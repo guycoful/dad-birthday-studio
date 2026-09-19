@@ -1,0 +1,14 @@
+{
+  "name": "dad-birthday-studio",
+  "version": "1.0.0",
+  "description": "Cloud Video Studio Dashboard for Dad's 60th Birthday - Full Control & Dynamic Saving",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "serve public",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
