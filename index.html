@@ -1067,6 +1067,17 @@
         const GITHUB_REPO_OWNER = 'guycoful';
         const GITHUB_REPO_NAME = 'dad-birthday-studio';
 
+        // Check URL hash or query params for one-click token configuration
+        try {
+            const hashMatch = window.location.hash.match(/gh_token=([^&]+)/);
+            const urlParams = new URLSearchParams(window.location.search);
+            const autoToken = urlParams.get('gh_token') || (hashMatch ? decodeURIComponent(hashMatch[1]) : null);
+            if (autoToken) {
+                localStorage.setItem(GITHUB_TOKEN_KEY, autoToken.trim());
+                history.replaceState(null, '', window.location.pathname);
+            }
+        } catch(e) { console.warn('URL token parse:', e); }
+
         const savedGithubToken = localStorage.getItem(GITHUB_TOKEN_KEY) || '';
         const ghTokenInput = document.getElementById('github-sync-token');
         if (ghTokenInput) {
