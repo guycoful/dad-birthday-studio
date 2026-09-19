@@ -126,10 +126,10 @@
         }
       ],
       "rotation": 0,
-      "scale": 2.2,
+      "scale": 1.0,
       "offsetX": 0,
-      "offsetY": 110,
-      "trim": 19,
+      "offsetY": 0,
+      "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
@@ -193,14 +193,15 @@
         }
       ],
       "rotation": 0,
-      "scale": 2.2,
-      "offsetX": -10,
-      "offsetY": 130,
-      "trim": 10,
+      "scale": 1.0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
       "cropBox": null,
       "filterMode": "natural_hd",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "colorized_path": "enhanced_photos/colorized_260_IMG-20260827-WA0024.png"
     },
     {
       "slide_id": 3,
