@@ -126,7 +126,7 @@
         }
       ],
       "rotation": 0,
-      "scale": 1.0,
+      "scale": 1,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
@@ -193,7 +193,7 @@
         }
       ],
       "rotation": 0,
-      "scale": 1.0,
+      "scale": 1,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
@@ -20346,5 +20346,6 @@
       "fitMode": "contain",
       "showCaption": true
     }
-  ]
+  ],
+  "last_updated": "2026-09-19T10:46:09.159Z"
 }
