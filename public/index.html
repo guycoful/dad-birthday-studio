@@ -1121,28 +1121,100 @@
 
             try {
                 const cleanPath = getActivePhotoPath(cur);
-                const res = await fetch('/api/colorize', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        api_key: apiKey,
-                        image_path: cleanPath
-                    })
-                });
+                let colorizedUrl = null;
 
-                const data = await res.json();
-                if (data.status === 'ok' && data.colorized_data_url) {
-                    cur.colorized_path = data.colorized_data_url;
+                // 1. Try serverless backend endpoint first (works on Vercel / Node)
+                try {
+                    const res = await fetch('/api/colorize', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            api_key: apiKey,
+                            image_path: cleanPath
+                        })
+                    });
+                    if (res.ok) {
+                        const data = await res.json();
+                        if (data.status === 'ok' && data.colorized_data_url) {
+                            colorizedUrl = data.colorized_data_url;
+                        }
+                    }
+                } catch(e) {
+                    console.log('Server API unavailable, falling back to direct client-side Gemini API');
+                }
+
+                // 2. Direct browser Gemini API fallback (works on GitHub Pages / static hosting)
+                if (!colorizedUrl) {
+                    showGeminiStatus('🧠 מעבד תמונה ישירות מול Gemini API...');
+                    const imgBlob = await fetch(cleanPath).then(r => r.blob());
+                    const b64 = await new Promise((resolve, reject) => {
+                        const reader = new FileReader();
+                        reader.onloadend = () => {
+                            const resB64 = reader.result.split(',')[1];
+                            resolve(resB64);
+                        };
+                        reader.onerror = reject;
+                        reader.readAsDataURL(imgBlob);
+                    });
+
+                    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=${apiKey}`;
+                    const prompt = (
+                        "Fully and completely colorize every single part of this vintage photograph in high resolution with vibrant, natural colors.\n" +
+                        "CRITICAL REQUIREMENTS:\n" +
+                        "1. Colorize EVERY SINGLE PERSON across the entire frame without exception, including all people on the left side, right side, and background. Give everyone realistic, warm, healthy human skin tones and natural hair color.\n" +
+                        "2. Colorize all clothing: suits, floral shirts, striped tops, patterned blouses, and dresses for ALL guests and attendees.\n" +
+                        "3. Colorize all elements in the scene: the table, tablecloth, glasses, food, background curtains, wall, and lighting.\n" +
+                        "4. Do NOT leave any person, corner, face, or background in grayscale or sepia. Ensure 100% complete full-color coverage across the entire photograph edge-to-edge."
+                    );
+
+                    const payload = {
+                        contents: [{
+                            parts: [
+                                { text: prompt },
+                                { inline_data: { mime_type: "image/jpeg", data: b64 } }
+                            ]
+                        }]
+                    };
+
+                    const geminiRes = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!geminiRes.ok) {
+                        const errTxt = await geminiRes.text();
+                        throw new Error('שגיאת מודל Gemini: ' + errTxt);
+                    }
+
+                    const gData = await geminiRes.json();
+                    let outB64 = null;
+                    for (const c of gData.candidates || []) {
+                        for (const p of c.content?.parts || []) {
+                            if (p.inlineData?.data) { outB64 = p.inlineData.data; break; }
+                            else if (p.inline_data?.data) { outB64 = p.inline_data.data; break; }
+                        }
+                    }
+
+                    if (outB64) {
+                        colorizedUrl = `data:image/png;base64,${outB64}`;
+                    } else {
+                        throw new Error('לא התקבלה תמונה צבועה מהמודל');
+                    }
+                }
+
+                if (colorizedUrl) {
+                    cur.colorized_path = colorizedUrl;
                     showGeminiStatus('🎨 Gemini החיל שחזור צבעים טבעי מלא בהצלחה !');
                     autoSaveState();
                     renderCurrentFrame(0);
                     renderScenesList(activeFilter);
                 } else {
-                    showGeminiStatus('שגיאה בצביעה: ' + (data.error || 'נסה שוב'), true);
+                    showGeminiStatus('שגיאה בצביעה, נסה שוב', true);
                 }
             } catch (err) {
                 console.error(err);
-                showGeminiStatus('שגיאה בחיבור ל-Gemini', true);
+                showGeminiStatus('שגיאה בצביעה: ' + (err.message || 'נסה שוב'), true);
             }
         }
 
