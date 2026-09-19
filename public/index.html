@@ -208,6 +208,40 @@
             padding: 10px;
             overflow: hidden;
             z-index: 2;
+            cursor: grab;
+            touch-action: none;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .viewport-stage.is-dragging {
+            cursor: grabbing !important;
+        }
+
+        .hud-transform-indicator {
+            position: absolute;
+            top: 14px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-5px);
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid var(--accent);
+            color: #ffffff;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            pointer-events: none;
+            z-index: 25;
+            opacity: 0;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+            white-space: nowrap;
+            direction: ltr;
+        }
+
+        .hud-transform-indicator.visible {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
         }
 
         /* 100% UNTOUCHED, UNGROPPED PHOTO */
@@ -223,6 +257,9 @@
             will-change: transform;
             transform: translate3d(0, 0, 0);
             transition: filter 0.15s ease;
+            -webkit-user-drag: none;
+            user-drag: none;
+            pointer-events: auto;
         }
 
         .cinematic-img.mode-cover {
@@ -640,6 +677,9 @@
                 
                 <video id="video-player" controls preload="none"></video>
 
+                <!-- Floating HUD indicator -->
+                <div class="hud-transform-indicator" id="hud-indicator">🔍 100% | ↔️ 0px | ↕️ 0px</div>
+
                 <!-- Overlay Layer -->
                 <div class="overlay-layer" id="overlay">
                     <div class="chapter-badge" id="badge-chapter">פרק 1: שנות הילדות</div>
@@ -734,20 +774,21 @@
             <!-- Transform & Sizing Panel -->
             <div class="panel">
                 <h3>📐 גודל, זום והזזה חופשית</h3>
+                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">💡 ניתן לגרור עם העכבר ישירות על גבי התמונה, ולגלול בגלגלת להגדלה והקטנה</p>
                 
                 <div class="form-group">
                     <label>🔍 גודל / זום: <span class="slider-val" id="val-scale">100%</span></label>
-                    <input type="range" min="0.4" max="2.5" step="0.05" value="1.0" id="scale-slider" oninput="updateCurrentScale(this.value)" style="width: 100%;">
+                    <input type="range" min="0.3" max="3.0" step="0.02" value="1.0" id="scale-slider" oninput="updateCurrentScale(this.value)" style="width: 100%;">
                 </div>
 
                 <div class="form-group">
                     <label>↕️ הזזה אנכית (גובה): <span class="slider-val" id="val-offsetY">0px</span></label>
-                    <input type="range" min="-400" max="400" step="10" value="0" id="offsetY-slider" oninput="updateCurrentOffsetY(this.value)" style="width: 100%;">
+                    <input type="range" min="-600" max="600" step="5" value="0" id="offsetY-slider" oninput="updateCurrentOffsetY(this.value)" style="width: 100%;">
                 </div>
 
                 <div class="form-group">
                     <label>↔️ הזזה אופקית (רוחב): <span class="slider-val" id="val-offsetX">0px</span></label>
-                    <input type="range" min="-400" max="400" step="10" value="0" id="offsetX-slider" oninput="updateCurrentOffsetX(this.value)" style="width: 100%;">
+                    <input type="range" min="-600" max="600" step="5" value="0" id="offsetX-slider" oninput="updateCurrentOffsetX(this.value)" style="width: 100%;">
                 </div>
 
                 <div class="btn-grid">
@@ -1299,6 +1340,7 @@
             document.getElementById('val-scale').textContent = `${Math.round(cur.scale * 100)}%`;
             autoSaveState();
             renderCurrentFrame(0);
+            showHudIndicator(`🔍 ${Math.round(cur.scale * 100)}% | ↔️ ${cur.offsetX || 0}px | ↕️ ${cur.offsetY || 0}px`);
         }
 
         function updateCurrentOffsetY(val) {
@@ -1307,6 +1349,7 @@
             document.getElementById('val-offsetY').textContent = `${cur.offsetY}px`;
             autoSaveState();
             renderCurrentFrame(0);
+            showHudIndicator(`🔍 ${Math.round((cur.scale || 1.0) * 100)}% | ↔️ ${cur.offsetX || 0}px | ↕️ ${cur.offsetY}px`);
         }
 
         function updateCurrentOffsetX(val) {
@@ -1315,6 +1358,176 @@
             document.getElementById('val-offsetX').textContent = `${cur.offsetX}px`;
             autoSaveState();
             renderCurrentFrame(0);
+            showHudIndicator(`🔍 ${Math.round((cur.scale || 1.0) * 100)}% | ↔️ ${cur.offsetX}px | ↕️ ${cur.offsetY || 0}px`);
+        }
+
+        function syncScaleSlider(scaleVal) {
+            const slider = document.getElementById('scale-slider');
+            if (slider) slider.value = scaleVal;
+            const label = document.getElementById('val-scale');
+            if (label) label.textContent = `${Math.round(scaleVal * 100)}%`;
+        }
+
+        function syncOffsetSliders(offsetX, offsetY) {
+            const sliderX = document.getElementById('offsetX-slider');
+            if (sliderX) sliderX.value = offsetX;
+            const labelX = document.getElementById('val-offsetX');
+            if (labelX) labelX.textContent = `${offsetX}px`;
+
+            const sliderY = document.getElementById('offsetY-slider');
+            if (sliderY) sliderY.value = offsetY;
+            const labelY = document.getElementById('val-offsetY');
+            if (labelY) labelY.textContent = `${offsetY}px`;
+        }
+
+        let hudTimer = null;
+        function showHudIndicator(text) {
+            const hud = document.getElementById('hud-indicator');
+            if (!hud) return;
+            hud.textContent = text;
+            hud.classList.add('visible');
+            clearTimeout(hudTimer);
+            hudTimer = setTimeout(() => {
+                hud.classList.remove('visible');
+            }, 1300);
+        }
+
+        let autoSaveTimer = null;
+        function debouncedAutoSave() {
+            clearTimeout(autoSaveTimer);
+            autoSaveTimer = setTimeout(() => {
+                autoSaveState();
+            }, 500);
+        }
+
+        // --- DIRECT INTERACTIVE CANVAS MANIPULATION (DRAG TO PAN & WHEEL/PINCH TO ZOOM) ---
+        const activePointers = new Map();
+        let dragStartX = 0;
+        let dragStartY = 0;
+        let initialOffsetX = 0;
+        let initialOffsetY = 0;
+        let initialPinchDist = 0;
+        let initialScale = 1.0;
+        let initialPinchMidX = 0;
+        let initialPinchMidY = 0;
+
+        function initInteractiveCanvas() {
+            const stage = document.getElementById('stage');
+            const mainImg = document.getElementById('main-photo');
+            if (!stage) return;
+
+            if (mainImg) {
+                mainImg.setAttribute('draggable', 'false');
+                mainImg.addEventListener('dragstart', (e) => e.preventDefault());
+            }
+
+            stage.addEventListener('pointerdown', (e) => {
+                const cur = slides[currentIndex];
+                if (!cur || cur.type === 'video') return;
+
+                // Only left mouse button or touch
+                if (e.pointerType === 'mouse' && e.button !== 0) return;
+
+                activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+                try { stage.setPointerCapture(e.pointerId); } catch(err) {}
+                stage.classList.add('is-dragging');
+
+                if (activePointers.size === 1) {
+                    dragStartX = e.clientX;
+                    dragStartY = e.clientY;
+                    initialOffsetX = cur.offsetX || 0;
+                    initialOffsetY = cur.offsetY || 0;
+                } else if (activePointers.size === 2) {
+                    const pts = Array.from(activePointers.values());
+                    initialPinchDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+                    initialScale = cur.scale !== undefined ? cur.scale : 1.0;
+                    initialPinchMidX = (pts[0].x + pts[1].x) / 2;
+                    initialPinchMidY = (pts[0].y + pts[1].y) / 2;
+                    initialOffsetX = cur.offsetX || 0;
+                    initialOffsetY = cur.offsetY || 0;
+                }
+            });
+
+            stage.addEventListener('pointermove', (e) => {
+                if (!activePointers.has(e.pointerId)) return;
+                const cur = slides[currentIndex];
+                if (!cur || cur.type === 'video') return;
+
+                activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+                if (activePointers.size === 1) {
+                    const deltaX = e.clientX - dragStartX;
+                    const deltaY = e.clientY - dragStartY;
+                    cur.offsetX = Math.round(initialOffsetX + deltaX);
+                    cur.offsetY = Math.round(initialOffsetY + deltaY);
+
+                    syncOffsetSliders(cur.offsetX, cur.offsetY);
+                    renderCurrentFrame(0);
+                    showHudIndicator(`🔍 ${Math.round((cur.scale || 1.0) * 100)}% | ↔️ ${cur.offsetX}px | ↕️ ${cur.offsetY}px`);
+                } else if (activePointers.size === 2) {
+                    const pts = Array.from(activePointers.values());
+                    const currentDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+                    if (initialPinchDist > 0) {
+                        const factor = currentDist / initialPinchDist;
+                        let newScale = Math.min(3.0, Math.max(0.3, initialScale * factor));
+                        newScale = Math.round(newScale * 100) / 100;
+                        cur.scale = newScale;
+
+                        const midX = (pts[0].x + pts[1].x) / 2;
+                        const midY = (pts[0].y + pts[1].y) / 2;
+                        cur.offsetX = Math.round(initialOffsetX + (midX - initialPinchMidX));
+                        cur.offsetY = Math.round(initialOffsetY + (midY - initialPinchMidY));
+
+                        syncScaleSlider(newScale);
+                        syncOffsetSliders(cur.offsetX, cur.offsetY);
+                        renderCurrentFrame(0);
+                        showHudIndicator(`🔍 ${Math.round(newScale * 100)}% | ↔️ ${cur.offsetX}px | ↕️ ${cur.offsetY}px`);
+                    }
+                }
+            });
+
+            const onPointerEnd = (e) => {
+                if (!activePointers.has(e.pointerId)) return;
+                activePointers.delete(e.pointerId);
+                try { stage.releasePointerCapture(e.pointerId); } catch(err) {}
+
+                if (activePointers.size === 0) {
+                    stage.classList.remove('is-dragging');
+                    debouncedAutoSave();
+                } else if (activePointers.size === 1) {
+                    const remaining = Array.from(activePointers.values())[0];
+                    dragStartX = remaining.x;
+                    dragStartY = remaining.y;
+                    const cur = slides[currentIndex];
+                    if (cur) {
+                        initialOffsetX = cur.offsetX || 0;
+                        initialOffsetY = cur.offsetY || 0;
+                    }
+                }
+            };
+
+            stage.addEventListener('pointerup', onPointerEnd);
+            stage.addEventListener('pointercancel', onPointerEnd);
+
+            // Wheel zoom (mouse scroll or touchpad zoom)
+            stage.addEventListener('wheel', (e) => {
+                const cur = slides[currentIndex];
+                if (!cur || cur.type === 'video') return;
+
+                e.preventDefault();
+
+                const delta = e.deltaY;
+                const zoomFactor = delta < 0 ? 1.08 : 0.92;
+                let currentScale = cur.scale !== undefined ? cur.scale : 1.0;
+                let newScale = Math.min(3.0, Math.max(0.3, currentScale * zoomFactor));
+                newScale = Math.round(newScale * 100) / 100;
+
+                cur.scale = newScale;
+                syncScaleSlider(newScale);
+                renderCurrentFrame(0);
+                showHudIndicator(`🔍 ${Math.round(newScale * 100)}% | ↔️ ${cur.offsetX || 0}px | ↕️ ${cur.offsetY || 0}px`);
+                debouncedAutoSave();
+            }, { passive: false });
         }
 
         function resetTransforms() {
@@ -1644,6 +1857,7 @@
 
         renderScenesList('all');
         selectSlide(0);
+        initInteractiveCanvas();
     </script>
 </body>
 </html>
