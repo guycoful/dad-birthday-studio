@@ -701,15 +701,15 @@
           "cloud_path": "photos/268_IMG-20260827-WA0032.jpg"
         }
       ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
+      "rotation": 270,
+      "scale": 3,
+      "offsetX": 56,
+      "offsetY": 75,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": false
     },
     {
       "slide_id": 10,
@@ -20347,5 +20347,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T07:43:47.859Z"
+  "last_updated": "2026-09-26T07:44:26.047Z"
 }
