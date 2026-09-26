@@ -2589,6 +2589,10 @@
             quoteDisplay.textContent = cur.quote ? `"${cur.quote}"` : '';
 
             renderCurrentFrame(0);
+            updateVideoTrimUI();
+            updateSoundtrackUI();
+            updateTransitionUI();
+            syncSoundtrackPlayback();
         }
 
         function renderCurrentFrame(progress = 0) {
