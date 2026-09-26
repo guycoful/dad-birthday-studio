@@ -862,6 +862,60 @@
                 <div id="cloud-sync-status" class="status-badge gold" style="display: block;">סנכרון ענן פעיל ✅</div>
             </div>
 
+            
+            <!-- Soundtrack & Music Continuity Panel -->
+            <div class="panel soundtrack-panel" id="soundtrack-control-panel">
+                <h3 style="color: #38bdf8;">🎵 פסקול ומוזיקה לשקף</h3>
+                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">
+                    המוזיקה מנגנת ברצף רציף בין השקפים ללא עצירה, אלא אם הוגדר כאן שיר חדש.
+                </p>
+
+                <div class="form-group" style="margin-bottom: 8px;">
+                    <label style="font-size: 0.82rem;">מצב השמע בשקף זה:</label>
+                    <select id="soundtrack-mode-select" onchange="changeSoundtrackMode(this.value)" style="width: 100%; padding: 6px; border-radius: 6px; background: var(--bg-main); color: #fff; border: 1px solid var(--border);">
+                        <option value="continue">📻 המשך שיר קודם ברצף (ללא שינוי)</option>
+                        <option value="new_track">🎶 התחל שיר חדש משקף זה</option>
+                        <option value="mute">🔇 ללא מוזיקה בשקף זה (השתקה)</option>
+                    </select>
+                </div>
+
+                <div id="soundtrack-picker-group" style="display: none; padding: 8px 10px; background: rgba(15, 23, 42, 0.7); border-radius: 6px; border: 1px dashed var(--accent); margin-top: 8px;">
+                    <label style="display: block; margin-bottom: 4px; font-weight: 600; font-size: 0.8rem;">בחר שיר להתחלה:</label>
+                    <select id="soundtrack-track-select" onchange="changeSoundtrackTrack(this.value)" style="width: 100%; padding: 6px; border-radius: 6px; background: var(--bg-main); color: #fff; border: 1px solid var(--border); margin-bottom: 8px;">
+                        <option value="audio/background_main.mp3">🎵 נעימת רקע ראשית (Background Main)</option>
+                        <option value="audio/kaveret_song.mp3">🎵 כוורת - שיר נבואי קוסמי עליז</option>
+                    </select>
+
+                    <div style="display: flex; gap: 6px;">
+                        <button type="button" class="tool-btn" onclick="previewCurrentSoundtrack()" style="flex: 1; font-size: 0.76rem; padding: 5px;">
+                            ▶️ האזן לשיר
+                        </button>
+                        <button type="button" class="tool-btn" onclick="document.getElementById('audio-upload-input').click()" style="flex: 1; font-size: 0.76rem; padding: 5px; color: var(--gold);">
+                            ➕ העלה MP3
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transition Effect Panel -->
+            <div class="panel transition-panel" id="transition-control-panel">
+                <h3 style="color: #c084fc;">✨ הנפשת מעבר קולנועית</h3>
+                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">
+                    מעברים חלקים בכניסה לשקף ולסרטונים למניעת קפיצות חדות.
+                </p>
+
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label style="font-size: 0.82rem;">סגנון מעבר לשקף זה:</label>
+                    <select id="transition-effect-select" onchange="changeTransitionEffect(this.value)" style="width: 100%; padding: 6px; border-radius: 6px; background: var(--bg-main); color: #fff; border: 1px solid var(--border);">
+                        <option value="crossfade">🎬 דיסולב קולנועי רך (Crossfade - מומלץ)</option>
+                        <option value="fade_black">⬛ פייד לשחור (Fade to Black)</option>
+                        <option value="zoom_fade">🔍 זום פנימה ופייד (Zoom Dissolve)</option>
+                        <option value="flash_soft">🌟 הבזק אור עדין (Soft Light Flash)</option>
+                        <option value="cut">⚡ חיתוך ישיר (Cut)</option>
+                    </select>
+                </div>
+            </div>
+    
             <!-- Google Gemini Pro AI Hub -->
             <div class="panel gemini-panel">
                 <h3 style="color: #c084fc;">🤖 Google Gemini AI Engine</h3>
