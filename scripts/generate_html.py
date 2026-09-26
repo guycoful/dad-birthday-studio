@@ -709,7 +709,7 @@ def build_cloud_index_html():
                 
                 <div class="form-group">
                     <label>🔑 Gemini API Key:</label>
-                    <input type="password" id="gemini-api-key" placeholder="AIzaSy..." onchange="saveGeminiApiKey(this.value)">
+                    <input type="password" id="gemini-api-key" placeholder="AQ... / AIzaSy..." onchange="saveGeminiApiKey(this.value)">
                 </div>
 
                 <div class="btn-grid">
