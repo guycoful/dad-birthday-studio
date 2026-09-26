@@ -2271,14 +2271,14 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
+      "scale": 3,
+      "offsetX": 52,
+      "offsetY": 23,
+      "trim": 25,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": false
     },
     {
       "slide_id": 35,
@@ -20086,5 +20086,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T08:30:19.301Z"
+  "last_updated": "2026-09-26T08:30:49.537Z"
 }
