@@ -7113,7 +7113,7 @@
       "act": "act_4",
       "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
       "duration": 8,
-      "caption": "אבא - 2018",
+      "caption": "עו\"ד סיון",
       "quote": "",
       "primary_item": {
         "index": 70,
@@ -7164,9 +7164,9 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
+      "scale": 1.59,
+      "offsetX": -8,
+      "offsetY": 70,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
@@ -19183,5 +19183,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T09:47:12.170Z"
+  "last_updated": "2026-09-26T09:47:53.019Z"
 }
