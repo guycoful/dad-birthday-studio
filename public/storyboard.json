@@ -7609,8 +7609,9 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "soundtrack_action": "new_track",
+      "transition_effect": "zoom_fade",
+      "soundtrack_track": "audio/משינה_-_מכונית_-_1990.mp3"
     },
     {
       "slide_id": 105,
@@ -7678,7 +7679,9 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "soundtrack_track": "audio/משינה_-_מכונית_-_1990.mp3",
+      "soundtrack_name": "משינה - מכונית - 1990"
     },
     {
       "slide_id": 88,
@@ -18408,5 +18411,5 @@
       "transition_effect": "crossfade"
     }
   ],
-  "last_updated": "2026-09-26T12:44:00.149Z"
+  "last_updated": "2026-09-26T12:48:36.520Z"
 }
