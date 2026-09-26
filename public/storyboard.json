@@ -8254,7 +8254,7 @@
       "act": "act_4",
       "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
       "duration": 5,
-      "caption": "",
+      "caption": "היום בערב יהיה צחוקים, אני בטוח",
       "quote": "",
       "primary_item": {
         "index": 50,
@@ -8305,7 +8305,7 @@
         }
       ],
       "rotation": 0,
-      "scale": 1.97,
+      "scale": 2.26,
       "offsetX": -6,
       "offsetY": -95,
       "trim": 0,
@@ -18410,5 +18410,5 @@
       "transition_effect": "crossfade"
     }
   ],
-  "last_updated": "2026-09-26T12:54:49.015Z"
+  "last_updated": "2026-09-26T12:56:12.998Z"
 }
