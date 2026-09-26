@@ -68,7 +68,9 @@
       "fitMode": "contain",
       "showCaption": true,
       "colorized_path": "enhanced_photos/colorized_319_IMG-20260828-WA0005.png",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "soundtrack_action": "new_track",
+      "soundtrack_track": "audio/kaveret_song.mp3"
     },
     {
       "slide_id": 8,
@@ -856,7 +858,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 10,
@@ -922,7 +925,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 11,
@@ -988,7 +992,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 12,
@@ -1100,7 +1105,8 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": false,
-      "colorized_path": "enhanced_photos/colorized_271_IMG-20260827-WA0035.png"
+      "colorized_path": "enhanced_photos/colorized_271_IMG-20260827-WA0035.png",
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 13,
@@ -1166,7 +1172,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 14,
@@ -1232,7 +1239,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 15,
@@ -1298,7 +1306,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 17,
@@ -1364,7 +1373,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 18,
@@ -1430,7 +1440,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 19,
@@ -1541,7 +1552,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 20,
@@ -1607,7 +1619,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 21,
@@ -1673,7 +1686,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 22,
@@ -1739,7 +1753,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 24,
@@ -1805,7 +1820,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 25,
@@ -1871,7 +1887,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 26,
@@ -1982,7 +1999,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 27,
@@ -2048,7 +2066,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 28,
@@ -2114,7 +2133,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 29,
@@ -2180,7 +2200,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "cover",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 31,
@@ -2246,7 +2267,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 33,
@@ -2357,7 +2379,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 34,
@@ -2423,7 +2446,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 35,
@@ -2489,7 +2513,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 36,
@@ -2555,7 +2580,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 37,
@@ -2621,7 +2647,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 38,
@@ -2687,7 +2714,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 41,
@@ -2753,7 +2781,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 42,
@@ -2819,7 +2848,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 43,
@@ -2886,7 +2916,8 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": false,
-      "colorized_path": "enhanced_photos/colorized_307_IMG-20260827-WA0076.png"
+      "colorized_path": "enhanced_photos/colorized_307_IMG-20260827-WA0076.png",
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 44,
@@ -2952,7 +2983,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 45,
@@ -3018,7 +3050,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 47,
@@ -3129,7 +3162,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 48,
@@ -3195,7 +3229,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 49,
@@ -3261,7 +3296,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 50,
@@ -3327,7 +3363,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 52,
@@ -3393,7 +3430,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false
+      "showCaption": false,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 70,
@@ -3459,7 +3497,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 55,
@@ -3525,7 +3564,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 56,
@@ -3591,7 +3631,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 57,
@@ -3657,7 +3698,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 59,
@@ -3723,7 +3765,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 61,
@@ -3789,7 +3832,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 60,
@@ -3855,7 +3899,8 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": true,
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 71,
@@ -17871,5 +17916,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T11:38:59.621Z"
+  "last_updated": "2026-09-26T11:43:03.851Z"
 }
