@@ -719,6 +719,7 @@
             <button onclick="toggleAudio()"><span id="audio-btn-icon">🔊</span> מוזיקה</button>
             <button onclick="toggleFullscreen()">📺 מסך מלא</button>
             <button class="gold" onclick="saveStoryboardToCloud()">💾 שמור בענן (GitHub)</button>
+            <button onclick="loadStoryboardFromCloud()">☁️ טען מהענן</button>
             <button onclick="exportStoryboardJson()">📥 ייצא JSON</button>
             <button onclick="document.getElementById('json-import-input').click()">📤 ייבא JSON</button>
         </div>
@@ -778,16 +779,21 @@
                 <h3 style="color: var(--gold);">☁️ שמירה ושליטה דינמית בענן</h3>
                 <div class="btn-grid">
                     <button type="button" class="gold" onclick="saveStoryboardToCloud()" style="font-size: 0.82rem;">
-                        💾 שמור שינויים בענן
+                        💾 שמור בענן
                     </button>
-                    <button type="button" class="primary" onclick="triggerAddNewSlide()" style="font-size: 0.82rem;">
-                        ➕ הוסף תמונה חדשה
+                    <button type="button" class="tool-btn" onclick="loadStoryboardFromCloud()" style="font-size: 0.82rem;">
+                        ☁️ טען מהענן
                     </button>
                 </div>
                 <div class="btn-grid" style="margin-top: 6px;">
+                    <button type="button" class="primary" onclick="triggerAddNewSlide()" style="font-size: 0.82rem;">
+                        ➕ הוסף תמונה חדשה
+                    </button>
                     <button type="button" class="danger" onclick="deleteCurrentSlide()" style="font-size: 0.78rem;">
                         🗑️ מחק שקף זה
                     </button>
+                </div>
+                <div class="btn-grid" style="margin-top: 6px;">
                     <button type="button" class="tool-btn" onclick="resetToDefaultStoryboard()" style="font-size: 0.78rem;">
                         🔄 שחזר מקור
                     </button>
@@ -977,8 +983,8 @@
 
         let slides = (savedState && Array.isArray(savedState) && savedState.length > 0) ? savedState : initialTimelineData.slides;
 
-        // Force clean defaults without legacy cut crops
-        slides.forEach(s => {
+        // Clean slide defaults without overwriting user adjustments or zooms
+        function applySlideDefaults(s) {
             if (s.fitMode === undefined) s.fitMode = 'contain';
             if (s.scale === undefined) s.scale = 1.0;
             if (s.offsetX === undefined) s.offsetX = 0;
@@ -987,30 +993,17 @@
             if (s.showCaption === undefined) s.showCaption = true;
 
             const fname = (s.primary_item && s.primary_item.filename) || '';
-            if (s.slide_id === 1 || fname.includes('259_')) {
-                s.colorized_path = 'enhanced_photos/colorized_259_IMG-20260827-WA0023.png';
-                if (s.scale > 1.5) s.scale = 1.0;
-                if (Math.abs(s.offsetY) > 30) s.offsetY = 0;
-                s.trim = 0;
-                s.cropBox = null;
-                s.fitMode = 'contain';
+            if (!s.colorized_path) {
+                if (s.slide_id === 1 || fname.includes('259_')) {
+                    s.colorized_path = 'enhanced_photos/colorized_259_IMG-20260827-WA0023.png';
+                } else if (s.slide_id === 2 || fname.includes('260_')) {
+                    s.colorized_path = 'enhanced_photos/colorized_260_IMG-20260827-WA0024.png';
+                } else if (s.slide_id === 54 || fname.includes('319_')) {
+                    s.colorized_path = 'enhanced_photos/colorized_319_IMG-20260828-WA0005.png';
+                }
             }
-            if (s.slide_id === 2 || fname.includes('260_')) {
-                s.colorized_path = 'enhanced_photos/colorized_260_IMG-20260827-WA0024.png';
-                if (s.scale > 1.5) s.scale = 1.0;
-                if (Math.abs(s.offsetY) > 30) s.offsetY = 0;
-                s.trim = 0;
-                s.cropBox = null;
-                s.fitMode = 'contain';
-            }
-            if (s.slide_id === 54 || fname.includes('319_')) {
-                s.colorized_path = 'enhanced_photos/colorized_319_IMG-20260828-WA0005.png';
-                if (s.scale > 1.5) s.scale = 1.0;
-                s.trim = 0;
-                s.cropBox = null;
-                s.fitMode = 'contain';
-            }
-        });
+        }
+        slides.forEach(applySlideDefaults);
 
         let currentIndex = 0;
         let isPlaying = false;
@@ -1254,6 +1247,31 @@
             }
         }
 
+        async function loadStoryboardFromCloud(silent = false) {
+            try {
+                if (!silent) showCloudStatus('⏳ טוען נתונים מענן GitHub...');
+                const res = await fetch('storyboard.json?v=' + Date.now());
+                if (res.ok) {
+                    const data = await res.json();
+                    const cloudSlides = data.slides || (Array.isArray(data) ? data : null);
+                    if (cloudSlides && Array.isArray(cloudSlides) && cloudSlides.length > 0) {
+                        slides = cloudSlides;
+                        slides.forEach(applySlideDefaults);
+                        autoSaveState();
+                        renderScenesList(activeFilter);
+                        selectSlide(currentIndex < slides.length ? currentIndex : 0);
+                        showCloudStatus('נטען וסונכרן מהענן בהצלחה ✅');
+                        if (!silent) alert('✅ הנתונים העדכניים ביותר נטענו בהצלחה מענן GitHub !');
+                        return true;
+                    }
+                }
+            } catch (err) {
+                console.warn('Cloud load error:', err);
+                if (!silent) showCloudStatus('❌ שגיאה בטעינה מהענן');
+            }
+            return false;
+        }
+
         function exportStoryboardJson() {
             const blob = new Blob([JSON.stringify(slides, null, 2)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
@@ -1274,6 +1292,7 @@
                     const list = Array.isArray(imported) ? imported : (imported.slides || []);
                     if (list.length > 0) {
                         slides = list;
+                        slides.forEach(applySlideDefaults);
                         autoSaveState();
                         renderScenesList(activeFilter);
                         selectSlide(0);
@@ -1289,6 +1308,7 @@
         function resetToDefaultStoryboard() {
             if (!confirm('האם אתה בטוח שברצונך לשחזר את הסטודיו לברירת המחדל המקורית?')) return;
             slides = JSON.parse(JSON.stringify(initialTimelineData.slides));
+            slides.forEach(applySlideDefaults);
             autoSaveState();
             renderScenesList(activeFilter);
             selectSlide(0);
@@ -2125,6 +2145,9 @@
         renderScenesList('all');
         selectSlide(0);
         initInteractiveCanvas();
+        if (!savedState) {
+            loadStoryboardFromCloud(true);
+        }
     </script>
 
     <!-- GitHub Token Modal -->

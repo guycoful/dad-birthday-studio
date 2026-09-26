@@ -26,7 +26,7 @@ def update_studio_html():
     print('Bumped LOCAL_STORAGE_KEY to v2!')
 
     # 3. Enhance slides initialization loop with auto-correction for Slide 1, 2, and 54
-    new_foreach = """slides.forEach(s => {
+    new_foreach = """function applySlideDefaults(s) {
             if (s.fitMode === undefined) s.fitMode = 'contain';
             if (s.scale === undefined) s.scale = 1.0;
             if (s.offsetX === undefined) s.offsetX = 0;
@@ -35,30 +35,17 @@ def update_studio_html():
             if (s.showCaption === undefined) s.showCaption = true;
 
             const fname = (s.primary_item && s.primary_item.filename) || '';
-            if (s.slide_id === 1 || fname.includes('259_')) {
-                s.colorized_path = 'enhanced_photos/colorized_259_IMG-20260827-WA0023.png';
-                if (s.scale > 1.5) s.scale = 1.0;
-                if (Math.abs(s.offsetY) > 30) s.offsetY = 0;
-                s.trim = 0;
-                s.cropBox = null;
-                s.fitMode = 'contain';
+            if (!s.colorized_path) {
+                if (s.slide_id === 1 || fname.includes('259_')) {
+                    s.colorized_path = 'enhanced_photos/colorized_259_IMG-20260827-WA0023.png';
+                } else if (s.slide_id === 2 || fname.includes('260_')) {
+                    s.colorized_path = 'enhanced_photos/colorized_260_IMG-20260827-WA0024.png';
+                } else if (s.slide_id === 54 || fname.includes('319_')) {
+                    s.colorized_path = 'enhanced_photos/colorized_319_IMG-20260828-WA0005.png';
+                }
             }
-            if (s.slide_id === 2 || fname.includes('260_')) {
-                s.colorized_path = 'enhanced_photos/colorized_260_IMG-20260827-WA0024.png';
-                if (s.scale > 1.5) s.scale = 1.0;
-                if (Math.abs(s.offsetY) > 30) s.offsetY = 0;
-                s.trim = 0;
-                s.cropBox = null;
-                s.fitMode = 'contain';
-            }
-            if (s.slide_id === 54 || fname.includes('319_')) {
-                s.colorized_path = 'enhanced_photos/colorized_319_IMG-20260828-WA0005.png';
-                if (s.scale > 1.5) s.scale = 1.0;
-                s.trim = 0;
-                s.cropBox = null;
-                s.fitMode = 'contain';
-            }
-        });"""
+        }
+        slides.forEach(applySlideDefaults);"""
 
     m = re.search(r'slides\.forEach\(s =>\s*\{[\s\S]*?showCaption\s*=\s*true;\s*\}\);', content)
     if m:
