@@ -3043,9 +3043,9 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
+      "scale": 3,
+      "offsetX": -1,
+      "offsetY": -113,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
@@ -19844,5 +19844,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T08:41:47.162Z"
+  "last_updated": "2026-09-26T08:42:09.577Z"
 }
