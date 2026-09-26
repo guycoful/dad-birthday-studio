@@ -945,10 +945,10 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
+      "scale": 3,
+      "offsetX": 3,
+      "offsetY": -24,
+      "trim": 8,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
@@ -20347,5 +20347,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T07:50:35.690Z"
+  "last_updated": "2026-09-26T07:55:56.270Z"
 }
