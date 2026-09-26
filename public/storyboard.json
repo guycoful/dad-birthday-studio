@@ -1,6 +1,6 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 285,
+  "total_slides": 284,
   "slides": [
     {
       "slide_id": 54,
@@ -1153,72 +1153,6 @@
       "showCaption": false
     },
     {
-      "slide_id": 16,
-      "type": "cinematic",
-      "act": "act_1",
-      "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
-      "caption": "שנות הילדות והמשפחה",
-      "quote": "",
-      "primary_item": {
-        "index": 276,
-        "id": "AF1QipMgQSpH7-KCQBElY68i418dk5DxNrdeIifIXZ29",
-        "type": "Photo",
-        "is_video": false,
-        "filename": "276_IMG-20260827-WA0041.jpg",
-        "relative_path": "projects/dad-birthday-60/processed_photos/276_IMG-20260827-WA0041.jpg",
-        "width": 1080,
-        "height": 1920,
-        "timestamp": 1787847357000,
-        "date_formatted": "27/08/2026 19:15",
-        "year": 2026,
-        "act": "act_1",
-        "act_title": "פרק 1: שנות הילדות",
-        "default_caption": "אבא - 2026",
-        "display_year": "",
-        "caption": "שנות הילדות והמשפחה",
-        "duration": 8,
-        "layout": "cinematic",
-        "is_vintage": true,
-        "timeline_index": 18,
-        "cloud_path": "photos/276_IMG-20260827-WA0041.jpg"
-      },
-      "items": [
-        {
-          "index": 276,
-          "id": "AF1QipMgQSpH7-KCQBElY68i418dk5DxNrdeIifIXZ29",
-          "type": "Photo",
-          "is_video": false,
-          "filename": "276_IMG-20260827-WA0041.jpg",
-          "relative_path": "projects/dad-birthday-60/processed_photos/276_IMG-20260827-WA0041.jpg",
-          "width": 1080,
-          "height": 1920,
-          "timestamp": 1787847357000,
-          "date_formatted": "27/08/2026 19:15",
-          "year": 2026,
-          "act": "act_1",
-          "act_title": "פרק 1: שנות הילדות",
-          "default_caption": "אבא - 2026",
-          "display_year": "",
-          "caption": "שנות הילדות והמשפחה",
-          "duration": 8,
-          "layout": "cinematic",
-          "is_vintage": true,
-          "timeline_index": 18,
-          "cloud_path": "photos/276_IMG-20260827-WA0041.jpg"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": true
-    },
-    {
       "slide_id": 17,
       "type": "cinematic",
       "act": "act_1",
@@ -1275,14 +1209,14 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
+      "scale": 3,
+      "offsetX": 18,
+      "offsetY": 36,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": false
     },
     {
       "slide_id": 18,
@@ -20347,5 +20281,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T07:59:28.885Z"
+  "last_updated": "2026-09-26T08:00:27.249Z"
 }
