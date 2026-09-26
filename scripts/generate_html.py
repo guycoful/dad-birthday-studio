@@ -709,7 +709,7 @@ def build_cloud_index_html():
                 
                 <div class="form-group">
                     <label>🔑 Gemini API Key:</label>
-                    <input type="password" id="gemini-api-key" placeholder="AQ.Ab8RN..." onchange="saveGeminiApiKey(this.value)">
+                    <input type="password" id="gemini-api-key" placeholder="AIzaSy..." onchange="saveGeminiApiKey(this.value)">
                 </div>
 
                 <div class="btn-grid">
@@ -916,7 +916,7 @@ def build_cloud_index_html():
 
         bgAudio.volume = 0.7;
 
-        const defaultApiKey = 'AQ.Ab8RN6K7mm1arshT3nkHmTgDbFkFzydZjaGYdn6myFJmJEFgAg';
+        const defaultApiKey = '';
         const savedApiKey = localStorage.getItem('gemini_api_key') || defaultApiKey;
         document.getElementById('gemini-api-key').value = savedApiKey;
 

@@ -816,8 +816,14 @@
                 <h3 style="color: #c084fc;">🤖 Google Gemini AI Engine</h3>
                 
                 <div class="form-group">
-                    <label>🔑 Gemini API Key:</label>
-                    <input type="password" id="gemini-api-key" placeholder="AQ.Ab8RN..." onchange="saveGeminiApiKey(this.value)">
+                    <label style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-bottom: 3px;">
+                        <span>🔑 Gemini API Key:</span>
+                        <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent); font-size: 0.72rem; text-decoration: underline;">קבלת מפתח חינם</a>
+                    </label>
+                    <div style="display: flex; gap: 4px;">
+                        <input type="password" id="gemini-api-key" placeholder="AIzaSy..." onchange="saveGeminiApiKey(this.value)" style="flex: 1; font-size: 0.78rem; padding: 5px 8px;">
+                        <button type="button" class="tool-btn" onclick="toggleGeminiTokenVisibility()" style="padding: 4px 8px; font-size: 0.75rem;" id="btn-toggle-gemini-token" title="הצג/הסתר מפתח">👁️</button>
+                    </div>
                 </div>
 
                 <div class="btn-grid">
@@ -1025,13 +1031,71 @@
 
         bgAudio.volume = 0.7;
 
-        const defaultApiKey = 'AQ.Ab8RN6K7mm1arshT3nkHmTgDbFkFzydZjaGYdn6myFJmJEFgAg';
-        const savedApiKey = localStorage.getItem('gemini_api_key') || defaultApiKey;
-        document.getElementById('gemini-api-key').value = savedApiKey;
+        const defaultApiKey = '';
+        let savedApiKey = localStorage.getItem('gemini_api_key') || '';
+        if (savedApiKey.startsWith('AQ.')) {
+            localStorage.removeItem('gemini_api_key');
+            savedApiKey = '';
+        }
+        const geminiInput = document.getElementById('gemini-api-key');
+        if (geminiInput) geminiInput.value = savedApiKey;
+        if (savedApiKey) {
+            showGeminiStatus('מפתח Gemini מחובר ✅');
+        } else {
+            showGeminiStatus('נדרש מפתח Google AI Studio 🔑');
+        }
 
         function saveGeminiApiKey(val) {
-            localStorage.setItem('gemini_api_key', val.trim());
-            showGeminiStatus(val ? 'מפתח Gemini נשמר בהצלחה ✅' : 'מפתח הוסר');
+            const trimmed = val.trim();
+            if (trimmed.startsWith('AQ.')) {
+                alert('מפתח זה אינו מפתח תקין. מפתח Google AI Studio מתחיל ב-AIzaSy.');
+                return;
+            }
+            localStorage.setItem('gemini_api_key', trimmed);
+            const input = document.getElementById('gemini-api-key');
+            if (input) input.value = trimmed;
+            if (trimmed) {
+                showGeminiStatus('מפתח Gemini נשמר בהצלחה בדפדפן ✅');
+            } else {
+                showGeminiStatus('מפתח Gemini הוסר');
+            }
+        }
+
+        function toggleGeminiTokenVisibility() {
+            const input = document.getElementById('gemini-api-key');
+            if (!input) return;
+            const isPassword = input.type === 'password';
+            input.type = isPassword ? 'text' : 'password';
+            document.getElementById('btn-toggle-gemini-token').textContent = isPassword ? '🔒' : '👁️';
+        }
+
+        function openGeminiTokenModal() {
+            const modal = document.getElementById('gemini-token-modal');
+            const input = document.getElementById('modal-gemini-token-input');
+            const saved = localStorage.getItem('gemini_api_key') || '';
+            if (input) input.value = saved.startsWith('AQ.') ? '' : saved;
+            if (modal) modal.style.display = 'flex';
+        }
+
+        function closeGeminiTokenModal() {
+            const modal = document.getElementById('gemini-token-modal');
+            if (modal) modal.style.display = 'none';
+        }
+
+        function confirmSaveWithModalGeminiToken() {
+            const input = document.getElementById('modal-gemini-token-input');
+            const val = (input ? input.value : '').trim();
+            if (!val) {
+                alert('אנא הזן מפתח API תקין.');
+                return;
+            }
+            if (val.startsWith('AQ.')) {
+                alert('מפתח זה אינו מפתח Google AI Studio תקין. המפתח צריך להתחיל באותיות AIzaSy.');
+                return;
+            }
+            saveGeminiApiKey(val);
+            closeGeminiTokenModal();
+            runGeminiColorPalette();
         }
 
         function showGeminiStatus(msg, isError = false) {
@@ -1441,7 +1505,19 @@
 
         // --- REAL AI COLORIZATION ---
         async function runGeminiColorPalette() {
-            const apiKey = (document.getElementById('gemini-api-key').value || defaultApiKey).trim();
+            let apiKey = (document.getElementById('gemini-api-key')?.value || localStorage.getItem('gemini_api_key') || '').trim();
+            if (apiKey.startsWith('AQ.')) {
+                apiKey = '';
+                localStorage.removeItem('gemini_api_key');
+                if (document.getElementById('gemini-api-key')) document.getElementById('gemini-api-key').value = '';
+            }
+
+            if (!apiKey) {
+                openGeminiTokenModal();
+                showGeminiStatus('נדרש מפתח Google AI Studio תקין (AIzaSy...) 🔑', true);
+                return;
+            }
+
             const cur = slides[currentIndex];
             if (cur.type === 'video') return;
 
@@ -1485,7 +1561,6 @@
                         reader.readAsDataURL(imgBlob);
                     });
 
-                    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=${apiKey}`;
                     const prompt = (
                         "Fully and completely colorize every single part of this vintage photograph in high resolution with vibrant, natural colors.\n" +
                         "CRITICAL REQUIREMENTS:\n" +
@@ -1501,18 +1576,48 @@
                                 { text: prompt },
                                 { inline_data: { mime_type: "image/jpeg", data: b64 } }
                             ]
-                        }]
+                        }],
+                        generationConfig: {
+                            responseModalities: ["IMAGE"]
+                        }
                     };
 
-                    const geminiRes = await fetch(url, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
+                    const modelsToTry = ['gemini-2.5-flash-image', 'gemini-3.1-flash-image'];
+                    let geminiRes = null;
+                    let lastErrTxt = '';
 
-                    if (!geminiRes.ok) {
-                        const errTxt = await geminiRes.text();
-                        throw new Error('שגיאת מודל Gemini: ' + errTxt);
+                    for (const modelName of modelsToTry) {
+                        const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${encodeURIComponent(apiKey)}`;
+                        geminiRes = await fetch(url, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'x-goog-api-key': apiKey
+                            },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (geminiRes.ok) break;
+
+                        lastErrTxt = await geminiRes.text();
+                        if (geminiRes.status === 401 || geminiRes.status === 403) {
+                            break;
+                        }
+                    }
+
+                    if (!geminiRes || !geminiRes.ok) {
+                        let parsedErr = null;
+                        try { parsedErr = JSON.parse(lastErrTxt); } catch(e) {}
+                        
+                        if (geminiRes && (geminiRes.status === 401 || geminiRes.status === 403)) {
+                            openGeminiTokenModal();
+                            throw new Error('מפתח Google AI Studio אינו תקין (שגיאה 401/403). אנא הזן מפתח API תקין מ-Google AI Studio (המתחיל ב-AIzaSy).');
+                        } else if (geminiRes && geminiRes.status === 429) {
+                            throw new Error('חרגת ממכסת הבקשות של Google AI Studio (שגיאה 429). אנא המתן דקה ונסה שוב.');
+                        } else {
+                            const msg = (parsedErr && parsedErr.error && parsedErr.error.message) || lastErrTxt;
+                            throw new Error(msg || 'שגיאת מודל Gemini');
+                        }
                     }
 
                     const gData = await geminiRes.json();
@@ -1527,7 +1632,7 @@
                     if (outB64) {
                         colorizedUrl = `data:image/png;base64,${outB64}`;
                     } else {
-                        throw new Error('לא התקבלה תמונה צבועה מהמודל');
+                        throw new Error('המודל סיים אך לא החזיר תמונה צבועה. נסה שוב.');
                     }
                 }
 
@@ -1546,7 +1651,7 @@
             }
         }
 
-        function revertToOriginalBW() {
+                function revertToOriginalBW() {
             const cur = slides[currentIndex];
             cur.colorized_path = null;
             showGeminiStatus('📷 הוחזרה תמונת שחור-לבן מקורית');
@@ -2173,6 +2278,34 @@
                     </button>
                     <button type="button" class="tool-btn" onclick="exportStoryboardJson(); closeGithubTokenModal();" style="font-size: 0.82rem;">
                         📥 הורד JSON למחשב
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gemini Token Modal -->
+    <div id="gemini-token-modal" class="modal-backdrop" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>🔑 הגדרת מפתח Google Gemini AI</h3>
+                <button type="button" class="modal-close" onclick="closeGeminiTokenModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 10px;">כדי לצבוע תמונות שחור-לבן בצבעים טבעיים ב-AI, נדרש מפתח אישי חינמי של <strong>Google AI Studio</strong> (מפתח המתחיל באותיות <code>AIzaSy...</code>).</p>
+                <div style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 6px; padding: 10px; margin: 10px 0; font-size: 0.82rem; line-height: 1.4;">
+                    💡 <strong>איך מקבלים מפתח חינם תוך 10 שניות :</strong><br>
+                    1. נכנסים לקישור <strong><a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent); text-decoration: underline;">Google AI Studio API Keys</a></strong> עם חשבון גוגל.<br>
+                    2. לוחצים על <strong>Create API key</strong> ומעתיקים את המפתח שנוצר.<br>
+                    🔒 המפתח נשמר אך ורק בדפדפן המקומי שלך (LocalStorage) ואינו מועבר לאיש.
+                </div>
+                <div class="form-group" style="margin: 12px 0;">
+                    <label style="display: block; margin-bottom: 5px; font-weight: 600;">הדבק כאן את מפתח ה-Gemini API (מתחיל ב-AIzaSy) :</label>
+                    <input type="password" id="modal-gemini-token-input" placeholder="AIzaSy..." style="width: 100%; padding: 8px; font-size: 0.9rem; background: var(--bg-main); border: 1px solid var(--border); color: #fff; border-radius: 6px;">
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: 16px;">
+                    <button type="button" class="gemini-btn" onclick="confirmSaveWithModalGeminiToken()" style="flex: 1; justify-content: center; padding: 8px;">
+                        🎨 שמור מפתח והפעל צביעה
                     </button>
                 </div>
             </div>
