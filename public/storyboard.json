@@ -7,7 +7,7 @@
       "type": "cinematic",
       "act": "act_2",
       "act_title": "פרק 2: נעורים, צבא ושנות ה-20",
-      "duration": 8,
+      "duration": 5,
       "caption": "איך הכל התחיל...",
       "quote": "",
       "primary_item": {
@@ -74,7 +74,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -140,7 +140,7 @@
       "type": "split_2",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "אבא בגיל 5",
       "quote": "",
       "primary_item": {
@@ -238,8 +238,8 @@
       ],
       "rotation": 0,
       "scale": 3,
-      "offsetX": 14,
-      "offsetY": 98,
+      "offsetX": 11,
+      "offsetY": 236,
       "trim": 24,
       "cropBox": null,
       "filterMode": "original",
@@ -252,7 +252,7 @@
       "type": "cinematic",
       "act": "act_2",
       "act_title": "פרק 2: נעורים, צבא ושנות ה-20",
-      "duration": 8,
+      "duration": 5,
       "caption": "תקופת הנעורים והבגרות",
       "quote": "",
       "primary_item": {
@@ -304,14 +304,14 @@
         }
       ],
       "rotation": 0,
-      "scale": 1.47,
+      "scale": 1.46,
       "offsetX": 26,
       "offsetY": -17,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_318_IMG-20260828-WA0003.png"
     },
     {
@@ -319,7 +319,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "איפה הכל התחיל...",
       "quote": "",
       "primary_item": {
@@ -386,7 +386,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -453,7 +453,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -519,7 +519,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -586,7 +586,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -652,7 +652,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: שנות הילדות",
-      "duration": 8,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -19779,5 +19779,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T08:46:04.761Z"
+  "last_updated": "2026-09-26T09:15:24.352Z"
 }
