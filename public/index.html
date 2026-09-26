@@ -699,11 +699,61 @@
             line-height: 1.5;
         }
     
+    
+        /* === Cinematic Transition Shutter === */
+        #cinematic-transition-shutter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 30;
+            opacity: 0;
+            background: #000;
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
+        }
+        #cinematic-transition-shutter.shutter-fade {
+            opacity: 1;
+        }
+        #cinematic-transition-shutter.shutter-zoom {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        #cinematic-transition-shutter.shutter-flash {
+            opacity: 0.85;
+            background: #f8fafc;
+        }
+
+        /* === Video Trimmer & Soundtrack Panel Badges === */
+        .mini-badge.music {
+            background: #8b5cf6;
+            left: auto;
+            right: 4px;
+            bottom: 4px;
+            top: auto;
+        }
+        .mini-badge.trim {
+            background: #ef4444;
+            left: 4px;
+            bottom: 4px;
+            top: auto;
+            right: auto;
+        }
+        .video-trim-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 12px;
+        }
+        
     </style>
 </head>
 <body>
 
     <audio id="bg-audio" src="audio/background_main.mp3" preload="none"></audio>
+    <input type="file" id="audio-upload-input" accept="audio/*" style="display: none;" onchange="handleAudioUpload(event)">
     <input type="file" id="photo-upload-input" accept="image/*" style="display: none;" onchange="handlePhotoUpload(event)">
     <input type="file" id="json-import-input" accept=".json" style="display: none;" onchange="handleJsonImport(event)">
 
@@ -739,6 +789,7 @@
                 </div>
                 
                 <video id="video-player" controls preload="none"></video>
+                <div id="cinematic-transition-shutter"></div>
 
                 <!-- Floating HUD indicator -->
                 <div class="hud-transform-indicator" id="hud-indicator">🔍 100% | ↔️ 0px | ↕️ 0px</div>
@@ -856,7 +907,7 @@
             </div>
 
             <!-- Transform & Sizing Panel -->
-            <div class="panel">
+            <div class="panel" id="photo-transforms-panel">
                 <h3>📐 גודל, זום והזזה חופשית</h3>
                 <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">💡 ניתן לגרור עם העכבר ישירות על גבי התמונה, ולגלול בגלגלת להגדלה והקטנה</p>
                 
@@ -885,6 +936,60 @@
                 </div>
             </div>
 
+            
+            <!-- Video Trimming Panel (Shown for video slides) -->
+            <div class="panel video-trim-panel" id="video-trimming-panel" style="display: none; border-color: rgba(239, 68, 68, 0.4);">
+                <h3 style="color: #f87171;">✂️ חיתוך ועריכת וידאו</h3>
+                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">
+                    קבע את שניות ההתחלה והסיום כדי לחתוך רק את הקטע המבוקש בסרטון.
+                </p>
+
+                <div class="video-trim-box">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #94a3b8; margin-bottom: 6px;">
+                        <span>אורך סרטון: <strong id="val-vid-duration" style="color: #fff;">00:00</strong></span>
+                        <span>מיקום נגן: <strong id="val-vid-current" style="color: var(--accent);">00:00</strong></span>
+                    </div>
+                    
+                    <!-- Start point -->
+                    <div class="form-group" style="margin-bottom: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+                            <label style="margin: 0; font-size: 0.82rem;">📍 התחלה (שניות):</label>
+                            <input type="number" id="input-vid-start" min="0" step="0.5" value="0" style="width: 70px; text-align: center; font-weight: bold; color: var(--gold);" oninput="updateVideoTrimStart(this.value)">
+                        </div>
+                        <input type="range" id="slider-vid-start" min="0" max="60" step="0.5" value="0" style="width: 100%;" oninput="updateVideoTrimStart(this.value)">
+                        <button type="button" class="tool-btn" style="width: 100%; margin-top: 3px; font-size: 0.75rem; padding: 3px;" onclick="setVideoStartFromCurrent()">
+                            📍 קבע התחלה מהמיקום הנוכחי
+                        </button>
+                    </div>
+
+                    <!-- End point -->
+                    <div class="form-group" style="margin-bottom: 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+                            <label style="margin: 0; font-size: 0.82rem;">🏁 סיום (שניות):</label>
+                            <input type="number" id="input-vid-end" min="0.5" step="0.5" value="10" style="width: 70px; text-align: center; font-weight: bold; color: var(--gold);" oninput="updateVideoTrimEnd(this.value)">
+                        </div>
+                        <input type="range" id="slider-vid-end" min="0.5" max="60" step="0.5" value="10" style="width: 100%;" oninput="updateVideoTrimEnd(this.value)">
+                        <button type="button" class="tool-btn" style="width: 100%; margin-top: 3px; font-size: 0.75rem; padding: 3px;" onclick="setVideoEndFromCurrent()">
+                            🏁 קבע סיום מהמיקום הנוכחי
+                        </button>
+                    </div>
+
+                    <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 6px; padding: 6px 10px; text-align: center; margin: 8px 0;">
+                        <span style="font-size: 0.8rem; color: #fca5a5;">משך הקטע במצגת: </span>
+                        <strong id="badge-vid-trimmed-duration" style="color: #fff; font-size: 0.92rem;">10.0 שניות</strong>
+                    </div>
+
+                    <div class="btn-grid" style="margin-top: 6px;">
+                        <button type="button" class="tool-btn" onclick="previewVideoTrim()" style="color: var(--accent); font-weight: 600; padding: 6px;">
+                            ▶️ נגן קטע נבחר
+                        </button>
+                        <button type="button" class="tool-btn" onclick="resetVideoTrim()" style="padding: 6px;">
+                            🔄 בטל חיתוך
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
             <!-- Fast Position Manager -->
             <div class="panel">
                 <h3>🔀 העברה ושינוי מיקום שקף</h3>
@@ -1021,6 +1126,26 @@
         const mainPhoto = document.getElementById('main-photo');
         const bgBlurPhoto = document.getElementById('bg-blur-photo');
         const videoPlayer = document.getElementById('video-player');
+
+        // Watch video playback time for trimming and audio pause
+        videoPlayer.addEventListener('timeupdate', () => {
+            const cur = slides[currentIndex];
+            const valCurrent = document.getElementById('val-vid-current');
+            if (valCurrent) valCurrent.textContent = formatTimeSec(videoPlayer.currentTime);
+
+            if (cur && cur.video_end !== undefined && cur.video_end > 0) {
+                if (videoPlayer.currentTime >= cur.video_end) {
+                    videoPlayer.pause();
+                    if (isPlaying) {
+                        nextSlide();
+                    }
+                }
+            }
+        });
+
+        videoPlayer.addEventListener('loadedmetadata', () => {
+            updateVideoTrimUI();
+        });
         
         // Comprehensive video event handling to interrupt/resume background music
         videoPlayer.addEventListener('play', () => {
@@ -1522,6 +1647,10 @@
             document.getElementById('btn-fit-cover').classList.toggle('active', mode === 'cover');
             autoSaveState();
             renderCurrentFrame(0);
+            updateVideoTrimUI();
+            updateSoundtrackUI();
+            updateTransitionUI();
+            syncSoundtrackPlayback();
         }
 
         function toggleCaptionDisplay() {
@@ -2061,7 +2190,9 @@
 
                 let thumbHtml = '';
                 if (isVid) {
-                    thumbHtml = `<span class="mini-badge video">#${idx + 1} 🎥</span><div style="background: #1e293b; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:0.75rem;">🎥 סרטון</div>`;
+                    const musicBadge = (slide.soundtrack_action === 'new_track') ? '<span class="mini-badge music">🎵 שיר</span>' : '';
+                const trimBadge = (slide.video_end) ? `<span class="mini-badge trim">✂️ ${(slide.video_end - (slide.video_start||0)).toFixed(0)}s</span>` : '';
+                thumbHtml = `<span class="mini-badge video">#${idx + 1} 🎥</span>${musicBadge}${trimBadge}<div style="background: #1e293b; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:0.75rem;">🎥 סרטון</div>`;
                 } else {
                     const thumbUrl = getThumbPath(slide);
                     const colorBadge = slide.colorized_path ? '<span class="mini-badge colorized" style="left:4px; right:auto;">צבע 🎨</span>' : '';
@@ -2093,6 +2224,328 @@
             renderScenesList(act);
         }
 
+        
+        // ==========================================
+        // ✂️ VIDEO TRIMMER & SOUNDTRACK & TRANSITIONS
+        // ==========================================
+
+        let availableSoundtracks = [
+            { id: 'track_main', name: 'נעימת רקע ראשית', url: 'audio/background_main.mp3' },
+            { id: 'track_kaveret', name: 'כוורת - שיר נבואי קוסמי עליז', url: 'audio/kaveret_song.mp3' }
+        ];
+        let isTransitioning = false;
+
+        function formatTimeSec(sec) {
+            if (isNaN(sec) || sec < 0) return '00:00';
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function updateVideoTrimUI() {
+            const cur = slides[currentIndex];
+            const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
+            const trimPanel = document.getElementById('video-trimming-panel');
+            const photoPanel = document.getElementById('photo-transforms-panel');
+
+            if (!isVid) {
+                if (trimPanel) trimPanel.style.display = 'none';
+                if (photoPanel) photoPanel.style.display = 'block';
+                return;
+            }
+
+            if (trimPanel) trimPanel.style.display = 'block';
+            if (photoPanel) photoPanel.style.display = 'none';
+
+            const vidDuration = (videoPlayer && videoPlayer.duration && !isNaN(videoPlayer.duration)) ? videoPlayer.duration : (cur.duration || 60);
+            const vStart = cur.video_start !== undefined ? cur.video_start : 0;
+            const vEnd = cur.video_end !== undefined ? cur.video_end : (vidDuration > 0 ? vidDuration : 10);
+
+            const inputStart = document.getElementById('input-vid-start');
+            const sliderStart = document.getElementById('slider-vid-start');
+            const inputEnd = document.getElementById('input-vid-end');
+            const sliderEnd = document.getElementById('slider-vid-end');
+            const badgeDuration = document.getElementById('badge-vid-trimmed-duration');
+            const valDuration = document.getElementById('val-vid-duration');
+            const valCurrent = document.getElementById('val-vid-current');
+
+            if (valDuration) valDuration.textContent = formatTimeSec(vidDuration);
+            if (valCurrent) valCurrent.textContent = formatTimeSec(videoPlayer ? videoPlayer.currentTime : 0);
+
+            if (sliderStart) {
+                sliderStart.max = vidDuration;
+                sliderStart.value = vStart;
+            }
+            if (inputStart) {
+                inputStart.max = vidDuration;
+                inputStart.value = Number(vStart).toFixed(1);
+            }
+
+            if (sliderEnd) {
+                sliderEnd.max = vidDuration;
+                sliderEnd.value = vEnd;
+            }
+            if (inputEnd) {
+                inputEnd.max = vidDuration;
+                inputEnd.value = Number(vEnd).toFixed(1);
+            }
+
+            const trimmedLength = Math.max(0.5, vEnd - vStart);
+            if (badgeDuration) badgeDuration.textContent = `${trimmedLength.toFixed(1)} שניות`;
+        }
+
+        function updateVideoTrimStart(val) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            let s = parseFloat(val) || 0;
+            const vidDuration = (videoPlayer && videoPlayer.duration) ? videoPlayer.duration : 60;
+            s = Math.max(0, Math.min(s, vidDuration - 0.5));
+            cur.video_start = Number(s.toFixed(1));
+            if (cur.video_end !== undefined && cur.video_end <= cur.video_start) {
+                cur.video_end = Math.min(vidDuration, cur.video_start + 5);
+            }
+            cur.duration = Math.max(1, Math.round((cur.video_end || vidDuration) - cur.video_start));
+            if (videoPlayer) videoPlayer.currentTime = cur.video_start;
+            updateVideoTrimUI();
+            debouncedAutoSave();
+        }
+
+        function updateVideoTrimEnd(val) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const vidDuration = (videoPlayer && videoPlayer.duration) ? videoPlayer.duration : 60;
+            let e = parseFloat(val) || vidDuration;
+            e = Math.min(vidDuration, Math.max(e, (cur.video_start || 0) + 0.5));
+            cur.video_end = Number(e.toFixed(1));
+            cur.duration = Math.max(1, Math.round(cur.video_end - (cur.video_start || 0)));
+            updateVideoTrimUI();
+            debouncedAutoSave();
+        }
+
+        function setVideoStartFromCurrent() {
+            if (!videoPlayer) return;
+            updateVideoTrimStart(videoPlayer.currentTime);
+            showCloudStatus(`נקודת התחלה נקבעה ל-${videoPlayer.currentTime.toFixed(1)} שניות 📍`);
+        }
+
+        function setVideoEndFromCurrent() {
+            if (!videoPlayer) return;
+            updateVideoTrimEnd(videoPlayer.currentTime);
+            showCloudStatus(`נקודת סיום נקבעה ל-${videoPlayer.currentTime.toFixed(1)} שניות 🏁`);
+        }
+
+        function previewVideoTrim() {
+            const cur = slides[currentIndex];
+            if (!cur || !videoPlayer) return;
+            videoPlayer.currentTime = cur.video_start || 0;
+            videoPlayer.play().catch(e => console.log('Preview play blocked:', e));
+        }
+
+        function resetVideoTrim() {
+            const cur = slides[currentIndex];
+            if (!cur || !videoPlayer) return;
+            cur.video_start = 0;
+            cur.video_end = (videoPlayer && videoPlayer.duration) ? videoPlayer.duration : (cur.duration || 10);
+            cur.duration = Math.round(cur.video_end);
+            videoPlayer.currentTime = 0;
+            updateVideoTrimUI();
+            debouncedAutoSave();
+            showCloudStatus('חיתוך הסרטון אופס לקובץ המלא 🔄');
+        }
+
+        // --- Soundtrack Management ---
+        function resolveActiveTrackForSlide(slideIdx) {
+            for (let i = slideIdx; i >= 0; i--) {
+                const s = slides[i];
+                if (s.soundtrack_action === 'mute') return null;
+                if (s.soundtrack_action === 'new_track' && s.soundtrack_track) {
+                    return s.soundtrack_track;
+                }
+            }
+            return availableSoundtracks[0].url;
+        }
+
+        function updateSoundtrackUI() {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const modeSelect = document.getElementById('soundtrack-mode-select');
+            const pickerGroup = document.getElementById('soundtrack-picker-group');
+            const trackSelect = document.getElementById('soundtrack-track-select');
+
+            const mode = cur.soundtrack_action || 'continue';
+            if (modeSelect) modeSelect.value = mode;
+
+            if (pickerGroup) {
+                pickerGroup.style.display = (mode === 'new_track') ? 'block' : 'none';
+            }
+
+            if (trackSelect && cur.soundtrack_track) {
+                trackSelect.value = cur.soundtrack_track;
+            }
+        }
+
+        function changeSoundtrackMode(mode) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            cur.soundtrack_action = mode;
+            if (mode === 'new_track' && !cur.soundtrack_track) {
+                const trackSelect = document.getElementById('soundtrack-track-select');
+                cur.soundtrack_track = trackSelect ? trackSelect.value : availableSoundtracks[0].url;
+            }
+            updateSoundtrackUI();
+            syncSoundtrackPlayback();
+            debouncedAutoSave();
+            renderScenesList(activeFilter);
+        }
+
+        function changeSoundtrackTrack(trackUrl) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            cur.soundtrack_track = trackUrl;
+            syncSoundtrackPlayback();
+            debouncedAutoSave();
+            renderScenesList(activeFilter);
+        }
+
+        function previewCurrentSoundtrack() {
+            const trackSelect = document.getElementById('soundtrack-track-select');
+            const url = trackSelect ? trackSelect.value : availableSoundtracks[0].url;
+            if (bgAudio.src.endsWith(url) && !bgAudio.paused) {
+                bgAudio.pause();
+                const icon = document.getElementById('audio-btn-icon');
+                if (icon) icon.textContent = '🔈';
+            } else {
+                bgAudio.src = url;
+                bgAudio.play().catch(e => console.log('Audio preview error:', e));
+                const icon = document.getElementById('audio-btn-icon');
+                if (icon) icon.textContent = '🔊';
+            }
+        }
+
+        function handleAudioUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const customUrl = e.target.result;
+                const trackName = file.name.replace(/\.[^/.]+$/, "");
+                const trackObj = { id: 'custom_' + Date.now(), name: trackName, url: customUrl };
+                availableSoundtracks.push(trackObj);
+
+                const select = document.getElementById('soundtrack-track-select');
+                if (select) {
+                    const opt = document.createElement('option');
+                    opt.value = customUrl;
+                    opt.textContent = `🎵 ${trackName} (קובץ שהועלה)`;
+                    select.appendChild(opt);
+                    select.value = customUrl;
+                }
+
+                const cur = slides[currentIndex];
+                if (cur) {
+                    cur.soundtrack_action = 'new_track';
+                    cur.soundtrack_track = customUrl;
+                    cur.soundtrack_name = trackName;
+                }
+
+                updateSoundtrackUI();
+                syncSoundtrackPlayback();
+                debouncedAutoSave();
+                renderScenesList(activeFilter);
+                showCloudStatus(`השיר "${trackName}" הועלה והוגדר בהצלחה 🎶`);
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function syncSoundtrackPlayback() {
+            const cur = slides[currentIndex];
+            const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
+
+            if (isVid) {
+                if (!bgAudio.paused) {
+                    bgAudio._wasPlayingBeforeVideo = true;
+                    bgAudio.pause();
+                    const icon = document.getElementById('audio-btn-icon');
+                    if (icon) icon.textContent = '🔈';
+                }
+                return;
+            }
+
+            const targetTrack = resolveActiveTrackForSlide(currentIndex);
+            if (!targetTrack) {
+                // Muted
+                if (!bgAudio.paused) bgAudio.pause();
+                return;
+            }
+
+            const currentSrc = bgAudio.getAttribute('data-active-track') || '';
+            if (currentSrc !== targetTrack) {
+                bgAudio.setAttribute('data-active-track', targetTrack);
+                bgAudio.src = targetTrack;
+                if (isPlaying || bgAudio._wasPlayingBeforeVideo) {
+                    bgAudio.play().catch(e => console.log('Audio autoplay error:', e));
+                    const icon = document.getElementById('audio-btn-icon');
+                    if (icon) icon.textContent = '🔊';
+                }
+            } else {
+                // Continuous playback: do not restart, just ensure running if it was playing
+                if ((isPlaying || bgAudio._wasPlayingBeforeVideo) && bgAudio.paused) {
+                    bgAudio.play().catch(e => console.log('Audio resume error:', e));
+                    const icon = document.getElementById('audio-btn-icon');
+                    if (icon) icon.textContent = '🔊';
+                }
+            }
+        }
+
+        // --- Transitions & Animations ---
+        function updateTransitionUI() {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const select = document.getElementById('transition-effect-select');
+            if (select) {
+                select.value = cur.transition_effect || 'crossfade';
+            }
+        }
+
+        function changeTransitionEffect(effect) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            cur.transition_effect = effect;
+            debouncedAutoSave();
+            showCloudStatus(`הנפשת מעבר הוגדרה: ${effect} ✨`);
+        }
+
+        function executeSlideTransition(targetIdx, onComplete) {
+            if (isTransitioning) {
+                if (onComplete) onComplete();
+                return;
+            }
+
+            const next = slides[targetIdx];
+            const effect = next ? (next.transition_effect || 'crossfade') : 'crossfade';
+            const shutter = document.getElementById('cinematic-transition-shutter');
+
+            if (!shutter || effect === 'cut') {
+                if (onComplete) onComplete();
+                return;
+            }
+
+            isTransitioning = true;
+            let shutterClass = 'shutter-fade';
+            if (effect === 'zoom_fade') shutterClass = 'shutter-zoom';
+            if (effect === 'flash_soft') shutterClass = 'shutter-flash';
+
+            shutter.className = shutterClass;
+
+            setTimeout(() => {
+                if (onComplete) onComplete();
+                setTimeout(() => {
+                    shutter.className = '';
+                    isTransitioning = false;
+                }, 160);
+            }, 220);
+        }
+    
         function selectSlide(idx) {
             currentIndex = idx;
             slideStartTime = performance.now();
