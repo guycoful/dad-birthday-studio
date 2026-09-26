@@ -1591,7 +1591,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": false
     },
     {
       "slide_id": 24,
@@ -20215,5 +20215,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T08:22:02.800Z"
+  "last_updated": "2026-09-26T08:22:16.252Z"
 }
