@@ -952,7 +952,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": false
     },
     {
       "slide_id": 13,
@@ -1143,14 +1143,14 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
+      "scale": 3,
+      "offsetX": -14,
+      "offsetY": -106,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true
+      "showCaption": false
     },
     {
       "slide_id": 16,
@@ -20347,5 +20347,5 @@
       "showCaption": true
     }
   ],
-  "last_updated": "2026-09-26T07:58:04.076Z"
+  "last_updated": "2026-09-26T07:59:28.885Z"
 }
