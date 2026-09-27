@@ -6933,6 +6933,38 @@
       "transition_effect": "crossfade"
     },
     {
+      "slide_id": 1790504698454,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "בתואר של מאיה",
+      "quote": "",
+      "primary_item": {
+        "index": 253,
+        "filename": "169151.jpg",
+        "cloud_path": "photos/169151.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "169151.jpg",
+          "cloud_path": "photos/169151.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
       "slide_id": 268,
       "type": "cinematic",
       "act": "act_5",
@@ -18411,38 +18443,6 @@
       "transition_effect": "crossfade"
     },
     {
-      "slide_id": 1790504698454,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "169151",
-      "quote": "",
-      "primary_item": {
-        "index": 253,
-        "filename": "169151.jpg",
-        "cloud_path": "photos/169151.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "169151.jpg",
-          "cloud_path": "photos/169151.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
       "slide_id": 1790504698457,
       "type": "video",
       "act": "act_5",
@@ -21213,5 +21213,5 @@
       "transition_effect": "crossfade"
     }
   ],
-  "last_updated": "2026-09-27T16:27:38.917Z"
+  "last_updated": "2026-09-27T16:29:03.819Z"
 }
