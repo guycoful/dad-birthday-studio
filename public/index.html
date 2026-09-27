@@ -22621,6 +22621,17 @@
                 if (copy.soundtrack_track && copy.soundtrack_track.startsWith('data:')) {
                     copy.soundtrack_track = 'audio/' + (copy.soundtrack_name ? copy.soundtrack_name.replace(/[^a-zA-Z0-9_֐-׾.-]/g, '_') : 'custom') + '.mp3';
                 }
+                if (copy.primary_item && copy.primary_item.cloud_path && copy.primary_item.cloud_path.startsWith('data:')) {
+                    copy.primary_item = Object.assign({}, copy.primary_item, { cloud_path: null });
+                }
+                if (Array.isArray(copy.items)) {
+                    copy.items = copy.items.map(it => {
+                        if (it && it.cloud_path && it.cloud_path.startsWith('data:')) {
+                            return Object.assign({}, it, { cloud_path: null });
+                        }
+                        return it;
+                    });
+                }
                 return copy;
             });
         }
@@ -22630,8 +22641,15 @@
             try {
                 const cleanSlides = getCleanSlidesForStorage(slides);
                 const jsonStr = JSON.stringify(cleanSlides);
-                localStorage.setItem(LOCAL_STORAGE_KEY, jsonStr);
-                localStorage.setItem('dad_cloud_studio_last_save', new Date().toISOString());
+                try {
+                    localStorage.setItem(LOCAL_STORAGE_KEY, jsonStr);
+                    localStorage.setItem('dad_cloud_studio_last_save', new Date().toISOString());
+                } catch(quotaErr) {
+                    console.warn('LocalStorage quota hit, purging backups to free space:', quotaErr);
+                    localStorage.removeItem('dad_studio_backups');
+                    localStorage.setItem(LOCAL_STORAGE_KEY, jsonStr);
+                    localStorage.setItem('dad_cloud_studio_last_save', new Date().toISOString());
+                }
             } catch(e) {
                 console.warn('AutoSave warning:', e);
             }
@@ -22720,15 +22738,12 @@
         }
 
         async function getFreshFileSha(filePath, token) {
-            // Force cache bypass with timestamp query and headers
+            // Force cache bypass with timestamp query parameter (safe for CORS)
             const apiUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${filePath}?ref=master&_t=${Date.now()}`;
             const getRes = await fetch(apiUrl, {
-                cache: 'no-store',
                 headers: {
                     'Authorization': `Bearer ${token}`,
-                    'Accept': 'application/vnd.github.v3+json',
-                    'Cache-Control': 'no-cache, no-store, must-revalidate',
-                    'Pragma': 'no-cache'
+                    'Accept': 'application/vnd.github.v3+json'
                 }
             });
 
@@ -22749,25 +22764,41 @@
             let attempt = 0;
             while (attempt < maxRetries) {
                 attempt++;
-                // Always fetch the freshest SHA on GitHub HEAD
-                const sha = await getFreshFileSha(filePath, token);
-                const apiUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${filePath}`;
+                let sha = null;
+                try {
+                    sha = await getFreshFileSha(filePath, token);
+                } catch(e) {
+                    if (attempt >= maxRetries) throw e;
+                    console.warn(`[GitHub Sync] getFreshFileSha failed on attempt ${attempt}:`, e);
+                    await new Promise(r => setTimeout(r, 800));
+                    continue;
+                }
 
+                const apiUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${filePath}`;
                 const putBody = {
                     message: commitMsg,
                     content: b64Content
                 };
                 if (sha) putBody.sha = sha;
 
-                const putRes = await fetch(apiUrl, {
-                    method: 'PUT',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Accept': 'application/vnd.github.v3+json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(putBody)
-                });
+                let putRes;
+                try {
+                    putRes = await fetch(apiUrl, {
+                        method: 'PUT',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(putBody)
+                    });
+                } catch(netErr) {
+                    if (attempt >= maxRetries) throw netErr;
+                    console.warn(`[GitHub Sync] Network error on attempt ${attempt}:`, netErr);
+                    showCloudStatus(`🔄 ממתין להתחברות יציבה מול GitHub (ניסיון ${attempt + 1})...`);
+                    await new Promise(r => setTimeout(r, 1000));
+                    continue;
+                }
 
                 if (putRes.ok) {
                     return await putRes.json();
@@ -22801,8 +22832,14 @@
                     slideCount: cleanSlides.length,
                     slides: cleanSlides
                 });
-                if (backups.length > 10) backups = backups.slice(0, 10);
-                localStorage.setItem('dad_studio_backups', JSON.stringify(backups));
+                // Keep only top 2 backups to strictly stay well under localStorage quota (5MB)
+                if (backups.length > 2) backups = backups.slice(0, 2);
+                try {
+                    localStorage.setItem('dad_studio_backups', JSON.stringify(backups));
+                } catch(quotaErr) {
+                    console.warn('LocalStorage quota warning in backups, trimming to 1:', quotaErr);
+                    localStorage.setItem('dad_studio_backups', JSON.stringify(backups.slice(0, 1)));
+                }
             } catch(e) {
                 console.warn('Backup save error:', e);
             }
@@ -22985,10 +23022,11 @@
                 showCloudStatus('⏳ מתחבר ל-GitHub ומסנכרן קבצים...');
 
                 const nowIso = new Date().toISOString();
+                const cleanSlides = getCleanSlidesForStorage(slides);
                 const payloadData = {
                     title: "סטודיו סרטון יום הולדת 60 לאבא צחי",
-                    total_slides: slides.length,
-                    slides: slides,
+                    total_slides: cleanSlides.length,
+                    slides: cleanSlides,
                     last_updated: nowIso
                 };
                 const jsonStr = JSON.stringify(payloadData, null, 2);
@@ -23013,6 +23051,13 @@
                     alert(`❌ שגיאה בשמירה ל-GitHub: ${err.message}
 השינויים נשמרו מקומית בדפדפן, אך לא הגיעו למאגר.`);
                 }
+            } finally {
+                isSavingToCloud = false;
+                saveButtons.forEach(b => {
+                    b.disabled = false;
+                    b.textContent = b._origText || '💾 שמור בענן (GitHub)';
+                    b.style.opacity = '1';
+                });
             }
         }
 
@@ -23026,7 +23071,7 @@
                 // Priority 1: Direct GitHub REST API if token exists (INSTANT - zero CDN or deployment delay!)
                 if (token) {
                     try {
-                        const ghRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/storyboard.json`, {
+                        const ghRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/public/storyboard.json?ref=master&_t=${Date.now()}`, {
                             headers: {
                                 'Authorization': `Bearer ${token}`,
                                 'Accept': 'application/vnd.github.v3+json'
@@ -24896,18 +24941,35 @@
                 if (videoUrl.startsWith('https://lh3.googleusercontent.com') && !videoUrl.includes('=')) {
                     videoUrl = videoUrl + '=dv';
                 }
+                const vStart = (cur.video_start !== undefined && cur.video_start !== null) ? Number(cur.video_start) : 0;
+
                 if (videoPlayer.getAttribute('data-active-src') !== videoUrl) {
                     videoPlayer.setAttribute('data-active-src', videoUrl);
                     videoPlayer.src = videoUrl;
                     videoPlayer.load();
-                }
-
-                if (isPlaying) {
-                    videoPlayer.play().catch(e => {
-                        console.log('Video autoplay blocked, trying muted fallback:', e);
-                        videoPlayer.muted = true;
-                        videoPlayer.play().catch(err => console.log('Muted play also blocked:', err));
-                    });
+                    const onMeta = () => {
+                        if (vStart > 0) {
+                            try { videoPlayer.currentTime = vStart; } catch(e){}
+                        }
+                        updateVideoTrimUI();
+                        if (isPlaying) {
+                            videoPlayer.play().catch(e => {
+                                videoPlayer.muted = true;
+                                videoPlayer.play().catch(err => console.log('Muted play error:', err));
+                            });
+                        }
+                    };
+                    videoPlayer.addEventListener('loadedmetadata', onMeta, { once: true });
+                } else {
+                    if (Math.abs(videoPlayer.currentTime - vStart) > 0.4) {
+                        try { videoPlayer.currentTime = vStart; } catch(e){}
+                    }
+                    if (isPlaying && videoPlayer.paused) {
+                        videoPlayer.play().catch(e => {
+                            videoPlayer.muted = true;
+                            videoPlayer.play().catch(err => console.log('Muted play error:', err));
+                        });
+                    }
                 }
                 return;
             }
@@ -25032,6 +25094,16 @@
 
                 const isStepVid = cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video);
                 if (isStepVid) {
+                    const vEnd = (cur.video_end !== undefined && cur.video_end !== null) ? Number(cur.video_end) : 0;
+                    if (vEnd > 0 && videoPlayer.currentTime >= vEnd) {
+                        videoPlayer.pause();
+                        const vStart = (cur.video_start !== undefined && cur.video_start !== null) ? Number(cur.video_start) : 0;
+                        videoPlayer.currentTime = vStart;
+                        if (isPlaying) {
+                            nextSlide();
+                            return;
+                        }
+                    }
                     if (videoPlayer.duration && !isNaN(videoPlayer.duration)) {
                         const vp = (videoPlayer.currentTime / videoPlayer.duration) * 100;
                         progressBar.style.width = `${vp.toFixed(1)}%`;
