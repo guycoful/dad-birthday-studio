@@ -4890,15 +4890,15 @@
       "showCaption": true,
       "transition_effect": "zoom_fade",
       "soundtrack_action": "new_track",
-      "soundtrack_track": "audio/in_my_life_beatles.mp3",
-      "soundtrack_name": "The Beatles - In My Life"
+      "soundtrack_track": "audio/רמי_קלינשטיין__-_מתנות_קטנות.mp3",
+      "soundtrack_name": "רמי קלינשטיין  - מתנות קטנות"
     },
     {
       "slide_id": 1790504698496,
       "type": "cinematic",
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -20257,5 +20257,5 @@
       "video_end": 10
     }
   ],
-  "last_updated": "2026-09-27T19:21:20.556Z"
+  "last_updated": "2026-09-27T19:45:00.412Z"
 }
