@@ -22977,6 +22977,7 @@
             }
             if (isPlaying) {
                 nextSlide();
+                startPresentationLoop();
             }
         });
         const overlayLayer = document.getElementById('overlay');
@@ -25794,6 +25795,7 @@
                         videoPlayer.currentTime = vStart;
                         if (isPlaying) {
                             nextSlide();
+                            animationFrame = requestAnimationFrame(step);
                             return;
                         }
                     }
