@@ -24696,6 +24696,65 @@
             renderCurrentFrame(0);
         }
 
+        
+        // ==========================================
+        // Throttled Image Queue: Prevents GitHub Pages HTTP 429 Rate Limit
+        // By limiting concurrent thumbnail fetches to max 6 at any given time.
+        // ==========================================
+        const ImageLoaderQueue = {
+            queue: [],
+            activeLoads: 0,
+            maxConcurrent: 6,
+
+            enqueue(imgEl, src, fallbackSrc) {
+                if (!src) return;
+                this.queue.push({ imgEl, src, fallbackSrc });
+                this.processNext();
+            },
+
+            prioritize(imgEl) {
+                const idx = this.queue.findIndex(item => item.imgEl === imgEl);
+                if (idx > -1) {
+                    const item = this.queue.splice(idx, 1)[0];
+                    this.queue.unshift(item);
+                    this.processNext();
+                }
+            },
+
+            clear() {
+                this.queue = [];
+            },
+
+            processNext() {
+                while (this.activeLoads < this.maxConcurrent && this.queue.length > 0) {
+                    const item = this.queue.shift();
+                    const { imgEl, src, fallbackSrc } = item;
+                    this.activeLoads++;
+
+                    const tempImg = new Image();
+                    tempImg.onload = () => {
+                        if (imgEl) {
+                            imgEl.src = src;
+                            imgEl.style.opacity = '1';
+                        }
+                        this.activeLoads--;
+                        this.processNext();
+                    };
+                    tempImg.onerror = () => {
+                        if (imgEl) {
+                            if (fallbackSrc && fallbackSrc !== src) {
+                                imgEl.src = fallbackSrc;
+                            }
+                            imgEl.style.opacity = '1';
+                        }
+                        this.activeLoads--;
+                        this.processNext();
+                    };
+                    tempImg.src = src;
+                }
+            }
+        };
+
         function renderScenesList(filter = 'all') {
             activeFilter = filter;
             const container = document.getElementById('scenes-container');
@@ -24760,7 +24819,7 @@
                     const thumbUrl = getThumbPath(slide);
                     const colorBadge = slide.colorized_path ? '<span class="mini-badge colorized" style="left:4px; right:auto;">צבע 🎨</span>' : '';
                     const fallbackPath = (slide.primary_item && slide.primary_item.filename) ? `photos/${slide.primary_item.filename}` : '';
-                    thumbHtml = `<span class="mini-badge photo">#${idx + 1}</span>${colorBadge}<img src="${thumbUrl}" loading="lazy" onerror="this.src='${fallbackPath}'">`;
+                    thumbHtml = `<span class="mini-badge photo">#${idx + 1}</span>${colorBadge}<img class="scene-thumb-img" data-thumb-src="${thumbUrl}" data-fallback="${fallbackPath}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'%3E%3Crect width='100%25' height='100%25' fill='%231e293b'/%3E%3C/svg%3E" style="opacity:0.3; transition: opacity 0.25s ease;">`;
                 }
 
                 card.innerHTML = `
@@ -24771,6 +24830,20 @@
                     </div>
                 `;
                 container.appendChild(card);
+            });
+
+            // Enqueue all thumbnails with controlled concurrency (max 6 active requests)
+            ImageLoaderQueue.clear();
+            const thumbImgs = container.querySelectorAll('.scene-thumb-img');
+            thumbImgs.forEach((img, i) => {
+                const src = img.dataset.thumbSrc;
+                const fallback = img.dataset.fallback;
+                // Give immediate priority to first 20 cards
+                if (i < 20) {
+                    ImageLoaderQueue.enqueue(img, src, fallback);
+                } else {
+                    setTimeout(() => ImageLoaderQueue.enqueue(img, src, fallback), 150 + (i * 12));
+                }
             });
         }
 
