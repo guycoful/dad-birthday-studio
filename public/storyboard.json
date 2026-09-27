@@ -1,6 +1,6 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 317,
+  "total_slides": 309,
   "slides": [
     {
       "slide_id": 54,
@@ -5730,6 +5730,38 @@
       "transition_effect": "crossfade"
     },
     {
+      "slide_id": 1790504700756,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168947",
+      "quote": "",
+      "primary_item": {
+        "index": 306,
+        "filename": "168947.jpg",
+        "cloud_path": "photos/168947.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168947.jpg",
+          "cloud_path": "photos/168947.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
       "slide_id": 1790504700067,
       "type": "cinematic",
       "act": "act_5",
@@ -5907,6 +5939,454 @@
         {
           "filename": "168967.jpg",
           "cloud_path": "photos/168967.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700597,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168956",
+      "quote": "",
+      "primary_item": {
+        "index": 302,
+        "filename": "168956.jpg",
+        "cloud_path": "photos/168956.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168956.jpg",
+          "cloud_path": "photos/168956.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700643,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168959",
+      "quote": "",
+      "primary_item": {
+        "index": 303,
+        "filename": "168959.jpg",
+        "cloud_path": "photos/168959.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168959.jpg",
+          "cloud_path": "photos/168959.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700686,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168962",
+      "quote": "",
+      "primary_item": {
+        "index": 304,
+        "filename": "168962.jpg",
+        "cloud_path": "photos/168962.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168962.jpg",
+          "cloud_path": "photos/168962.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700805,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168949",
+      "quote": "",
+      "primary_item": {
+        "index": 307,
+        "filename": "168949.jpg",
+        "cloud_path": "photos/168949.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168949.jpg",
+          "cloud_path": "photos/168949.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700914,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168941",
+      "quote": "",
+      "primary_item": {
+        "index": 309,
+        "filename": "168941.jpg",
+        "cloud_path": "photos/168941.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168941.jpg",
+          "cloud_path": "photos/168941.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700991,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168944",
+      "quote": "",
+      "primary_item": {
+        "index": 310,
+        "filename": "168944.jpg",
+        "cloud_path": "photos/168944.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168944.jpg",
+          "cloud_path": "photos/168944.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504701165,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168934",
+      "quote": "",
+      "primary_item": {
+        "index": 312,
+        "filename": "168934.jpg",
+        "cloud_path": "photos/168934.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168934.jpg",
+          "cloud_path": "photos/168934.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504701376,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168923",
+      "quote": "",
+      "primary_item": {
+        "index": 314,
+        "filename": "168923.jpg",
+        "cloud_path": "photos/168923.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168923.jpg",
+          "cloud_path": "photos/168923.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504702200,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168623",
+      "quote": "",
+      "primary_item": {
+        "index": 323,
+        "filename": "168623.jpg",
+        "cloud_path": "photos/168623.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168623.jpg",
+          "cloud_path": "photos/168623.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504702543,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168617",
+      "quote": "",
+      "primary_item": {
+        "index": 327,
+        "filename": "168617.jpg",
+        "cloud_path": "photos/168617.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168617.jpg",
+          "cloud_path": "photos/168617.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504701458,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168925",
+      "quote": "",
+      "primary_item": {
+        "index": 315,
+        "filename": "168925.jpg",
+        "cloud_path": "photos/168925.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168925.jpg",
+          "cloud_path": "photos/168925.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504701541,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168927",
+      "quote": "",
+      "primary_item": {
+        "index": 316,
+        "filename": "168927.jpg",
+        "cloud_path": "photos/168927.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168927.jpg",
+          "cloud_path": "photos/168927.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504701739,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168635",
+      "quote": "",
+      "primary_item": {
+        "index": 318,
+        "filename": "168635.jpg",
+        "cloud_path": "photos/168635.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168635.jpg",
+          "cloud_path": "photos/168635.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 20,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504700718,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "168965",
+      "quote": "",
+      "primary_item": {
+        "index": 305,
+        "filename": "168965.jpg",
+        "cloud_path": "photos/168965.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168965.jpg",
+          "cloud_path": "photos/168965.jpg",
           "is_video": false
         }
       ],
@@ -19403,742 +19883,6 @@
       "transition_effect": "crossfade"
     },
     {
-      "slide_id": 1790504700597,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168956",
-      "quote": "",
-      "primary_item": {
-        "index": 302,
-        "filename": "168956.jpg",
-        "cloud_path": "photos/168956.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168956.jpg",
-          "cloud_path": "photos/168956.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700643,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168959",
-      "quote": "",
-      "primary_item": {
-        "index": 303,
-        "filename": "168959.jpg",
-        "cloud_path": "photos/168959.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168959.jpg",
-          "cloud_path": "photos/168959.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700686,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168962",
-      "quote": "",
-      "primary_item": {
-        "index": 304,
-        "filename": "168962.jpg",
-        "cloud_path": "photos/168962.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168962.jpg",
-          "cloud_path": "photos/168962.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700718,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168965",
-      "quote": "",
-      "primary_item": {
-        "index": 305,
-        "filename": "168965.jpg",
-        "cloud_path": "photos/168965.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168965.jpg",
-          "cloud_path": "photos/168965.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700756,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168947",
-      "quote": "",
-      "primary_item": {
-        "index": 306,
-        "filename": "168947.jpg",
-        "cloud_path": "photos/168947.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168947.jpg",
-          "cloud_path": "photos/168947.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700805,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168949",
-      "quote": "",
-      "primary_item": {
-        "index": 307,
-        "filename": "168949.jpg",
-        "cloud_path": "photos/168949.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168949.jpg",
-          "cloud_path": "photos/168949.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700914,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168941",
-      "quote": "",
-      "primary_item": {
-        "index": 309,
-        "filename": "168941.jpg",
-        "cloud_path": "photos/168941.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168941.jpg",
-          "cloud_path": "photos/168941.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700991,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168944",
-      "quote": "",
-      "primary_item": {
-        "index": 310,
-        "filename": "168944.jpg",
-        "cloud_path": "photos/168944.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168944.jpg",
-          "cloud_path": "photos/168944.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701063,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168932",
-      "quote": "",
-      "primary_item": {
-        "index": 311,
-        "filename": "168932.jpg",
-        "cloud_path": "photos/168932.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168932.jpg",
-          "cloud_path": "photos/168932.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701165,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168934",
-      "quote": "",
-      "primary_item": {
-        "index": 312,
-        "filename": "168934.jpg",
-        "cloud_path": "photos/168934.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168934.jpg",
-          "cloud_path": "photos/168934.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701262,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168938",
-      "quote": "",
-      "primary_item": {
-        "index": 313,
-        "filename": "168938.jpg",
-        "cloud_path": "photos/168938.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168938.jpg",
-          "cloud_path": "photos/168938.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701376,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168923",
-      "quote": "",
-      "primary_item": {
-        "index": 314,
-        "filename": "168923.jpg",
-        "cloud_path": "photos/168923.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168923.jpg",
-          "cloud_path": "photos/168923.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701458,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168925",
-      "quote": "",
-      "primary_item": {
-        "index": 315,
-        "filename": "168925.jpg",
-        "cloud_path": "photos/168925.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168925.jpg",
-          "cloud_path": "photos/168925.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701541,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168927",
-      "quote": "",
-      "primary_item": {
-        "index": 316,
-        "filename": "168927.jpg",
-        "cloud_path": "photos/168927.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168927.jpg",
-          "cloud_path": "photos/168927.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701739,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168635",
-      "quote": "",
-      "primary_item": {
-        "index": 318,
-        "filename": "168635.jpg",
-        "cloud_path": "photos/168635.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168635.jpg",
-          "cloud_path": "photos/168635.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701820,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168631",
-      "quote": "",
-      "primary_item": {
-        "index": 319,
-        "filename": "168631.jpg",
-        "cloud_path": "photos/168631.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168631.jpg",
-          "cloud_path": "photos/168631.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504701913,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168629",
-      "quote": "",
-      "primary_item": {
-        "index": 320,
-        "filename": "168629.jpg",
-        "cloud_path": "photos/168629.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168629.jpg",
-          "cloud_path": "photos/168629.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504702000,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168625",
-      "quote": "",
-      "primary_item": {
-        "index": 321,
-        "filename": "168625.jpg",
-        "cloud_path": "photos/168625.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168625.jpg",
-          "cloud_path": "photos/168625.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504702084,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168627",
-      "quote": "",
-      "primary_item": {
-        "index": 322,
-        "filename": "168627.jpg",
-        "cloud_path": "photos/168627.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168627.jpg",
-          "cloud_path": "photos/168627.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504702200,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168623",
-      "quote": "",
-      "primary_item": {
-        "index": 323,
-        "filename": "168623.jpg",
-        "cloud_path": "photos/168623.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168623.jpg",
-          "cloud_path": "photos/168623.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504702275,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168619",
-      "quote": "",
-      "primary_item": {
-        "index": 324,
-        "filename": "168619.jpg",
-        "cloud_path": "photos/168619.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168619.jpg",
-          "cloud_path": "photos/168619.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504702365,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168621",
-      "quote": "",
-      "primary_item": {
-        "index": 325,
-        "filename": "168621.jpg",
-        "cloud_path": "photos/168621.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168621.jpg",
-          "cloud_path": "photos/168621.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504702543,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "168617",
-      "quote": "",
-      "primary_item": {
-        "index": 327,
-        "filename": "168617.jpg",
-        "cloud_path": "photos/168617.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168617.jpg",
-          "cloud_path": "photos/168617.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
       "slide_id": 1790534470472,
       "type": "video",
       "act": "act_5",
@@ -20513,5 +20257,5 @@
       "video_end": 10
     }
   ],
-  "last_updated": "2026-09-27T19:12:32.866Z"
+  "last_updated": "2026-09-27T19:21:20.556Z"
 }
