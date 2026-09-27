@@ -1,6 +1,6 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 308,
+  "total_slides": 307,
   "slides": [
     {
       "slide_id": 54,
@@ -4890,7 +4890,7 @@
       "showCaption": true,
       "transition_effect": "zoom_fade",
       "soundtrack_action": "new_track",
-      "soundtrack_track": "audio/רמי_קלינשטיין__-_מתנות_קטנות.mp3",
+      "soundtrack_track": "audio/in_my_life_beatles.mp3",
       "soundtrack_name": "רמי קלינשטיין  - מתנות קטנות"
     },
     {
@@ -5767,7 +5767,7 @@
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
       "duration": 3,
-      "caption": "168983",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 296,
@@ -5783,9 +5783,9 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.06,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 25,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
@@ -5799,7 +5799,7 @@
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
       "duration": 3,
-      "caption": "168980",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 298,
@@ -5815,7 +5815,7 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.78,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
@@ -5831,7 +5831,7 @@
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
       "duration": 3,
-      "caption": "168971",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 299,
@@ -5847,9 +5847,9 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.52,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 165,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
@@ -5863,7 +5863,7 @@
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
       "duration": 3,
-      "caption": "168974",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 300,
@@ -5879,39 +5879,7 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700527,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 3,
-      "caption": "168967",
-      "quote": "",
-      "primary_item": {
-        "index": 301,
-        "filename": "168967.jpg",
-        "cloud_path": "photos/168967.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168967.jpg",
-          "cloud_path": "photos/168967.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
+      "scale": 2.36,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
@@ -5943,13 +5911,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.12,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -5975,13 +5943,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.78,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 55,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6007,13 +5975,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.62,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 210,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6039,13 +6007,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.3,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 140,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6071,13 +6039,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.3,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 125,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6103,13 +6071,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.06,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 110,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6135,13 +6103,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.46,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 405,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6167,13 +6135,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.94,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6199,13 +6167,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 1.28,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": -55,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6231,13 +6199,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.62,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6263,13 +6231,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.58,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": 230,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6295,13 +6263,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.84,
       "offsetX": 0,
       "offsetY": 0,
-      "trim": 0,
+      "trim": 15,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6327,13 +6295,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 20,
+      "scale": 2.16,
+      "offsetX": 600,
+      "offsetY": 15,
+      "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6359,13 +6327,13 @@
         }
       ],
       "rotation": 0,
-      "scale": 1,
+      "scale": 2.84,
       "offsetX": 0,
-      "offsetY": 0,
+      "offsetY": -75,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
     },
@@ -6571,7 +6539,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "new_track",
+      "soundtrack_track": "audio/רמי_קלינשטיין__-_מתנות_קטנות.mp3"
     },
     {
       "slide_id": 60,
@@ -9331,7 +9300,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "אוהב להצטלם",
       "quote": "",
       "primary_item": {
@@ -9401,7 +9370,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "ולאכול",
       "quote": "",
       "primary_item": {
@@ -9469,7 +9438,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "אבל הסונטה ? תענוג",
       "quote": "",
       "primary_item": {
@@ -9537,7 +9506,7 @@
       "type": "split_2",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "אוהב להצטלם בה",
       "quote": "",
       "primary_item": {
@@ -9650,7 +9619,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "ממש אוהב להצטלם בה",
       "quote": "",
       "primary_item": {
@@ -9718,7 +9687,7 @@
       "type": "split_2",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "טוב הבנתם ",
       "quote": "",
       "primary_item": {
@@ -9831,7 +9800,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -9899,7 +9868,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -9967,7 +9936,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10035,7 +10004,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "היום בערב יהיה צחוקים, אני בטוח 😈",
       "quote": "",
       "primary_item": {
@@ -10103,7 +10072,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10171,7 +10140,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10239,7 +10208,7 @@
       "type": "split_2",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10352,7 +10321,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "הסדינים האלה !!!",
       "quote": "",
       "primary_item": {
@@ -10420,8 +10389,8 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
-      "caption": "אבא - 2017",
+      "duration": 5,
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 52,
@@ -10489,7 +10458,7 @@
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 11,
-      "caption": "סרטון משפחתי",
+      "caption": "הרקדן האוטומטי",
       "quote": "",
       "primary_item": {
         "index": 54,
@@ -10558,7 +10527,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10626,7 +10595,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10694,7 +10663,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10762,7 +10731,7 @@
       "type": "split_2",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10875,7 +10844,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -10943,7 +10912,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "מצחיק גם עם ילדים",
       "quote": "",
       "primary_item": {
@@ -11011,7 +10980,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -11079,7 +11048,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -11147,7 +11116,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "ואוהב להתאמן",
       "quote": "",
       "primary_item": {
@@ -11215,7 +11184,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -11283,7 +11252,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -11351,7 +11320,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "ממש ספץ",
       "quote": "",
       "primary_item": {
@@ -11419,7 +11388,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -11487,7 +11456,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "עם קפה טוב",
       "quote": "",
       "primary_item": {
@@ -11555,7 +11524,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "מהודר ומוכן",
       "quote": "",
       "primary_item": {
@@ -11623,7 +11592,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "והסלבס",
       "quote": "",
       "primary_item": {
@@ -11691,7 +11660,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -11759,7 +11728,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -20225,5 +20194,5 @@
       "video_end": 10
     }
   ],
-  "last_updated": "2026-09-27T21:36:48.092Z"
+  "last_updated": "2026-09-27T21:54:13.812Z"
 }
