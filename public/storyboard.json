@@ -15576,8 +15576,10 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "soundtrack_action": "new_track",
+      "transition_effect": "crossfade",
+      "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3",
+      "soundtrack_name": "סימן שאתה צעיר"
     },
     {
       "slide_id": 154,
@@ -19786,5 +19788,5 @@
       "transition_effect": "crossfade"
     }
   ],
-  "last_updated": "2026-09-27T22:23:31.724Z"
+  "last_updated": "2026-09-27T22:34:08.556Z"
 }
