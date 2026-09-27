@@ -1277,83 +1277,6 @@
                         <span>מיקום נגן: <strong id="val-vid-current" style="color: var(--accent);">00:00</strong></span>
                     </div>
 
-            <!-- Google Gemini Pro AI Hub -->
-            <div class="panel gemini-panel">
-                <h3 style="color: #c084fc;">🤖 Google Gemini AI Engine</h3>
-                
-                <div class="form-group">
-                    <label style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-bottom: 3px;">
-                        <span>🔑 Gemini API Key:</span>
-                        <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent); font-size: 0.72rem; text-decoration: underline;">קבלת מפתח חינם</a>
-                    </label>
-                    <div style="display: flex; gap: 4px;">
-                        <input type="password" id="gemini-api-key" placeholder="AQ... / AIzaSy..." onchange="saveGeminiApiKey(this.value)" style="flex: 1; font-size: 0.78rem; padding: 5px 8px;">
-                        <button type="button" class="tool-btn" onclick="toggleGeminiTokenVisibility()" style="padding: 4px 8px; font-size: 0.75rem;" id="btn-toggle-gemini-token" title="הצג/הסתר מפתח">👁️</button>
-                    </div>
-                </div>
-
-                <div class="btn-grid">
-                    <button type="button" class="gemini-btn" onclick="runGeminiColorPalette()">
-                        🎨 Gemini צביעת AI אמיתית
-                    </button>
-                    <button type="button" class="gemini-btn" onclick="runGeminiAutoCrop()">
-                        ✂️ Gemini Auto-Crop
-                    </button>
-                </div>
-                <div class="btn-grid" style="margin-top: 6px;">
-                    <button type="button" class="tool-btn" onclick="revertToOriginalBW()">
-                        📷 חזור לשחור-לבן מקור
-                    </button>
-                </div>
-                <div id="gemini-status" class="status-badge" style="display: none;">Gemini AI מוכן לפעולה</div>
-            </div>
-
-            <!-- Framing & Display Mode -->
-            <div class="panel" style="border: 1px solid var(--accent);">
-                <h3>🖼️ אופן הצגת התמונה במסך</h3>
-                <div class="btn-grid">
-                    <button type="button" class="tool-btn active" id="btn-fit-contain" onclick="setFitMode('contain')">
-                        🖼️ תמונה מלאה (ללא שום חיתוך)
-                    </button>
-                    <button type="button" class="tool-btn" id="btn-fit-cover" onclick="setFitMode('cover')">
-                        📺 מילוי מסך מלא (Cover)
-                    </button>
-                </div>
-            </div>
-
-            <!-- Transform & Sizing Panel -->
-            <div class="panel" id="photo-transforms-panel">
-                <h3>📐 גודל, זום והזזה חופשית</h3>
-                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">💡 ניתן לגרור עם העכבר ישירות על גבי התמונה, ולגלול בגלגלת להגדלה והקטנה</p>
-                
-                <div class="form-group">
-                    <label>🔍 גודל / זום: <span class="slider-val" id="val-scale">100%</span></label>
-                    <input type="range" min="0.3" max="3.0" step="0.02" value="1.0" id="scale-slider" oninput="updateCurrentScale(this.value)" style="width: 100%;">
-                </div>
-
-                <div class="form-group">
-                    <label>↕️ הזזה אנכית (גובה): <span class="slider-val" id="val-offsetY">0px</span></label>
-                    <input type="range" min="-600" max="600" step="5" value="0" id="offsetY-slider" oninput="updateCurrentOffsetY(this.value)" style="width: 100%;">
-                </div>
-
-                <div class="form-group">
-                    <label>↔️ הזזה אופקית (רוחב): <span class="slider-val" id="val-offsetX">0px</span></label>
-                    <input type="range" min="-600" max="600" step="5" value="0" id="offsetX-slider" oninput="updateCurrentOffsetX(this.value)" style="width: 100%;">
-                </div>
-
-                <div class="btn-grid">
-                    <button type="button" class="tool-btn" onclick="rotateCurrentPhoto(90)">
-                        🔄 סובב 90°
-                    </button>
-                    <button type="button" class="tool-btn" onclick="resetTransforms()">
-                        ↩️ אפס הכל
-                    </button>
-                </div>
-            </div>
-
-            
-            
-                    
                     <!-- Start point -->
                     <div class="form-group" style="margin-bottom: 8px;">
                         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
@@ -1393,6 +1316,80 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Framing & Display Mode -->
+            <div class="panel" id="photo-framing-panel" style="border: 1px solid var(--accent);">
+                <h3>🖼️ אופן הצגת התמונה במסך</h3>
+                <div class="btn-grid">
+                    <button type="button" class="tool-btn active" id="btn-fit-contain" onclick="setFitMode('contain')">
+                        🖼️ תמונה מלאה (ללא שום חיתוך)
+                    </button>
+                    <button type="button" class="tool-btn" id="btn-fit-cover" onclick="setFitMode('cover')">
+                        📺 מילוי מסך מלא (Cover)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Transform & Sizing Panel -->
+            <div class="panel" id="photo-transforms-panel">
+                <h3>📐 גודל, זום, הזזה ואינצ'ים (מיקום תמונה)</h3>
+                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">💡 ניתן לגרור עם העכבר ישירות על גבי התמונה, ולגלול בגלגלת להגדלה והקטנה</p>
+                
+                <div class="form-group">
+                    <label>🔍 גודל / זום (אינצ'ים): <span class="slider-val" id="val-scale">100%</span></label>
+                    <input type="range" min="0.3" max="3.0" step="0.02" value="1.0" id="scale-slider" oninput="updateCurrentScale(this.value)" style="width: 100%;">
+                </div>
+
+                <div class="form-group">
+                    <label>↕️ הזזה אנכית (גובה / אינצ'ים): <span class="slider-val" id="val-offsetY">0px</span></label>
+                    <input type="range" min="-600" max="600" step="5" value="0" id="offsetY-slider" oninput="updateCurrentOffsetY(this.value)" style="width: 100%;">
+                </div>
+
+                <div class="form-group">
+                    <label>↔️ הזזה אופקית (רוחב / אינצ'ים): <span class="slider-val" id="val-offsetX">0px</span></label>
+                    <input type="range" min="-600" max="600" step="5" value="0" id="offsetX-slider" oninput="updateCurrentOffsetX(this.value)" style="width: 100%;">
+                </div>
+
+                <div class="btn-grid">
+                    <button type="button" class="tool-btn" onclick="rotateCurrentPhoto(90)">
+                        🔄 סובב 90°
+                    </button>
+                    <button type="button" class="tool-btn" onclick="resetTransforms()">
+                        ↩️ אפס הכל
+                    </button>
+                </div>
+            </div>
+
+            <!-- Google Gemini Pro AI Hub -->
+            <div class="panel gemini-panel" id="gemini-panel">
+                <h3 style="color: #c084fc;">🤖 Google Gemini AI Engine</h3>
+                
+                <div class="form-group">
+                    <label style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-bottom: 3px;">
+                        <span>🔑 Gemini API Key:</span>
+                        <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent); font-size: 0.72rem; text-decoration: underline;">קבלת מפתח חינם</a>
+                    </label>
+                    <div style="display: flex; gap: 4px;">
+                        <input type="password" id="gemini-api-key" placeholder="AQ... / AIzaSy..." onchange="saveGeminiApiKey(this.value)" style="flex: 1; font-size: 0.78rem; padding: 5px 8px;">
+                        <button type="button" class="tool-btn" onclick="toggleGeminiTokenVisibility()" style="padding: 4px 8px; font-size: 0.75rem;" id="btn-toggle-gemini-token" title="הצג/הסתר מפתח">👁️</button>
+                    </div>
+                </div>
+
+                <div class="btn-grid">
+                    <button type="button" class="gemini-btn" onclick="runGeminiColorPalette()">
+                        🎨 Gemini צביעת AI אמיתית
+                    </button>
+                    <button type="button" class="gemini-btn" onclick="runGeminiAutoCrop()">
+                        ✂️ Gemini Auto-Crop
+                    </button>
+                </div>
+                <div class="btn-grid" style="margin-top: 6px;">
+                    <button type="button" class="tool-btn" onclick="revertToOriginalBW()">
+                        📷 חזור לשחור-לבן מקור
+                    </button>
+                </div>
+                <div id="gemini-status" class="status-badge" style="display: none;">Gemini AI מוכן לפעולה</div>
+            </div>
         
             <!-- Fast Position Manager -->
             <div class="panel">
@@ -1420,10 +1417,10 @@
             </div>
 
             <!-- Manual Border Crop Panel -->
-            <div class="panel">
-                <h3>✂️ ניקוי שולי אלבום וקרטון</h3>
+            <div class="panel" id="photo-crop-panel">
+                <h3>✂️ ניקוי שולי אלבום וקרטון (אינצ'ים)</h3>
                 <div class="form-group">
-                    <label>✂️ חיתוך שוליים: <span class="slider-val" id="val-trim">0%</span></label>
+                    <label>✂️ חיתוך שוליים (אינצ'ים): <span class="slider-val" id="val-trim">0%</span></label>
                     <input type="range" min="0" max="25" step="1" value="0" id="trim-slider" oninput="updateCurrentTrim(this.value)" style="width: 100%;">
                 </div>
                 <div class="btn-grid">
@@ -24252,8 +24249,10 @@
             const cur = slides[currentIndex];
             cur.cropBox = null;
             cur.trim = 0;
-            document.getElementById('trim-slider').value = 0;
-            document.getElementById('val-trim').textContent = '0%';
+            const trimSlider = document.getElementById('trim-slider');
+            if (trimSlider) trimSlider.value = 0;
+            const valTrim = document.getElementById('val-trim');
+            if (valTrim) valTrim.textContent = '0%';
             autoSaveState();
             renderCurrentFrame(0);
             showGeminiStatus('🔄 כל החיתוכים בוטלו - תמונה מלאה ופנים שלמות מוצגות !');
@@ -24469,8 +24468,10 @@
             const cur = slides[currentIndex];
             cur.trim = 10;
             cur.cropBox = null;
-            document.getElementById('trim-slider').value = 10;
-            document.getElementById('val-trim').textContent = '10%';
+            const trimSlider = document.getElementById('trim-slider');
+            if (trimSlider) trimSlider.value = 10;
+            const valTrim = document.getElementById('val-trim');
+            if (valTrim) valTrim.textContent = '10%';
             showGeminiStatus('✂️ בוצע ניקוי שוליים מותאם');
             autoSaveState();
             renderCurrentFrame(0);
@@ -24480,13 +24481,15 @@
             const cur = slides[currentIndex];
             cur.trim = parseInt(val, 10);
             cur.cropBox = null;
-            document.getElementById('val-trim').textContent = `${cur.trim}%`;
+            const valTrim = document.getElementById('val-trim');
+            if (valTrim) valTrim.textContent = `${cur.trim}%`;
             autoSaveState();
             renderCurrentFrame(0);
         }
 
         function setQuickTrim(val) {
-            document.getElementById('trim-slider').value = val;
+            const trimSlider = document.getElementById('trim-slider');
+            if (trimSlider) trimSlider.value = val;
             updateCurrentTrim(val);
         }
 
@@ -24500,7 +24503,8 @@
         function updateCurrentScale(val) {
             const cur = slides[currentIndex];
             cur.scale = parseFloat(val);
-            document.getElementById('val-scale').textContent = `${Math.round(cur.scale * 100)}%`;
+            const valScale = document.getElementById('val-scale');
+            if (valScale) valScale.textContent = `${Math.round(cur.scale * 100)}%`;
             autoSaveState();
             renderCurrentFrame(0);
             showHudIndicator(`🔍 ${Math.round(cur.scale * 100)}% | ↔️ ${cur.offsetX || 0}px | ↕️ ${cur.offsetY || 0}px`);
@@ -24509,7 +24513,8 @@
         function updateCurrentOffsetY(val) {
             const cur = slides[currentIndex];
             cur.offsetY = parseInt(val, 10);
-            document.getElementById('val-offsetY').textContent = `${cur.offsetY}px`;
+            const valOffsetY = document.getElementById('val-offsetY');
+            if (valOffsetY) valOffsetY.textContent = `${cur.offsetY}px`;
             autoSaveState();
             renderCurrentFrame(0);
             showHudIndicator(`🔍 ${Math.round((cur.scale || 1.0) * 100)}% | ↔️ ${cur.offsetX || 0}px | ↕️ ${cur.offsetY}px`);
@@ -24518,7 +24523,8 @@
         function updateCurrentOffsetX(val) {
             const cur = slides[currentIndex];
             cur.offsetX = parseInt(val, 10);
-            document.getElementById('val-offsetX').textContent = `${cur.offsetX}px`;
+            const valOffsetX = document.getElementById('val-offsetX');
+            if (valOffsetX) valOffsetX.textContent = `${cur.offsetX}px`;
             autoSaveState();
             renderCurrentFrame(0);
             showHudIndicator(`🔍 ${Math.round((cur.scale || 1.0) * 100)}% | ↔️ ${cur.offsetX}px | ↕️ ${cur.offsetY || 0}px`);
@@ -24704,18 +24710,29 @@
             cur.fitMode = 'contain';
             cur.showCaption = true;
             
-            document.getElementById('scale-slider').value = 1.0;
-            document.getElementById('offsetY-slider').value = 0;
-            document.getElementById('offsetX-slider').value = 0;
-            document.getElementById('trim-slider').value = 0;
-            document.getElementById('val-scale').textContent = '100%';
-            document.getElementById('val-offsetY').textContent = '0px';
-            document.getElementById('val-offsetX').textContent = '0px';
-            document.getElementById('val-trim').textContent = '0%';
+            const scaleSlider = document.getElementById('scale-slider');
+            if (scaleSlider) scaleSlider.value = 1.0;
+            const offsetYSlider = document.getElementById('offsetY-slider');
+            if (offsetYSlider) offsetYSlider.value = 0;
+            const offsetXSlider = document.getElementById('offsetX-slider');
+            if (offsetXSlider) offsetXSlider.value = 0;
+            const trimSlider = document.getElementById('trim-slider');
+            if (trimSlider) trimSlider.value = 0;
+
+            const valScale = document.getElementById('val-scale');
+            if (valScale) valScale.textContent = '100%';
+            const valOffsetY = document.getElementById('val-offsetY');
+            if (valOffsetY) valOffsetY.textContent = '0px';
+            const valOffsetX = document.getElementById('val-offsetX');
+            if (valOffsetX) valOffsetX.textContent = '0px';
+            const valTrim = document.getElementById('val-trim');
+            if (valTrim) valTrim.textContent = '0%';
             
-            document.getElementById('btn-fit-contain').classList.add('active');
-            document.getElementById('btn-fit-cover').classList.remove('active');
-            captionsContainer.style.display = 'block';
+            const btnContain = document.getElementById('btn-fit-contain');
+            if (btnContain) btnContain.classList.add('active');
+            const btnCover = document.getElementById('btn-fit-cover');
+            if (btnCover) btnCover.classList.remove('active');
+            if (captionsContainer) captionsContainer.style.display = 'block';
 
             autoSaveState();
             renderCurrentFrame(0);
@@ -24912,15 +24929,24 @@
             const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
             const trimPanel = document.getElementById('video-trimming-panel');
             const photoPanel = document.getElementById('photo-transforms-panel');
+            const photoFraming = document.getElementById('photo-framing-panel');
+            const photoCrop = document.getElementById('photo-crop-panel');
+            const geminiPanel = document.getElementById('gemini-panel');
 
             if (!isVid) {
                 if (trimPanel) trimPanel.style.display = 'none';
                 if (photoPanel) photoPanel.style.display = 'block';
+                if (photoFraming) photoFraming.style.display = 'block';
+                if (photoCrop) photoCrop.style.display = 'block';
+                if (geminiPanel) geminiPanel.style.display = 'block';
                 return;
             }
 
             if (trimPanel) trimPanel.style.display = 'block';
             if (photoPanel) photoPanel.style.display = 'none';
+            if (photoFraming) photoFraming.style.display = 'none';
+            if (photoCrop) photoCrop.style.display = 'none';
+            if (geminiPanel) geminiPanel.style.display = 'none';
 
             let vidDuration = (videoPlayer && videoPlayer.duration && !isNaN(videoPlayer.duration) && isFinite(videoPlayer.duration)) ? videoPlayer.duration : (cur.duration || 60);
             if (vidDuration <= 0) vidDuration = 60;
@@ -25554,18 +25580,31 @@
             const fitMode = cur.fitMode || 'contain';
             const showCap = cur.showCaption !== undefined ? cur.showCaption : true;
 
-            document.getElementById('scale-slider').value = scale;
-            document.getElementById('val-scale').textContent = `${Math.round(scale * 100)}%`;
-            document.getElementById('offsetY-slider').value = offsetY;
-            document.getElementById('val-offsetY').textContent = `${offsetY}px`;
-            document.getElementById('offsetX-slider').value = offsetX;
-            document.getElementById('val-offsetX').textContent = `${offsetX}px`;
-            document.getElementById('trim-slider').value = trim;
-            document.getElementById('val-trim').textContent = `${trim}%`;
+            const scaleSlider = document.getElementById('scale-slider');
+            if (scaleSlider) scaleSlider.value = scale;
+            const valScale = document.getElementById('val-scale');
+            if (valScale) valScale.textContent = `${Math.round(scale * 100)}%`;
 
-            document.getElementById('btn-fit-contain').classList.toggle('active', fitMode === 'contain');
-            document.getElementById('btn-fit-cover').classList.toggle('active', fitMode === 'cover');
-            captionsContainer.style.display = showCap ? 'block' : 'none';
+            const offsetYSlider = document.getElementById('offsetY-slider');
+            if (offsetYSlider) offsetYSlider.value = offsetY;
+            const valOffsetY = document.getElementById('val-offsetY');
+            if (valOffsetY) valOffsetY.textContent = `${offsetY}px`;
+
+            const offsetXSlider = document.getElementById('offsetX-slider');
+            if (offsetXSlider) offsetXSlider.value = offsetX;
+            const valOffsetX = document.getElementById('val-offsetX');
+            if (valOffsetX) valOffsetX.textContent = `${offsetX}px`;
+
+            const trimSlider = document.getElementById('trim-slider');
+            if (trimSlider) trimSlider.value = trim;
+            const valTrim = document.getElementById('val-trim');
+            if (valTrim) valTrim.textContent = `${trim}%`;
+
+            const btnContain = document.getElementById('btn-fit-contain');
+            if (btnContain) btnContain.classList.toggle('active', fitMode === 'contain');
+            const btnCover = document.getElementById('btn-fit-cover');
+            if (btnCover) btnCover.classList.toggle('active', fitMode === 'cover');
+            if (captionsContainer) captionsContainer.style.display = showCap ? 'block' : 'none';
 
             // Update text overlays
             badgeChapter.textContent = cur.act_title || 'יום הולדת 60 לאבא';
