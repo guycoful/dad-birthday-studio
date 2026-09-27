@@ -244,6 +244,31 @@
             transform: translateX(-50%) translateY(0);
         }
 
+        
+        /* Missing Media Fallback Overlay */
+        .missing-media-fallback {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(15, 23, 42, 0.94);
+            z-index: 15;
+            padding: 20px;
+            text-align: center;
+        }
+        .missing-media-card {
+            background: #1e293b;
+            border: 2px dashed #f87171;
+            border-radius: 12px;
+            padding: 24px 32px;
+            max-width: 480px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+
         /* 100% UNTOUCHED, UNGROPPED PHOTO */
         .cinematic-img {
             max-width: 100%;
@@ -1074,6 +1099,20 @@
 
                 <video id="video-player" controls preload="none"></video>
                 <div id="cinematic-transition-shutter" style="display:none;"></div>
+
+                <!-- Missing Media Fallback Overlay -->
+                <div id="missing-media-fallback" class="missing-media-fallback" style="display:none;">
+                    <div class="missing-media-card">
+                        <div style="font-size: 2.2rem; margin-bottom: 8px;">📷</div>
+                        <div style="font-size: 1.1rem; font-weight: bold; color: #f87171; margin-bottom: 6px;">התמונה לא נמצאה בשרת</div>
+                        <div id="missing-media-filename" style="font-size: 0.85rem; color: #94a3b8; direction: ltr; margin-bottom: 14px; word-break: break-all;"></div>
+                        <label class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 18px; border-radius: 8px; background: #0284c7; color: #fff; font-weight: bold; font-size: 0.9rem;">
+                            <span>📁 בחר תמונה להחלפה מיידית</span>
+                            <input type="file" id="fallback-photo-input" accept="image/*" style="display:none;" onchange="handleReplaceMissingPhoto(event)">
+                        </label>
+                    </div>
+                </div>
+
 
                 <!-- Floating HUD indicator -->
                 <div class="hud-transform-indicator" id="hud-indicator">🔍 100% | ↔️ 0px | ↕️ 0px</div>
@@ -8393,6 +8432,38 @@
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504698454,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 8,
+      "caption": "בתואר של מאיה",
+      "quote": "",
+      "primary_item": {
+        "index": 253,
+        "filename": "169151.jpg",
+        "cloud_path": "photos/169151.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "169151.jpg",
+          "cloud_path": "photos/169151.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
@@ -19877,38 +19948,6 @@
       "transition_effect": "crossfade"
     },
     {
-      "slide_id": 1790504698454,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 8,
-      "caption": "169151",
-      "quote": "",
-      "primary_item": {
-        "index": 253,
-        "filename": "169151.jpg",
-        "cloud_path": "photos/169151.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "169151.jpg",
-          "cloud_path": "photos/169151.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
       "slide_id": 1790504698457,
       "type": "video",
       "act": "act_5",
@@ -22322,7 +22361,9 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 10
     },
     {
       "slide_id": 1790511068785,
@@ -22677,11 +22718,11 @@
       "transition_effect": "crossfade"
     }
   ],
-  "last_updated": "2026-09-27T12:14:21.167Z"
+  "last_updated": "2026-09-27T16:29:03.819Z"
 };
         
         // 1. Initialize slides from localStorage, or embedded default
-        const LOCAL_STORAGE_KEY = 'dad_cloud_studio_state_v6';
+        const LOCAL_STORAGE_KEY = 'dad_cloud_studio_state_v7';
         let savedState = null;
         try {
             const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -25126,6 +25167,82 @@
             executeSlideDeckTransition(currentIndex, currentIndex, 'forward', null, true);
         }
 
+        
+        // Missing photo recovery and error handling
+        function handlePhotoError(imgEl, layerNum) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const isVid = cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video);
+            if (isVid) return;
+
+            const fallbackContainer = document.getElementById('missing-media-fallback');
+            const fnameEl = document.getElementById('missing-media-filename');
+            if (fallbackContainer) {
+                const fname = (cur.primary_item && cur.primary_item.filename) || 'photo.jpg';
+                if (fnameEl) fnameEl.textContent = fname;
+                fallbackContainer.style.display = 'flex';
+            }
+        }
+
+        function handlePhotoSuccess(layerNum) {
+            const fallbackContainer = document.getElementById('missing-media-fallback');
+            if (fallbackContainer) fallbackContainer.style.display = 'none';
+        }
+
+        async function handleReplaceMissingPhoto(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const cur = slides[currentIndex];
+            if (!cur) return;
+
+            showCloudStatus('מעבד ומחליף תמונה... ⏳');
+            const dataUrl = await new Promise(resolve => {
+                const img = new Image();
+                img.onload = () => {
+                    const MAX_W = 1920, MAX_H = 1080;
+                    let w = img.width, h = img.height;
+                    if (w > MAX_W || h > MAX_H) {
+                        const ratio = Math.min(MAX_W / w, MAX_H / h);
+                        w = Math.round(w * ratio);
+                        h = Math.round(h * ratio);
+                    }
+                    const canvas = document.createElement('canvas');
+                    canvas.width = w; canvas.height = h;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, w, h);
+                    resolve(canvas.toDataURL('image/jpeg', 0.88));
+                };
+                img.onerror = () => {
+                    const reader = new FileReader();
+                    reader.onload = e => resolve(e.target.result);
+                    reader.readAsDataURL(file);
+                };
+                img.src = URL.createObjectURL(file);
+            });
+
+            const cleanName = file.name.replace(/[^a-zA-Z0-9_֐-׾.-]/g, '_');
+            if (!cur.primary_item) {
+                cur.primary_item = { index: currentIndex + 1, filename: cleanName, cloud_path: dataUrl, is_video: false };
+            } else {
+                cur.primary_item.filename = cleanName;
+                cur.primary_item.cloud_path = dataUrl;
+                cur.primary_item.is_video = false;
+            }
+            if (Array.isArray(cur.items) && cur.items.length > 0) {
+                cur.items[0].filename = cleanName;
+                cur.items[0].cloud_path = dataUrl;
+            }
+
+            const fallbackContainer = document.getElementById('missing-media-fallback');
+            if (fallbackContainer) fallbackContainer.style.display = 'none';
+
+            autoSaveState();
+            renderScenesList(activeFilter);
+            selectSlide(currentIndex, null, true);
+            showCloudStatus('תמונה הוחלפה בהצלחה! שומר בענן... ☁️');
+            saveStoryboardToCloud();
+        }
+
         function populateSlideLayer(layerNum, cur, progress = 0) {
             if (!cur) return;
             const photo = document.getElementById(`photo-${layerNum}`);
@@ -25134,6 +25251,8 @@
 
             const cleanPath = getActivePhotoPath(cur);
             photo.setAttribute('data-active-src', cleanPath);
+            photo.onerror = () => handlePhotoError(photo, layerNum);
+            photo.onload = () => handlePhotoSuccess(layerNum);
             photo.src = cleanPath;
             blur.src = cleanPath;
 
@@ -25428,6 +25547,8 @@
             const cleanPath = getActivePhotoPath(cur);
             if (mainPhoto.getAttribute('data-active-src') !== cleanPath) {
                 mainPhoto.setAttribute('data-active-src', cleanPath);
+                mainPhoto.onerror = () => handlePhotoError(mainPhoto, currentActiveLayer);
+                mainPhoto.onload = () => handlePhotoSuccess(currentActiveLayer);
                 mainPhoto.src = cleanPath;
                 bgBlurPhoto.src = cleanPath;
             }
