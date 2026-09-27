@@ -22722,11 +22722,15 @@
 };
         
         // 1. Initialize slides from localStorage, or embedded default
-        const LOCAL_STORAGE_KEY = 'dad_cloud_studio_state_v7';
+        const LOCAL_STORAGE_KEY = 'dad_cloud_studio_state_v8';
         let savedState = null;
         try {
             const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
-            if (raw) savedState = JSON.parse(raw);
+            if (raw) {
+                savedState = JSON.parse(raw);
+            } else {
+                localStorage.removeItem('dad_cloud_studio_last_save');
+            }
         } catch(e) { console.log('LocalStorage load:', e); }
 
         let slides = (savedState && Array.isArray(savedState) && savedState.length > 0) ? savedState : initialTimelineData.slides;
