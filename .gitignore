@@ -7,3 +7,7 @@ __pycache__
 *.pyc
 /*_test.png
 /live_*.png
+uncut_backups/
+temp_cuts/
+test_cut_*.mp4
+
