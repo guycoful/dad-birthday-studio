@@ -1,6 +1,6 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 285,
+  "total_slides": 299,
   "slides": [
     {
       "slide_id": 54,
@@ -19068,7 +19068,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 21,
+      "duration": 18,
       "caption": "סרטון ברכה 1",
       "quote": "",
       "primary_item": {
@@ -19088,7 +19088,7 @@
         "default_caption": "סרטון ברכה 1",
         "display_year": "2026",
         "caption": "סרטון ברכה 1",
-        "duration": 21,
+        "duration": 18,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 320,
@@ -19112,7 +19112,7 @@
           "default_caption": "סרטון ברכה 1",
           "display_year": "2026",
           "caption": "סרטון ברכה 1",
-          "duration": 21,
+          "duration": 18,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 320,
@@ -19127,15 +19127,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 20.8,
+      "video_end": 18.17,
       "video_segments": [
         {
           "start": 0,
-          "end": 20.8
+          "end": 18.17
         }
       ]
     },
@@ -19144,7 +19144,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 50,
+      "duration": 43,
       "caption": "סרטון ברכה 2",
       "quote": "",
       "primary_item": {
@@ -19164,7 +19164,7 @@
         "default_caption": "סרטון ברכה 2",
         "display_year": "2026",
         "caption": "סרטון ברכה 2",
-        "duration": 50,
+        "duration": 43,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 321,
@@ -19188,7 +19188,7 @@
           "default_caption": "סרטון ברכה 2",
           "display_year": "2026",
           "caption": "סרטון ברכה 2",
-          "duration": 50,
+          "duration": 43,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 321,
@@ -19203,15 +19203,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 50.07,
+      "video_end": 42.99,
       "video_segments": [
         {
           "start": 0,
-          "end": 50.07
+          "end": 42.99
         }
       ]
     },
@@ -19220,7 +19220,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 7,
+      "duration": 6,
       "caption": "סרטון ברכה 3",
       "quote": "",
       "primary_item": {
@@ -19240,7 +19240,7 @@
         "default_caption": "סרטון ברכה 3",
         "display_year": "2026",
         "caption": "סרטון ברכה 3",
-        "duration": 7,
+        "duration": 6,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 322,
@@ -19264,7 +19264,7 @@
           "default_caption": "סרטון ברכה 3",
           "display_year": "2026",
           "caption": "סרטון ברכה 3",
-          "duration": 7,
+          "duration": 6,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 322,
@@ -19279,15 +19279,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 6.55,
+      "video_end": 5.73,
       "video_segments": [
         {
           "start": 0,
-          "end": 6.55
+          "end": 5.73
         }
       ]
     },
@@ -19296,7 +19296,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 33,
+      "duration": 30,
       "caption": "סרטון ברכה 4",
       "quote": "",
       "primary_item": {
@@ -19316,7 +19316,7 @@
         "default_caption": "סרטון ברכה 4",
         "display_year": "2026",
         "caption": "סרטון ברכה 4",
-        "duration": 33,
+        "duration": 30,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 323,
@@ -19340,7 +19340,7 @@
           "default_caption": "סרטון ברכה 4",
           "display_year": "2026",
           "caption": "סרטון ברכה 4",
-          "duration": 33,
+          "duration": 30,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 323,
@@ -19355,15 +19355,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 32.93,
+      "video_end": 30.27,
       "video_segments": [
         {
           "start": 0,
-          "end": 32.93
+          "end": 30.27
         }
       ]
     },
@@ -19372,7 +19372,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 23,
+      "duration": 20,
       "caption": "סרטון ברכה 5",
       "quote": "",
       "primary_item": {
@@ -19392,7 +19392,7 @@
         "default_caption": "סרטון ברכה 5",
         "display_year": "2026",
         "caption": "סרטון ברכה 5",
-        "duration": 23,
+        "duration": 20,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 324,
@@ -19416,7 +19416,7 @@
           "default_caption": "סרטון ברכה 5",
           "display_year": "2026",
           "caption": "סרטון ברכה 5",
-          "duration": 23,
+          "duration": 20,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 324,
@@ -19431,15 +19431,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 23.29,
+      "video_end": 19.5,
       "video_segments": [
         {
           "start": 0,
-          "end": 23.29
+          "end": 19.5
         }
       ]
     },
@@ -19448,7 +19448,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 25,
+      "duration": 19,
       "caption": "סרטון ברכה 6",
       "quote": "",
       "primary_item": {
@@ -19468,7 +19468,7 @@
         "default_caption": "סרטון ברכה 6",
         "display_year": "2026",
         "caption": "סרטון ברכה 6",
-        "duration": 25,
+        "duration": 19,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 325,
@@ -19492,7 +19492,7 @@
           "default_caption": "סרטון ברכה 6",
           "display_year": "2026",
           "caption": "סרטון ברכה 6",
-          "duration": 25,
+          "duration": 19,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 325,
@@ -19507,15 +19507,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 24.7,
+      "video_end": 19.4,
       "video_segments": [
         {
           "start": 0,
-          "end": 24.7
+          "end": 19.4
         }
       ]
     },
@@ -19524,7 +19524,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 18,
+      "duration": 14,
       "caption": "סרטון ברכה 7",
       "quote": "",
       "primary_item": {
@@ -19544,7 +19544,7 @@
         "default_caption": "סרטון ברכה 7",
         "display_year": "2026",
         "caption": "סרטון ברכה 7",
-        "duration": 18,
+        "duration": 14,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 326,
@@ -19568,7 +19568,7 @@
           "default_caption": "סרטון ברכה 7",
           "display_year": "2026",
           "caption": "סרטון ברכה 7",
-          "duration": 18,
+          "duration": 14,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 326,
@@ -19583,15 +19583,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 17.97,
+      "video_end": 14.2,
       "video_segments": [
         {
           "start": 0,
-          "end": 17.97
+          "end": 14.2
         }
       ]
     },
@@ -19600,7 +19600,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 19,
+      "duration": 14,
       "caption": "סרטון ברכה 8",
       "quote": "",
       "primary_item": {
@@ -19620,7 +19620,7 @@
         "default_caption": "סרטון ברכה 8",
         "display_year": "2026",
         "caption": "סרטון ברכה 8",
-        "duration": 19,
+        "duration": 14,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 327,
@@ -19644,7 +19644,7 @@
           "default_caption": "סרטון ברכה 8",
           "display_year": "2026",
           "caption": "סרטון ברכה 8",
-          "duration": 19,
+          "duration": 14,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 327,
@@ -19659,15 +19659,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 19.16,
+      "video_end": 14.22,
       "video_segments": [
         {
           "start": 0,
-          "end": 19.16
+          "end": 14.22
         }
       ]
     },
@@ -19676,7 +19676,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 18,
+      "duration": 14,
       "caption": "סרטון ברכה 9",
       "quote": "",
       "primary_item": {
@@ -19696,7 +19696,7 @@
         "default_caption": "סרטון ברכה 9",
         "display_year": "2026",
         "caption": "סרטון ברכה 9",
-        "duration": 18,
+        "duration": 14,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 328,
@@ -19720,7 +19720,7 @@
           "default_caption": "סרטון ברכה 9",
           "display_year": "2026",
           "caption": "סרטון ברכה 9",
-          "duration": 18,
+          "duration": 14,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 328,
@@ -19735,15 +19735,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 18.18,
+      "video_end": 13.68,
       "video_segments": [
         {
           "start": 0,
-          "end": 18.18
+          "end": 13.68
         }
       ]
     },
@@ -19752,7 +19752,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 15,
+      "duration": 14,
       "caption": "סרטון ברכה 10",
       "quote": "",
       "primary_item": {
@@ -19772,7 +19772,7 @@
         "default_caption": "סרטון ברכה 10",
         "display_year": "2026",
         "caption": "סרטון ברכה 10",
-        "duration": 15,
+        "duration": 14,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 329,
@@ -19796,7 +19796,7 @@
           "default_caption": "סרטון ברכה 10",
           "display_year": "2026",
           "caption": "סרטון ברכה 10",
-          "duration": 15,
+          "duration": 14,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 329,
@@ -19811,15 +19811,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 15.48,
+      "video_end": 13.72,
       "video_segments": [
         {
           "start": 0,
-          "end": 15.48
+          "end": 13.72
         }
       ]
     },
@@ -19828,7 +19828,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 37,
+      "duration": 29,
       "caption": "סרטון ברכה 11",
       "quote": "",
       "primary_item": {
@@ -19848,7 +19848,7 @@
         "default_caption": "סרטון ברכה 11",
         "display_year": "2026",
         "caption": "סרטון ברכה 11",
-        "duration": 37,
+        "duration": 29,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 330,
@@ -19872,7 +19872,7 @@
           "default_caption": "סרטון ברכה 11",
           "display_year": "2026",
           "caption": "סרטון ברכה 11",
-          "duration": 37,
+          "duration": 29,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 330,
@@ -19887,15 +19887,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 36.77,
+      "video_end": 28.53,
       "video_segments": [
         {
           "start": 0,
-          "end": 36.77
+          "end": 28.53
         }
       ]
     },
@@ -19904,7 +19904,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 21,
+      "duration": 18,
       "caption": "סרטון ברכה 12",
       "quote": "",
       "primary_item": {
@@ -19924,7 +19924,7 @@
         "default_caption": "סרטון ברכה 12",
         "display_year": "2026",
         "caption": "סרטון ברכה 12",
-        "duration": 21,
+        "duration": 18,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 331,
@@ -19948,7 +19948,7 @@
           "default_caption": "סרטון ברכה 12",
           "display_year": "2026",
           "caption": "סרטון ברכה 12",
-          "duration": 21,
+          "duration": 18,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 331,
@@ -19963,15 +19963,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 20.53,
+      "video_end": 18.08,
       "video_segments": [
         {
           "start": 0,
-          "end": 20.53
+          "end": 18.08
         }
       ]
     },
@@ -19980,7 +19980,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 61,
+      "duration": 55,
       "caption": "סרטון ברכה 13",
       "quote": "",
       "primary_item": {
@@ -20000,7 +20000,7 @@
         "default_caption": "סרטון ברכה 13",
         "display_year": "2026",
         "caption": "סרטון ברכה 13",
-        "duration": 61,
+        "duration": 55,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 332,
@@ -20024,7 +20024,7 @@
           "default_caption": "סרטון ברכה 13",
           "display_year": "2026",
           "caption": "סרטון ברכה 13",
-          "duration": 61,
+          "duration": 55,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 332,
@@ -20039,15 +20039,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 60.51,
+      "video_end": 55.43,
       "video_segments": [
         {
           "start": 0,
-          "end": 60.51
+          "end": 55.43
         }
       ]
     },
@@ -20056,7 +20056,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 51,
+      "duration": 44,
       "caption": "סרטון ברכה 14",
       "quote": "",
       "primary_item": {
@@ -20076,7 +20076,7 @@
         "default_caption": "סרטון ברכה 14",
         "display_year": "2026",
         "caption": "סרטון ברכה 14",
-        "duration": 51,
+        "duration": 44,
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 333,
@@ -20100,7 +20100,7 @@
           "default_caption": "סרטון ברכה 14",
           "display_year": "2026",
           "caption": "סרטון ברכה 14",
-          "duration": 51,
+          "duration": 44,
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 333,
@@ -20115,18 +20115,18 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 50.53,
+      "video_end": 43.91,
       "video_segments": [
         {
           "start": 0,
-          "end": 50.53
+          "end": 43.91
         }
       ]
     }
   ],
-  "last_updated": "2026-09-28T15:43:25.938627+00:00"
+  "last_updated": "2026-09-28T16:07:16.420819+00:00"
 }
