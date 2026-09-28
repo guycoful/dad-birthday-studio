@@ -1,6 +1,6 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 285,
+  "total_slides": 299,
   "slides": [
     {
       "slide_id": 54,
@@ -19127,7 +19127,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -19203,15 +19203,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 50.07,
+      "video_end": 50,
       "video_segments": [
         {
           "start": 0,
-          "end": 50.07
+          "end": 50
         }
       ]
     },
@@ -19279,15 +19279,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 6.55,
+      "video_end": 6.5,
       "video_segments": [
         {
           "start": 0,
-          "end": 6.55
+          "end": 6.5
         }
       ]
     },
@@ -19355,15 +19355,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 32.93,
+      "video_end": 32.9,
       "video_segments": [
         {
           "start": 0,
-          "end": 32.93
+          "end": 32.9
         }
       ]
     },
@@ -19431,15 +19431,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 23.29,
+      "video_end": 23,
       "video_segments": [
         {
           "start": 0,
-          "end": 23.29
+          "end": 23
         }
       ]
     },
@@ -19507,7 +19507,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -19583,15 +19583,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 17.97,
+      "video_end": 17.966016,
       "video_segments": [
         {
           "start": 0,
-          "end": 17.97
+          "end": 17.966016
         }
       ]
     },
@@ -19659,15 +19659,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 19.16,
+      "video_end": 19,
       "video_segments": [
         {
           "start": 0,
-          "end": 19.16
+          "end": 19
         }
       ]
     },
@@ -19735,15 +19735,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 18.18,
+      "video_end": 18,
       "video_segments": [
         {
           "start": 0,
-          "end": 18.18
+          "end": 18
         }
       ]
     },
@@ -19811,15 +19811,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 15.48,
+      "video_end": 15,
       "video_segments": [
         {
           "start": 0,
-          "end": 15.48
+          "end": 15
         }
       ]
     },
@@ -19887,15 +19887,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 36.77,
+      "video_end": 36.766016,
       "video_segments": [
         {
           "start": 0,
-          "end": 36.77
+          "end": 36.766016
         }
       ]
     },
@@ -19963,15 +19963,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 20.53,
+      "video_end": 20.5,
       "video_segments": [
         {
           "start": 0,
-          "end": 20.53
+          "end": 20.5
         }
       ]
     },
@@ -20039,15 +20039,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 60.51,
+      "video_end": 60.5,
       "video_segments": [
         {
           "start": 0,
-          "end": 60.51
+          "end": 60.5
         }
       ]
     },
@@ -20115,18 +20115,18 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 50.53,
+      "video_end": 50.5,
       "video_segments": [
         {
           "start": 0,
-          "end": 50.53
+          "end": 50.5
         }
       ]
     }
   ],
-  "last_updated": "2026-09-28T15:43:25.938627+00:00"
+  "last_updated": "2026-09-28T16:02:14.415Z"
 }
