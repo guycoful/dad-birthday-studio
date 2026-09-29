@@ -19252,7 +19252,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 7,
+      "duration": 6,
       "caption": "אורי",
       "quote": "",
       "primary_item": {
@@ -19260,7 +19260,7 @@
         "id": "blessing_3",
         "type": "Video",
         "is_video": true,
-        "filename": "blessing_03.mp4",
+        "filename": "blessing_03_raw.mp4",
         "relative_path": "videos/blessing_03.mp4",
         "width": 576,
         "height": 1024,
@@ -19277,7 +19277,7 @@
         "is_vintage": false,
         "timeline_index": 322,
         "cloud_path": "videos/blessing_03.mp4",
-        "url": "videos/blessing_03_moderate.mp4"
+        "url": "videos/blessing_03_raw.mp4"
       },
       "items": [
         {
@@ -19312,15 +19312,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false,
+      "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 7.2,
+      "video_end": 5.566016,
       "video_segments": [
         {
           "start": 0,
-          "end": 7.2
+          "end": 5.566016
         }
       ],
       "cut_presets": {
@@ -19337,22 +19337,22 @@
           "duration": 5.57
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "none"
     },
     {
       "slide_id": 1790579438957,
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 33,
-      "caption": "סרטון ברכה 4",
+      "duration": 35,
+      "caption": "רינת",
       "quote": "",
       "primary_item": {
         "index": 603,
         "id": "blessing_4",
         "type": "Video",
         "is_video": true,
-        "filename": "blessing_04.mp4",
+        "filename": "blessing_04_raw.mp4",
         "relative_path": "videos/blessing_04.mp4",
         "width": 478,
         "height": 850,
@@ -19369,7 +19369,7 @@
         "is_vintage": false,
         "timeline_index": 323,
         "cloud_path": "videos/blessing_04.mp4",
-        "url": "videos/blessing_04_moderate.mp4"
+        "url": "videos/blessing_04_raw.mp4"
       },
       "items": [
         {
@@ -19404,15 +19404,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false,
+      "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 32.93,
+      "video_end": 35,
       "video_segments": [
         {
           "start": 0,
-          "end": 32.93
+          "end": 35
         }
       ],
       "cut_presets": {
@@ -19429,7 +19429,7 @@
           "duration": 20.93
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "none"
     },
     {
       "slide_id": 1790579438958,
@@ -21180,5 +21180,5 @@
       "cut_mode": "moderate"
     }
   ],
-  "last_updated": "2026-09-29T12:14:21.342Z"
+  "last_updated": "2026-09-29T12:50:23.001Z"
 }
