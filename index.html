@@ -1097,7 +1097,7 @@
                     </div>
                 </div>
 
-                <video id="video-player" controls preload="none"></video>
+                <video id="video-player" controls preload="none" crossorigin="anonymous"></video>
                 <div id="cinematic-transition-shutter" style="display:none;"></div>
 
                 <!-- Missing Media Fallback Overlay -->
@@ -1224,6 +1224,22 @@
                         </button>
                     </div>
                 </div>
+
+                <!-- Master Background Music Volume & Anti-Shock -->
+                <div style="margin-top: 10px; padding: 8px 10px; background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(192, 132, 252, 0.35); border-radius: 6px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                        <span style="font-size: 0.8rem; font-weight: 600; color: #c084fc;">🎚️ עוצמת מוזיקת רקע כללית:</span>
+                        <span id="badge-bg-music-volume" style="font-size: 0.75rem; font-weight: 700; color: #e9d5ff; font-family: monospace; background: rgba(168, 85, 247, 0.2); padding: 1px 6px; border-radius: 6px; border: 1px solid rgba(168, 85, 247, 0.3);">45%</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span style="font-size: 0.72rem; color: #94a3b8;">🔇</span>
+                        <input type="range" id="bg-music-volume-slider" min="0" max="100" step="5" value="45" oninput="setMasterBackgroundVolume(this.value / 100, false)" onchange="setMasterBackgroundVolume(this.value / 100, true)" style="flex: 1;">
+                        <span style="font-size: 0.72rem; color: #94a3b8;">🔊</span>
+                    </div>
+                    <div style="font-size: 0.69rem; color: #94a3b8; margin-top: 4px;">
+                        מונע פיצוץ ווליום בסיום סרטון (Fade-In רך של 1.2 שנ' מופעל אוטומטית ✅)
+                    </div>
+                </div>
             </div>
 
             <!-- Transition Effect Panel -->
@@ -1292,6 +1308,32 @@
                     </div>
                     <div id="cut-mode-description" style="font-size: 0.72rem; color: #94a3b8; margin-top: 6px; text-align: center; line-height: 1.3;">
                         קאטים מתונים: חיתוך שתיקות ארוכות בלבד ושמירה על זרימה טבעית של הדיבור.
+                    </div>
+                </div>
+
+                <!-- Video Audio Boost / Sound Amplification Section -->
+                <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(56, 189, 248, 0.45); border-radius: 8px; padding: 10px; margin-bottom: 12px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.4);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-size: 0.82rem; font-weight: bold; color: #38bdf8;">🔊 הגברת סאונד לסרטון זה:</span>
+                        <span id="badge-video-volume-boost" style="font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); font-family: monospace;">100% (רגיל)</span>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-bottom: 8px;">
+                        <button type="button" class="tool-btn vid-vol-preset-btn" id="btn-vol-100" onclick="setVideoVolumeBoost(1.0)" style="justify-content: center; font-size: 0.72rem; padding: 6px 2px; border-radius: 6px;">100%</button>
+                        <button type="button" class="tool-btn vid-vol-preset-btn" id="btn-vol-150" onclick="setVideoVolumeBoost(1.5)" style="justify-content: center; font-size: 0.72rem; padding: 6px 2px; border-radius: 6px;">150%</button>
+                        <button type="button" class="tool-btn vid-vol-preset-btn" id="btn-vol-200" onclick="setVideoVolumeBoost(2.0)" style="justify-content: center; font-size: 0.72rem; padding: 6px 2px; border-radius: 6px;">200% (פי 2)</button>
+                        <button type="button" class="tool-btn vid-vol-preset-btn" id="btn-vol-250" onclick="setVideoVolumeBoost(2.5)" style="justify-content: center; font-size: 0.72rem; padding: 6px 2px; border-radius: 6px;">250%</button>
+                        <button type="button" class="tool-btn vid-vol-preset-btn" id="btn-vol-300" onclick="setVideoVolumeBoost(3.0)" style="justify-content: center; font-size: 0.72rem; padding: 6px 2px; border-radius: 6px;">300% (פי 3)</button>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                        <span style="font-size: 0.72rem; color: #94a3b8;">כוונון עדין:</span>
+                        <input type="range" id="slider-video-volume-boost" min="0.5" max="3.5" step="0.05" value="1.0" oninput="setVideoVolumeBoost(parseFloat(this.value), false)" onchange="setVideoVolumeBoost(parseFloat(this.value), true)" style="flex: 1;">
+                        <span id="label-slider-vol-val" style="font-size: 0.75rem; color: #38bdf8; font-family: monospace; min-width: 40px; text-align: left;">100%</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.12);">
+                        <span style="font-size: 0.7rem; color: #94a3b8;">הגברה נקייה מותאמת לברכות חלשות</span>
+                        <button type="button" class="tool-btn" onclick="applyVolumeBoostToAllVideos()" style="font-size: 0.72rem; padding: 3px 8px; color: var(--gold); border-color: rgba(234, 179, 8, 0.4);" title="מחיל את עוצמת הסאונד שנבחרה כאן על כל סרטוני הברכות במצגת">
+                            🌐 החל עוצמה זו על כל הסרטונים
+                        </button>
                     </div>
                 </div>
 
@@ -1809,6 +1851,7 @@
             if (s.showCaption === undefined) s.showCaption = true;
             if (s.soundtrack_action === undefined) s.soundtrack_action = 'continue';
             if (s.transition_effect === undefined) s.transition_effect = 'crossfade';
+            if (s.volume_boost === undefined || s.volume_boost === null || isNaN(s.volume_boost) || s.volume_boost <= 0) s.volume_boost = 1.0;
 
             const isVid = s.type === 'video' || (s.primary_item && s.primary_item.is_video);
             if (isVid) {
@@ -1914,6 +1957,8 @@
         });
 
         videoPlayer.addEventListener('play', () => {
+            setupVideoAudioGain();
+            applyCurrentVideoVolumeBoost();
             const cur = slides[currentIndex];
             const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
             if (isVid) {
@@ -1928,6 +1973,8 @@
                 }
             }
             if (!bgAudio.paused) {
+                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+                bgAudio._isFadingIn = false;
                 bgAudio._wasPlayingBeforeVideo = true;
                 bgAudio.pause();
                 const audioIcon = document.getElementById('audio-btn-icon');
@@ -1948,7 +1995,7 @@
 
         videoPlayer.addEventListener('pause', () => {
             if (!isPlaying && bgAudio._wasPlayingBeforeVideo) {
-                bgAudio.play().catch(e => console.log('Audio resume error:', e));
+                fadeInBackgroundAudio();
                 bgAudio._wasPlayingBeforeVideo = false;
                 const audioIcon = document.getElementById('audio-btn-icon');
                 if (audioIcon) audioIcon.textContent = '🔊';
@@ -1957,7 +2004,7 @@
 
         videoPlayer.addEventListener('ended', () => {
             if (bgAudio._wasPlayingBeforeVideo || isPlaying) {
-                bgAudio.play().catch(e => console.log('Audio resume error:', e));
+                fadeInBackgroundAudio();
                 bgAudio._wasPlayingBeforeVideo = false;
                 const audioIcon = document.getElementById('audio-btn-icon');
                 if (audioIcon) audioIcon.textContent = '🔊';
@@ -1975,7 +2022,107 @@
         const progressBar = document.getElementById('slide-progress');
         const bgAudio = document.getElementById('bg-audio');
 
-        bgAudio.volume = 0.7;
+        // Master Background Music Volume & Anti-Shock Ducking
+        let masterBgAudioVolume = parseFloat(localStorage.getItem('dad_studio_bg_volume') || '0.45');
+        if (isNaN(masterBgAudioVolume) || masterBgAudioVolume < 0 || masterBgAudioVolume > 1) {
+            masterBgAudioVolume = 0.45;
+        }
+        bgAudio.volume = masterBgAudioVolume;
+
+        let bgFadeInterval = null;
+
+        function fadeInBackgroundAudio(durationMs = 1200) {
+            if (!bgAudio) return;
+            if (bgFadeInterval) {
+                clearInterval(bgFadeInterval);
+                bgFadeInterval = null;
+            }
+            const targetVol = (typeof masterBgAudioVolume === 'number' && !isNaN(masterBgAudioVolume)) ? masterBgAudioVolume : 0.45;
+            if (targetVol <= 0.01) {
+                bgAudio.volume = 0;
+                bgAudio._isFadingIn = false;
+                bgAudio.play().catch(e => console.log('Audio resume error:', e));
+                return;
+            }
+
+            bgAudio._isFadingIn = true;
+            const startVol = 0.04;
+            bgAudio.volume = startVol;
+
+            const playPromise = bgAudio.play();
+            if (playPromise) {
+                playPromise.catch(e => console.log('Audio resume error:', e));
+            }
+
+            const startTime = performance.now();
+            bgFadeInterval = setInterval(() => {
+                const elapsed = performance.now() - startTime;
+                const progress = Math.min(1, elapsed / durationMs);
+                const ease = 1 - Math.pow(1 - progress, 2);
+                const currentV = startVol + (targetVol - startVol) * ease;
+                bgAudio.volume = Math.max(0, Math.min(1, currentV));
+
+                if (progress >= 1) {
+                    clearInterval(bgFadeInterval);
+                    bgFadeInterval = null;
+                    bgAudio.volume = targetVol;
+                    bgAudio._isFadingIn = false;
+                }
+            }, 35);
+        }
+
+        function setMasterBackgroundVolume(val, notify = true) {
+            masterBgAudioVolume = Math.max(0, Math.min(1, parseFloat(val) || 0));
+            localStorage.setItem('dad_studio_bg_volume', masterBgAudioVolume.toString());
+            if (bgAudio && !bgAudio._isFadingIn) {
+                bgAudio.volume = masterBgAudioVolume;
+            }
+            updateBgMusicVolumeUI();
+            if (notify) {
+                showCloudStatus(`עוצמת מוזיקת רקע כללית נקבעה ל-${Math.round(masterBgAudioVolume * 100)}% 🎵`);
+            }
+        }
+
+        function updateBgMusicVolumeUI() {
+            const slider = document.getElementById('bg-music-volume-slider');
+            const badge = document.getElementById('badge-bg-music-volume');
+            const pct = Math.round(masterBgAudioVolume * 100);
+            if (slider) slider.value = pct;
+            if (badge) badge.textContent = `${pct}%`;
+        }
+
+        // Web Audio API Sound Amplification for Video Elements (> 100% boost)
+        let videoAudioCtx = null;
+        let videoSourceNode = null;
+        let videoGainNode = null;
+
+        function setupVideoAudioGain() {
+            try {
+                if (!videoAudioCtx) {
+                    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                    if (!AudioCtx) return;
+                    videoAudioCtx = new AudioCtx();
+                    const vp = document.getElementById('video-player') || window.videoPlayer;
+                    if (vp) {
+                        videoSourceNode = videoAudioCtx.createMediaElementSource(vp);
+                        videoGainNode = videoAudioCtx.createGain();
+                        videoSourceNode.connect(videoGainNode);
+                        videoGainNode.connect(videoAudioCtx.destination);
+                    }
+                }
+                if (videoAudioCtx && videoAudioCtx.state === 'suspended') {
+                    videoAudioCtx.resume().catch(() => {});
+                }
+            } catch(err) {
+                console.warn('AudioContext setup warning:', err);
+            }
+        }
+
+        document.addEventListener('click', () => {
+            if (videoAudioCtx && videoAudioCtx.state === 'suspended') {
+                videoAudioCtx.resume().catch(() => {});
+            }
+        }, { passive: true });
 
         const defaultApiKey = '';
         let savedApiKey = localStorage.getItem('gemini_api_key') || '';
@@ -3185,9 +3332,11 @@
 
         function toggleAudio() {
             if (bgAudio.paused) {
-                bgAudio.play().catch(e => console.log('Audio error:', e));
+                fadeInBackgroundAudio();
                 document.getElementById('audio-btn-icon').textContent = '🔊';
             } else {
+                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+                bgAudio._isFadingIn = false;
                 bgAudio.pause();
                 document.getElementById('audio-btn-icon').textContent = '🔈';
             }
@@ -4141,6 +4290,8 @@
                 }
             }
             updateCutModeButtonsUI();
+            updateVideoVolumeUI();
+            applyCurrentVideoVolumeBoost();
         }
 
         function setCurrentAsSegmentEnd() {
@@ -4485,6 +4636,107 @@
             showCloudStatus('כל הקאטים אופסו לסרטון מלא ומקורי 🔄');
         }
 
+        function applyCurrentVideoVolumeBoost() {
+            const cur = slides[currentIndex];
+            const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
+            if (!isVid) return;
+            setupVideoAudioGain();
+            const boost = (cur && typeof cur.volume_boost === 'number' && cur.volume_boost > 0) ? cur.volume_boost : 1.0;
+            if (videoGainNode && videoAudioCtx) {
+                try {
+                    videoGainNode.gain.cancelScheduledValues(videoAudioCtx.currentTime);
+                    videoGainNode.gain.setValueAtTime(boost, videoAudioCtx.currentTime);
+                } catch(e) {
+                    videoGainNode.gain.value = boost;
+                }
+            }
+        }
+
+        function setVideoVolumeBoost(val, notify = true) {
+            const cur = slides[currentIndex];
+            const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
+            if (!isVid) return;
+            const num = Math.max(0.5, Math.min(3.5, parseFloat(val) || 1.0));
+            cur.volume_boost = Number(num.toFixed(2));
+            applyCurrentVideoVolumeBoost();
+            updateVideoVolumeUI();
+            if (notify) {
+                autoSaveState();
+                const pct = Math.round(num * 100);
+                const multStr = (num % 1 === 0) ? `פי ${num}` : `פי ${num.toFixed(1)}`;
+                showCloudStatus(`עוצמת סאונד לסרטון נקבעה ל-${pct}% (${multStr}) 🔊`);
+            }
+        }
+
+        function applyVolumeBoostToAllVideos() {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const boost = (typeof cur.volume_boost === 'number' && cur.volume_boost > 0) ? cur.volume_boost : 1.0;
+            let count = 0;
+            slides.forEach(s => {
+                const isVid = s.type === 'video' || (s.primary_item && s.primary_item.is_video);
+                if (isVid) {
+                    s.volume_boost = boost;
+                    count++;
+                }
+            });
+            applyCurrentVideoVolumeBoost();
+            updateVideoVolumeUI();
+            autoSaveState();
+            const pct = Math.round(boost * 100);
+            const multStr = (boost % 1 === 0) ? `פי ${boost}` : `פי ${boost.toFixed(1)}`;
+            showCloudStatus(`עוצמת סאונד ${pct}% (${multStr}) הוחלה על כל ${count} סרטוני הברכות ! 🌐🔊`);
+        }
+
+        function updateVideoVolumeUI() {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const boost = (typeof cur.volume_boost === 'number' && cur.volume_boost > 0) ? cur.volume_boost : 1.0;
+            const pct = Math.round(boost * 100);
+
+            const badge = document.getElementById('badge-video-volume-boost');
+            if (badge) {
+                if (pct === 100) {
+                    badge.textContent = '100% (רגיל)';
+                    badge.style.color = '#94a3b8';
+                    badge.style.background = 'rgba(148, 163, 184, 0.15)';
+                    badge.style.borderColor = 'rgba(148, 163, 184, 0.3)';
+                } else {
+                    const multStr = (boost % 1 === 0) ? `פי ${boost}` : `פי ${boost.toFixed(1)}`;
+                    badge.textContent = `${pct}% (${multStr})`;
+                    badge.style.color = '#38bdf8';
+                    badge.style.background = 'rgba(56, 189, 248, 0.2)';
+                    badge.style.borderColor = 'rgba(56, 189, 248, 0.5)';
+                }
+            }
+
+            const slider = document.getElementById('slider-video-volume-boost');
+            if (slider) slider.value = boost.toString();
+
+            const lbl = document.getElementById('label-slider-vol-val');
+            if (lbl) lbl.textContent = `${pct}%`;
+
+            const presets = [100, 150, 200, 250, 300];
+            presets.forEach(p => {
+                const btn = document.getElementById(`btn-vol-${p}`);
+                if (btn) {
+                    if (pct === p) {
+                        btn.style.borderColor = '#38bdf8';
+                        btn.style.background = 'rgba(56, 189, 248, 0.25)';
+                        btn.style.color = '#7dd3fc';
+                        btn.style.fontWeight = 'bold';
+                        btn.style.boxShadow = '0 0 10px rgba(56, 189, 248, 0.35)';
+                    } else {
+                        btn.style.borderColor = 'rgba(255,255,255,0.15)';
+                        btn.style.background = 'rgba(30, 41, 59, 0.6)';
+                        btn.style.color = '#cbd5e1';
+                        btn.style.fontWeight = 'normal';
+                        btn.style.boxShadow = 'none';
+                    }
+                }
+            });
+        }
+
         // Backward compatibility wrappers
         function updateVideoTrimStart(val) { updateSegmentStart(0, val); }
         function updateVideoTrimEnd(val) { updateSegmentEnd(0, val); }
@@ -4541,6 +4793,7 @@
             if (trackSelect && cur.soundtrack_track) {
                 trackSelect.value = cur.soundtrack_track;
             }
+            updateBgMusicVolumeUI();
         }
 
         function changeSoundtrackMode(mode) {
@@ -4570,12 +4823,14 @@
             const trackSelect = document.getElementById('soundtrack-track-select');
             const url = trackSelect ? trackSelect.value : availableSoundtracks[0].url;
             if (bgAudio.src.endsWith(url) && !bgAudio.paused) {
+                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+                bgAudio._isFadingIn = false;
                 bgAudio.pause();
                 const icon = document.getElementById('audio-btn-icon');
                 if (icon) icon.textContent = '🔈';
             } else {
                 bgAudio.src = url;
-                bgAudio.play().catch(e => console.log('Audio preview error:', e));
+                fadeInBackgroundAudio();
                 const icon = document.getElementById('audio-btn-icon');
                 if (icon) icon.textContent = '🔊';
             }
@@ -4639,6 +4894,8 @@
 
             if (isVid) {
                 if (!bgAudio.paused) {
+                    if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+                    bgAudio._isFadingIn = false;
                     bgAudio._wasPlayingBeforeVideo = true;
                     bgAudio.pause();
                     const icon = document.getElementById('audio-btn-icon');
@@ -4650,6 +4907,8 @@
             const targetTrack = resolveActiveTrackForSlide(currentIndex);
             if (!targetTrack) {
                 // Muted
+                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+                bgAudio._isFadingIn = false;
                 if (!bgAudio.paused) bgAudio.pause();
                 return;
             }
@@ -4659,14 +4918,14 @@
                 bgAudio.setAttribute('data-active-track', targetTrack);
                 bgAudio.src = targetTrack;
                 if (isPlaying || bgAudio._wasPlayingBeforeVideo) {
-                    bgAudio.play().catch(e => console.log('Audio autoplay error:', e));
+                    fadeInBackgroundAudio();
                     const icon = document.getElementById('audio-btn-icon');
                     if (icon) icon.textContent = '🔊';
                 }
             } else {
                 // Continuous playback: do not restart, just ensure running if it was playing
                 if ((isPlaying || bgAudio._wasPlayingBeforeVideo) && bgAudio.paused) {
-                    bgAudio.play().catch(e => console.log('Audio resume error:', e));
+                    fadeInBackgroundAudio();
                     const icon = document.getElementById('audio-btn-icon');
                     if (icon) icon.textContent = '🔊';
                 }
@@ -4933,6 +5192,7 @@
             } else {
                 incomingEl.style.display = 'none';
                 videoPlayer.style.display = 'block';
+                applyCurrentVideoVolumeBoost();
                 overlayLayer.style.display = 'flex';
                 overlayLayer.classList.add('video-mode');
                 let videoUrl = (targetSlide.primary_item && targetSlide.primary_item.cloud_path) || ('videos/' + (targetSlide.primary_item && targetSlide.primary_item.filename ? targetSlide.primary_item.filename : ''));
@@ -5076,6 +5336,8 @@
                 bgBlurPhoto.style.display = 'none';
                 videoPlayer.style.display = 'block';
 
+                applyCurrentVideoVolumeBoost();
+
                 // Display captions and chapter badge cleanly above the video player
                 overlayLayer.style.display = 'flex';
                 overlayLayer.classList.add('video-mode');
@@ -5086,6 +5348,8 @@
 
                 // Interrupt & pause background music completely while video is active
                 if (!bgAudio.paused) {
+                    if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+                    bgAudio._isFadingIn = false;
                     bgAudio._wasPlayingBeforeVideo = true;
                     bgAudio.pause();
                     const audioIcon = document.getElementById('audio-btn-icon');
@@ -5141,7 +5405,7 @@
             // Resume background music if presentation is playing or it was interrupted by video
             if (isPlaying || bgAudio._wasPlayingBeforeVideo) {
                 if (bgAudio.paused) {
-                    bgAudio.play().catch(e => console.log('Audio resume error:', e));
+                    fadeInBackgroundAudio();
                 }
                 bgAudio._wasPlayingBeforeVideo = false;
                 const audioIcon = document.getElementById('audio-btn-icon');
@@ -5249,8 +5513,10 @@
                 btn.textContent = '⏸️ השהה מצגת';
                 btn.className = 'gold';
                 slideStartTime = performance.now();
-                if (bgAudio.paused) {
-                    bgAudio.play().catch(e => console.log('Audio autoplay policy:', e));
+                const cur = slides[currentIndex];
+                const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
+                if (!isVid && bgAudio.paused) {
+                    fadeInBackgroundAudio();
                 }
                 startPresentationLoop();
             } else {
