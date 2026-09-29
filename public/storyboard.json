@@ -3549,6 +3549,285 @@
       "soundtrack_action": "continue"
     },
     {
+      "slide_id": 1790579438957,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 33,
+      "caption": "רינת",
+      "quote": "",
+      "primary_item": {
+        "index": 603,
+        "id": "blessing_4",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_04_moderate.mp4",
+        "relative_path": "videos/blessing_04_moderate.mp4",
+        "width": 478,
+        "height": 850,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 4",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 4",
+        "duration": 21,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 323,
+        "cloud_path": "videos/blessing_04_moderate.mp4",
+        "url": "videos/blessing_04_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 603,
+          "id": "blessing_4",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_04_moderate.mp4",
+          "relative_path": "videos/blessing_04_moderate.mp4",
+          "width": 478,
+          "height": 850,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 4",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 4",
+          "duration": 21,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 323,
+          "cloud_path": "videos/blessing_04_moderate.mp4",
+          "url": "videos/blessing_04_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 32.9,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 32.9
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_04_raw.mp4",
+          "duration": 35.3
+        },
+        "moderate": {
+          "url": "videos/blessing_04_moderate.mp4",
+          "duration": 32.93
+        },
+        "aggressive": {
+          "url": "videos/blessing_04_aggressive.mp4",
+          "duration": 20.93
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438958,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 21,
+      "caption": "שחר אגם ויונתן",
+      "quote": "",
+      "primary_item": {
+        "index": 604,
+        "id": "blessing_5",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_05_aggressive.mp4",
+        "relative_path": "videos/blessing_05_aggressive.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 5",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 5",
+        "duration": 21,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 324,
+        "cloud_path": "videos/blessing_05_aggressive.mp4",
+        "url": "videos/blessing_05_aggressive.mp4"
+      },
+      "items": [
+        {
+          "index": 604,
+          "id": "blessing_5",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_05_aggressive.mp4",
+          "relative_path": "videos/blessing_05_aggressive.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 5",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 5",
+          "duration": 21,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 324,
+          "cloud_path": "videos/blessing_05_aggressive.mp4",
+          "url": "videos/blessing_05_aggressive.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 21,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_05_raw.mp4",
+          "duration": 25.86
+        },
+        "moderate": {
+          "url": "videos/blessing_05_moderate.mp4",
+          "duration": 25.47
+        },
+        "aggressive": {
+          "url": "videos/blessing_05_aggressive.mp4",
+          "duration": 21.02
+        }
+      },
+      "cut_mode": "aggressive"
+    },
+    {
+      "slide_id": 1790579438967,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 52,
+      "caption": "מאיר",
+      "quote": "",
+      "primary_item": {
+        "index": 613,
+        "id": "blessing_14",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_14_moderate.mp4",
+        "relative_path": "videos/blessing_14_moderate.mp4",
+        "width": 464,
+        "height": 832,
+        "timestamp": 1790608439747,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 14",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 14",
+        "duration": 45,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 333,
+        "cloud_path": "videos/blessing_14_moderate.mp4",
+        "url": "videos/blessing_14_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 613,
+          "id": "blessing_14",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_14_moderate.mp4",
+          "relative_path": "videos/blessing_14_moderate.mp4",
+          "width": 464,
+          "height": 832,
+          "timestamp": 1790608439747,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 14",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 14",
+          "duration": 45,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 333,
+          "cloud_path": "videos/blessing_14_moderate.mp4",
+          "url": "videos/blessing_14_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 51.5,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 51.5
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_14_raw.mp4",
+          "duration": 63.05
+        },
+        "moderate": {
+          "url": "videos/blessing_14_moderate.mp4",
+          "duration": 51.52
+        },
+        "aggressive": {
+          "url": "videos/blessing_14_aggressive.mp4",
+          "duration": 44.98
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
       "slide_id": 72,
       "type": "cinematic",
       "act": "act_2",
@@ -4688,7 +4967,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 14,
+      "duration": 3,
       "caption": "סרטון חגיגות 60",
       "quote": "",
       "primary_item": {
@@ -4751,14 +5030,20 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 2.9,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 2.9
+        }
+      ]
     },
     {
       "slide_id": 181,
       "type": "video",
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
-      "duration": 14,
+      "duration": 10,
       "caption": "ועוד גוווווול",
       "quote": "",
       "primary_item": {
@@ -4821,7 +5106,13 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 9.857533,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 9.857533
+        }
+      ]
     },
     {
       "slide_id": 150,
@@ -4891,7 +5182,478 @@
       "video_end": 11,
       "video_start": 0,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "slide_id": 1790579438970,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 25,
+      "caption": "סרטון ברכה 17",
+      "quote": "",
+      "primary_item": {
+        "index": 616,
+        "id": "blessing_17",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_17_moderate.mp4",
+        "relative_path": "videos/blessing_17_moderate.mp4",
+        "width": 1024,
+        "height": 576,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 17",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 17",
+        "duration": 26,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 336,
+        "cloud_path": "videos/blessing_17_moderate.mp4",
+        "url": "videos/blessing_17_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 616,
+          "id": "blessing_17",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_17_moderate.mp4",
+          "relative_path": "videos/blessing_17_moderate.mp4",
+          "width": 1024,
+          "height": 576,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 17",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 17",
+          "duration": 26,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 336,
+          "cloud_path": "videos/blessing_17_moderate.mp4",
+          "url": "videos/blessing_17_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 25,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 25
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_17_raw.mp4",
+          "duration": 33.28
+        },
+        "moderate": {
+          "url": "videos/blessing_17_moderate.mp4",
+          "duration": 25.36
+        },
+        "aggressive": {
+          "url": "videos/blessing_17_aggressive.mp4",
+          "duration": 26.16
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438961,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 20,
+      "caption": "רפי כהן",
+      "quote": "",
+      "primary_item": {
+        "index": 607,
+        "id": "blessing_8",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_08_moderate.mp4",
+        "relative_path": "videos/blessing_08_moderate.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 8",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 8",
+        "duration": 20,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 327,
+        "cloud_path": "videos/blessing_08_moderate.mp4",
+        "url": "videos/blessing_08_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 607,
+          "id": "blessing_8",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_08_moderate.mp4",
+          "relative_path": "videos/blessing_08_moderate.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 8",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 8",
+          "duration": 20,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 327,
+          "cloud_path": "videos/blessing_08_moderate.mp4",
+          "url": "videos/blessing_08_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 20,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 20
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_08_raw.mp4",
+          "duration": 21.47
+        },
+        "moderate": {
+          "url": "videos/blessing_08_moderate.mp4",
+          "duration": 20.47
+        },
+        "aggressive": {
+          "url": "videos/blessing_08_aggressive.mp4",
+          "duration": 20.05
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438954,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 20,
+      "caption": "אופיר",
+      "quote": "",
+      "primary_item": {
+        "index": 600,
+        "id": "blessing_1",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_01_moderate.mp4",
+        "relative_path": "videos/blessing_01_moderate.mp4",
+        "width": 478,
+        "height": 850,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 1",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 1",
+        "duration": 16,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 320,
+        "cloud_path": "videos/blessing_01_moderate.mp4",
+        "url": "videos/blessing_01_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 600,
+          "id": "blessing_1",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_01_moderate.mp4",
+          "relative_path": "videos/blessing_01_moderate.mp4",
+          "width": 478,
+          "height": 850,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 1",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 1",
+          "duration": 16,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 320,
+          "cloud_path": "videos/blessing_01_moderate.mp4",
+          "url": "videos/blessing_01_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 20,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 20
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_01_raw.mp4",
+          "duration": 30.17
+        },
+        "moderate": {
+          "url": "videos/blessing_01_moderate.mp4",
+          "duration": 20.43
+        },
+        "aggressive": {
+          "url": "videos/blessing_01_aggressive.mp4",
+          "duration": 15.8
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438972,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 23,
+      "caption": "אורן",
+      "quote": "",
+      "primary_item": {
+        "index": 618,
+        "id": "blessing_19",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_19_aggressive.mp4",
+        "relative_path": "videos/blessing_19_aggressive.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 19",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 19",
+        "duration": 23,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 338,
+        "cloud_path": "videos/blessing_19_aggressive.mp4",
+        "url": "videos/blessing_19_aggressive.mp4"
+      },
+      "items": [
+        {
+          "index": 618,
+          "id": "blessing_19",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_19_aggressive.mp4",
+          "relative_path": "videos/blessing_19_aggressive.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 19",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 19",
+          "duration": 23,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 338,
+          "cloud_path": "videos/blessing_19_aggressive.mp4",
+          "url": "videos/blessing_19_aggressive.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 23,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 23
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_19_raw.mp4",
+          "duration": 28.47
+        },
+        "moderate": {
+          "url": "videos/blessing_19_moderate.mp4",
+          "duration": 26.73
+        },
+        "aggressive": {
+          "url": "videos/blessing_19_aggressive.mp4",
+          "duration": 23.17
+        }
+      },
+      "cut_mode": "aggressive"
+    },
+    {
+      "slide_id": 1790579438969,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 21,
+      "caption": "נוי",
+      "quote": "",
+      "primary_item": {
+        "index": 615,
+        "id": "blessing_16",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_16_moderate.mp4",
+        "relative_path": "videos/blessing_16_moderate.mp4",
+        "width": 720,
+        "height": 1280,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 16",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 16",
+        "duration": 12,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 335,
+        "cloud_path": "videos/blessing_16_moderate.mp4",
+        "url": "videos/blessing_16_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 615,
+          "id": "blessing_16",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_16_moderate.mp4",
+          "relative_path": "videos/blessing_16_moderate.mp4",
+          "width": 720,
+          "height": 1280,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 16",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 16",
+          "duration": 12,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 335,
+          "cloud_path": "videos/blessing_16_moderate.mp4",
+          "url": "videos/blessing_16_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 21,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_16_raw.mp4",
+          "duration": 24.51
+        },
+        "moderate": {
+          "url": "videos/blessing_16_moderate.mp4",
+          "duration": 21.42
+        },
+        "aggressive": {
+          "url": "videos/blessing_16_aggressive.mp4",
+          "duration": 12.11
+        }
+      },
+      "cut_mode": "moderate"
     },
     {
       "slide_id": 55,
@@ -5256,6 +6018,99 @@
       "transition_effect": "crossfade"
     },
     {
+      "slide_id": 1790579438971,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 36,
+      "caption": "ניר ועדן",
+      "quote": "",
+      "primary_item": {
+        "index": 617,
+        "id": "blessing_18",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_18_moderate.mp4",
+        "relative_path": "videos/blessing_18_moderate.mp4",
+        "width": 478,
+        "height": 850,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 18",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 18",
+        "duration": 29,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 337,
+        "cloud_path": "videos/blessing_18_moderate.mp4",
+        "url": "videos/blessing_18_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 617,
+          "id": "blessing_18",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_18_moderate.mp4",
+          "relative_path": "videos/blessing_18_moderate.mp4",
+          "width": 478,
+          "height": 850,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 18",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 18",
+          "duration": 29,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 337,
+          "cloud_path": "videos/blessing_18_moderate.mp4",
+          "url": "videos/blessing_18_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 36,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 36
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_18_raw.mp4",
+          "duration": 41.34
+        },
+        "moderate": {
+          "url": "videos/blessing_18_moderate.mp4",
+          "duration": 36.45
+        },
+        "aggressive": {
+          "url": "videos/blessing_18_aggressive.mp4",
+          "duration": 29.11
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
       "slide_id": 1790504698878,
       "type": "cinematic",
       "act": "act_5",
@@ -5350,6 +6205,192 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790579438963,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 16,
+      "caption": "מאיה",
+      "quote": "",
+      "primary_item": {
+        "index": 609,
+        "id": "blessing_10",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_10_moderate.mp4",
+        "relative_path": "videos/blessing_10_moderate.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790588857535,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 10",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 10",
+        "duration": 15,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 329,
+        "cloud_path": "videos/blessing_10_moderate.mp4",
+        "url": "videos/blessing_10_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 609,
+          "id": "blessing_10",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_10_moderate.mp4",
+          "relative_path": "videos/blessing_10_moderate.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790588857535,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 10",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 10",
+          "duration": 15,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 329,
+          "cloud_path": "videos/blessing_10_moderate.mp4",
+          "url": "videos/blessing_10_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 16,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 16
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_10_raw.mp4",
+          "duration": 16.18
+        },
+        "moderate": {
+          "url": "videos/blessing_10_moderate.mp4",
+          "duration": 16.18
+        },
+        "aggressive": {
+          "url": "videos/blessing_10_aggressive.mp4",
+          "duration": 14.9
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438977,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 8,
+      "caption": "אור",
+      "quote": "",
+      "primary_item": {
+        "index": 623,
+        "id": "blessing_24",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_24_moderate.mp4",
+        "relative_path": "videos/blessing_24_moderate.mp4",
+        "width": 478,
+        "height": 850,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 24",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 24",
+        "duration": 6,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 343,
+        "cloud_path": "videos/blessing_24_moderate.mp4",
+        "url": "videos/blessing_24_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 623,
+          "id": "blessing_24",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_24_moderate.mp4",
+          "relative_path": "videos/blessing_24_moderate.mp4",
+          "width": 478,
+          "height": 850,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 24",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 24",
+          "duration": 6,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 343,
+          "cloud_path": "videos/blessing_24_moderate.mp4",
+          "url": "videos/blessing_24_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 7.9,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 7.9
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_24_raw.mp4",
+          "duration": 8.61
+        },
+        "moderate": {
+          "url": "videos/blessing_24_moderate.mp4",
+          "duration": 7.94
+        },
+        "aggressive": {
+          "url": "videos/blessing_24_aggressive.mp4",
+          "duration": 6.44
+        }
+      },
+      "cut_mode": "moderate"
     },
     {
       "slide_id": 1790504698998,
@@ -5768,6 +6809,38 @@
       "transition_effect": "crossfade"
     },
     {
+      "slide_id": 1790504700170,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 3,
+      "caption": "",
+      "quote": "",
+      "primary_item": {
+        "index": 296,
+        "filename": "168983.jpg",
+        "cloud_path": "photos/168983.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168983.jpg",
+          "cloud_path": "photos/168983.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 2.06,
+      "offsetX": 0,
+      "offsetY": 25,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
       "slide_id": 1790504700756,
       "type": "cinematic",
       "act": "act_5",
@@ -5824,38 +6897,6 @@
       "scale": 2.48,
       "offsetX": 0,
       "offsetY": 135,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790504700170,
-      "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 3,
-      "caption": "",
-      "quote": "",
-      "primary_item": {
-        "index": 296,
-        "filename": "168983.jpg",
-        "cloud_path": "photos/168983.jpg",
-        "is_video": false
-      },
-      "items": [
-        {
-          "filename": "168983.jpg",
-          "cloud_path": "photos/168983.jpg",
-          "is_video": false
-        }
-      ],
-      "rotation": 0,
-      "scale": 2.06,
-      "offsetX": 0,
-      "offsetY": 25,
       "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
@@ -6280,36 +7321,190 @@
       "transition_effect": "crossfade"
     },
     {
-      "slide_id": 1790504701458,
-      "type": "cinematic",
+      "slide_id": 1790579438976,
+      "type": "video",
       "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 3,
-      "caption": "168925",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 21,
+      "caption": "סיון והשבט",
       "quote": "",
       "primary_item": {
-        "index": 315,
-        "filename": "168925.jpg",
-        "cloud_path": "photos/168925.jpg",
-        "is_video": false
+        "index": 622,
+        "id": "blessing_23",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_23_moderate.mp4",
+        "relative_path": "videos/blessing_23_moderate.mp4",
+        "width": 464,
+        "height": 832,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 23",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 23",
+        "duration": 17,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 342,
+        "cloud_path": "videos/blessing_23_moderate.mp4",
+        "url": "videos/blessing_23_moderate.mp4"
       },
       "items": [
         {
-          "filename": "168925.jpg",
-          "cloud_path": "photos/168925.jpg",
-          "is_video": false
+          "index": 622,
+          "id": "blessing_23",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_23_moderate.mp4",
+          "relative_path": "videos/blessing_23_moderate.mp4",
+          "width": 464,
+          "height": 832,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 23",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 23",
+          "duration": 17,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 342,
+          "cloud_path": "videos/blessing_23_moderate.mp4",
+          "url": "videos/blessing_23_moderate.mp4"
         }
       ],
       "rotation": 0,
-      "scale": 2.58,
+      "scale": 1,
       "offsetX": 0,
-      "offsetY": 230,
+      "offsetY": 0,
       "trim": 0,
       "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 20.9,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 20.9
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_23_raw.mp4",
+          "duration": 21.7
+        },
+        "moderate": {
+          "url": "videos/blessing_23_moderate.mp4",
+          "duration": 20.95
+        },
+        "aggressive": {
+          "url": "videos/blessing_23_aggressive.mp4",
+          "duration": 17.31
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438974,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 7,
+      "caption": "סרטון ברכה 21",
+      "quote": "",
+      "primary_item": {
+        "index": 620,
+        "id": "blessing_21",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_21_moderate.mp4",
+        "relative_path": "videos/blessing_21_moderate.mp4",
+        "width": 464,
+        "height": 832,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 21",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 21",
+        "duration": 22,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 340,
+        "cloud_path": "videos/blessing_21_moderate.mp4",
+        "url": "videos/blessing_21_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 620,
+          "id": "blessing_21",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_21_moderate.mp4",
+          "relative_path": "videos/blessing_21_moderate.mp4",
+          "width": 464,
+          "height": 832,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 21",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 21",
+          "duration": 22,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 340,
+          "cloud_path": "videos/blessing_21_moderate.mp4",
+          "url": "videos/blessing_21_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "video_start": 0.6,
+      "video_end": 8,
+      "video_segments": [
+        {
+          "start": 0.6,
+          "end": 8
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_21_raw.mp4",
+          "duration": 23.99
+        },
+        "moderate": {
+          "url": "videos/blessing_21_moderate.mp4",
+          "duration": 23.59
+        },
+        "aggressive": {
+          "url": "videos/blessing_21_aggressive.mp4",
+          "duration": 22.26
+        }
+      },
+      "cut_mode": "moderate"
     },
     {
       "slide_id": 1790504701541,
@@ -6337,6 +7532,38 @@
       "offsetX": 0,
       "offsetY": 0,
       "trim": 15,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790504701458,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 3,
+      "caption": "168925",
+      "quote": "",
+      "primary_item": {
+        "index": 315,
+        "filename": "168925.jpg",
+        "cloud_path": "photos/168925.jpg",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "168925.jpg",
+          "cloud_path": "photos/168925.jpg",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 2.58,
+      "offsetX": 0,
+      "offsetY": 230,
+      "trim": 0,
       "cropBox": null,
       "fitMode": "contain",
       "showCaption": false,
@@ -7406,72 +8633,469 @@
       "transition_effect": "crossfade"
     },
     {
-      "slide_id": 77,
-      "type": "cinematic",
-      "act": "act_3",
-      "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 3,
-      "caption": "",
+      "slide_id": 1790579438956,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 8,
+      "caption": "אורי",
       "quote": "",
       "primary_item": {
-        "index": 26,
-        "id": "AF1QipOFr8Sh2NTSQyRbKs_kuQcEquzoai-4I-4YjFcf",
-        "type": "Photo",
-        "is_video": false,
-        "filename": "026_IMG-20150310-WA0006.jpg",
-        "relative_path": "projects/dad-birthday-60/processed_photos/026_IMG-20150310-WA0006.jpg",
-        "width": 960,
-        "height": 1280,
-        "timestamp": 1425996552000,
-        "date_formatted": "10/03/2015 16:09",
-        "year": 2015,
-        "act": "act_3",
-        "act_title": "פרק 3: הקמת המשפחה",
-        "default_caption": "אבא - 2015",
-        "display_year": "2015",
-        "caption": "אבא - 2015",
-        "duration": 8,
+        "index": 602,
+        "id": "blessing_3",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_03_raw.mp4",
+        "relative_path": "videos/blessing_03_raw.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 3",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 3",
+        "duration": 6,
         "layout": "cinematic",
         "is_vintage": false,
-        "timeline_index": 87,
-        "cloud_path": "photos/026_IMG-20150310-WA0006.jpg"
+        "timeline_index": 322,
+        "cloud_path": "videos/blessing_03_raw.mp4",
+        "url": "videos/blessing_03_raw.mp4"
       },
       "items": [
         {
-          "index": 26,
-          "id": "AF1QipOFr8Sh2NTSQyRbKs_kuQcEquzoai-4I-4YjFcf",
-          "type": "Photo",
-          "is_video": false,
-          "filename": "026_IMG-20150310-WA0006.jpg",
-          "relative_path": "projects/dad-birthday-60/processed_photos/026_IMG-20150310-WA0006.jpg",
-          "width": 960,
-          "height": 1280,
-          "timestamp": 1425996552000,
-          "date_formatted": "10/03/2015 16:09",
-          "year": 2015,
-          "act": "act_3",
-          "act_title": "פרק 3: הקמת המשפחה",
-          "default_caption": "אבא - 2015",
-          "display_year": "2015",
-          "caption": "אבא - 2015",
-          "duration": 8,
+          "index": 602,
+          "id": "blessing_3",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_03_raw.mp4",
+          "relative_path": "videos/blessing_03_raw.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 3",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 3",
+          "duration": 6,
           "layout": "cinematic",
           "is_vintage": false,
-          "timeline_index": 87,
-          "cloud_path": "photos/026_IMG-20150310-WA0006.jpg"
+          "timeline_index": 322,
+          "cloud_path": "videos/blessing_03_raw.mp4",
+          "url": "videos/blessing_03_raw.mp4"
         }
       ],
       "rotation": 0,
-      "scale": 1.59,
-      "offsetX": 3,
-      "offsetY": -75,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 8,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 8
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_03_raw.mp4",
+          "duration": 8.1
+        },
+        "moderate": {
+          "url": "videos/blessing_03_moderate.mp4",
+          "duration": 7.2
+        },
+        "aggressive": {
+          "url": "videos/blessing_03_aggressive.mp4",
+          "duration": 5.57
+        }
+      },
+      "cut_mode": "none"
+    },
+    {
+      "slide_id": 1790579438962,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 19,
+      "caption": "רועי",
+      "quote": "",
+      "primary_item": {
+        "index": 608,
+        "id": "blessing_9",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_09_moderate.mp4",
+        "relative_path": "videos/blessing_09_moderate.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 9",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 9",
+        "duration": 13,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 328,
+        "cloud_path": "videos/blessing_09_moderate.mp4",
+        "url": "videos/blessing_09_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 608,
+          "id": "blessing_9",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_09_moderate.mp4",
+          "relative_path": "videos/blessing_09_moderate.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 9",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 9",
+          "duration": 13,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 328,
+          "cloud_path": "videos/blessing_09_moderate.mp4",
+          "url": "videos/blessing_09_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 18.766016,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 18.766016
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_09_raw.mp4",
+          "duration": 23.67
+        },
+        "moderate": {
+          "url": "videos/blessing_09_moderate.mp4",
+          "duration": 18.77
+        },
+        "aggressive": {
+          "url": "videos/blessing_09_aggressive.mp4",
+          "duration": 13.14
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438959,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 27,
+      "caption": "ריף",
+      "quote": "",
+      "primary_item": {
+        "index": 605,
+        "id": "blessing_6",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_06_moderate.mp4",
+        "relative_path": "videos/blessing_06_moderate.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 6",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 6",
+        "duration": 19,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 325,
+        "cloud_path": "videos/blessing_06_moderate.mp4",
+        "url": "videos/blessing_06_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 605,
+          "id": "blessing_6",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_06_moderate.mp4",
+          "relative_path": "videos/blessing_06_moderate.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 6",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 6",
+          "duration": 19,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 325,
+          "cloud_path": "videos/blessing_06_moderate.mp4",
+          "url": "videos/blessing_06_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 26.6,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 26.6
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_06_raw.mp4",
+          "duration": 27.97
+        },
+        "moderate": {
+          "url": "videos/blessing_06_moderate.mp4",
+          "duration": 26.61
+        },
+        "aggressive": {
+          "url": "videos/blessing_06_aggressive.mp4",
+          "duration": 18.82
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438960,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 19,
+      "caption": "עומר",
+      "quote": "",
+      "primary_item": {
+        "index": 606,
+        "id": "blessing_7",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_07_moderate.mp4",
+        "relative_path": "videos/blessing_07_moderate.mp4",
+        "width": 576,
+        "height": 1024,
+        "timestamp": 1790579438854,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 7",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 7",
+        "duration": 14,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 326,
+        "cloud_path": "videos/blessing_07_moderate.mp4",
+        "url": "videos/blessing_07_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 606,
+          "id": "blessing_7",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_07_moderate.mp4",
+          "relative_path": "videos/blessing_07_moderate.mp4",
+          "width": 576,
+          "height": 1024,
+          "timestamp": 1790579438854,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 7",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 7",
+          "duration": 14,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 326,
+          "cloud_path": "videos/blessing_07_moderate.mp4",
+          "url": "videos/blessing_07_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 19,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 19
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_07_raw.mp4",
+          "duration": 21.98
+        },
+        "moderate": {
+          "url": "videos/blessing_07_moderate.mp4",
+          "duration": 19.27
+        },
+        "aggressive": {
+          "url": "videos/blessing_07_aggressive.mp4",
+          "duration": 14.29
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
+      "slide_id": 1790579438964,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 50,
+      "caption": "מיכל ואלון",
+      "quote": "",
+      "primary_item": {
+        "index": 610,
+        "id": "blessing_11",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_11_raw.mp4",
+        "relative_path": "videos/blessing_11_raw.mp4",
+        "width": 1920,
+        "height": 1080,
+        "timestamp": 1790588857535,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 11",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 11",
+        "duration": 20,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 330,
+        "cloud_path": "videos/blessing_11_raw.mp4",
+        "url": "videos/blessing_11_raw.mp4"
+      },
+      "items": [
+        {
+          "index": 610,
+          "id": "blessing_11",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_11_raw.mp4",
+          "relative_path": "videos/blessing_11_raw.mp4",
+          "width": 1920,
+          "height": 1080,
+          "timestamp": 1790588857535,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 11",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 11",
+          "duration": 20,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 330,
+          "cloud_path": "videos/blessing_11_raw.mp4",
+          "url": "videos/blessing_11_raw.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 49.766016,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 49.766016
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_11_raw.mp4",
+          "duration": 49.77
+        },
+        "moderate": {
+          "url": "videos/blessing_11_moderate.mp4",
+          "duration": 29.82
+        },
+        "aggressive": {
+          "url": "videos/blessing_11_aggressive.mp4",
+          "duration": 20.35
+        }
+      },
+      "cut_mode": "none"
     },
     {
       "slide_id": 85,
@@ -7608,6 +9232,74 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 77,
+      "type": "cinematic",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
+      "duration": 3,
+      "caption": "",
+      "quote": "",
+      "primary_item": {
+        "index": 26,
+        "id": "AF1QipOFr8Sh2NTSQyRbKs_kuQcEquzoai-4I-4YjFcf",
+        "type": "Photo",
+        "is_video": false,
+        "filename": "026_IMG-20150310-WA0006.jpg",
+        "relative_path": "projects/dad-birthday-60/processed_photos/026_IMG-20150310-WA0006.jpg",
+        "width": 960,
+        "height": 1280,
+        "timestamp": 1425996552000,
+        "date_formatted": "10/03/2015 16:09",
+        "year": 2015,
+        "act": "act_3",
+        "act_title": "פרק 3: הקמת המשפחה",
+        "default_caption": "אבא - 2015",
+        "display_year": "2015",
+        "caption": "אבא - 2015",
+        "duration": 8,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 87,
+        "cloud_path": "photos/026_IMG-20150310-WA0006.jpg"
+      },
+      "items": [
+        {
+          "index": 26,
+          "id": "AF1QipOFr8Sh2NTSQyRbKs_kuQcEquzoai-4I-4YjFcf",
+          "type": "Photo",
+          "is_video": false,
+          "filename": "026_IMG-20150310-WA0006.jpg",
+          "relative_path": "projects/dad-birthday-60/processed_photos/026_IMG-20150310-WA0006.jpg",
+          "width": 960,
+          "height": 1280,
+          "timestamp": 1425996552000,
+          "date_formatted": "10/03/2015 16:09",
+          "year": 2015,
+          "act": "act_3",
+          "act_title": "פרק 3: הקמת המשפחה",
+          "default_caption": "אבא - 2015",
+          "display_year": "2015",
+          "caption": "אבא - 2015",
+          "duration": 8,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 87,
+          "cloud_path": "photos/026_IMG-20150310-WA0006.jpg"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1.59,
+      "offsetX": 3,
+      "offsetY": -75,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "zoom_fade"
     },
     {
       "slide_id": 246,
@@ -9346,7 +11038,7 @@
       "type": "video",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 5,
+      "duration": 12,
       "caption": "סרטון משפחתי",
       "quote": "",
       "primary_item": {
@@ -9408,8 +11100,14 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "video_start": 9,
-      "video_end": 14
+      "video_start": 9.5,
+      "video_end": 21.9,
+      "video_segments": [
+        {
+          "start": 9.5,
+          "end": 21.9
+        }
+      ]
     },
     {
       "slide_id": 134,
@@ -10477,99 +12175,6 @@
       "transition_effect": "crossfade"
     },
     {
-      "slide_id": 1790579438954,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 20,
-      "caption": "סרטון ברכה 1",
-      "quote": "",
-      "primary_item": {
-        "index": 600,
-        "id": "blessing_1",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_01_moderate.mp4",
-        "relative_path": "videos/blessing_01_moderate.mp4",
-        "width": 478,
-        "height": 850,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 1",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 1",
-        "duration": 16,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 320,
-        "cloud_path": "videos/blessing_01_moderate.mp4",
-        "url": "videos/blessing_01_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 600,
-          "id": "blessing_1",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_01_moderate.mp4",
-          "relative_path": "videos/blessing_01_moderate.mp4",
-          "width": 478,
-          "height": 850,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 1",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 1",
-          "duration": 16,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 320,
-          "cloud_path": "videos/blessing_01_moderate.mp4",
-          "url": "videos/blessing_01_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 20.43,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 20.43
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_01_raw.mp4",
-          "duration": 30.17
-        },
-        "moderate": {
-          "url": "videos/blessing_01_moderate.mp4",
-          "duration": 20.43
-        },
-        "aggressive": {
-          "url": "videos/blessing_01_aggressive.mp4",
-          "duration": 15.8
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
       "slide_id": 180,
       "type": "cinematic",
       "act": "act_4",
@@ -11202,6 +12807,99 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
+    },
+    {
+      "slide_id": 1790579438973,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 83,
+      "caption": "סרטון ברכה 20",
+      "quote": "",
+      "primary_item": {
+        "index": 619,
+        "id": "blessing_20",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_20_aggressive.mp4",
+        "relative_path": "videos/blessing_20_aggressive.mp4",
+        "width": 576,
+        "height": 1280,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 20",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 20",
+        "duration": 83,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 339,
+        "cloud_path": "videos/blessing_20_aggressive.mp4",
+        "url": "videos/blessing_20_aggressive.mp4"
+      },
+      "items": [
+        {
+          "index": 619,
+          "id": "blessing_20",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_20_aggressive.mp4",
+          "relative_path": "videos/blessing_20_aggressive.mp4",
+          "width": 576,
+          "height": 1280,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 20",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 20",
+          "duration": 83,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 339,
+          "cloud_path": "videos/blessing_20_aggressive.mp4",
+          "url": "videos/blessing_20_aggressive.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 82.9,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 82.9
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_20_raw.mp4",
+          "duration": 99.9
+        },
+        "moderate": {
+          "url": "videos/blessing_20_moderate.mp4",
+          "duration": 91.63
+        },
+        "aggressive": {
+          "url": "videos/blessing_20_aggressive.mp4",
+          "duration": 82.93
+        }
+      },
+      "cut_mode": "aggressive"
     },
     {
       "slide_id": 210,
@@ -15607,6 +17305,99 @@
       "transition_effect": "crossfade"
     },
     {
+      "slide_id": 1790579438965,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 21,
+      "caption": "סרטון ברכה 12",
+      "quote": "",
+      "primary_item": {
+        "index": 611,
+        "id": "blessing_12",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_12_moderate.mp4",
+        "relative_path": "videos/blessing_12_moderate.mp4",
+        "width": 474,
+        "height": 850,
+        "timestamp": 1790588857535,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 12",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 12",
+        "duration": 18,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 331,
+        "cloud_path": "videos/blessing_12_moderate.mp4",
+        "url": "videos/blessing_12_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 611,
+          "id": "blessing_12",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_12_moderate.mp4",
+          "relative_path": "videos/blessing_12_moderate.mp4",
+          "width": 474,
+          "height": 850,
+          "timestamp": 1790588857535,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 12",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 12",
+          "duration": 18,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 331,
+          "cloud_path": "videos/blessing_12_moderate.mp4",
+          "url": "videos/blessing_12_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 21,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_12_raw.mp4",
+          "duration": 23.5
+        },
+        "moderate": {
+          "url": "videos/blessing_12_moderate.mp4",
+          "duration": 21.08
+        },
+        "aggressive": {
+          "url": "videos/blessing_12_aggressive.mp4",
+          "duration": 18.33
+        }
+      },
+      "cut_mode": "moderate"
+    },
+    {
       "slide_id": 158,
       "type": "cinematic",
       "act": "act_4",
@@ -16015,6 +17806,82 @@
       "transition_effect": "crossfade"
     },
     {
+      "slide_id": 164,
+      "type": "video",
+      "act": "act_4",
+      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "duration": 7,
+      "caption": "רקדן אוטומטי",
+      "quote": "",
+      "primary_item": {
+        "index": 124,
+        "id": "AF1QipMuIDWFlH9XKfgHXcWn1-MsKt0Hvpx9XqX2MeIl",
+        "type": "Video",
+        "is_video": true,
+        "filename": "video_124_20210819_2312.mp4",
+        "relative_path": "projects/dad-birthday-60/videos/video_124_20210819_2312.mp4",
+        "width": 1080,
+        "height": 1920,
+        "timestamp": 1629403951000,
+        "date_formatted": "19/08/2021 23:12",
+        "year": 2021,
+        "act": "act_4",
+        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+        "default_caption": "אבא - 2021",
+        "display_year": "2021",
+        "caption": "סרטון משפחתי",
+        "duration": 14,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 185,
+        "cloud_path": "videos/video_124_20210819_2312.mp4"
+      },
+      "items": [
+        {
+          "index": 124,
+          "id": "AF1QipMuIDWFlH9XKfgHXcWn1-MsKt0Hvpx9XqX2MeIl",
+          "type": "Video",
+          "is_video": true,
+          "filename": "video_124_20210819_2312.mp4",
+          "relative_path": "projects/dad-birthday-60/videos/video_124_20210819_2312.mp4",
+          "width": 1080,
+          "height": 1920,
+          "timestamp": 1629403951000,
+          "date_formatted": "19/08/2021 23:12",
+          "year": 2021,
+          "act": "act_4",
+          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+          "default_caption": "אבא - 2021",
+          "display_year": "2021",
+          "caption": "סרטון משפחתי",
+          "duration": 14,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 185,
+          "cloud_path": "videos/video_124_20210819_2312.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 7,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 7
+        }
+      ]
+    },
+    {
       "slide_id": 1790579438955,
       "type": "video",
       "act": "act_5",
@@ -16108,59 +17975,61 @@
       "cut_mode": "moderate"
     },
     {
-      "slide_id": 164,
+      "slide_id": 1790579438966,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 14,
-      "caption": "רקדן אוטומטי",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 52,
+      "caption": "סרטון ברכה 13",
       "quote": "",
       "primary_item": {
-        "index": 124,
-        "id": "AF1QipMuIDWFlH9XKfgHXcWn1-MsKt0Hvpx9XqX2MeIl",
+        "index": 612,
+        "id": "blessing_13",
         "type": "Video",
         "is_video": true,
-        "filename": "video_124_20210819_2312.mp4",
-        "relative_path": "projects/dad-birthday-60/videos/video_124_20210819_2312.mp4",
-        "width": 1080,
-        "height": 1920,
-        "timestamp": 1629403951000,
-        "date_formatted": "19/08/2021 23:12",
-        "year": 2021,
-        "act": "act_4",
-        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-        "default_caption": "אבא - 2021",
-        "display_year": "2021",
-        "caption": "סרטון משפחתי",
-        "duration": 14,
+        "filename": "blessing_13_aggressive.mp4",
+        "relative_path": "videos/blessing_13_aggressive.mp4",
+        "width": 478,
+        "height": 850,
+        "timestamp": 1790608439747,
+        "date_formatted": "28/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 13",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 13",
+        "duration": 52,
         "layout": "cinematic",
         "is_vintage": false,
-        "timeline_index": 185,
-        "cloud_path": "videos/video_124_20210819_2312.mp4"
+        "timeline_index": 332,
+        "cloud_path": "videos/blessing_13_aggressive.mp4",
+        "url": "videos/blessing_13_aggressive.mp4"
       },
       "items": [
         {
-          "index": 124,
-          "id": "AF1QipMuIDWFlH9XKfgHXcWn1-MsKt0Hvpx9XqX2MeIl",
+          "index": 612,
+          "id": "blessing_13",
           "type": "Video",
           "is_video": true,
-          "filename": "video_124_20210819_2312.mp4",
-          "relative_path": "projects/dad-birthday-60/videos/video_124_20210819_2312.mp4",
-          "width": 1080,
-          "height": 1920,
-          "timestamp": 1629403951000,
-          "date_formatted": "19/08/2021 23:12",
-          "year": 2021,
-          "act": "act_4",
-          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-          "default_caption": "אבא - 2021",
-          "display_year": "2021",
-          "caption": "סרטון משפחתי",
-          "duration": 14,
+          "filename": "blessing_13_aggressive.mp4",
+          "relative_path": "videos/blessing_13_aggressive.mp4",
+          "width": 478,
+          "height": 850,
+          "timestamp": 1790608439747,
+          "date_formatted": "28/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 13",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 13",
+          "duration": 52,
           "layout": "cinematic",
           "is_vintage": false,
-          "timeline_index": 185,
-          "cloud_path": "videos/video_124_20210819_2312.mp4"
+          "timeline_index": 332,
+          "cloud_path": "videos/blessing_13_aggressive.mp4",
+          "url": "videos/blessing_13_aggressive.mp4"
         }
       ],
       "rotation": 0,
@@ -16171,11 +18040,125 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 7
+      "video_end": 52,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 52
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_13_raw.mp4",
+          "duration": 66.12
+        },
+        "moderate": {
+          "url": "videos/blessing_13_moderate.mp4",
+          "duration": 60.4
+        },
+        "aggressive": {
+          "url": "videos/blessing_13_aggressive.mp4",
+          "duration": 52.2
+        }
+      },
+      "cut_mode": "aggressive"
+    },
+    {
+      "slide_id": 1790579438968,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 15,
+      "caption": "סרטון ברכה 15",
+      "quote": "",
+      "primary_item": {
+        "index": 614,
+        "id": "blessing_15",
+        "type": "Video",
+        "is_video": true,
+        "filename": "blessing_15_moderate.mp4",
+        "relative_path": "videos/blessing_15_moderate.mp4",
+        "width": 848,
+        "height": 478,
+        "timestamp": 1790682317770,
+        "date_formatted": "29/09/2026",
+        "year": 2026,
+        "act": "act_5",
+        "act_title": "פרק 5: סבא צחי מצחיקי",
+        "default_caption": "סרטון ברכה 15",
+        "display_year": "2026",
+        "caption": "סרטון ברכה 15",
+        "duration": 14,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 334,
+        "cloud_path": "videos/blessing_15_moderate.mp4",
+        "url": "videos/blessing_15_moderate.mp4"
+      },
+      "items": [
+        {
+          "index": 614,
+          "id": "blessing_15",
+          "type": "Video",
+          "is_video": true,
+          "filename": "blessing_15_moderate.mp4",
+          "relative_path": "videos/blessing_15_moderate.mp4",
+          "width": 848,
+          "height": 478,
+          "timestamp": 1790682317770,
+          "date_formatted": "29/09/2026",
+          "year": 2026,
+          "act": "act_5",
+          "act_title": "פרק 5: סבא צחי מצחיקי",
+          "default_caption": "סרטון ברכה 15",
+          "display_year": "2026",
+          "caption": "סרטון ברכה 15",
+          "duration": 14,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 334,
+          "cloud_path": "videos/blessing_15_moderate.mp4",
+          "url": "videos/blessing_15_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 15,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 15
+        }
+      ],
+      "cut_presets": {
+        "none": {
+          "url": "videos/blessing_15_raw.mp4",
+          "duration": 16.62
+        },
+        "moderate": {
+          "url": "videos/blessing_15_moderate.mp4",
+          "duration": 15.07
+        },
+        "aggressive": {
+          "url": "videos/blessing_15_aggressive.mp4",
+          "duration": 14.37
+        }
+      },
+      "cut_mode": "moderate"
     },
     {
       "slide_id": 153,
@@ -16749,7 +18732,13 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 14
+        }
+      ]
     },
     {
       "slide_id": 165,
@@ -17091,7 +19080,13 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 6.5
+      "video_end": 6.5,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 6.5
+        }
+      ]
     },
     {
       "slide_id": 178,
@@ -19248,1960 +21243,7 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade"
-    },
-    {
-      "slide_id": 1790579438956,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 8,
-      "caption": "אורי",
-      "quote": "",
-      "primary_item": {
-        "index": 602,
-        "id": "blessing_3",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_03_raw.mp4",
-        "relative_path": "videos/blessing_03_raw.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 3",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 3",
-        "duration": 6,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 322,
-        "cloud_path": "videos/blessing_03_raw.mp4",
-        "url": "videos/blessing_03_raw.mp4"
-      },
-      "items": [
-        {
-          "index": 602,
-          "id": "blessing_3",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_03_raw.mp4",
-          "relative_path": "videos/blessing_03_raw.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 3",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 3",
-          "duration": 6,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 322,
-          "cloud_path": "videos/blessing_03_raw.mp4",
-          "url": "videos/blessing_03_raw.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 8,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 8
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_03_raw.mp4",
-          "duration": 8.1
-        },
-        "moderate": {
-          "url": "videos/blessing_03_moderate.mp4",
-          "duration": 7.2
-        },
-        "aggressive": {
-          "url": "videos/blessing_03_aggressive.mp4",
-          "duration": 5.57
-        }
-      },
-      "cut_mode": "none"
-    },
-    {
-      "slide_id": 1790579438957,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 33,
-      "caption": "רינת",
-      "quote": "",
-      "primary_item": {
-        "index": 603,
-        "id": "blessing_4",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_04_moderate.mp4",
-        "relative_path": "videos/blessing_04_moderate.mp4",
-        "width": 478,
-        "height": 850,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 4",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 4",
-        "duration": 21,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 323,
-        "cloud_path": "videos/blessing_04_moderate.mp4",
-        "url": "videos/blessing_04_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 603,
-          "id": "blessing_4",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_04_moderate.mp4",
-          "relative_path": "videos/blessing_04_moderate.mp4",
-          "width": 478,
-          "height": 850,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 4",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 4",
-          "duration": 21,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 323,
-          "cloud_path": "videos/blessing_04_moderate.mp4",
-          "url": "videos/blessing_04_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 32.9,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 32.9
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_04_raw.mp4",
-          "duration": 35.3
-        },
-        "moderate": {
-          "url": "videos/blessing_04_moderate.mp4",
-          "duration": 32.93
-        },
-        "aggressive": {
-          "url": "videos/blessing_04_aggressive.mp4",
-          "duration": 20.93
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438958,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 21,
-      "caption": "סרטון ברכה 5",
-      "quote": "",
-      "primary_item": {
-        "index": 604,
-        "id": "blessing_5",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_05_aggressive.mp4",
-        "relative_path": "videos/blessing_05_aggressive.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 5",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 5",
-        "duration": 21,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 324,
-        "cloud_path": "videos/blessing_05_aggressive.mp4",
-        "url": "videos/blessing_05_aggressive.mp4"
-      },
-      "items": [
-        {
-          "index": 604,
-          "id": "blessing_5",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_05_aggressive.mp4",
-          "relative_path": "videos/blessing_05_aggressive.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 5",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 5",
-          "duration": 21,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 324,
-          "cloud_path": "videos/blessing_05_aggressive.mp4",
-          "url": "videos/blessing_05_aggressive.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 21,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 21
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_05_raw.mp4",
-          "duration": 25.86
-        },
-        "moderate": {
-          "url": "videos/blessing_05_moderate.mp4",
-          "duration": 25.47
-        },
-        "aggressive": {
-          "url": "videos/blessing_05_aggressive.mp4",
-          "duration": 21.02
-        }
-      },
-      "cut_mode": "aggressive"
-    },
-    {
-      "slide_id": 1790579438959,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 27,
-      "caption": "סרטון ברכה 6",
-      "quote": "",
-      "primary_item": {
-        "index": 605,
-        "id": "blessing_6",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_06_moderate.mp4",
-        "relative_path": "videos/blessing_06_moderate.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 6",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 6",
-        "duration": 19,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 325,
-        "cloud_path": "videos/blessing_06_moderate.mp4",
-        "url": "videos/blessing_06_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 605,
-          "id": "blessing_6",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_06_moderate.mp4",
-          "relative_path": "videos/blessing_06_moderate.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 6",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 6",
-          "duration": 19,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 325,
-          "cloud_path": "videos/blessing_06_moderate.mp4",
-          "url": "videos/blessing_06_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 26.6,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 26.6
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_06_raw.mp4",
-          "duration": 27.97
-        },
-        "moderate": {
-          "url": "videos/blessing_06_moderate.mp4",
-          "duration": 26.61
-        },
-        "aggressive": {
-          "url": "videos/blessing_06_aggressive.mp4",
-          "duration": 18.82
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438960,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 19,
-      "caption": "סרטון ברכה 7",
-      "quote": "",
-      "primary_item": {
-        "index": 606,
-        "id": "blessing_7",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_07_moderate.mp4",
-        "relative_path": "videos/blessing_07_moderate.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 7",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 7",
-        "duration": 14,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 326,
-        "cloud_path": "videos/blessing_07_moderate.mp4",
-        "url": "videos/blessing_07_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 606,
-          "id": "blessing_7",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_07_moderate.mp4",
-          "relative_path": "videos/blessing_07_moderate.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 7",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 7",
-          "duration": 14,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 326,
-          "cloud_path": "videos/blessing_07_moderate.mp4",
-          "url": "videos/blessing_07_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 19,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 19
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_07_raw.mp4",
-          "duration": 21.98
-        },
-        "moderate": {
-          "url": "videos/blessing_07_moderate.mp4",
-          "duration": 19.27
-        },
-        "aggressive": {
-          "url": "videos/blessing_07_aggressive.mp4",
-          "duration": 14.29
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438961,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 20,
-      "caption": "סרטון ברכה 8",
-      "quote": "",
-      "primary_item": {
-        "index": 607,
-        "id": "blessing_8",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_08_moderate.mp4",
-        "relative_path": "videos/blessing_08_moderate.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 8",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 8",
-        "duration": 20,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 327,
-        "cloud_path": "videos/blessing_08_moderate.mp4",
-        "url": "videos/blessing_08_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 607,
-          "id": "blessing_8",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_08_moderate.mp4",
-          "relative_path": "videos/blessing_08_moderate.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 8",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 8",
-          "duration": 20,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 327,
-          "cloud_path": "videos/blessing_08_moderate.mp4",
-          "url": "videos/blessing_08_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 20,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 20
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_08_raw.mp4",
-          "duration": 21.47
-        },
-        "moderate": {
-          "url": "videos/blessing_08_moderate.mp4",
-          "duration": 20.47
-        },
-        "aggressive": {
-          "url": "videos/blessing_08_aggressive.mp4",
-          "duration": 20.05
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438962,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 19,
-      "caption": "סרטון ברכה 9",
-      "quote": "",
-      "primary_item": {
-        "index": 608,
-        "id": "blessing_9",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_09_moderate.mp4",
-        "relative_path": "videos/blessing_09_moderate.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790579438854,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 9",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 9",
-        "duration": 13,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 328,
-        "cloud_path": "videos/blessing_09_moderate.mp4",
-        "url": "videos/blessing_09_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 608,
-          "id": "blessing_9",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_09_moderate.mp4",
-          "relative_path": "videos/blessing_09_moderate.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790579438854,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 9",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 9",
-          "duration": 13,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 328,
-          "cloud_path": "videos/blessing_09_moderate.mp4",
-          "url": "videos/blessing_09_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 18.766016,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 18.766016
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_09_raw.mp4",
-          "duration": 23.67
-        },
-        "moderate": {
-          "url": "videos/blessing_09_moderate.mp4",
-          "duration": 18.77
-        },
-        "aggressive": {
-          "url": "videos/blessing_09_aggressive.mp4",
-          "duration": 13.14
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438963,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 16,
-      "caption": "סרטון ברכה 10",
-      "quote": "",
-      "primary_item": {
-        "index": 609,
-        "id": "blessing_10",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_10_moderate.mp4",
-        "relative_path": "videos/blessing_10_moderate.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790588857535,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 10",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 10",
-        "duration": 15,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 329,
-        "cloud_path": "videos/blessing_10_moderate.mp4",
-        "url": "videos/blessing_10_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 609,
-          "id": "blessing_10",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_10_moderate.mp4",
-          "relative_path": "videos/blessing_10_moderate.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790588857535,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 10",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 10",
-          "duration": 15,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 329,
-          "cloud_path": "videos/blessing_10_moderate.mp4",
-          "url": "videos/blessing_10_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 16,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 16
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_10_raw.mp4",
-          "duration": 16.18
-        },
-        "moderate": {
-          "url": "videos/blessing_10_moderate.mp4",
-          "duration": 16.18
-        },
-        "aggressive": {
-          "url": "videos/blessing_10_aggressive.mp4",
-          "duration": 14.9
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438964,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 50,
-      "caption": "סרטון ברכה 11",
-      "quote": "",
-      "primary_item": {
-        "index": 610,
-        "id": "blessing_11",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_11_raw.mp4",
-        "relative_path": "videos/blessing_11_raw.mp4",
-        "width": 1920,
-        "height": 1080,
-        "timestamp": 1790588857535,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 11",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 11",
-        "duration": 20,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 330,
-        "cloud_path": "videos/blessing_11_raw.mp4",
-        "url": "videos/blessing_11_raw.mp4"
-      },
-      "items": [
-        {
-          "index": 610,
-          "id": "blessing_11",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_11_raw.mp4",
-          "relative_path": "videos/blessing_11_raw.mp4",
-          "width": 1920,
-          "height": 1080,
-          "timestamp": 1790588857535,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 11",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 11",
-          "duration": 20,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 330,
-          "cloud_path": "videos/blessing_11_raw.mp4",
-          "url": "videos/blessing_11_raw.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 49.766016,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 49.766016
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_11_raw.mp4",
-          "duration": 49.77
-        },
-        "moderate": {
-          "url": "videos/blessing_11_moderate.mp4",
-          "duration": 29.82
-        },
-        "aggressive": {
-          "url": "videos/blessing_11_aggressive.mp4",
-          "duration": 20.35
-        }
-      },
-      "cut_mode": "none"
-    },
-    {
-      "slide_id": 1790579438965,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 21,
-      "caption": "סרטון ברכה 12",
-      "quote": "",
-      "primary_item": {
-        "index": 611,
-        "id": "blessing_12",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_12_moderate.mp4",
-        "relative_path": "videos/blessing_12_moderate.mp4",
-        "width": 474,
-        "height": 850,
-        "timestamp": 1790588857535,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 12",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 12",
-        "duration": 18,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 331,
-        "cloud_path": "videos/blessing_12_moderate.mp4",
-        "url": "videos/blessing_12_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 611,
-          "id": "blessing_12",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_12_moderate.mp4",
-          "relative_path": "videos/blessing_12_moderate.mp4",
-          "width": 474,
-          "height": 850,
-          "timestamp": 1790588857535,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 12",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 12",
-          "duration": 18,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 331,
-          "cloud_path": "videos/blessing_12_moderate.mp4",
-          "url": "videos/blessing_12_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 21.08,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 21.08
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_12_raw.mp4",
-          "duration": 23.5
-        },
-        "moderate": {
-          "url": "videos/blessing_12_moderate.mp4",
-          "duration": 21.08
-        },
-        "aggressive": {
-          "url": "videos/blessing_12_aggressive.mp4",
-          "duration": 18.33
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438966,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 60,
-      "caption": "סרטון ברכה 13",
-      "quote": "",
-      "primary_item": {
-        "index": 612,
-        "id": "blessing_13",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_13_moderate.mp4",
-        "relative_path": "videos/blessing_13_moderate.mp4",
-        "width": 478,
-        "height": 850,
-        "timestamp": 1790608439747,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 13",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 13",
-        "duration": 52,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 332,
-        "cloud_path": "videos/blessing_13_moderate.mp4",
-        "url": "videos/blessing_13_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 612,
-          "id": "blessing_13",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_13_moderate.mp4",
-          "relative_path": "videos/blessing_13_moderate.mp4",
-          "width": 478,
-          "height": 850,
-          "timestamp": 1790608439747,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 13",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 13",
-          "duration": 52,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 332,
-          "cloud_path": "videos/blessing_13_moderate.mp4",
-          "url": "videos/blessing_13_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 60.4,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 60.4
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_13_raw.mp4",
-          "duration": 66.12
-        },
-        "moderate": {
-          "url": "videos/blessing_13_moderate.mp4",
-          "duration": 60.4
-        },
-        "aggressive": {
-          "url": "videos/blessing_13_aggressive.mp4",
-          "duration": 52.2
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438967,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 52,
-      "caption": "סרטון ברכה 14",
-      "quote": "",
-      "primary_item": {
-        "index": 613,
-        "id": "blessing_14",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_14_moderate.mp4",
-        "relative_path": "videos/blessing_14_moderate.mp4",
-        "width": 464,
-        "height": 832,
-        "timestamp": 1790608439747,
-        "date_formatted": "28/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 14",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 14",
-        "duration": 45,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 333,
-        "cloud_path": "videos/blessing_14_moderate.mp4",
-        "url": "videos/blessing_14_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 613,
-          "id": "blessing_14",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_14_moderate.mp4",
-          "relative_path": "videos/blessing_14_moderate.mp4",
-          "width": 464,
-          "height": 832,
-          "timestamp": 1790608439747,
-          "date_formatted": "28/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 14",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 14",
-          "duration": 45,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 333,
-          "cloud_path": "videos/blessing_14_moderate.mp4",
-          "url": "videos/blessing_14_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 51.52,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 51.52
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_14_raw.mp4",
-          "duration": 63.05
-        },
-        "moderate": {
-          "url": "videos/blessing_14_moderate.mp4",
-          "duration": 51.52
-        },
-        "aggressive": {
-          "url": "videos/blessing_14_aggressive.mp4",
-          "duration": 44.98
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438968,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 15,
-      "caption": "סרטון ברכה 15",
-      "quote": "",
-      "primary_item": {
-        "index": 614,
-        "id": "blessing_15",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_15_moderate.mp4",
-        "relative_path": "videos/blessing_15_moderate.mp4",
-        "width": 848,
-        "height": 478,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 15",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 15",
-        "duration": 14,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 334,
-        "cloud_path": "videos/blessing_15_moderate.mp4",
-        "url": "videos/blessing_15_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 614,
-          "id": "blessing_15",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_15_moderate.mp4",
-          "relative_path": "videos/blessing_15_moderate.mp4",
-          "width": 848,
-          "height": 478,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 15",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 15",
-          "duration": 14,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 334,
-          "cloud_path": "videos/blessing_15_moderate.mp4",
-          "url": "videos/blessing_15_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 15.07,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 15.07
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_15_raw.mp4",
-          "duration": 16.62
-        },
-        "moderate": {
-          "url": "videos/blessing_15_moderate.mp4",
-          "duration": 15.07
-        },
-        "aggressive": {
-          "url": "videos/blessing_15_aggressive.mp4",
-          "duration": 14.37
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438969,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 21,
-      "caption": "סרטון ברכה 16",
-      "quote": "",
-      "primary_item": {
-        "index": 615,
-        "id": "blessing_16",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_16_moderate.mp4",
-        "relative_path": "videos/blessing_16_moderate.mp4",
-        "width": 720,
-        "height": 1280,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 16",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 16",
-        "duration": 12,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 335,
-        "cloud_path": "videos/blessing_16_moderate.mp4",
-        "url": "videos/blessing_16_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 615,
-          "id": "blessing_16",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_16_moderate.mp4",
-          "relative_path": "videos/blessing_16_moderate.mp4",
-          "width": 720,
-          "height": 1280,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 16",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 16",
-          "duration": 12,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 335,
-          "cloud_path": "videos/blessing_16_moderate.mp4",
-          "url": "videos/blessing_16_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 21.42,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 21.42
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_16_raw.mp4",
-          "duration": 24.51
-        },
-        "moderate": {
-          "url": "videos/blessing_16_moderate.mp4",
-          "duration": 21.42
-        },
-        "aggressive": {
-          "url": "videos/blessing_16_aggressive.mp4",
-          "duration": 12.11
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438970,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 25,
-      "caption": "סרטון ברכה 17",
-      "quote": "",
-      "primary_item": {
-        "index": 616,
-        "id": "blessing_17",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_17_moderate.mp4",
-        "relative_path": "videos/blessing_17_moderate.mp4",
-        "width": 1024,
-        "height": 576,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 17",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 17",
-        "duration": 26,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 336,
-        "cloud_path": "videos/blessing_17_moderate.mp4",
-        "url": "videos/blessing_17_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 616,
-          "id": "blessing_17",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_17_moderate.mp4",
-          "relative_path": "videos/blessing_17_moderate.mp4",
-          "width": 1024,
-          "height": 576,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 17",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 17",
-          "duration": 26,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 336,
-          "cloud_path": "videos/blessing_17_moderate.mp4",
-          "url": "videos/blessing_17_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 25.36,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 25.36
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_17_raw.mp4",
-          "duration": 33.28
-        },
-        "moderate": {
-          "url": "videos/blessing_17_moderate.mp4",
-          "duration": 25.36
-        },
-        "aggressive": {
-          "url": "videos/blessing_17_aggressive.mp4",
-          "duration": 26.16
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438971,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 36,
-      "caption": "סרטון ברכה 18",
-      "quote": "",
-      "primary_item": {
-        "index": 617,
-        "id": "blessing_18",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_18_moderate.mp4",
-        "relative_path": "videos/blessing_18_moderate.mp4",
-        "width": 478,
-        "height": 850,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 18",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 18",
-        "duration": 29,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 337,
-        "cloud_path": "videos/blessing_18_moderate.mp4",
-        "url": "videos/blessing_18_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 617,
-          "id": "blessing_18",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_18_moderate.mp4",
-          "relative_path": "videos/blessing_18_moderate.mp4",
-          "width": 478,
-          "height": 850,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 18",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 18",
-          "duration": 29,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 337,
-          "cloud_path": "videos/blessing_18_moderate.mp4",
-          "url": "videos/blessing_18_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 36.45,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 36.45
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_18_raw.mp4",
-          "duration": 41.34
-        },
-        "moderate": {
-          "url": "videos/blessing_18_moderate.mp4",
-          "duration": 36.45
-        },
-        "aggressive": {
-          "url": "videos/blessing_18_aggressive.mp4",
-          "duration": 29.11
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438972,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 27,
-      "caption": "סרטון ברכה 19",
-      "quote": "",
-      "primary_item": {
-        "index": 618,
-        "id": "blessing_19",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_19_moderate.mp4",
-        "relative_path": "videos/blessing_19_moderate.mp4",
-        "width": 576,
-        "height": 1024,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 19",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 19",
-        "duration": 23,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 338,
-        "cloud_path": "videos/blessing_19_moderate.mp4",
-        "url": "videos/blessing_19_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 618,
-          "id": "blessing_19",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_19_moderate.mp4",
-          "relative_path": "videos/blessing_19_moderate.mp4",
-          "width": 576,
-          "height": 1024,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 19",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 19",
-          "duration": 23,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 338,
-          "cloud_path": "videos/blessing_19_moderate.mp4",
-          "url": "videos/blessing_19_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 26.73,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 26.73
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_19_raw.mp4",
-          "duration": 28.47
-        },
-        "moderate": {
-          "url": "videos/blessing_19_moderate.mp4",
-          "duration": 26.73
-        },
-        "aggressive": {
-          "url": "videos/blessing_19_aggressive.mp4",
-          "duration": 23.17
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438973,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 92,
-      "caption": "סרטון ברכה 20",
-      "quote": "",
-      "primary_item": {
-        "index": 619,
-        "id": "blessing_20",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_20_moderate.mp4",
-        "relative_path": "videos/blessing_20_moderate.mp4",
-        "width": 576,
-        "height": 1280,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 20",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 20",
-        "duration": 83,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 339,
-        "cloud_path": "videos/blessing_20_moderate.mp4",
-        "url": "videos/blessing_20_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 619,
-          "id": "blessing_20",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_20_moderate.mp4",
-          "relative_path": "videos/blessing_20_moderate.mp4",
-          "width": 576,
-          "height": 1280,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 20",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 20",
-          "duration": 83,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 339,
-          "cloud_path": "videos/blessing_20_moderate.mp4",
-          "url": "videos/blessing_20_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 91.63,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 91.63
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_20_raw.mp4",
-          "duration": 99.9
-        },
-        "moderate": {
-          "url": "videos/blessing_20_moderate.mp4",
-          "duration": 91.63
-        },
-        "aggressive": {
-          "url": "videos/blessing_20_aggressive.mp4",
-          "duration": 82.93
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438976,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 21,
-      "caption": "סרטון ברכה 23",
-      "quote": "",
-      "primary_item": {
-        "index": 622,
-        "id": "blessing_23",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_23_moderate.mp4",
-        "relative_path": "videos/blessing_23_moderate.mp4",
-        "width": 464,
-        "height": 832,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 23",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 23",
-        "duration": 17,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 342,
-        "cloud_path": "videos/blessing_23_moderate.mp4",
-        "url": "videos/blessing_23_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 622,
-          "id": "blessing_23",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_23_moderate.mp4",
-          "relative_path": "videos/blessing_23_moderate.mp4",
-          "width": 464,
-          "height": 832,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 23",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 23",
-          "duration": 17,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 342,
-          "cloud_path": "videos/blessing_23_moderate.mp4",
-          "url": "videos/blessing_23_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 20.95,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 20.95
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_23_raw.mp4",
-          "duration": 21.7
-        },
-        "moderate": {
-          "url": "videos/blessing_23_moderate.mp4",
-          "duration": 20.95
-        },
-        "aggressive": {
-          "url": "videos/blessing_23_aggressive.mp4",
-          "duration": 17.31
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438974,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 24,
-      "caption": "סרטון ברכה 21",
-      "quote": "",
-      "primary_item": {
-        "index": 620,
-        "id": "blessing_21",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_21_moderate.mp4",
-        "relative_path": "videos/blessing_21_moderate.mp4",
-        "width": 464,
-        "height": 832,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 21",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 21",
-        "duration": 22,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 340,
-        "cloud_path": "videos/blessing_21_moderate.mp4",
-        "url": "videos/blessing_21_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 620,
-          "id": "blessing_21",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_21_moderate.mp4",
-          "relative_path": "videos/blessing_21_moderate.mp4",
-          "width": 464,
-          "height": 832,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 21",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 21",
-          "duration": 22,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 340,
-          "cloud_path": "videos/blessing_21_moderate.mp4",
-          "url": "videos/blessing_21_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 23.59,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 23.59
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_21_raw.mp4",
-          "duration": 23.99
-        },
-        "moderate": {
-          "url": "videos/blessing_21_moderate.mp4",
-          "duration": 23.59
-        },
-        "aggressive": {
-          "url": "videos/blessing_21_aggressive.mp4",
-          "duration": 22.26
-        }
-      },
-      "cut_mode": "moderate"
-    },
-    {
-      "slide_id": 1790579438977,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 8,
-      "caption": "סרטון ברכה 24",
-      "quote": "",
-      "primary_item": {
-        "index": 623,
-        "id": "blessing_24",
-        "type": "Video",
-        "is_video": true,
-        "filename": "blessing_24_moderate.mp4",
-        "relative_path": "videos/blessing_24_moderate.mp4",
-        "width": 478,
-        "height": 850,
-        "timestamp": 1790682317770,
-        "date_formatted": "29/09/2026",
-        "year": 2026,
-        "act": "act_5",
-        "act_title": "פרק 5: סבא צחי מצחיקי",
-        "default_caption": "סרטון ברכה 24",
-        "display_year": "2026",
-        "caption": "סרטון ברכה 24",
-        "duration": 6,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 343,
-        "cloud_path": "videos/blessing_24_moderate.mp4",
-        "url": "videos/blessing_24_moderate.mp4"
-      },
-      "items": [
-        {
-          "index": 623,
-          "id": "blessing_24",
-          "type": "Video",
-          "is_video": true,
-          "filename": "blessing_24_moderate.mp4",
-          "relative_path": "videos/blessing_24_moderate.mp4",
-          "width": 478,
-          "height": 850,
-          "timestamp": 1790682317770,
-          "date_formatted": "29/09/2026",
-          "year": 2026,
-          "act": "act_5",
-          "act_title": "פרק 5: סבא צחי מצחיקי",
-          "default_caption": "סרטון ברכה 24",
-          "display_year": "2026",
-          "caption": "סרטון ברכה 24",
-          "duration": 6,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 343,
-          "cloud_path": "videos/blessing_24_moderate.mp4",
-          "url": "videos/blessing_24_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 7.94,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 7.94
-        }
-      ],
-      "cut_presets": {
-        "none": {
-          "url": "videos/blessing_24_raw.mp4",
-          "duration": 8.61
-        },
-        "moderate": {
-          "url": "videos/blessing_24_moderate.mp4",
-          "duration": 7.94
-        },
-        "aggressive": {
-          "url": "videos/blessing_24_aggressive.mp4",
-          "duration": 6.44
-        }
-      },
-      "cut_mode": "moderate"
     }
   ],
-  "last_updated": "2026-09-29T15:24:44.731Z"
+  "last_updated": "2026-09-29T18:33:06.745Z"
 }
