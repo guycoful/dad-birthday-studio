@@ -6954,17 +6954,17 @@
       "quote": "",
       "primary_item": {
         "index": 315,
-        "filename": "VID_20260929_175639.mp4",
-        "cloud_path": "videos/VID_20260929_175639.mp4",
+        "filename": "VID_20260929_175639_moderate.mp4",
+        "cloud_path": "videos/VID_20260929_175639_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID_20260929_175639.mp4"
+        "url": "videos/VID_20260929_175639_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID_20260929_175639.mp4",
-          "cloud_path": "videos/VID_20260929_175639.mp4",
+          "filename": "VID_20260929_175639_moderate.mp4",
+          "cloud_path": "videos/VID_20260929_175639_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID_20260929_175639.mp4"
+          "url": "videos/VID_20260929_175639_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -6980,16 +6980,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 42
+          "end": 42.45
         }
       ],
       "video_start": 0,
-      "video_end": 42,
-      "cut_mode": "raw",
+      "video_end": 42.45,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID_20260929_175639.mp4",
           "duration": 42.45
+        },
+        "moderate": {
+          "url": "videos/VID_20260929_175639_moderate.mp4",
+          "duration": 42.45
+        },
+        "aggressive": {
+          "url": "videos/VID_20260929_175639_aggressive.mp4",
+          "duration": 40.52
         }
       },
       "volume_boost": 1
@@ -7004,17 +7012,17 @@
       "quote": "",
       "primary_item": {
         "index": 316,
-        "filename": "VID_20260930_112511.mp4",
-        "cloud_path": "videos/VID_20260930_112511.mp4",
+        "filename": "VID_20260930_112511_moderate.mp4",
+        "cloud_path": "videos/VID_20260930_112511_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID_20260930_112511.mp4"
+        "url": "videos/VID_20260930_112511_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID_20260930_112511.mp4",
-          "cloud_path": "videos/VID_20260930_112511.mp4",
+          "filename": "VID_20260930_112511_moderate.mp4",
+          "cloud_path": "videos/VID_20260930_112511_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID_20260930_112511.mp4"
+          "url": "videos/VID_20260930_112511_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -7030,16 +7038,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 9
+          "end": 8.53
         }
       ],
       "video_start": 0,
-      "video_end": 9,
-      "cut_mode": "raw",
+      "video_end": 8.53,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID_20260930_112511.mp4",
           "duration": 9.45
+        },
+        "moderate": {
+          "url": "videos/VID_20260930_112511_moderate.mp4",
+          "duration": 8.53
+        },
+        "aggressive": {
+          "url": "videos/VID_20260930_112511_aggressive.mp4",
+          "duration": 7.17
         }
       },
       "volume_boost": 1
@@ -8881,17 +8897,17 @@
       "quote": "",
       "primary_item": {
         "index": 309,
-        "filename": "VID-20260927-WA0070 (2).mp4",
-        "cloud_path": "videos/VID-20260927-WA0070 (2).mp4",
+        "filename": "VID-20260927-WA0070_moderate.mp4",
+        "cloud_path": "videos/VID-20260927-WA0070_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID-20260927-WA0070 (2).mp4"
+        "url": "videos/VID-20260927-WA0070_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260927-WA0070 (2).mp4",
-          "cloud_path": "videos/VID-20260927-WA0070 (2).mp4",
+          "filename": "VID-20260927-WA0070_moderate.mp4",
+          "cloud_path": "videos/VID-20260927-WA0070_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID-20260927-WA0070 (2).mp4"
+          "url": "videos/VID-20260927-WA0070_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -8907,16 +8923,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 26
+          "end": 26.32
         }
       ],
       "video_start": 0,
-      "video_end": 26,
+      "video_end": 26.32,
       "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID-20260927-WA0070 (2).mp4",
           "duration": 26.32
+        },
+        "moderate": {
+          "url": "videos/VID-20260927-WA0070_moderate.mp4",
+          "duration": 26.32
+        },
+        "aggressive": {
+          "url": "videos/VID-20260927-WA0070_aggressive.mp4",
+          "duration": 23.83
         }
       },
       "volume_boost": 1
@@ -21707,22 +21731,22 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 32,
+      "duration": 28,
       "caption": "VID 20260930 WA0002",
       "quote": "",
       "primary_item": {
         "index": 310,
-        "filename": "VID-20260930-WA0002.mp4",
-        "cloud_path": "videos/VID-20260930-WA0002.mp4",
+        "filename": "VID-20260930-WA0002_moderate.mp4",
+        "cloud_path": "videos/VID-20260930-WA0002_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID-20260930-WA0002.mp4"
+        "url": "videos/VID-20260930-WA0002_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260930-WA0002.mp4",
-          "cloud_path": "videos/VID-20260930-WA0002.mp4",
+          "filename": "VID-20260930-WA0002_moderate.mp4",
+          "cloud_path": "videos/VID-20260930-WA0002_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID-20260930-WA0002.mp4"
+          "url": "videos/VID-20260930-WA0002_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -21738,16 +21762,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 32
+          "end": 27.97
         }
       ],
       "video_start": 0,
-      "video_end": 32,
-      "cut_mode": "raw",
+      "video_end": 27.97,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID-20260930-WA0002.mp4",
           "duration": 32.47
+        },
+        "moderate": {
+          "url": "videos/VID-20260930-WA0002_moderate.mp4",
+          "duration": 27.97
+        },
+        "aggressive": {
+          "url": "videos/VID-20260930-WA0002_aggressive.mp4",
+          "duration": 24.96
         }
       },
       "volume_boost": 1
@@ -21757,22 +21789,22 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 18,
+      "duration": 16,
       "caption": "VID 20260927 WA0072",
       "quote": "",
       "primary_item": {
         "index": 311,
-        "filename": "VID-20260927-WA0072.mp4",
-        "cloud_path": "videos/VID-20260927-WA0072.mp4",
+        "filename": "VID-20260927-WA0072_moderate.mp4",
+        "cloud_path": "videos/VID-20260927-WA0072_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID-20260927-WA0072.mp4"
+        "url": "videos/VID-20260927-WA0072_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260927-WA0072.mp4",
-          "cloud_path": "videos/VID-20260927-WA0072.mp4",
+          "filename": "VID-20260927-WA0072_moderate.mp4",
+          "cloud_path": "videos/VID-20260927-WA0072_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID-20260927-WA0072.mp4"
+          "url": "videos/VID-20260927-WA0072_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -21788,16 +21820,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 17.9
+          "end": 16.47
         }
       ],
       "video_start": 0,
-      "video_end": 17.9,
-      "cut_mode": "raw",
+      "video_end": 16.47,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID-20260927-WA0072.mp4",
           "duration": 17.94
+        },
+        "moderate": {
+          "url": "videos/VID-20260927-WA0072_moderate.mp4",
+          "duration": 16.47
+        },
+        "aggressive": {
+          "url": "videos/VID-20260927-WA0072_aggressive.mp4",
+          "duration": 14.87
         }
       },
       "volume_boost": 1
@@ -21812,17 +21852,17 @@
       "quote": "",
       "primary_item": {
         "index": 312,
-        "filename": "VID-20260929-WA0018.mp4",
-        "cloud_path": "videos/VID-20260929-WA0018.mp4",
+        "filename": "VID-20260929-WA0018_moderate.mp4",
+        "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID-20260929-WA0018.mp4"
+        "url": "videos/VID-20260929-WA0018_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260929-WA0018.mp4",
-          "cloud_path": "videos/VID-20260929-WA0018.mp4",
+          "filename": "VID-20260929-WA0018_moderate.mp4",
+          "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID-20260929-WA0018.mp4"
+          "url": "videos/VID-20260929-WA0018_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -21838,16 +21878,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 65.556322
+          "end": 65.57
         }
       ],
       "video_start": 0,
-      "video_end": 65.556322,
-      "cut_mode": "raw",
+      "video_end": 65.57,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID-20260929-WA0018.mp4",
           "duration": 65.56
+        },
+        "moderate": {
+          "url": "videos/VID-20260929-WA0018_moderate.mp4",
+          "duration": 65.57
+        },
+        "aggressive": {
+          "url": "videos/VID-20260929-WA0018_aggressive.mp4",
+          "duration": 62.93
         }
       },
       "volume_boost": 1
@@ -21857,22 +21905,22 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 37,
+      "duration": 33,
       "caption": "VID 20260929 WA0034",
       "quote": "",
       "primary_item": {
         "index": 313,
-        "filename": "VID-20260929-WA0034.mp4",
-        "cloud_path": "videos/VID-20260929-WA0034.mp4",
+        "filename": "VID-20260929-WA0034_moderate.mp4",
+        "cloud_path": "videos/VID-20260929-WA0034_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID-20260929-WA0034.mp4"
+        "url": "videos/VID-20260929-WA0034_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260929-WA0034.mp4",
-          "cloud_path": "videos/VID-20260929-WA0034.mp4",
+          "filename": "VID-20260929-WA0034_moderate.mp4",
+          "cloud_path": "videos/VID-20260929-WA0034_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID-20260929-WA0034.mp4"
+          "url": "videos/VID-20260929-WA0034_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -21888,16 +21936,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 36.6
+          "end": 32.85
         }
       ],
       "video_start": 0,
-      "video_end": 36.6,
-      "cut_mode": "raw",
+      "video_end": 32.85,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID-20260929-WA0034.mp4",
           "duration": 36.63
+        },
+        "moderate": {
+          "url": "videos/VID-20260929-WA0034_moderate.mp4",
+          "duration": 32.85
+        },
+        "aggressive": {
+          "url": "videos/VID-20260929-WA0034_aggressive.mp4",
+          "duration": 30.37
         }
       },
       "volume_boost": 1
@@ -21907,22 +21963,22 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 29,
+      "duration": 26,
       "caption": "VID 20260929 WA0032",
       "quote": "",
       "primary_item": {
         "index": 314,
-        "filename": "VID-20260929-WA0032.mp4",
-        "cloud_path": "videos/VID-20260929-WA0032.mp4",
+        "filename": "VID-20260929-WA0032_moderate.mp4",
+        "cloud_path": "videos/VID-20260929-WA0032_moderate.mp4",
         "is_video": true,
-        "url": "videos/VID-20260929-WA0032.mp4"
+        "url": "videos/VID-20260929-WA0032_moderate.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260929-WA0032.mp4",
-          "cloud_path": "videos/VID-20260929-WA0032.mp4",
+          "filename": "VID-20260929-WA0032_moderate.mp4",
+          "cloud_path": "videos/VID-20260929-WA0032_moderate.mp4",
           "is_video": true,
-          "url": "videos/VID-20260929-WA0032.mp4"
+          "url": "videos/VID-20260929-WA0032_moderate.mp4"
         }
       ],
       "rotation": 0,
@@ -21938,16 +21994,24 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 28.8
+          "end": 26.14
         }
       ],
       "video_start": 0,
-      "video_end": 28.8,
-      "cut_mode": "raw",
+      "video_end": 26.14,
+      "cut_mode": "moderate",
       "cut_presets": {
-        "raw": {
+        "none": {
           "url": "videos/VID-20260929-WA0032.mp4",
           "duration": 28.8
+        },
+        "moderate": {
+          "url": "videos/VID-20260929-WA0032_moderate.mp4",
+          "duration": 26.14
+        },
+        "aggressive": {
+          "url": "videos/VID-20260929-WA0032_aggressive.mp4",
+          "duration": 24.68
         }
       },
       "volume_boost": 1
