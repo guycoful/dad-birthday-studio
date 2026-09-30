@@ -10,4 +10,4 @@ __pycache__
 uncut_backups/
 temp_cuts/
 test_cut_*.mp4
-
+/videos

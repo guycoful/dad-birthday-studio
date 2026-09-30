@@ -1103,11 +1103,11 @@
                 <!-- Missing Media Fallback Overlay -->
                 <div id="missing-media-fallback" class="missing-media-fallback" style="display:none;">
                     <div class="missing-media-card">
-                        <div style="font-size: 2.2rem; margin-bottom: 8px;">📷</div>
-                        <div style="font-size: 1.1rem; font-weight: bold; color: #f87171; margin-bottom: 6px;">התמונה לא נמצאה בשרת</div>
+                        <div id="missing-media-icon" style="font-size: 2.2rem; margin-bottom: 8px;">📷</div>
+                        <div id="missing-media-title" style="font-size: 1.1rem; font-weight: bold; color: #f87171; margin-bottom: 6px;">התמונה לא נמצאה בשרת</div>
                         <div id="missing-media-filename" style="font-size: 0.85rem; color: #94a3b8; direction: ltr; margin-bottom: 14px; word-break: break-all;"></div>
                         <label class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 18px; border-radius: 8px; background: #0284c7; color: #fff; font-weight: bold; font-size: 0.9rem;">
-                            <span>📁 בחר תמונה להחלפה מיידית</span>
+                            <span id="missing-media-btn-text">📁 בחר תמונה להחלפה מיידית</span>
                             <input type="file" id="fallback-photo-input" accept="image/*,video/*" style="display:none;" onchange="handleReplaceMissingPhoto(event)">
                         </label>
                     </div>
@@ -2204,6 +2204,28 @@
                 }
                 if (copy.soundtrack_track && copy.soundtrack_track.startsWith('data:')) {
                     copy.soundtrack_track = 'audio/' + (copy.soundtrack_name ? copy.soundtrack_name.replace(/[^a-zA-Z0-9_֐-׾.-]/g, '_') : 'custom') + '.mp3';
+                }
+                if (copy.primary_item) {
+                    const pi = Object.assign({}, copy.primary_item);
+                    if (pi.cloud_path && pi.cloud_path.startsWith('blob:')) {
+                        pi.cloud_path = (pi.is_video ? 'videos/' : 'photos/') + pi.filename;
+                    }
+                    if (pi.url && pi.url.startsWith('blob:')) {
+                        pi.url = (pi.is_video ? 'videos/' : 'photos/') + pi.filename;
+                    }
+                    copy.primary_item = pi;
+                }
+                if (Array.isArray(copy.items)) {
+                    copy.items = copy.items.map(it => {
+                        const itCopy = Object.assign({}, it);
+                        if (itCopy.cloud_path && itCopy.cloud_path.startsWith('blob:')) {
+                            itCopy.cloud_path = (itCopy.is_video ? 'videos/' : 'photos/') + itCopy.filename;
+                        }
+                        if (itCopy.url && itCopy.url.startsWith('blob:')) {
+                            itCopy.url = (itCopy.is_video ? 'videos/' : 'photos/') + itCopy.filename;
+                        }
+                        return itCopy;
+                    });
                 }
                 return copy;
             });
@@ -5056,9 +5078,16 @@
 
             const fallbackContainer = document.getElementById('missing-media-fallback');
             const fnameEl = document.getElementById('missing-media-filename');
+            const iconEl = document.getElementById('missing-media-icon');
+            const titleEl = document.getElementById('missing-media-title');
+            const btnTextEl = document.getElementById('missing-media-btn-text');
+
             if (fallbackContainer) {
-                const fname = (cur.primary_item && cur.primary_item.filename) || 'photo.jpg';
+                const fname = (cur.primary_item && cur.primary_item.filename) || (isVid ? 'video.mp4' : 'photo.jpg');
                 if (fnameEl) fnameEl.textContent = fname;
+                if (iconEl) iconEl.textContent = isVid ? '🎬' : '📷';
+                if (titleEl) titleEl.textContent = isVid ? 'הסרטון לא נמצא בשרת' : 'התמונה לא נמצאה בשרת';
+                if (btnTextEl) btnTextEl.textContent = isVid ? '📁 בחר סרטון להחלפה מיידית' : '📁 בחר תמונה להחלפה מיידית';
                 fallbackContainer.style.display = 'flex';
             }
         }
@@ -5420,7 +5449,19 @@
                 if (videoPlayer.getAttribute('data-active-src') !== videoUrl) {
                     videoPlayer.setAttribute('data-active-src', videoUrl);
                     videoPlayer.src = videoUrl;
-                    videoPlayer.onerror = () => handlePhotoError(videoPlayer, 'main');
+                    videoPlayer.onerror = () => {
+                        if (videoUrl.startsWith('blob:') && cur.primary_item && cur.primary_item.filename) {
+                            const fallbackRel = 'videos/' + cur.primary_item.filename;
+                            if (videoPlayer.getAttribute('data-active-src') !== fallbackRel) {
+                                console.warn('Blob URL failed, falling back to server video:', fallbackRel);
+                                videoPlayer.setAttribute('data-active-src', fallbackRel);
+                                videoPlayer.src = fallbackRel;
+                                videoPlayer.load();
+                                return;
+                            }
+                        }
+                        handlePhotoError(videoPlayer, 'main');
+                    };
                     videoPlayer.onloadeddata = () => handlePhotoSuccess('main');
                     videoPlayer.load();
                     const onMeta = () => {
