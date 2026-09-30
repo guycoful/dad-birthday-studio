@@ -71,7 +71,8 @@
       "transition_effect": "zoom_fade",
       "soundtrack_action": "new_track",
       "soundtrack_track": "audio/kaveret_song.mp3",
-      "soundtrack_name": "כוורת - שיר נבואי קוסמי עליז"
+      "soundtrack_name": "כוורת - שיר נבואי קוסמי עליז",
+      "volume_boost": 1
     },
     {
       "slide_id": 8,
@@ -139,7 +140,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 5,
@@ -253,7 +255,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_263_IMG-20260827-WA0027.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 53,
@@ -322,7 +325,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_318_IMG-20260828-WA0003.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 67,
@@ -391,7 +395,8 @@
       "showCaption": false,
       "colorized_path": null,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 1,
@@ -460,7 +465,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_259_IMG-20260827-WA0023.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 2,
@@ -529,7 +535,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_260_IMG-20260827-WA0024.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 3,
@@ -597,7 +604,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 4,
@@ -666,7 +674,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_262_IMG-20260827-WA0026.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 6,
@@ -734,7 +743,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 7,
@@ -803,7 +813,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_266_IMG-20260827-WA0030.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 9,
@@ -871,7 +882,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 10,
@@ -939,7 +951,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 11,
@@ -1007,7 +1020,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 12,
@@ -1121,7 +1135,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_271_IMG-20260827-WA0035.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 13,
@@ -1189,7 +1204,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 14,
@@ -1257,7 +1273,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 15,
@@ -1325,7 +1342,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 17,
@@ -1393,7 +1411,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 18,
@@ -1461,7 +1480,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 19,
@@ -1574,7 +1594,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 20,
@@ -1642,7 +1663,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 21,
@@ -1710,7 +1732,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 22,
@@ -1778,7 +1801,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 24,
@@ -1846,7 +1870,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 25,
@@ -1914,7 +1939,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 26,
@@ -2027,7 +2053,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 27,
@@ -2095,7 +2122,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 28,
@@ -2163,7 +2191,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 29,
@@ -2231,7 +2260,8 @@
       "fitMode": "cover",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 31,
@@ -2299,7 +2329,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 33,
@@ -2412,7 +2443,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 34,
@@ -2480,7 +2512,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 35,
@@ -2548,7 +2581,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 36,
@@ -2616,7 +2650,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 37,
@@ -2684,7 +2719,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 38,
@@ -2752,7 +2788,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 41,
@@ -2820,7 +2857,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 42,
@@ -2888,7 +2926,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 43,
@@ -2957,7 +2996,8 @@
       "showCaption": false,
       "colorized_path": "enhanced_photos/colorized_307_IMG-20260827-WA0076.png",
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 44,
@@ -3025,7 +3065,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 45,
@@ -3093,7 +3134,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 47,
@@ -3206,7 +3248,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 48,
@@ -3274,7 +3317,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 49,
@@ -3342,7 +3386,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 50,
@@ -3410,7 +3455,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 52,
@@ -3478,7 +3524,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 70,
@@ -3546,7 +3593,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 72,
@@ -3616,7 +3664,8 @@
       "soundtrack_action": "new_track",
       "soundtrack_track": "audio/hapoel_pt_2026.mp3",
       "soundtrack_name": "הפועל פתח תקווה - מכל האדומות 2026",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 112,
@@ -3684,7 +3733,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 94,
@@ -3752,7 +3802,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 119,
@@ -3820,7 +3871,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 120,
@@ -3888,7 +3940,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 193,
@@ -3956,7 +4009,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 194,
@@ -4024,7 +4078,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 86,
@@ -4092,7 +4147,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 128,
@@ -4160,7 +4216,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 148,
@@ -4228,7 +4285,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 182,
@@ -4296,7 +4354,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 216,
@@ -4364,7 +4423,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 241,
@@ -4477,7 +4537,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 267,
@@ -4545,7 +4606,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 279,
@@ -4613,7 +4675,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 198,
@@ -4681,7 +4744,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 269,
@@ -4751,7 +4815,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 181,
@@ -4821,7 +4886,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 150,
@@ -4891,7 +4957,8 @@
       "video_end": 11,
       "video_start": 0,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 55,
@@ -4961,7 +5028,8 @@
       "transition_effect": "zoom_fade",
       "soundtrack_action": "new_track",
       "soundtrack_track": "audio/in_my_life_beatles.mp3",
-      "soundtrack_name": "רמי קלינשטיין  - מתנות קטנות"
+      "soundtrack_name": "רמי קלינשטיין  - מתנות קטנות",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698496,
@@ -4993,7 +5061,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698545,
@@ -5025,7 +5094,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 56,
@@ -5093,7 +5163,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698627,
@@ -5125,7 +5196,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698673,
@@ -5157,7 +5229,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698753,
@@ -5189,7 +5262,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698795,
@@ -5221,7 +5295,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698837,
@@ -5253,7 +5328,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698878,
@@ -5285,7 +5361,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698919,
@@ -5317,7 +5394,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698959,
@@ -5349,7 +5427,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698998,
@@ -5381,7 +5460,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699037,
@@ -5413,7 +5493,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699114,
@@ -5445,7 +5526,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699152,
@@ -5477,7 +5559,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699217,
@@ -5509,7 +5592,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699286,
@@ -5541,7 +5625,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699364,
@@ -5573,7 +5658,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699551,
@@ -5605,7 +5691,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699623,
@@ -5637,7 +5724,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699821,
@@ -5669,7 +5757,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699876,
@@ -5701,7 +5790,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699921,
@@ -5733,7 +5823,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504699984,
@@ -5765,7 +5856,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700756,
@@ -5797,7 +5889,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700067,
@@ -5829,7 +5922,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700170,
@@ -5861,7 +5955,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700340,
@@ -5893,7 +5988,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700408,
@@ -5925,7 +6021,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700464,
@@ -5957,7 +6054,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700597,
@@ -5989,7 +6087,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700643,
@@ -6021,7 +6120,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700686,
@@ -6053,7 +6153,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700805,
@@ -6085,7 +6186,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700914,
@@ -6117,7 +6219,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700991,
@@ -6149,7 +6252,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504701165,
@@ -6181,7 +6285,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504701376,
@@ -6213,7 +6318,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504702200,
@@ -6245,7 +6351,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504702543,
@@ -6277,7 +6384,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504701458,
@@ -6309,7 +6417,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504701541,
@@ -6341,7 +6450,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504701739,
@@ -6373,7 +6483,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504700718,
@@ -6405,7 +6516,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 57,
@@ -6473,7 +6585,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 59,
@@ -6541,7 +6654,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 61,
@@ -6610,7 +6724,8 @@
       "showCaption": true,
       "transition_effect": "zoom_fade",
       "soundtrack_action": "new_track",
-      "soundtrack_track": "audio/רמי_קלינשטיין__-_מתנות_קטנות.mp3"
+      "soundtrack_track": "audio/רמי_קלינשטיין__-_מתנות_קטנות.mp3",
+      "volume_boost": 1
     },
     {
       "slide_id": 60,
@@ -6678,7 +6793,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "transition_effect": "zoom_fade",
-      "soundtrack_action": "continue"
+      "soundtrack_action": "continue",
+      "volume_boost": 1
     },
     {
       "slide_id": 71,
@@ -6746,7 +6862,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 91,
@@ -6814,7 +6931,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 93,
@@ -6882,7 +7000,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 106,
@@ -6950,7 +7069,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 62,
@@ -7063,7 +7183,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 66,
@@ -7131,7 +7252,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 63,
@@ -7199,7 +7321,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 99,
@@ -7267,7 +7390,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 64,
@@ -7335,7 +7459,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 81,
@@ -7403,7 +7528,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 77,
@@ -7471,7 +7597,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 85,
@@ -7539,7 +7666,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 87,
@@ -7607,7 +7735,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 246,
@@ -7675,7 +7804,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 79,
@@ -7743,7 +7873,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 118,
@@ -7856,7 +7987,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 96,
@@ -7924,7 +8056,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 89,
@@ -7992,7 +8125,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 90,
@@ -8105,7 +8239,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 113,
@@ -8173,7 +8308,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 155,
@@ -8241,7 +8377,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790504698454,
@@ -8273,7 +8410,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 268,
@@ -8341,7 +8479,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 116,
@@ -8409,7 +8548,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 114,
@@ -8477,7 +8617,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 192,
@@ -8545,7 +8686,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 191,
@@ -8613,7 +8755,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 80,
@@ -8681,7 +8824,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 103,
@@ -8749,7 +8893,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 124,
@@ -8817,7 +8962,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 127,
@@ -8885,7 +9031,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 108,
@@ -8954,7 +9101,8 @@
       "showCaption": true,
       "soundtrack_action": "mute",
       "transition_effect": "crossfade",
-      "soundtrack_track": "audio/משינה_-_מכונית_-_1990.mp3"
+      "soundtrack_track": "audio/משינה_-_מכונית_-_1990.mp3",
+      "volume_boost": 1
     },
     {
       "slide_id": 109,
@@ -9022,7 +9170,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 121,
@@ -9090,7 +9239,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 123,
@@ -9158,7 +9308,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 133,
@@ -9271,7 +9422,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 125,
@@ -9339,7 +9491,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 126,
@@ -9409,7 +9562,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 9,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 134,
@@ -9477,7 +9631,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 137,
@@ -9545,7 +9700,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 138,
@@ -9613,7 +9769,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 139,
@@ -9681,7 +9838,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 140,
@@ -9794,7 +9952,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 141,
@@ -9862,7 +10021,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 157,
@@ -9930,7 +10090,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 142,
@@ -9998,7 +10159,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 143,
@@ -10066,7 +10228,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 163,
@@ -10134,7 +10297,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 149,
@@ -10202,7 +10366,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 151,
@@ -10270,7 +10435,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 152,
@@ -10338,7 +10504,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 172,
@@ -10406,7 +10573,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 173,
@@ -10474,7 +10642,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438954,
@@ -10567,7 +10736,8 @@
           "duration": 15.8
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 180,
@@ -10635,7 +10805,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 283,
@@ -10703,7 +10874,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 280,
@@ -10771,7 +10943,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 185,
@@ -10839,7 +11012,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 187,
@@ -10907,7 +11081,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 188,
@@ -10975,7 +11150,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 284,
@@ -11088,7 +11264,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 213,
@@ -11201,7 +11378,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 210,
@@ -11269,7 +11447,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 212,
@@ -11337,7 +11516,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 220,
@@ -11450,7 +11630,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 247,
@@ -11518,7 +11699,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 222,
@@ -11586,7 +11768,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 223,
@@ -11654,7 +11837,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 224,
@@ -11722,7 +11906,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 225,
@@ -11790,7 +11975,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 227,
@@ -11903,7 +12089,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 228,
@@ -11971,7 +12158,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 230,
@@ -12039,7 +12227,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 231,
@@ -12107,7 +12296,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 233,
@@ -12175,7 +12365,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 234,
@@ -12288,7 +12479,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 235,
@@ -12356,7 +12548,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 237,
@@ -12424,7 +12617,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 238,
@@ -12492,7 +12686,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 239,
@@ -12560,7 +12755,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 240,
@@ -12628,7 +12824,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 252,
@@ -12696,7 +12893,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 258,
@@ -12764,7 +12962,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 253,
@@ -12832,7 +13031,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 254,
@@ -12900,7 +13100,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 256,
@@ -12968,7 +13169,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 65,
@@ -13036,7 +13238,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 82,
@@ -13104,7 +13307,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 130,
@@ -13172,7 +13376,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 132,
@@ -13240,7 +13445,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 131,
@@ -13310,7 +13516,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "zoom_fade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 78,
@@ -13380,7 +13587,8 @@
       "soundtrack_action": "new_track",
       "transition_effect": "zoom_fade",
       "soundtrack_track": "audio/משינה_-_מכונית_-_1990.mp3",
-      "soundtrack_name": "משינה - מכונית - 1990"
+      "soundtrack_name": "משינה - מכונית - 1990",
+      "volume_boost": 1
     },
     {
       "slide_id": 105,
@@ -13448,7 +13656,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 88,
@@ -13516,7 +13725,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 83,
@@ -13629,7 +13839,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 84,
@@ -13697,7 +13908,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 111,
@@ -13810,7 +14022,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 95,
@@ -13878,7 +14091,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 122,
@@ -13946,7 +14160,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 219,
@@ -14014,7 +14229,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 98,
@@ -14082,7 +14298,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 73,
@@ -14150,7 +14367,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 74,
@@ -14218,7 +14436,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 76,
@@ -14331,7 +14550,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 75,
@@ -14399,7 +14619,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 100,
@@ -14467,7 +14688,8 @@
       "fitMode": "contain",
       "showCaption": false,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 102,
@@ -14537,7 +14759,8 @@
       "video_start": 29.5,
       "video_end": 38,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 107,
@@ -14605,7 +14828,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 135,
@@ -14673,7 +14897,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 169,
@@ -14741,7 +14966,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 183,
@@ -14854,7 +15080,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 136,
@@ -14922,7 +15149,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "zoom_fade"
+      "transition_effect": "zoom_fade",
+      "volume_boost": 1
     },
     {
       "slide_id": 129,
@@ -14990,7 +15218,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 170,
@@ -15058,7 +15287,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 146,
@@ -15126,7 +15356,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 162,
@@ -15194,7 +15425,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 199,
@@ -15262,7 +15494,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 207,
@@ -15330,7 +15563,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 211,
@@ -15398,7 +15632,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 215,
@@ -15468,7 +15703,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 5
+      "video_end": 5,
+      "volume_boost": 1
     },
     {
       "slide_id": 195,
@@ -15536,7 +15772,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 196,
@@ -15604,7 +15841,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 158,
@@ -15672,7 +15910,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 110,
@@ -15740,7 +15979,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 145,
@@ -15808,7 +16048,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 115,
@@ -15876,7 +16117,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 218,
@@ -15944,7 +16186,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 117,
@@ -16012,7 +16255,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438955,
@@ -16105,7 +16349,8 @@
           "duration": 46.43
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 164,
@@ -16175,7 +16420,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 7
+      "video_end": 7,
+      "volume_boost": 1
     },
     {
       "slide_id": 153,
@@ -16245,7 +16491,8 @@
       "soundtrack_action": "new_track",
       "transition_effect": "crossfade",
       "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3",
-      "soundtrack_name": "סימן שאתה צעיר"
+      "soundtrack_name": "סימן שאתה צעיר",
+      "volume_boost": 1
     },
     {
       "slide_id": 154,
@@ -16358,7 +16605,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 156,
@@ -16426,7 +16674,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 161,
@@ -16539,7 +16788,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 160,
@@ -16609,7 +16859,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 159,
@@ -16679,7 +16930,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 171,
@@ -16749,7 +17001,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 14
+      "video_end": 14,
+      "volume_boost": 1
     },
     {
       "slide_id": 165,
@@ -16817,7 +17070,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 166,
@@ -16885,7 +17139,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 167,
@@ -16953,7 +17208,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 174,
@@ -17021,7 +17277,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 175,
@@ -17091,7 +17348,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 6.5
+      "video_end": 6.5,
+      "volume_boost": 1
     },
     {
       "slide_id": 178,
@@ -17159,7 +17417,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 177,
@@ -17227,7 +17486,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 189,
@@ -17295,7 +17555,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 190,
@@ -17408,7 +17669,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 200,
@@ -17476,7 +17738,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 209,
@@ -17544,7 +17807,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 203,
@@ -17612,7 +17876,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 214,
@@ -17680,7 +17945,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 204,
@@ -17750,7 +18016,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 7.5
+      "video_end": 7.5,
+      "volume_boost": 1
     },
     {
       "slide_id": 242,
@@ -17820,7 +18087,8 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 5.5
+      "video_end": 5.5,
+      "volume_boost": 1
     },
     {
       "slide_id": 260,
@@ -17888,7 +18156,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 271,
@@ -17956,7 +18225,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 278,
@@ -18024,7 +18294,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 244,
@@ -18092,7 +18363,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 245,
@@ -18160,7 +18432,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 248,
@@ -18273,7 +18546,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 249,
@@ -18341,7 +18615,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 250,
@@ -18409,7 +18684,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 251,
@@ -18477,7 +18753,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 259,
@@ -18545,7 +18822,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 262,
@@ -18658,7 +18936,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 263,
@@ -18726,7 +19005,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 265,
@@ -18794,7 +19074,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 272,
@@ -18862,7 +19143,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 281,
@@ -18930,7 +19212,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 285,
@@ -18998,7 +19281,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 276,
@@ -19066,7 +19350,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 184,
@@ -19134,7 +19419,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 277,
@@ -19247,7 +19533,8 @@
       "fitMode": "contain",
       "showCaption": true,
       "soundtrack_action": "continue",
-      "transition_effect": "crossfade"
+      "transition_effect": "crossfade",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438956,
@@ -19340,7 +19627,8 @@
           "duration": 5.57
         }
       },
-      "cut_mode": "none"
+      "cut_mode": "none",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438957,
@@ -19433,7 +19721,8 @@
           "duration": 20.93
         }
       },
-      "cut_mode": "none"
+      "cut_mode": "none",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438958,
@@ -19526,7 +19815,8 @@
           "duration": 21.02
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438959,
@@ -19619,7 +19909,8 @@
           "duration": 18.82
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438960,
@@ -19712,7 +20003,8 @@
           "duration": 14.29
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438961,
@@ -19805,7 +20097,8 @@
           "duration": 20.05
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438962,
@@ -19898,7 +20191,8 @@
           "duration": 13.14
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438963,
@@ -19991,7 +20285,8 @@
           "duration": 14.9
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438964,
@@ -20084,7 +20379,8 @@
           "duration": 20.35
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438965,
@@ -20177,7 +20473,8 @@
           "duration": 18.33
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438966,
@@ -20270,7 +20567,8 @@
           "duration": 52.2
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438967,
@@ -20363,7 +20661,8 @@
           "duration": 44.98
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438968,
@@ -20456,7 +20755,8 @@
           "duration": 14.37
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438969,
@@ -20549,7 +20849,8 @@
           "duration": 12.11
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438970,
@@ -20642,7 +20943,8 @@
           "duration": 26.16
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438971,
@@ -20735,7 +21037,8 @@
           "duration": 29.11
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438972,
@@ -20828,7 +21131,8 @@
           "duration": 23.17
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438973,
@@ -20921,7 +21225,8 @@
           "duration": 82.93
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438976,
@@ -21014,7 +21319,8 @@
           "duration": 17.31
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438974,
@@ -21107,7 +21413,8 @@
           "duration": 22.26
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     },
     {
       "slide_id": 1790579438977,
@@ -21200,8 +21507,9 @@
           "duration": 6.44
         }
       },
-      "cut_mode": "moderate"
+      "cut_mode": "moderate",
+      "volume_boost": 1
     }
   ],
-  "last_updated": "2026-09-29T13:08:34.263Z"
+  "last_updated": "2026-09-30T04:49:11.741Z"
 }

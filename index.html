@@ -2255,11 +2255,19 @@
             showCloudStatus('נדרש GitHub Token לסנכרון ענן 🔑');
         }
 
+        function getSanitizedGithubToken() {
+            let token = (document.getElementById('github-sync-token')?.value || localStorage.getItem(GITHUB_TOKEN_KEY) || '').trim();
+            return token.replace(/^(Bearer\s+|token\s+)/i, '').replace(/^["']|["']$/g, '').trim();
+        }
+
         function saveGithubToken(val) {
-            const trimmed = val.trim();
+            let trimmed = (val || '').trim();
+            trimmed = trimmed.replace(/^(Bearer\s+|token\s+)/i, '').replace(/^["']|["']$/g, '').trim();
             localStorage.setItem(GITHUB_TOKEN_KEY, trimmed);
             const input = document.getElementById('github-sync-token');
             if (input) input.value = trimmed;
+            const modalInput = document.getElementById('modal-gh-token-input');
+            if (modalInput) modalInput.value = trimmed;
             if (trimmed) {
                 showCloudStatus('מפתח GitHub נשמר בהצלחה בדפדפן ✅');
             } else {
@@ -2278,7 +2286,7 @@
         function openGithubTokenModal() {
             const modal = document.getElementById('github-token-modal');
             const input = document.getElementById('modal-gh-token-input');
-            const saved = localStorage.getItem(GITHUB_TOKEN_KEY) || '';
+            const saved = getSanitizedGithubToken();
             if (input) input.value = saved;
             if (modal) modal.style.display = 'flex';
         }
@@ -2286,15 +2294,28 @@
         function closeGithubTokenModal() {
             const modal = document.getElementById('github-token-modal');
             if (modal) modal.style.display = 'none';
+            // Safety unlock so UI is never stuck
+            isSavingToCloud = false;
+            queuedSaveToCloud = false;
+            const saveButtons = document.querySelectorAll('button[onclick*="saveStoryboardToCloud"]');
+            saveButtons.forEach(b => {
+                b.disabled = false;
+                b.textContent = b._origText || '💾 שמור בענן (GitHub)';
+                b.style.opacity = '1';
+            });
         }
 
         function confirmSaveWithModalToken() {
             const input = document.getElementById('modal-gh-token-input');
-            const token = input ? input.value.trim() : '';
+            let token = input ? input.value.trim() : '';
+            token = token.replace(/^(Bearer\s+|token\s+)/i, '').replace(/^["']|["']$/g, '').trim();
             if (!token) {
                 alert('נא להדביק מפתח GitHub Token תקף.');
                 return;
             }
+            // Unlock before triggering save
+            isSavingToCloud = false;
+            queuedSaveToCloud = false;
             saveGithubToken(token);
             closeGithubTokenModal();
             saveStoryboardToCloud();
@@ -2311,26 +2332,33 @@
         }
 
         async function getFreshFileSha(filePath, token) {
-            // Force cache bypass with timestamp query parameter (safe for CORS)
             const apiUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${filePath}?ref=master&_t=${Date.now()}`;
-            const getRes = await fetch(apiUrl, {
-                headers: {
-                    'Authorization': `Bearer ${token}`,
-                    'Accept': 'application/vnd.github.v3+json'
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+            try {
+                const getRes = await fetch(apiUrl, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.v3+json'
+                    },
+                    signal: controller.signal
+                });
+
+                if (getRes.status === 401 || getRes.status === 403) {
+                    const err = new Error('הרשאה נדחתה ב-GitHub (בדוק את תקינות ה-Token והרשאת repo)');
+                    err.status = getRes.status;
+                    throw err;
                 }
-            });
 
-            if (getRes.status === 401 || getRes.status === 403) {
-                const err = new Error('הרשאה נדחתה ב-GitHub (בדוק את תקינות ה-Token והרשאת repo)');
-                err.status = getRes.status;
-                throw err;
+                if (getRes.ok) {
+                    const fileData = await getRes.json();
+                    return fileData.sha;
+                }
+                return null;
+            } finally {
+                clearTimeout(timeoutId);
             }
-
-            if (getRes.ok) {
-                const fileData = await getRes.json();
-                return fileData.sha;
-            }
-            return null;
         }
 
         async function syncFileToGithub(filePath, b64Content, token, commitMsg, maxRetries = 3) {
@@ -2341,7 +2369,8 @@
                 try {
                     sha = await getFreshFileSha(filePath, token);
                 } catch(e) {
-                    if (attempt >= maxRetries) throw e;
+                    // Do NOT retry on 401/403 authorization failures
+                    if (e.status === 401 || e.status === 403 || attempt >= maxRetries) throw e;
                     console.warn(`[GitHub Sync] getFreshFileSha failed on attempt ${attempt}:`, e);
                     await new Promise(r => setTimeout(r, 800));
                     continue;
@@ -2350,11 +2379,15 @@
                 const apiUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${filePath}`;
                 const putBody = {
                     message: commitMsg,
-                    content: b64Content
+                    content: b64Content,
+                    branch: 'master'
                 };
                 if (sha) putBody.sha = sha;
 
                 let putRes;
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 20000);
+
                 try {
                     putRes = await fetch(apiUrl, {
                         method: 'PUT',
@@ -2363,21 +2396,34 @@
                             'Accept': 'application/vnd.github.v3+json',
                             'Content-Type': 'application/json'
                         },
-                        body: JSON.stringify(putBody)
+                        body: JSON.stringify(putBody),
+                        signal: controller.signal
                     });
                 } catch(netErr) {
+                    clearTimeout(timeoutId);
+                    if (netErr.name === 'AbortError') {
+                        throw new Error('התקשורת מול GitHub התעכבה יותר מדי (Timeout). אנא נסה שנית.');
+                    }
                     if (attempt >= maxRetries) throw netErr;
                     console.warn(`[GitHub Sync] Network error on attempt ${attempt}:`, netErr);
                     showCloudStatus(`🔄 ממתין להתחברות יציבה מול GitHub (ניסיון ${attempt + 1})...`);
                     await new Promise(r => setTimeout(r, 1000));
                     continue;
+                } finally {
+                    clearTimeout(timeoutId);
                 }
 
                 if (putRes.ok) {
                     return await putRes.json();
                 }
 
-                // If 409 Conflict (e.g. rapid double click or concurrent commit), auto-retry with fresh SHA
+                if (putRes.status === 401 || putRes.status === 403) {
+                    const err = new Error('הרשאה נדחתה ב-GitHub (401/403): המפתח אינו תקין או שחסרה הרשאת repo.');
+                    err.status = putRes.status;
+                    throw err;
+                }
+
+                // If 409 Conflict (e.g. concurrent commit), auto-retry with fresh SHA
                 if (putRes.status === 409 && attempt < maxRetries) {
                     console.warn(`[GitHub Sync] 409 Conflict on attempt ${attempt}. Retrying with fresh SHA in 600ms...`);
                     showCloudStatus(`🔄 מעדכן סנכרון ומיישר קו מול המאגר (ניסיון ${attempt + 1})...`);
@@ -2386,7 +2432,11 @@
                 }
 
                 const errData = await putRes.json().catch(() => ({}));
-                const err = new Error(errData.message || `HTTP ${putRes.status}`);
+                let msg = errData.message || `HTTP ${putRes.status}`;
+                if (putRes.status === 422) {
+                    msg = 'גודל הקובץ חורג ממגבלת ה-API של GitHub (או שקובץ לא תקין). נסה לשמור פחות תמונות בבת אחת.';
+                }
+                const err = new Error(msg);
                 err.status = putRes.status;
                 throw err;
             }
@@ -2547,29 +2597,9 @@
         let queuedSaveToCloud = false;
 
         async function saveStoryboardToCloud() {
-            if (isSavingToCloud) {
-                console.log('[Cloud Save] Save already in progress, queuing next save');
-                queuedSaveToCloud = true;
-                showCloudStatus('⏳ שמירה נוספת הוכנסה לתור ותבוצע מיד לאחר הנוכחית...');
-                return;
-            }
-            isSavingToCloud = true;
+            const token = getSanitizedGithubToken();
 
-            // Visual feedback on save buttons
-            const saveButtons = document.querySelectorAll('button[onclick*="saveStoryboardToCloud"]');
-            saveButtons.forEach(b => {
-                b.disabled = true;
-                b._origText = b.textContent;
-                b.textContent = '⏳ שומר...';
-                b.style.opacity = '0.7';
-            });
-
-            autoSaveState();
-            saveLocalBackup(slides, 'שמירה בענן');
-            showCloudStatus('⏳ שומר ומסנכרן לענן...');
-
-            const token = (document.getElementById('github-sync-token')?.value || localStorage.getItem(GITHUB_TOKEN_KEY) || '').trim();
-
+            // Validate token before acquiring lock or disabling buttons
             if (!token) {
                 if (window.location.hostname !== 'guycoful.github.io') {
                     try {
@@ -2593,7 +2623,28 @@
                 return;
             }
 
+            if (isSavingToCloud) {
+                console.log('[Cloud Save] Save already in progress, queuing next save');
+                queuedSaveToCloud = true;
+                showCloudStatus('⏳ שמירה נוספת הוכנסה לתור ותבוצע מיד לאחר הנוכחית...');
+                return;
+            }
+            isSavingToCloud = true;
+
+            // Visual feedback on save buttons
+            const saveButtons = document.querySelectorAll('button[onclick*="saveStoryboardToCloud"]');
+            saveButtons.forEach(b => {
+                b.disabled = true;
+                if (!b._origText) b._origText = b.textContent;
+                b.textContent = '⏳ שומר...';
+                b.style.opacity = '0.7';
+            });
+
             try {
+                autoSaveState();
+                saveLocalBackup(slides, 'שמירה בענן');
+                showCloudStatus('⏳ שומר ומסנכרן לענן...');
+
                 // Step 1: Automatically upload any newly added photos / images to GitHub repo first!
                 for (let i = 0; i < slides.length; i++) {
                     const s = slides[i];
@@ -2621,6 +2672,9 @@
                                     });
                                 }
                             } catch(upErr) {
+                                if (upErr.status === 401 || upErr.status === 403) {
+                                    throw upErr; // Terminate early on auth failure
+                                }
                                 console.warn('Failed to upload photo to GitHub:', safeName, upErr);
                             }
                         }
@@ -2653,6 +2707,7 @@
 
             } catch(err) {
                 console.error('GitHub Sync Error:', err);
+                queuedSaveToCloud = false;
                 showCloudStatus(`❌ שגיאה בשמירה ל-GitHub: ${err.message}`);
                 if (err.status === 401 || err.status === 403) {
                     alert('❌ שגיאת הרשאה ב-GitHub (401/403): המפתח אינו תקין או שחסרה הרשאת repo.\nאנא עדכן את המפתח.');
@@ -2680,7 +2735,7 @@
             try {
                 if (!silent) showCloudStatus('⏳ טוען נתונים מענן GitHub...');
 
-                const token = (document.getElementById('github-sync-token')?.value || localStorage.getItem(GITHUB_TOKEN_KEY) || '').trim();
+                const token = getSanitizedGithubToken();
                 let cloudData = null;
 
                 // Priority 1: Direct GitHub REST API if token exists (INSTANT - zero CDN or deployment delay!)
@@ -4849,7 +4904,7 @@
                 const relativeUrl = 'audio/' + safeName;
                 const localBlobUrl = URL.createObjectURL(file);
 
-                const token = (document.getElementById('github-sync-token')?.value || localStorage.getItem(GITHUB_TOKEN_KEY) || '').trim();
+                const token = getSanitizedGithubToken();
                 if (token) {
                     try {
                         showCloudStatus(`מעלה קובץ אודיו ${safeName} ל-GitHub... ⏳`);
