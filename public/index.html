@@ -907,33 +907,33 @@
         .kb-motion .cinematic-img {
             pointer-events: auto;
         }
-        /* translate runs after scale. +Y holds the top of the photo in frame.
-           Net top gap ≈ translateY - (scale-1)/2. Keep it ≥ 0 so heads stay in.
-           Every pan decreases translateY, so the picture scrolls upward. */
+        /* translate runs after scale. +Y keeps the top of the photo in frame.
+           Net top gap ≈ translateY - (scale-1)/2. Keep it ≥ 0 so the head is not cropped.
+           translateY increases, so the picture dives downward. */
         @keyframes kbPanZoomA {
-            from { transform: translate3d(1.6%, 6.2%, 0) scale(1.06); }
-            to   { transform: translate3d(-2.6%, 3.2%, 0) scale(1.06); }
+            from { transform: translate3d(1.6%, 3.2%, 0) scale(1.06); }
+            to   { transform: translate3d(-2.6%, 6.2%, 0) scale(1.06); }
         }
         @keyframes kbPanZoomB {
-            from { transform: translate3d(-1.8%, 7%, 0) scale(1.08); }
-            to   { transform: translate3d(2%, 4.2%, 0) scale(1.08); }
+            from { transform: translate3d(-1.8%, 4.2%, 0) scale(1.08); }
+            to   { transform: translate3d(2%, 7%, 0) scale(1.08); }
         }
         @keyframes kbPanZoomC {
-            from { transform: translate3d(2%, 5.5%, 0) scale(1.05); }
-            to   { transform: translate3d(-1.6%, 2.7%, 0) scale(1.05); }
+            from { transform: translate3d(2%, 2.7%, 0) scale(1.05); }
+            to   { transform: translate3d(-1.6%, 5.5%, 0) scale(1.05); }
         }
         @keyframes kbPanZoomD {
-            from { transform: translate3d(0, 8%, 0) scale(1.1); }
-            to   { transform: translate3d(0, 5.2%, 0) scale(1.1); }
+            from { transform: translate3d(0, 5.2%, 0) scale(1.1); }
+            to   { transform: translate3d(0, 8%, 0) scale(1.1); }
         }
-        /* Tall portraits: head stays inside, camera rises (content moves up) toward the face. */
-        @keyframes kbRiseUp {
-            from { transform: translate3d(0, 16%, 0) scale(1.18); }
-            to   { transform: translate3d(0, 9.4%, 0) scale(1.18); }
+        /* Tall portraits: start on the face, then dive down. Head stays inside the frame. */
+        @keyframes kbDiveDown {
+            from { transform: translate3d(0, 9.6%, 0) scale(1.18); }
+            to   { transform: translate3d(0, 14.5%, 0) scale(1.18); }
         }
         @keyframes kbPanZoomE {
-            from { transform: translate3d(-2%, 6.5%, 0) scale(1.07); }
-            to   { transform: translate3d(1.6%, 3.7%, 0) scale(1.07); }
+            from { transform: translate3d(-2%, 3.7%, 0) scale(1.07); }
+            to   { transform: translate3d(1.6%, 6.5%, 0) scale(1.07); }
         }
 
         .slide-deck-layer {
@@ -6002,7 +6002,7 @@
         }
 
         function kenBurnsNameForSlide(slide, idx, layerNum) {
-            if (slideIsTallSubject(slide, layerNum)) return 'kbRiseUp';
+            if (slideIsTallSubject(slide, layerNum)) return 'kbDiveDown';
             const names = ['kbPanZoomA', 'kbPanZoomB', 'kbPanZoomC', 'kbPanZoomD', 'kbPanZoomE'];
             return names[Math.abs(Number(slide && slide.slide_id) || idx || 0) % names.length];
         }
