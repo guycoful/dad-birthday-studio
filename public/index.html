@@ -907,25 +907,33 @@
         .kb-motion .cinematic-img {
             pointer-events: auto;
         }
+        /* translate runs after scale. +Y holds the top of the photo in frame.
+           Net top gap ≈ translateY - (scale-1)/2. Keep it ≥ 0 so heads stay in.
+           Every pan decreases translateY, so the picture scrolls upward. */
         @keyframes kbPanZoomA {
-            from { transform: scale(1) translate3d(0, 0, 0); }
-            to   { transform: scale(1.1) translate3d(-2.4%, -1.6%, 0); }
+            from { transform: translate3d(1.6%, 6.2%, 0) scale(1.06); }
+            to   { transform: translate3d(-2.6%, 3.2%, 0) scale(1.06); }
         }
         @keyframes kbPanZoomB {
-            from { transform: scale(1.08) translate3d(1.8%, 1.2%, 0); }
-            to   { transform: scale(1) translate3d(-1.6%, 0.4%, 0); }
+            from { transform: translate3d(-1.8%, 7%, 0) scale(1.08); }
+            to   { transform: translate3d(2%, 4.2%, 0) scale(1.08); }
         }
         @keyframes kbPanZoomC {
-            from { transform: scale(1.02) translate3d(-1.5%, 0.6%, 0); }
-            to   { transform: scale(1.1) translate3d(2.2%, -1.2%, 0); }
+            from { transform: translate3d(2%, 5.5%, 0) scale(1.05); }
+            to   { transform: translate3d(-1.6%, 2.7%, 0) scale(1.05); }
         }
         @keyframes kbPanZoomD {
-            from { transform: scale(1.06) translate3d(0, 1.8%, 0); }
-            to   { transform: scale(1.12) translate3d(0, -1.8%, 0); }
+            from { transform: translate3d(0, 8%, 0) scale(1.1); }
+            to   { transform: translate3d(0, 5.2%, 0) scale(1.1); }
+        }
+        /* Tall portraits: head stays inside, camera rises (content moves up) toward the face. */
+        @keyframes kbRiseUp {
+            from { transform: translate3d(0, 16%, 0) scale(1.18); }
+            to   { transform: translate3d(0, 9.4%, 0) scale(1.18); }
         }
         @keyframes kbPanZoomE {
-            from { transform: scale(1.1) translate3d(2%, -0.6%, 0); }
-            to   { transform: scale(1.02) translate3d(-1.8%, 1.4%, 0); }
+            from { transform: translate3d(-2%, 6.5%, 0) scale(1.07); }
+            to   { transform: translate3d(1.6%, 3.7%, 0) scale(1.07); }
         }
 
         .slide-deck-layer {
@@ -1152,6 +1160,48 @@
             padding: 10px;
             margin-bottom: 12px;
         }
+        .video-trim-timeline,
+        .trim-axes,
+        #video-segments-timeline-bar,
+        #video-segments-list input[type="range"],
+        #video-segments-list input[type="number"] {
+            direction: ltr;
+        }
+        .trim-sec-input {
+            width: 100%;
+            margin-top: 4px;
+            padding: 4px 6px;
+            background: #0f172a;
+            color: #fbbf24;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            font-family: ui-monospace, monospace;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+        .timeline-seg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        .trim-handle {
+            position: absolute;
+            top: 0;
+            width: 16px;
+            height: 100%;
+            background: #fbbf24;
+            color: #111827;
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 32px;
+            text-align: center;
+            cursor: ew-resize;
+            z-index: 6;
+            touch-action: none;
+            user-select: none;
+        }
+        .trim-handle-start { left: 0; border-radius: 3px 0 0 3px; }
+        .trim-handle-end { right: 0; border-radius: 0 3px 3px 0; }
 
         #mp4-export-overlay {
             position: fixed;
@@ -1211,6 +1261,7 @@
             <button onclick="openBackupsModal()">↺ שחזור גיבוי</button>
             <button onclick="exportStoryboardJson()">📥 ייצא JSON</button>
             <button class="gold" onclick="startFullShowMp4Export()" title="הורדת כל המצגת כקובץ MP4 אחד לצפייה בלי אינטרנט">🎥 הורד MP4</button>
+            <button class="gold" id="btn-mp4-resume" style="display:none" onclick="resumeMp4Export()" title="ממשיך ייצוא MP4 מהשקף שבו נעצרתם">▶️ המשך הקלטה</button>
             <button onclick="document.getElementById('json-import-input').click()">📤 ייבא JSON</button>
         </div>
     </header>
@@ -1284,8 +1335,12 @@
                     <button type="button" class="tool-btn" onclick="clearCurrentCrop()" style="color: var(--gold); font-weight: bold;">🔄 בטל חיתוך (החזר פנים מלאות)</button>
                     <button type="button" class="tool-btn" onclick="toggleCaptionDisplay()" id="btn-toggle-caption">👁️ הסתר/הצג כיתוב</button>
                     <button type="button" class="gold" onclick="startFullShowMp4Export()">🎥 הורד MP4</button>
+                    <button type="button" class="tool-btn" id="btn-mp4-resume-player" style="display:none" onclick="resumeMp4Export()">▶️ המשך הקלטה</button>
+                    <input type="number" id="mp4-resume-slide" min="1" value="1" title="מספר שקף להתחלת הקלטה" style="width: 64px; text-align: center; font-weight: bold; color: var(--gold);">
+                    <button type="button" class="tool-btn" onclick="resumeMp4FromChosenSlide()">הקלטה מהשקף</button>
                 </div>
             </div>
+            <div id="mp4-export-done-note" style="display:none; margin-top:8px; font-size:0.8rem; color:#fde68a; line-height:1.45;"></div>
         </div>
 
         <!-- Right Configuration Sidebar -->
@@ -1483,9 +1538,9 @@
                 </div>
 
                 <!-- Interactive Visual Timeline Bar -->
-                <div style="margin-bottom: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border); border-radius: 8px; padding: 10px;">
+                <div class="video-trim-timeline" style="margin-bottom: 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border); border-radius: 8px; padding: 10px;">
                     <div style="display: flex; justify-content: space-between; font-size: 0.76rem; color: #94a3b8; margin-bottom: 4px;">
-                        <span>מפת קאטים (ירוק = מושמע | מפוספס = מת ונחתך):</span>
+                        <span>מפת קאטים (ירוק = מושמע | מפוספס = מת ונחתך). גררו את החצים הצהובים:</span>
                         <span id="timeline-bar-hover-time" style="color: var(--gold); font-family: monospace; font-weight: bold;"></span>
                     </div>
                     <div id="video-segments-timeline-bar" onclick="seekVideoFromTimelineBar(event)" style="position: relative; width: 100%; height: 32px; background: #0f172a; border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; cursor: pointer; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);">
@@ -2082,10 +2137,17 @@
 
                 // Previewing a single segment
                 if (videoPlayer._previewSingleEnd && t >= videoPlayer._previewSingleEnd - 0.05) {
-                    videoPlayer.pause();
-                    videoPlayer._previewSingleEnd = null;
+                    if (!trimEditLocked()) {
+                        videoPlayer.pause();
+                        videoPlayer._previewSingleEnd = null;
+                    }
                     return;
                 }
+
+                // While the user is placing a trim handle, do not yank the playhead
+                // back to the segment start. Jump-cuts run only during playback.
+                const enforceJump = !trimEditLocked() && (isPlaying || videoPlayer._jumpCutPreview || !videoPlayer.paused);
+                if (!enforceJump) return;
 
                 const segments = getActiveVideoSegments(cur);
                 if (segments.length > 0) {
@@ -2142,7 +2204,7 @@
             const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
             if (isVid) {
                 const segments = getActiveVideoSegments(cur);
-                if (segments.length > 0) {
+                if (segments.length > 0 && !trimEditLocked()) {
                     const t = videoPlayer.currentTime;
                     const inAny = segments.some(s => t >= s.start - 0.1 && t < s.end);
                     if (!inAny) {
@@ -4367,36 +4429,90 @@
             return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
         }
 
+        let trimEditLockUntil = 0;
+        function lockTrimEdit(ms = 900) {
+            trimEditLockUntil = performance.now() + ms;
+        }
+        function trimEditLocked() {
+            return performance.now() < trimEditLockUntil;
+        }
+
+        function knownVideoDuration(cur) {
+            const active = !!(cur && slides[currentIndex] === cur);
+            const d = active && videoPlayer && videoPlayer.duration;
+            if (d && isFinite(d) && d > 0.5 && d !== Infinity) {
+                cur.video_source_duration = Number(d.toFixed(3));
+                return d;
+            }
+            if (cur && Number(cur.video_source_duration) > 0.5) return Number(cur.video_source_duration);
+            return 0;
+        }
+
+        function trimTimelineDuration(cur) {
+            const known = knownVideoDuration(cur);
+            if (known) return known;
+            const segs = (cur && Array.isArray(cur.video_segments)) ? cur.video_segments : [];
+            const maxEdge = segs.reduce((m, s) => Math.max(m, Number(s.end) || 0, Number(s.start) || 0), 0);
+            return Math.max(maxEdge, Number(cur && cur.video_end) || 0, 30);
+        }
+
         function getActiveVideoSegments(slide) {
             if (!slide) return [];
             if (slide.video_segments && Array.isArray(slide.video_segments) && slide.video_segments.length > 0) {
                 return slide.video_segments.map(s => ({
-                    start: Number(Number(s.start).toFixed(1)) || 0,
-                    end: Number(Number(s.end).toFixed(1)) || 0
+                    start: Math.max(0, Number(s.start) || 0),
+                    end: Math.max(0, Number(s.end) || 0)
                 })).filter(s => s.end > s.start).sort((a, b) => a.start - b.start);
             }
             const vStart = (slide.video_start !== undefined && slide.video_start !== null) ? Number(slide.video_start) : 0;
-            const vEnd = (slide.video_end !== undefined && slide.video_end !== null) ? Number(slide.video_end) : (slide.duration || 60);
-            return [{ start: Number(vStart.toFixed(1)), end: Number(Math.max(vStart + 0.5, vEnd).toFixed(1)) }];
+            let vEnd = (slide.video_end !== undefined && slide.video_end !== null) ? Number(slide.video_end) : 0;
+            if (!(vEnd > vStart)) vEnd = vStart + Math.max(0.5, Number(slide.duration) || 0.5);
+            return [{ start: vStart, end: vEnd }];
+        }
+
+        function clampSegmentEdge(segments, idx, edge, value, cur) {
+            const minGap = 0.2;
+            const limit = knownVideoDuration(cur);
+            let v = Math.max(0, Number(value) || 0);
+            if (limit) v = Math.min(limit, v);
+            const seg = segments[idx];
+            if (!seg) return Number(v.toFixed(2));
+            if (edge === 'start') {
+                const floor = idx > 0 ? segments[idx - 1].end : 0;
+                const ceil = Math.max(floor, seg.end - minGap);
+                v = Math.min(Math.max(v, floor), ceil);
+            } else {
+                const ceilCap = (idx < segments.length - 1) ? segments[idx + 1].start : (limit || Infinity);
+                const floor = seg.start + minGap;
+                v = Math.max(floor, Math.min(v, ceilCap));
+                if (limit) v = Math.min(v, limit);
+            }
+            return Number(v.toFixed(2));
         }
 
         function syncSlideSegments(cur, segments) {
             if (!cur) return [];
-            const vidDur = (videoPlayer && videoPlayer.duration && !isNaN(videoPlayer.duration)) ? videoPlayer.duration : (cur.duration || 60);
-            const sorted = segments
-                .map(s => ({ start: Math.max(0, Math.min(vidDur, Number(Number(s.start).toFixed(1)))), end: Math.max(0, Math.min(vidDur, Number(Number(s.end).toFixed(1)))) }))
-                .filter(s => s.end > s.start)
-                .sort((a, b) => a.start - b.start);
+            const vidDur = knownVideoDuration(cur);
+            const sorted = (segments || []).map(s => {
+                let start = Math.max(0, Number(s.start) || 0);
+                let end = Math.max(0, Number(s.end) || 0);
+                if (vidDur) {
+                    start = Math.min(vidDur, start);
+                    end = Math.min(vidDur, end);
+                }
+                return { start: Number(start.toFixed(2)), end: Number(end.toFixed(2)) };
+            }).filter(s => s.end > s.start).sort((a, b) => a.start - b.start);
 
             if (sorted.length === 0) {
-                sorted.push({ start: 0, end: Number(vidDur.toFixed(1)) });
+                const fallbackEnd = vidDur || Number(cur.video_end) || Number(cur.video_source_duration) || 30;
+                sorted.push({ start: 0, end: Number(Math.max(0.5, fallbackEnd).toFixed(2)) });
             }
 
             cur.video_segments = sorted;
             cur.video_start = sorted[0].start;
             cur.video_end = sorted[sorted.length - 1].end;
             const totalActive = sorted.reduce((sum, s) => sum + Math.max(0, s.end - s.start), 0);
-            cur.duration = Math.max(1, Math.round(totalActive));
+            cur.duration = Math.max(1, Math.round(totalActive * 10) / 10);
             return sorted;
         }
 
@@ -4450,11 +4566,14 @@
             if (photoCrop) photoCrop.style.display = 'none';
             if (geminiPanel) geminiPanel.style.display = 'none';
 
-            let vidDuration = (videoPlayer && videoPlayer.duration && !isNaN(videoPlayer.duration) && isFinite(videoPlayer.duration)) ? videoPlayer.duration : (cur.duration || 60);
-            if (vidDuration <= 0) vidDuration = 60;
+            let vidDuration = trimTimelineDuration(cur);
+            if (!(vidDuration > 0)) vidDuration = 30;
 
             const segments = getActiveVideoSegments(cur);
-            syncSlideSegments(cur, segments);
+            if (trimEditLocked()) {
+                paintTrimWhileEditing(0);
+                return;
+            }
 
             // Update durations & current time display
             const valDuration = document.getElementById('val-vid-duration');
@@ -4470,15 +4589,16 @@
                     const leftPct = (seg.start / vidDuration) * 100;
                     const widthPct = Math.max(0.4, ((seg.end - seg.start) / vidDuration) * 100);
                     const segEl = document.createElement('div');
-                    segEl.style.position = 'absolute';
+                    segEl.className = 'timeline-seg';
+                    segEl.dataset.idx = String(idx);
                     segEl.style.left = `${leftPct}%`;
                     segEl.style.width = `${widthPct}%`;
-                    segEl.style.top = '0';
-                    segEl.style.bottom = '0';
                     segEl.style.background = 'linear-gradient(180deg, #34d399 0%, #059669 100%)';
                     segEl.style.borderRadius = '3px';
                     segEl.style.border = '1px solid rgba(255,255,255,0.4)';
                     segEl.title = `משפט ${idx + 1}: ${formatTimeSec(seg.start)} - ${formatTimeSec(seg.end)}`;
+                    addTrimHandle(segEl, idx, 'start');
+                    addTrimHandle(segEl, idx, 'end');
                     barContainer.appendChild(segEl);
                 });
             }
@@ -4545,21 +4665,23 @@
                                 ${segments.length > 1 ? `<button type="button" class="tool-btn" onclick="removeVideoSegment(${idx})" style="padding: 2px 6px; font-size: 0.74rem; color: #f87171;" title="מחק מקטע זה">🗑️</button>` : ''}
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div class="trim-axes" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
                             <div>
-                                <div style="display: flex; justify-content: space-between; font-size: 0.74rem; color: #94a3b8; margin-bottom: 2px;">
-                                    <span>📍 התחלה:</span>
-                                    <strong style="color: var(--gold); font-family: monospace;">${seg.start.toFixed(1)}s</strong>
-                                </div>
-                                <input type="range" min="0" max="${vidDuration}" step="0.1" value="${seg.start}" oninput="updateSegmentStart(${idx}, this.value)" style="width: 100%;">
+                                <label for="seg-start-num-${idx}" style="display: flex; justify-content: space-between; font-size: 0.74rem; color: #94a3b8; margin-bottom: 2px; direction: rtl;">
+                                    <span>שניית התחלה</span>
+                                    <strong id="seg-start-label-${idx}" style="color: var(--gold); font-family: monospace;">${seg.start.toFixed(2)}s</strong>
+                                </label>
+                                <input type="number" class="trim-sec-input" id="seg-start-num-${idx}" data-seg="${idx}" data-field="start" data-kind="num" min="0" max="${vidDuration}" step="0.01" value="${seg.start.toFixed(2)}" oninput="updateSegmentStart(${idx}, this.value, 'input')" onchange="updateSegmentStart(${idx}, this.value, 'change')">
+                                <input type="range" data-seg="${idx}" data-field="start" data-kind="range" min="0" max="${vidDuration}" step="0.1" value="${seg.start}" oninput="updateSegmentStart(${idx}, this.value, 'input')" onchange="updateSegmentStart(${idx}, this.value, 'change')" style="width: 100%;">
                                 <button type="button" class="tool-btn" onclick="setSegmentStartFromCurrent(${idx})" style="width: 100%; margin-top: 3px; font-size: 0.7rem; padding: 2px;">📍 קבע מכאן (${formatTimeSec(videoPlayer ? videoPlayer.currentTime : 0)})</button>
                             </div>
                             <div>
-                                <div style="display: flex; justify-content: space-between; font-size: 0.74rem; color: #94a3b8; margin-bottom: 2px;">
-                                    <span>🏁 סיום:</span>
-                                    <strong style="color: var(--gold); font-family: monospace;">${seg.end.toFixed(1)}s</strong>
-                                </div>
-                                <input type="range" min="0" max="${vidDuration}" step="0.1" value="${seg.end}" oninput="updateSegmentEnd(${idx}, this.value)" style="width: 100%;">
+                                <label for="seg-end-num-${idx}" style="display: flex; justify-content: space-between; font-size: 0.74rem; color: #94a3b8; margin-bottom: 2px; direction: rtl;">
+                                    <span>שניית סיום</span>
+                                    <strong id="seg-end-label-${idx}" style="color: var(--gold); font-family: monospace;">${seg.end.toFixed(2)}s</strong>
+                                </label>
+                                <input type="number" class="trim-sec-input" id="seg-end-num-${idx}" data-seg="${idx}" data-field="end" data-kind="num" min="0" max="${vidDuration}" step="0.01" value="${seg.end.toFixed(2)}" oninput="updateSegmentEnd(${idx}, this.value, 'input')" onchange="updateSegmentEnd(${idx}, this.value, 'change')">
+                                <input type="range" data-seg="${idx}" data-field="end" data-kind="range" min="0" max="${vidDuration}" step="0.1" value="${seg.end}" oninput="updateSegmentEnd(${idx}, this.value, 'input')" onchange="updateSegmentEnd(${idx}, this.value, 'change')" style="width: 100%;">
                                 <button type="button" class="tool-btn" onclick="setSegmentEndFromCurrent(${idx})" style="width: 100%; margin-top: 3px; font-size: 0.7rem; padding: 2px;">🏁 קבע מכאן (${formatTimeSec(videoPlayer ? videoPlayer.currentTime : 0)})</button>
                             </div>
                         </div>
@@ -4702,33 +4824,113 @@
             showCloudStatus('הסרטון פוצל לשני שקפים נפרדים במצגת! 🎞️✂️');
         }
 
-        function updateSegmentStart(idx, val) {
-            const cur = slides[currentIndex];
-            if (!cur) return;
-            const segments = getActiveVideoSegments(cur);
-            if (!segments[idx]) return;
-            const sVal = parseFloat(val) || 0;
-            segments[idx].start = Math.max(0, Math.min(sVal, segments[idx].end - 0.2));
-            syncSlideSegments(cur, segments);
-            if (videoPlayer) videoPlayer.currentTime = segments[idx].start;
-            updateVideoTrimUI();
-            renderScenesList(activeFilter);
-            autoSaveState();
+        function addTrimHandle(segEl, idx, edge) {
+            const handle = document.createElement('div');
+            handle.className = `trim-handle trim-handle-${edge}`;
+            handle.textContent = edge === 'start' ? '◂' : '▸';
+            handle.title = edge === 'start' ? 'גרירת שניית התחלה' : 'גרירת שניית סיום';
+            handle.addEventListener('pointerdown', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const bar = document.getElementById('video-segments-timeline-bar');
+                if (!bar) return;
+                handle.setPointerCapture(e.pointerId);
+                const apply = (ev, phase) => {
+                    const rect = bar.getBoundingClientRect();
+                    const pct = Math.max(0, Math.min(1, (ev.clientX - rect.left) / Math.max(1, rect.width)));
+                    const cur = slides[currentIndex];
+                    const dur = trimTimelineDuration(cur);
+                    const t = pct * dur;
+                    if (edge === 'start') updateSegmentStart(idx, t, phase);
+                    else updateSegmentEnd(idx, t, phase);
+                };
+                const move = (ev) => apply(ev, 'input');
+                const up = (ev) => {
+                    handle.removeEventListener('pointermove', move);
+                    handle.removeEventListener('pointerup', up);
+                    handle.removeEventListener('pointercancel', up);
+                    apply(ev, 'change');
+                };
+                handle.addEventListener('pointermove', move);
+                handle.addEventListener('pointerup', up);
+                handle.addEventListener('pointercancel', up);
+                apply(e, 'input');
+            });
+            handle.addEventListener('click', (e) => e.stopPropagation());
+            segEl.appendChild(handle);
         }
 
-        function updateSegmentEnd(idx, val) {
+        function paintTrimWhileEditing(idx) {
+            const cur = slides[currentIndex];
+            if (!cur) return;
+            const segments = cur.video_segments || getActiveVideoSegments(cur);
+            const vidDur = trimTimelineDuration(cur);
+            const barContainer = document.getElementById('timeline-segments-container');
+            if (barContainer) {
+                const nodes = barContainer.querySelectorAll('.timeline-seg');
+                segments.forEach((seg, i) => {
+                    const el = nodes[i];
+                    if (!el) return;
+                    el.style.left = `${(seg.start / vidDur) * 100}%`;
+                    el.style.width = `${Math.max(0.4, ((seg.end - seg.start) / vidDur) * 100)}%`;
+                });
+            }
+            const active = document.activeElement;
+            segments.forEach((seg, i) => {
+                ['start', 'end'].forEach(field => {
+                    const label = document.getElementById(`seg-${field}-label-${i}`);
+                    if (label) label.textContent = `${Number(seg[field]).toFixed(2)}s`;
+                    document.querySelectorAll(`[data-seg="${i}"][data-field="${field}"]`).forEach(input => {
+                        if (input === active) return;
+                        const shown = field === 'start' ? seg.start : seg.end;
+                        if (input.type === 'number') input.value = Number(shown).toFixed(2);
+                        else if (document.activeElement !== input) input.value = shown;
+                    });
+                });
+            });
+            const badgeDuration = document.getElementById('badge-vid-trimmed-duration');
+            if (badgeDuration) {
+                const totalActive = segments.reduce((sum, s) => sum + Math.max(0, s.end - s.start), 0);
+                badgeDuration.textContent = `${totalActive.toFixed(1)} שניות (${formatTimeSec(totalActive)})`;
+            }
+            if (idx == null) return;
+        }
+
+        function updateSegmentEdge(idx, edge, val, phase) {
+            lockTrimEdit(phase === 'change' ? 700 : 1600);
             const cur = slides[currentIndex];
             if (!cur) return;
             const segments = getActiveVideoSegments(cur);
             if (!segments[idx]) return;
-            const vidDur = (videoPlayer && videoPlayer.duration) ? videoPlayer.duration : (cur.duration || 60);
-            const eVal = parseFloat(val) || vidDur;
-            segments[idx].end = Math.min(vidDur, Math.max(eVal, segments[idx].start + 0.2));
+            const num = parseFloat(val);
+            if (!isFinite(num)) return;
+            const next = clampSegmentEdge(segments, idx, edge, num, cur);
+            if (edge === 'start') segments[idx].start = next;
+            else segments[idx].end = next;
             syncSlideSegments(cur, segments);
-            if (videoPlayer) videoPlayer.currentTime = segments[idx].end;
-            updateVideoTrimUI();
-            renderScenesList(activeFilter);
-            autoSaveState();
+            cur.cut_mode = 'custom';
+            if (videoPlayer && isFinite(next)) {
+                try { videoPlayer.currentTime = next; } catch (e) {}
+            }
+            if (phase === 'input') {
+                paintTrimWhileEditing(idx);
+                debouncedAutoSave();
+            } else {
+                const resumeLock = trimEditLockUntil;
+                trimEditLockUntil = 0;
+                updateVideoTrimUI();
+                trimEditLockUntil = resumeLock;
+                renderScenesList(activeFilter);
+                autoSaveState();
+            }
+        }
+
+        function updateSegmentStart(idx, val, phase) {
+            updateSegmentEdge(idx, 'start', val, phase || 'change');
+        }
+
+        function updateSegmentEnd(idx, val, phase) {
+            updateSegmentEdge(idx, 'end', val, phase || 'change');
         }
 
         function setSegmentStartFromCurrent(idx) {
@@ -5354,6 +5556,11 @@
         function handlePhotoSuccess(layerNum) {
             const fallbackContainer = document.getElementById('missing-media-fallback');
             if (fallbackContainer) fallbackContainer.style.display = 'none';
+            const cur = slides[currentIndex];
+            if (!cur || String(layerNum) !== String(currentActiveLayer)) return;
+            const wrap = document.getElementById(`kb-${layerNum}`);
+            if (wrap) wrap.removeAttribute('data-kb');
+            applyKenBurns(layerNum, cur, currentIndex);
         }
 
         async function handleReplaceMissingPhoto(event) {
@@ -5471,6 +5678,7 @@
                 trimClip = `inset(${cur.trim}%)`;
             }
             photo.style.clipPath = trimClip;
+            photo.style.objectPosition = (fitMode === 'cover' && slideIsTallSubject(cur, layerNum)) ? 'center 15%' : 'center center';
 
             photo.style.transform = `translate3d(${userOffsetX}px, ${userOffsetY}px, 0) scale(${userScale}) rotate(${rot}deg)`;
             applyKenBurns(layerNum, cur, currentIndex);
@@ -5713,17 +5921,39 @@
             syncSoundtrackPlayback();
         }
 
+        function slideIsTallSubject(slide, layerNum) {
+            const item = (slide && (slide.primary_item || (slide.items && slide.items[0]))) || {};
+            let w = Number(item.width) || 0;
+            let h = Number(item.height) || 0;
+            if (!(w > 0 && h > 0) && layerNum) {
+                const img = document.getElementById(`photo-${layerNum}`);
+                if (img && img.naturalWidth && img.naturalHeight) {
+                    w = img.naturalWidth;
+                    h = img.naturalHeight;
+                }
+            }
+            if (!(w > 0 && h > 0)) return false;
+            return (h / w) >= 0.92;
+        }
+
+        function kenBurnsNameForSlide(slide, idx, layerNum) {
+            if (slideIsTallSubject(slide, layerNum)) return 'kbRiseUp';
+            const names = ['kbPanZoomA', 'kbPanZoomB', 'kbPanZoomC', 'kbPanZoomD', 'kbPanZoomE'];
+            return names[Math.abs(Number(slide && slide.slide_id) || idx || 0) % names.length];
+        }
+
         function applyKenBurns(layerNum, slide, idx) {
             const wrap = document.getElementById(`kb-${layerNum}`);
             if (!wrap || !slide) return;
             const isVid = slide.type === 'video' || (slide.primary_item && slide.primary_item.is_video);
-            const names = ['kbPanZoomA', 'kbPanZoomB', 'kbPanZoomC', 'kbPanZoomD', 'kbPanZoomE'];
-            const name = names[Math.abs(Number(slide.slide_id) || idx || 0) % names.length];
+            const tall = !isVid && slideIsTallSubject(slide, layerNum);
+            const name = kenBurnsNameForSlide(slide, idx, layerNum);
             const dur = Math.max(4, Number(slide.duration) || 8);
-            const token = `${isPlaying && !isVid ? name : 'still'}:${idx}:${dur}`;
+            const token = `${isPlaying && !isVid ? name : 'still'}:${idx}:${dur}:${tall ? 'tall' : 'wide'}`;
             if (wrap.getAttribute('data-kb') === token) return;
             wrap.setAttribute('data-kb', token);
             wrap.style.animation = 'none';
+            wrap.style.transformOrigin = 'center center';
             if (!isPlaying || isVid) return;
             void wrap.offsetWidth;
             wrap.style.animation = `${name} ${dur}s linear forwards`;
@@ -5790,7 +6020,7 @@
                     };
                     videoPlayer.addEventListener('loadedmetadata', onMeta, { once: true });
                 } else {
-                    if (Math.abs(videoPlayer.currentTime - vStart) > 0.4) {
+                    if (!trimEditLocked() && Math.abs(videoPlayer.currentTime - vStart) > 0.4 && videoPlayer.paused) {
                         try { videoPlayer.currentTime = vStart; } catch(e){}
                     }
                     if (isPlaying && videoPlayer.paused) {
@@ -5850,6 +6080,7 @@
                 trimClip = `inset(${cur.trim}%)`;
             }
             mainPhoto.style.clipPath = trimClip;
+            mainPhoto.style.objectPosition = (fitMode === 'cover' && slideIsTallSubject(cur, currentActiveLayer)) ? 'center 15%' : 'center center';
 
             mainPhoto.style.transform = `translate3d(${userOffsetX}px, ${userOffsetY}px, 0) scale(${userScale}) rotate(${rot}deg)`;
             applyKenBurns(currentActiveLayer, cur, currentIndex);
@@ -5889,6 +6120,7 @@
         }
 
         function nextSlide() {
+            if (mp4Export && !mp4Export.finishing) noteMp4SlideCompleted(currentIndex);
             const lastAllowed = (mp4Export && mp4Export.maxSlides) ? Math.min(slides.length, mp4Export.maxSlides) - 1 : slides.length - 1;
             if (currentIndex < lastAllowed) {
                 selectSlide(currentIndex + 1, 'forward');
@@ -6026,23 +6258,40 @@
             return types.find(t => window.MediaRecorder && MediaRecorder.isTypeSupported(t)) || '';
         }
 
-        function estimateShowSeconds(maxSlides) {
-            const list = maxSlides ? slides.slice(0, maxSlides) : slides;
-            let total = 0;
-            list.forEach(s => {
-                const isVid = s.type === 'video' || (s.primary_item && s.primary_item.is_video);
-                if (isVid) {
-                    const segs = getActiveVideoSegments(s);
-                    if (segs && segs.length) {
-                        total += segs.reduce((sum, seg) => sum + Math.max(0, Number(seg.end) - Number(seg.start)), 0);
-                    } else {
-                        total += Number(s.duration) || 10;
-                    }
-                } else {
-                    total += Number(s.duration) || 8;
+        function slidePlaybackSeconds(s) {
+            if (!s) return 0;
+            const isVid = s.type === 'video' || (s.primary_item && s.primary_item.is_video);
+            if (isVid) {
+                const segs = getActiveVideoSegments(s);
+                if (segs && segs.length) {
+                    return segs.reduce((sum, seg) => sum + Math.max(0, Number(seg.end) - Number(seg.start)), 0);
                 }
-            });
+                return Number(s.duration) || 10;
+            }
+            return Number(s.duration) || 8;
+        }
+
+        function estimateShowSeconds(maxSlides, fromSlide) {
+            const start = Math.max(0, fromSlide || 0);
+            const end = maxSlides ? Math.min(slides.length, maxSlides) : slides.length;
+            let total = 0;
+            for (let i = start; i < end; i++) total += slidePlaybackSeconds(slides[i]);
             return total;
+        }
+
+        function estimateMusicOffsetForSlide(slideIdx) {
+            let origin = 0;
+            for (let i = Math.min(slideIdx, slides.length - 1); i >= 0; i--) {
+                if (slides[i] && slides[i].soundtrack_action === 'new_track') { origin = i; break; }
+            }
+            let t = 0;
+            for (let i = origin; i < slideIdx; i++) {
+                const s = slides[i];
+                if (!s) continue;
+                const isVid = s.type === 'video' || (s.primary_item && s.primary_item.is_video);
+                if (!isVid && s.soundtrack_action !== 'mute') t += Number(s.duration) || 8;
+            }
+            return t;
         }
 
         function cssMatrix2d(transform) {
@@ -6063,15 +6312,18 @@
             ctx.translate(-w / 2, -h / 2);
         }
 
-        function drawFittedImage(ctx, img, w, h, fit, imgMatrix) {
+        function drawFittedImage(ctx, img, w, h, fit, imgMatrix, focusY) {
             const nw = img.naturalWidth || img.videoWidth;
             const nh = img.naturalHeight || img.videoHeight;
             if (!nw || !nh) return;
             const scale = fit === 'cover' ? Math.max(w / nw, h / nh) : Math.min(w / nw, h / nh);
             const dw = nw * scale;
             const dh = nh * scale;
+            const fy = (fit === 'cover' && focusY != null) ? focusY : 0.5;
+            const ox = (w - dw) / 2;
+            const oy = (h - dh) * fy;
             ctx.save();
-            ctx.translate((w - dw) / 2 + dw / 2, (h - dh) / 2 + dh / 2);
+            ctx.translate(ox + dw / 2, oy + dh / 2);
             ctx.transform(imgMatrix[0], imgMatrix[1], imgMatrix[2], imgMatrix[3], imgMatrix[4], imgMatrix[5]);
             ctx.translate(-dw / 2, -dh / 2);
             ctx.drawImage(img, 0, 0, dw, dh);
@@ -6100,18 +6352,20 @@
                 const blur = layer.querySelector('.ambient-blur-bg');
                 const kb = layer.querySelector('.kb-motion');
                 const fit = photo && photo.classList.contains('mode-cover') ? 'cover' : 'contain';
+                const tallCover = fit === 'cover' && photo && photo.naturalHeight > photo.naturalWidth * 0.92;
+                const focusY = tallCover ? 0.15 : 0.5;
                 ctx.save();
                 ctx.globalAlpha = opacity;
                 applyCssMatrix(ctx, cssMatrix2d(lcs.transform), w, h);
                 if (blur && blur.style.display !== 'none' && blur.naturalWidth) {
                     ctx.save();
                     ctx.filter = 'blur(14px) brightness(0.38)';
-                    drawFittedImage(ctx, blur, w, h, 'cover', [1, 0, 0, 1, 0, 0]);
+                    drawFittedImage(ctx, blur, w, h, 'cover', [1, 0, 0, 1, 0, 0], 0.5);
                     ctx.restore();
                 }
                 if (kb) applyCssMatrix(ctx, cssMatrix2d(getComputedStyle(kb).transform), w, h);
                 if (photo && photo.naturalWidth) {
-                    drawFittedImage(ctx, photo, w, h, fit, cssMatrix2d(getComputedStyle(photo).transform));
+                    drawFittedImage(ctx, photo, w, h, fit, cssMatrix2d(getComputedStyle(photo).transform), focusY);
                 }
                 ctx.restore();
             });
@@ -6190,19 +6444,28 @@
             exportMixDest.stream.getAudioTracks().forEach(t => stream.addTrack(t));
         }
 
-        function restartSoundtrackForExport() {
-            const target = resolveActiveTrackForSlide(0);
+        function restartSoundtrackForExport(fromSlide = 0) {
+            const target = resolveActiveTrackForSlide(fromSlide);
             if (!target || !bgAudio) return;
+            const offset = estimateMusicOffsetForSlide(fromSlide);
             musicUserEnabled = true;
             musicPausedForPresentation = false;
             soundtrackResetPending = true;
-            musicHoldTime = 0;
+            musicHoldTime = offset;
             bgAudio._wasPlayingBeforeVideo = false;
             bgAudio.setAttribute('data-active-track', target);
             bgAudio.src = target;
             bgAudio.loop = true;
-            try { bgAudio.currentTime = 0; } catch (e) {}
+            const applyOffset = () => {
+                try {
+                    const dur = bgAudio.duration;
+                    if (offset > 0 && isFinite(dur) && dur > 1) bgAudio.currentTime = offset % dur;
+                    else bgAudio.currentTime = 0;
+                } catch (e) {}
+            };
+            bgAudio.addEventListener('loadedmetadata', applyOffset, { once: true });
             soundtrackResetPending = false;
+            setTimeout(applyOffset, 250);
         }
 
         function showMp4Overlay(text) {
@@ -6248,6 +6511,111 @@
             requestAnimationFrame(exportDrawLoop);
         }
 
+        const MP4_CHECKPOINT_KEY = 'dad_mp4_export_checkpoint_v1';
+
+        function readMp4Checkpoint() {
+            try { return JSON.parse(localStorage.getItem(MP4_CHECKPOINT_KEY) || 'null'); }
+            catch (e) { return null; }
+        }
+
+        function writeMp4Checkpoint(data) {
+            localStorage.setItem(MP4_CHECKPOINT_KEY, JSON.stringify(data));
+            refreshMp4ResumeUI();
+        }
+
+        function clearMp4Checkpoint() {
+            localStorage.removeItem(MP4_CHECKPOINT_KEY);
+            refreshMp4ResumeUI();
+        }
+
+        function refreshMp4ResumeUI() {
+            const cp = readMp4Checkpoint();
+            const canResume = !!(cp && !cp.complete && cp.nextSlideIndex > 0 && cp.nextSlideIndex < slides.length);
+            ['btn-mp4-resume', 'btn-mp4-resume-player'].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                el.style.display = canResume ? '' : 'none';
+                if (canResume) el.textContent = `▶️ המשך הקלטה (שקף ${cp.nextSlideIndex + 1})`;
+            });
+            const slideInput = document.getElementById('mp4-resume-slide');
+            if (slideInput && canResume && document.activeElement !== slideInput) {
+                slideInput.value = String(cp.nextSlideIndex + 1);
+            }
+        }
+
+        function noteMp4SlideCompleted(idx) {
+            if (!mp4Export || mp4Export.finishing) return;
+            if (mp4Export._notedIdx === idx) return;
+            mp4Export._notedIdx = idx;
+            mp4Export.completedDurationSec += slidePlaybackSeconds(slides[idx]);
+            mp4Export.nextSlideIndex = idx + 1;
+        }
+
+        function mp4PartFileName(partNumber, ext) {
+            return `dad-60-part-${String(partNumber).padStart(2, '0')}.${ext || 'mp4'}`;
+        }
+
+        function renderMp4DoneNote(cp, savedName) {
+            const note = document.getElementById('mp4-export-done-note');
+            if (!note) return;
+            note.style.display = 'block';
+            if (!cp || !cp.parts || !cp.parts.length) {
+                note.textContent = savedName ? `הקובץ ${savedName} נשמר.` : '';
+                return;
+            }
+            const next = cp.complete ? null : (cp.nextSlideIndex + 1);
+            const lines = cp.parts.map(p => {
+                const trim = (p.trimToSec == null) ? 'קובץ מלא' : `לחתוך עד ${p.trimToSec} שנ׳`;
+                return `${p.file} (שקפים ${p.startSlide + 1}–${Math.max(p.startSlide + 1, p.nextSlide)}) · ${trim}`;
+            });
+            note.innerHTML = cp.complete
+                ? `כל החלקים הוקלטו. הורידו את קובץ האיחוד ולחצו:<br><span dir="ltr">bash scripts/concat_mp4_parts.sh dad-60-parts.json</span><br>${lines.join('<br>')}<br><button type="button" class="tool-btn" onclick="downloadMp4Manifest()">הורד dad-60-parts.json</button>`
+                : `נשמר חלק. ההמשך הוא משקף ${next}, בלי להקליט מחדש את מה שכבר הושלם.<br>${lines.join('<br>')}<br><button type="button" class="gold" onclick="resumeMp4Export()">▶️ המשך הקלטה</button> <button type="button" class="tool-btn" onclick="downloadMp4Manifest()">הורד dad-60-parts.json</button>`;
+        }
+
+        function downloadMp4Manifest() {
+            const cp = readMp4Checkpoint();
+            if (!cp || !cp.parts || !cp.parts.length) {
+                alert('אין חלקים שמורים לאיחוד.');
+                return;
+            }
+            const manifest = {
+                output: 'dad-60-birthday.mp4',
+                parts: cp.parts.map(p => ({ file: p.file, trimToSec: p.trimToSec == null ? null : p.trimToSec }))
+            };
+            const blob = new Blob([JSON.stringify(manifest, null, 2)], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'dad-60-parts.json';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
+
+        function commitMp4Part(exp) {
+            const finishedAll = exp.nextSlideIndex >= slides.length;
+            const singleFullTake = exp.partStartSlide === 0 && finishedAll && !(readMp4Checkpoint() && readMp4Checkpoint().parts && readMp4Checkpoint().parts.length);
+            if (singleFullTake) {
+                clearMp4Checkpoint();
+                renderMp4DoneNote(null, exp.fileName);
+                return;
+            }
+            const prev = readMp4Checkpoint() || { version: 1, parts: [] };
+            prev.version = 1;
+            prev.parts = prev.parts || [];
+            prev.parts.push({
+                file: exp.fileName,
+                startSlide: exp.partStartSlide,
+                nextSlide: exp.nextSlideIndex,
+                trimToSec: finishedAll ? null : Number((exp.completedDurationSec || 0).toFixed(2))
+            });
+            prev.nextSlideIndex = exp.nextSlideIndex;
+            prev.complete = finishedAll;
+            prev.savedAt = new Date().toISOString();
+            writeMp4Checkpoint(prev);
+            renderMp4DoneNote(prev, exp.fileName);
+        }
+
         async function finishMp4Export() {
             if (!mp4Export || mp4Export.finishing) return;
             const exp = mp4Export;
@@ -6271,13 +6639,17 @@
                 const blob = new Blob(exp.chunks, { type: exp.mime || 'video/mp4' });
                 const a = document.createElement('a');
                 const ext = (exp.mime || '').includes('webm') ? 'webm' : 'mp4';
+                if (!exp.fileName || !exp.fileName.endsWith('.' + ext)) {
+                    exp.fileName = (exp.fileName || 'dad-60-birthday').replace(/\.(mp4|webm)$/i, '') + '.' + ext;
+                }
                 a.href = URL.createObjectURL(blob);
-                a.download = `dad-60-birthday.${ext}`;
+                a.download = exp.fileName;
                 document.body.appendChild(a);
                 a.click();
                 a.remove();
                 showCloudStatus(ext === 'mp4' ? 'הורדת MP4 התחילה 🎥' : 'הורדת הסרטון התחילה 🎥');
             }
+            if (!exp.discard) commitMp4Part(exp);
             if (exp.stream) {
                 exp.stream.getVideoTracks().forEach(t => t.stop());
             }
@@ -6292,17 +6664,55 @@
                 el.removeAttribute('data-kb');
             });
             hideMp4Overlay();
-            if (!exp.discard) {
-                const note = document.getElementById('mp4-export-done-note');
-                if (note) note.style.display = 'block';
-            }
+            refreshMp4ResumeUI();
         }
 
         async function cancelMp4Export() {
             if (!mp4Export) return;
             mp4Export.discard = true;
             await finishMp4Export();
-            showCloudStatus('ייצוא ה-MP4 בוטל');
+            showCloudStatus('ייצוא ה-MP4 בוטל. החלקים שכבר נשמרו נשארו.');
+        }
+
+        async function stopAndSaveMp4Export() {
+            if (!mp4Export) return;
+            mp4Export.savePartial = true;
+            await finishMp4Export();
+            const cp = readMp4Checkpoint();
+            if (cp && !cp.complete) {
+                showCloudStatus(`החלק נשמר. המשך הקלטה משקף ${cp.nextSlideIndex + 1}`);
+            }
+        }
+
+        function resumeMp4Export() {
+            const cp = readMp4Checkpoint();
+            if (!cp || cp.complete || !(cp.nextSlideIndex > 0) || cp.nextSlideIndex >= slides.length) {
+                alert('אין נקודת המשך. אפשר להתחיל הקלטה משקף מסוים עם «הקלטה מהשקף».');
+                return;
+            }
+            const partNumber = (cp.parts && cp.parts.length ? cp.parts.length : 0) + 1;
+            startFullShowMp4Export({
+                silentConfirm: true,
+                resumeFromSlide: cp.nextSlideIndex,
+                partNumber
+            });
+        }
+
+        function resumeMp4FromChosenSlide() {
+            const input = document.getElementById('mp4-resume-slide');
+            const num = parseInt(input && input.value, 10);
+            if (!num || num < 1 || num > slides.length) {
+                alert(`בחרו מספר שקף בין 1 ל-${slides.length}.`);
+                return;
+            }
+            const cp = readMp4Checkpoint();
+            const partNumber = (cp && cp.parts && cp.parts.length ? cp.parts.length : 0) + (num === 1 ? 0 : 1);
+            startFullShowMp4Export({
+                silentConfirm: true,
+                resumeFromSlide: num - 1,
+                partNumber: num === 1 ? 1 : Math.max(1, partNumber || 1),
+                freshStart: num === 1
+            });
         }
 
         async function startFullShowMp4Export(opts = {}) {
@@ -6317,11 +6727,25 @@
                 alert('הדפדפן לא תומך בהקלטת MP4. נסו Chrome או Edge מעודכנים.');
                 return;
             }
+            const resumeFrom = Number.isFinite(options.resumeFromSlide) ? Math.max(0, options.resumeFromSlide) : 0;
+            const existing = readMp4Checkpoint();
+            if (!options.silentConfirm && resumeFrom === 0 && existing && !existing.complete && existing.nextSlideIndex > 0 && existing.nextSlideIndex < slides.length) {
+                const restart = confirm(`יש הקלטה חלקית עד שקף ${existing.nextSlideIndex} מתוך ${slides.length}.\n\nאישור = מתחילים מההתחלה ומוחקים את נקודת ההמשך.\nביטול = נשארים כאן (אחר כך «המשך הקלטה»).`);
+                if (!restart) return;
+                clearMp4Checkpoint();
+            }
+            if (options.freshStart) clearMp4Checkpoint();
+
             const maxSlides = options.maxSlides || 0;
-            const totalSec = estimateShowSeconds(maxSlides || undefined);
+            const totalSec = estimateShowSeconds(maxSlides || undefined, resumeFrom);
             const minutes = Math.max(1, Math.round(totalSec / 60));
+            const ext = mime.includes('webm') ? 'webm' : 'mp4';
+            const partNumber = options.partNumber || (resumeFrom > 0 ? ((existing && existing.parts && existing.parts.length) || 0) + 1 : 1);
+            const continuation = resumeFrom > 0 || partNumber > 1;
+            let fileName = continuation ? mp4PartFileName(partNumber, ext) : `dad-60-birthday.${ext}`;
             if (!options.silentConfirm) {
-                const ok = confirm(`הייצוא מקליט את כל המצגת לקובץ אחד (${slides.length} שקפים, בערך ${minutes} דקות).\n\nנכללים מעברים, תנועת תמונות, מוזיקת רקע, וכשהשקף הוא סרטון — הסאונד של הסרטון.\nיש להשאיר את הלשונית פתוחה בחזית עד הסוף.\n\nלהתחיל?`);
+                const fromLabel = resumeFrom > 0 ? `משקף ${resumeFrom + 1}` : 'מההתחלה';
+                const ok = confirm(`הייצוא מקליט את המצגת ${fromLabel} (${minutes} דקות בערך).\n\nאפשר לעצור ולשמור באמצע, ואז להמשיך מהשקף הבא בלי להקליט מחדש את ההתחלה.\nיש להשאיר את הלשונית פתוחה בחזית.\n\nלהתחיל?`);
                 if (!ok) return;
             }
 
@@ -6330,10 +6754,11 @@
             if (!options.skipPicker && window.showSaveFilePicker) {
                 try {
                     const handle = await showSaveFilePicker({
-                        suggestedName: 'dad-60-birthday.mp4',
-                        types: [{ description: 'MP4', accept: { 'video/mp4': ['.mp4'] } }]
+                        suggestedName: fileName,
+                        types: [{ description: ext === 'webm' ? 'WebM' : 'MP4', accept: { [ext === 'webm' ? 'video/webm' : 'video/mp4']: ['.' + ext] } }]
                     });
                     writer = await handle.createWritable();
+                    if (handle.name) fileName = handle.name;
                 } catch (e) {
                     if (e && e.name === 'AbortError') return;
                 }
@@ -6359,13 +6784,20 @@
                     else chunks.push(e.data);
                 }).catch(err => console.warn('mp4 write', err));
             };
+            rec.onerror = () => {
+                if (mp4Export && !mp4Export.finishing) {
+                    mp4Export.savePartial = true;
+                    finishMp4Export();
+                }
+            };
 
             if (isPlaying) {
                 isPlaying = false;
                 stopPresentationLoop();
             }
-            selectSlide(0, null, true);
-            restartSoundtrackForExport();
+            const startIdx = Math.max(0, Math.min(slides.length - 1, resumeFrom));
+            selectSlide(startIdx, null, true);
+            restartSoundtrackForExport(startIdx);
 
             mp4Export = {
                 rec,
@@ -6376,15 +6808,21 @@
                 canvas,
                 ctx,
                 mime,
+                fileName,
+                partNumber,
+                partStartSlide: startIdx,
+                nextSlideIndex: startIdx,
+                completedDurationSec: 0,
                 started: performance.now(),
                 totalSec,
                 maxSlides: maxSlides || 0,
                 finishing: false,
-                discard: false
+                discard: false,
+                savePartial: false
             };
             Object.defineProperty(mp4Export, 'writeChain', { get() { return writeChain; } });
 
-            showMp4Overlay('מתחיל הקלטה…');
+            showMp4Overlay(startIdx > 0 ? `ממשיך הקלטה משקף ${startIdx + 1}…` : 'מתחיל הקלטה…');
             const btn = document.getElementById('btn-play');
             isPlaying = true;
             musicPausedForPresentation = false;
@@ -6394,7 +6832,7 @@
             }
             slideStartTime = performance.now();
             document.querySelectorAll('.kb-motion').forEach(el => el.removeAttribute('data-kb'));
-            applyKenBurns(currentActiveLayer, slides[0], 0);
+            applyKenBurns(currentActiveLayer, slides[startIdx], startIdx);
             ensureSoundtrack({ forcePlay: true });
             drawShowToCanvas(ctx, canvas.width, canvas.height);
             try { rec.start(500); } catch (err) {
@@ -6409,6 +6847,7 @@
 
         renderScenesList('all');
         selectSlide(0, null, true);
+        refreshMp4ResumeUI();
         initInteractiveCanvas();
         // Always synchronize latest storyboard from cloud to prevent stale cache
         loadStoryboardFromCloud(true);
@@ -6692,9 +7131,11 @@
             <div id="mp4-export-sub" style="font-size:0.82rem; color:#94a3b8; line-height:1.45;">
                 ההקלטה רצה בזמן אמת וכוללת מעברים, מוזיקת רקע וסאונד של סרטונים. השאירו את הלשונית פתוחה.
             </div>
-            <div style="display:flex; justify-content:flex-end; margin-top:14px;">
+            <div style="display:flex; gap:8px; justify-content:flex-end; margin-top:14px; flex-wrap:wrap;">
+                <button type="button" class="gold" onclick="stopAndSaveMp4Export()">⏹️ עצור ושמור</button>
                 <button type="button" class="danger" onclick="cancelMp4Export()">ביטול</button>
             </div>
+            <p style="font-size:0.75rem; color:#94a3b8; margin:8px 0 0; line-height:1.45;">עצור ושמור שומר את מה שכבר הוקלט. «המשך הקלטה» מתחיל מהשקף שלא הושלם, בלי להקליט מחדש את ההתחלה. איחוד החלקים: <span dir="ltr">bash scripts/concat_mp4_parts.sh dad-60-parts.json</span></p>
         </div>
     </div>
 </body>
