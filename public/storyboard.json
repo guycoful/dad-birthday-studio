@@ -7,7 +7,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "איך הכל התחיל...",
       "quote": "",
       "primary_item": {
@@ -79,7 +79,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -148,7 +148,7 @@
       "type": "split_2",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "אבא בגיל 5",
       "quote": "",
       "primary_item": {
@@ -263,7 +263,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "תקופת הנעורים והבגרות",
       "quote": "",
       "primary_item": {
@@ -333,7 +333,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "ילדות",
       "quote": "",
       "primary_item": {
@@ -403,7 +403,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "איפה הכל התחיל...",
       "quote": "",
       "primary_item": {
@@ -473,7 +473,7 @@
       "type": "cinematic",
       "act": "act_1",
       "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
-      "duration": 3,
+      "duration": 5,
       "caption": "שנות הילדות והמשפחה",
       "quote": "",
       "primary_item": {
@@ -22068,5 +22068,5 @@
       "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3"
     }
   ],
-  "last_updated": "2026-10-01T17:17:32.250Z"
+  "last_updated": "2026-10-01T17:19:19.596Z"
 }
