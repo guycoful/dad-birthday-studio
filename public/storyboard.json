@@ -1,6 +1,6 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 316,
+  "total_slides": 315,
   "slides": [
     {
       "slide_id": 54,
@@ -3688,7 +3688,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 32.933
     },
     {
       "slide_id": 1790579438958,
@@ -3782,7 +3783,8 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 3
+      "volume_boost": 2,
+      "video_source_duration": 21.015
     },
     {
       "slide_id": 1790579438967,
@@ -5104,7 +5106,8 @@
           "end": 2.9
         }
       ],
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_source_duration": 2.949
     },
     {
       "slide_id": 181,
@@ -5352,14 +5355,15 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 25.365
     },
     {
       "slide_id": 1790579438961,
       "type": "video",
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
-      "duration": 21,
+      "duration": 20,
       "caption": "רפי כהן",
       "quote": "",
       "primary_item": {
@@ -5423,11 +5427,11 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "video_start": 0,
+      "video_start": 1,
       "video_end": 21,
       "video_segments": [
         {
-          "start": 0,
+          "start": 1,
           "end": 21
         }
       ],
@@ -5445,8 +5449,9 @@
           "duration": 20.05
         }
       },
-      "cut_mode": "none",
-      "volume_boost": 3
+      "cut_mode": "custom",
+      "volume_boost": 3,
+      "video_source_duration": 21.47
     },
     {
       "slide_id": 1790579438954,
@@ -5540,7 +5545,8 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 15.8
     },
     {
       "slide_id": 1790579438972,
@@ -5634,7 +5640,8 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 23.167
     },
     {
       "slide_id": 1790579438969,
@@ -5728,7 +5735,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 21.418
     },
     {
       "slide_id": 55,
@@ -6464,7 +6472,7 @@
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 16,
+      "duration": 16.1,
       "caption": "מאיה",
       "quote": "מאיה פפאיה",
       "primary_item": {
@@ -6529,11 +6537,11 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 16,
+      "video_end": 16.1,
       "video_segments": [
         {
           "start": 0,
-          "end": 16
+          "end": 16.1
         }
       ],
       "cut_presets": {
@@ -6550,15 +6558,16 @@
           "duration": 14.9
         }
       },
-      "cut_mode": "moderate",
-      "volume_boost": 3
+      "cut_mode": "custom",
+      "volume_boost": 3,
+      "video_source_duration": 16.183
     },
     {
       "slide_id": 1790579438977,
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 8,
+      "duration": 7.2,
       "caption": "אור",
       "quote": "",
       "primary_item": {
@@ -6622,12 +6631,12 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 7.9,
+      "video_start": 0.7,
+      "video_end": 7.94,
       "video_segments": [
         {
-          "start": 0,
-          "end": 7.9
+          "start": 0.7,
+          "end": 7.94
         }
       ],
       "cut_presets": {
@@ -6644,8 +6653,9 @@
           "duration": 6.44
         }
       },
-      "cut_mode": "moderate",
-      "volume_boost": 3
+      "cut_mode": "custom",
+      "volume_boost": 3,
+      "video_source_duration": 7.941
     },
     {
       "slide_id": 1790504699217,
@@ -6949,7 +6959,7 @@
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 41,
+      "duration": 40,
       "caption": "גיא",
       "quote": "גיגושונוש",
       "primary_item": {
@@ -6981,13 +6991,13 @@
       "transition_effect": "crossfade",
       "video_segments": [
         {
-          "start": 0,
+          "start": 0.5,
           "end": 40.5
         }
       ],
-      "video_start": 0,
+      "video_start": 0.5,
       "video_end": 40.5,
-      "cut_mode": "aggressive",
+      "cut_mode": "custom",
       "cut_presets": {
         "none": {
           "url": "videos/VID_20260929_175639.mp4",
@@ -7002,7 +7012,8 @@
           "duration": 40.52
         }
       },
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 40.517
     },
     {
       "slide_id": 1790757094409,
@@ -7060,7 +7071,8 @@
           "duration": 7.17
         }
       },
-      "volume_boost": 1.5
+      "volume_boost": 1.5,
+      "video_source_duration": 8.533
     },
     {
       "slide_id": 1790504700756,
@@ -7649,14 +7661,15 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 20.945
     },
     {
       "slide_id": 1790579438974,
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 10,
+      "duration": 11.4,
       "caption": "סרטון ברכה 21",
       "quote": "",
       "primary_item": {
@@ -7721,11 +7734,11 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0.6,
-      "video_end": 11,
+      "video_end": 12,
       "video_segments": [
         {
           "start": 0.6,
-          "end": 11
+          "end": 12
         }
       ],
       "cut_presets": {
@@ -7742,8 +7755,9 @@
           "duration": 22.26
         }
       },
-      "cut_mode": "moderate",
-      "volume_boost": 1
+      "cut_mode": "custom",
+      "volume_boost": 1,
+      "video_source_duration": 23.59
     },
     {
       "slide_id": 1790504701541,
@@ -7776,7 +7790,17 @@
       "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_source_duration": 23.59,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 12
+        }
+      ],
+      "video_start": 0,
+      "video_end": 12,
+      "cut_mode": "custom"
     },
     {
       "slide_id": 1790504701458,
@@ -8945,7 +8969,8 @@
           "duration": 23.83
         }
       },
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 26.315
     },
     {
       "slide_id": 1790579438956,
@@ -9039,7 +9064,8 @@
         }
       },
       "cut_mode": "none",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 8.1
     },
     {
       "slide_id": 1790579438962,
@@ -9133,7 +9159,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 18.766
     },
     {
       "slide_id": 1790579438959,
@@ -9227,7 +9254,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 26.61
     },
     {
       "slide_id": 1790579438960,
@@ -9321,7 +9349,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 19.266
     },
     {
       "slide_id": 1790579438964,
@@ -9415,7 +9444,8 @@
         }
       },
       "cut_mode": "none",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 49.766
     },
     {
       "slide_id": 85,
@@ -11455,7 +11485,8 @@
           "end": 22.6
         }
       ],
-      "volume_boost": 0.5
+      "volume_boost": 0.5,
+      "video_source_duration": 71.935
     },
     {
       "slide_id": 134,
@@ -13271,14 +13302,15 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 82.933
     },
     {
       "slide_id": 1790748438215,
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 25,
+      "duration": 21.2,
       "caption": "משפחת שרעבי",
       "quote": "",
       "primary_item": {
@@ -13310,13 +13342,13 @@
       "transition_effect": "crossfade",
       "video_segments": [
         {
-          "start": 0,
-          "end": 24.676009
+          "start": 3.5,
+          "end": 24.68
         }
       ],
-      "video_start": 0,
-      "video_end": 24.676009,
-      "cut_mode": "aggressive",
+      "video_start": 3.5,
+      "video_end": 24.68,
+      "cut_mode": "custom",
       "cut_presets": {
         "none": {
           "url": "videos/VID-20260929-WA0032.mp4",
@@ -13331,7 +13363,8 @@
           "duration": 24.68
         }
       },
-      "volume_boost": 3.5
+      "volume_boost": 3.5,
+      "video_source_duration": 24.676
     },
     {
       "slide_id": 1790748422597,
@@ -13389,14 +13422,15 @@
           "duration": 14.87
         }
       },
-      "volume_boost": 1.2
+      "volume_boost": 1.2,
+      "video_source_duration": 16.467
     },
     {
       "slide_id": 1790748428205,
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 30,
+      "duration": 29.6,
       "caption": "VID 20260929 WA0018",
       "quote": "",
       "primary_item": {
@@ -13429,12 +13463,12 @@
       "video_segments": [
         {
           "start": 17.9,
-          "end": 48
+          "end": 47.5
         }
       ],
       "video_start": 17.9,
-      "video_end": 48,
-      "cut_mode": "none",
+      "video_end": 47.5,
+      "cut_mode": "custom",
       "cut_presets": {
         "none": {
           "url": "videos/VID-20260929-WA0018.mp4",
@@ -13449,7 +13483,8 @@
           "duration": 62.93
         }
       },
-      "volume_boost": 2
+      "volume_boost": 2,
+      "video_source_duration": 65.556
     },
     {
       "slide_id": 210,
@@ -13518,7 +13553,17 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_source_duration": 65.556,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 47.5
+        }
+      ],
+      "video_start": 0,
+      "video_end": 47.5,
+      "cut_mode": "custom"
     },
     {
       "slide_id": 212,
@@ -15593,7 +15638,8 @@
           "start": 0,
           "end": 11.7
         }
-      ]
+      ],
+      "video_source_duration": 11.703
     },
     {
       "slide_id": 78,
@@ -16313,7 +16359,7 @@
       "type": "cinematic",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 5,
+      "duration": 8,
       "caption": "היום בערב יהיה צחוקים, אני בטוח 😈",
       "quote": "",
       "primary_item": {
@@ -16772,7 +16818,7 @@
       "type": "video",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 11,
+      "duration": 12.7,
       "caption": "הרקדן האוטומטי",
       "quote": "",
       "primary_item": {
@@ -16832,17 +16878,19 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "video_start": 0,
-      "video_end": 11,
+      "video_start": 30.5,
+      "video_end": 43.2,
       "soundtrack_action": "continue",
       "transition_effect": "zoom_fade",
       "volume_boost": 1,
       "video_segments": [
         {
-          "start": 0,
-          "end": 11
+          "start": 30.5,
+          "end": 43.2
         }
-      ]
+      ],
+      "video_source_duration": 87.493,
+      "cut_mode": "custom"
     },
     {
       "slide_id": 107,
@@ -17792,7 +17840,8 @@
           "start": 0,
           "end": 5
         }
-      ]
+      ],
+      "video_source_duration": 11.773
     },
     {
       "slide_id": 195,
@@ -18024,7 +18073,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 21.08
     },
     {
       "slide_id": 158,
@@ -18515,7 +18565,8 @@
           "end": 7
         }
       ],
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_source_duration": 38.145
     },
     {
       "slide_id": 1790579438955,
@@ -18609,7 +18660,8 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 46.433
     },
     {
       "slide_id": 1790748407390,
@@ -18667,7 +18719,8 @@
           "duration": 24.96
         }
       },
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 27.974
     },
     {
       "slide_id": 1790579438966,
@@ -18761,7 +18814,8 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 52.2
     },
     {
       "slide_id": 1790579438968,
@@ -18855,7 +18909,8 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 15.067
     },
     {
       "slide_id": 1790748432904,
@@ -18915,7 +18970,8 @@
           "duration": 30.37
         }
       },
-      "volume_boost": 3
+      "volume_boost": 3,
+      "video_source_duration": 30.372
     },
     {
       "slide_id": 153,
@@ -19286,237 +19342,6 @@
       "volume_boost": 1
     },
     {
-      "slide_id": 160,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 14,
-      "caption": "",
-      "quote": "",
-      "primary_item": {
-        "index": 119,
-        "id": "AF1QipOvCTCqZB_4X3Ym4jOf4tmahZcUjubhhQ12BMEw",
-        "type": "Video",
-        "is_video": true,
-        "filename": "video_119_20210806_1531.mp4",
-        "relative_path": "projects/dad-birthday-60/videos/video_119_20210806_1531.mp4",
-        "width": 1080,
-        "height": 1920,
-        "timestamp": 1628253112000,
-        "date_formatted": "06/08/2021 15:31",
-        "year": 2021,
-        "act": "act_4",
-        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-        "default_caption": "אבא - 2021",
-        "display_year": "2021",
-        "caption": "סרטון משפחתי",
-        "duration": 14,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 180,
-        "cloud_path": "videos/video_119_20210806_1531.mp4"
-      },
-      "items": [
-        {
-          "index": 119,
-          "id": "AF1QipOvCTCqZB_4X3Ym4jOf4tmahZcUjubhhQ12BMEw",
-          "type": "Video",
-          "is_video": true,
-          "filename": "video_119_20210806_1531.mp4",
-          "relative_path": "projects/dad-birthday-60/videos/video_119_20210806_1531.mp4",
-          "width": 1080,
-          "height": 1920,
-          "timestamp": 1628253112000,
-          "date_formatted": "06/08/2021 15:31",
-          "year": 2021,
-          "act": "act_4",
-          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-          "default_caption": "אבא - 2021",
-          "display_year": "2021",
-          "caption": "סרטון משפחתי",
-          "duration": 14,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 180,
-          "cloud_path": "videos/video_119_20210806_1531.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 14,
-      "volume_boost": 1,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 14
-        }
-      ]
-    },
-    {
-      "slide_id": 159,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 14,
-      "caption": "",
-      "quote": "מספר הסיפורים",
-      "primary_item": {
-        "index": 118,
-        "id": "AF1QipNMfnwv59LBe1CMcFwYq1vAouzQ699lJ0zyzOlk",
-        "type": "Video",
-        "is_video": true,
-        "filename": "video_118_20210730_2036.mp4",
-        "relative_path": "projects/dad-birthday-60/videos/video_118_20210730_2036.mp4",
-        "width": 352,
-        "height": 640,
-        "timestamp": 1627666563000,
-        "date_formatted": "30/07/2021 20:36",
-        "year": 2021,
-        "act": "act_4",
-        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-        "default_caption": "אבא - 2021",
-        "display_year": "2021",
-        "caption": "סרטון משפחתי",
-        "duration": 14,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 179,
-        "cloud_path": "videos/video_118_20210730_2036.mp4"
-      },
-      "items": [
-        {
-          "index": 118,
-          "id": "AF1QipNMfnwv59LBe1CMcFwYq1vAouzQ699lJ0zyzOlk",
-          "type": "Video",
-          "is_video": true,
-          "filename": "video_118_20210730_2036.mp4",
-          "relative_path": "projects/dad-birthday-60/videos/video_118_20210730_2036.mp4",
-          "width": 352,
-          "height": 640,
-          "timestamp": 1627666563000,
-          "date_formatted": "30/07/2021 20:36",
-          "year": 2021,
-          "act": "act_4",
-          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-          "default_caption": "אבא - 2021",
-          "display_year": "2021",
-          "caption": "סרטון משפחתי",
-          "duration": 14,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 179,
-          "cloud_path": "videos/video_118_20210730_2036.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 14,
-      "volume_boost": 1,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 14
-        }
-      ]
-    },
-    {
-      "slide_id": 171,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 14,
-      "caption": "צחי מצחיקי",
-      "quote": "",
-      "primary_item": {
-        "index": 131,
-        "id": "AF1QipMaKAGmZSva5qR_VKsxssCZ8cNpuEaEoz2gcPFw",
-        "type": "Video",
-        "is_video": true,
-        "filename": "video_131_20211023_1722.mp4",
-        "relative_path": "projects/dad-birthday-60/videos/video_131_20211023_1722.mp4",
-        "width": 352,
-        "height": 640,
-        "timestamp": 1634998975000,
-        "date_formatted": "23/10/2021 17:22",
-        "year": 2021,
-        "act": "act_4",
-        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-        "default_caption": "אבא - 2021",
-        "display_year": "2021",
-        "caption": "סרטון משפחתי",
-        "duration": 14,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 192,
-        "cloud_path": "videos/video_131_20211023_1722.mp4"
-      },
-      "items": [
-        {
-          "index": 131,
-          "id": "AF1QipMaKAGmZSva5qR_VKsxssCZ8cNpuEaEoz2gcPFw",
-          "type": "Video",
-          "is_video": true,
-          "filename": "video_131_20211023_1722.mp4",
-          "relative_path": "projects/dad-birthday-60/videos/video_131_20211023_1722.mp4",
-          "width": 352,
-          "height": 640,
-          "timestamp": 1634998975000,
-          "date_formatted": "23/10/2021 17:22",
-          "year": 2021,
-          "act": "act_4",
-          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-          "default_caption": "אבא - 2021",
-          "display_year": "2021",
-          "caption": "סרטון משפחתי",
-          "duration": 14,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 192,
-          "cloud_path": "videos/video_131_20211023_1722.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 14,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 14
-        }
-      ],
-      "volume_boost": 1
-    },
-    {
       "slide_id": 165,
       "type": "cinematic",
       "act": "act_5",
@@ -19790,83 +19615,6 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "volume_boost": 1
-    },
-    {
-      "slide_id": 175,
-      "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 7,
-      "caption": "סרטון משפחתי",
-      "quote": "",
-      "primary_item": {
-        "index": 135,
-        "id": "AF1QipNNPkMTgXWK195ckyieEbDgXZYz-XaGjNi_9c0P",
-        "type": "Video",
-        "is_video": true,
-        "filename": "video_135_20211106_1147.mp4",
-        "relative_path": "projects/dad-birthday-60/videos/video_135_20211106_1147.mp4",
-        "width": 720,
-        "height": 1280,
-        "timestamp": 1636192036000,
-        "date_formatted": "06/11/2021 11:47",
-        "year": 2021,
-        "act": "act_4",
-        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-        "default_caption": "אבא - 2021",
-        "display_year": "2021",
-        "caption": "סרטון משפחתי",
-        "duration": 14,
-        "layout": "cinematic",
-        "is_vintage": false,
-        "timeline_index": 196,
-        "cloud_path": "videos/video_135_20211106_1147.mp4"
-      },
-      "items": [
-        {
-          "index": 135,
-          "id": "AF1QipNNPkMTgXWK195ckyieEbDgXZYz-XaGjNi_9c0P",
-          "type": "Video",
-          "is_video": true,
-          "filename": "video_135_20211106_1147.mp4",
-          "relative_path": "projects/dad-birthday-60/videos/video_135_20211106_1147.mp4",
-          "width": 720,
-          "height": 1280,
-          "timestamp": 1636192036000,
-          "date_formatted": "06/11/2021 11:47",
-          "year": 2021,
-          "act": "act_4",
-          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
-          "default_caption": "אבא - 2021",
-          "display_year": "2021",
-          "caption": "סרטון משפחתי",
-          "duration": 14,
-          "layout": "cinematic",
-          "is_vintage": false,
-          "timeline_index": 196,
-          "cloud_path": "videos/video_135_20211106_1147.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "filterMode": "original",
-      "fitMode": "contain",
-      "showCaption": false,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_start": 0,
-      "video_end": 6.5,
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 6.5
-        }
-      ],
       "volume_boost": 1
     },
     {
@@ -20467,6 +20215,153 @@
       "volume_boost": 1
     },
     {
+      "slide_id": 260,
+      "type": "cinematic",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 3,
+      "caption": "",
+      "quote": "",
+      "primary_item": {
+        "index": 230,
+        "id": "AF1QipNBv-6uEsNIMndbe6UM6wQYcvdaAQmZCCEkiAr0",
+        "type": "Photo",
+        "is_video": false,
+        "filename": "230_IMG-20240525-WA0078.jpg",
+        "relative_path": "projects/dad-birthday-60/processed_photos/230_IMG-20240525-WA0078.jpg",
+        "width": 1200,
+        "height": 1600,
+        "timestamp": 1716643275000,
+        "date_formatted": "25/05/2024 16:21",
+        "year": 2024,
+        "act": "act_5",
+        "act_title": "פרק 5: חוגגים 60 לאבא",
+        "default_caption": "אבא - 2024",
+        "display_year": "2024",
+        "caption": "אבא - 2024",
+        "duration": 8,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 291,
+        "cloud_path": "photos/230_IMG-20240525-WA0078.jpg"
+      },
+      "items": [
+        {
+          "index": 230,
+          "id": "AF1QipNBv-6uEsNIMndbe6UM6wQYcvdaAQmZCCEkiAr0",
+          "type": "Photo",
+          "is_video": false,
+          "filename": "230_IMG-20240525-WA0078.jpg",
+          "relative_path": "projects/dad-birthday-60/processed_photos/230_IMG-20240525-WA0078.jpg",
+          "width": 1200,
+          "height": 1600,
+          "timestamp": 1716643275000,
+          "date_formatted": "25/05/2024 16:21",
+          "year": 2024,
+          "act": "act_5",
+          "act_title": "פרק 5: חוגגים 60 לאבא",
+          "default_caption": "אבא - 2024",
+          "display_year": "2024",
+          "caption": "אבא - 2024",
+          "duration": 8,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 291,
+          "cloud_path": "photos/230_IMG-20240525-WA0078.jpg"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1.72,
+      "offsetX": 27,
+      "offsetY": -55,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "volume_boost": 1
+    },
+    {
+      "slide_id": 160,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 14,
+      "caption": "",
+      "quote": "",
+      "primary_item": {
+        "index": 119,
+        "id": "AF1QipOvCTCqZB_4X3Ym4jOf4tmahZcUjubhhQ12BMEw",
+        "type": "Video",
+        "is_video": true,
+        "filename": "video_119_20210806_1531.mp4",
+        "relative_path": "projects/dad-birthday-60/videos/video_119_20210806_1531.mp4",
+        "width": 1080,
+        "height": 1920,
+        "timestamp": 1628253112000,
+        "date_formatted": "06/08/2021 15:31",
+        "year": 2021,
+        "act": "act_4",
+        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+        "default_caption": "אבא - 2021",
+        "display_year": "2021",
+        "caption": "סרטון משפחתי",
+        "duration": 14,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 180,
+        "cloud_path": "videos/video_119_20210806_1531.mp4"
+      },
+      "items": [
+        {
+          "index": 119,
+          "id": "AF1QipOvCTCqZB_4X3Ym4jOf4tmahZcUjubhhQ12BMEw",
+          "type": "Video",
+          "is_video": true,
+          "filename": "video_119_20210806_1531.mp4",
+          "relative_path": "projects/dad-birthday-60/videos/video_119_20210806_1531.mp4",
+          "width": 1080,
+          "height": 1920,
+          "timestamp": 1628253112000,
+          "date_formatted": "06/08/2021 15:31",
+          "year": 2021,
+          "act": "act_4",
+          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+          "default_caption": "אבא - 2021",
+          "display_year": "2021",
+          "caption": "סרטון משפחתי",
+          "duration": 14,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 180,
+          "cloud_path": "videos/video_119_20210806_1531.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 14,
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 14
+        }
+      ],
+      "video_source_duration": 34.457
+    },
+    {
       "slide_id": 204,
       "type": "video",
       "act": "act_5",
@@ -20541,7 +20436,8 @@
           "start": 0,
           "end": 7.5
         }
-      ]
+      ],
+      "video_source_duration": 22.238
     },
     {
       "slide_id": 242,
@@ -20618,68 +20514,69 @@
           "start": 0,
           "end": 5.5
         }
-      ]
+      ],
+      "video_source_duration": 24.242
     },
     {
-      "slide_id": 260,
-      "type": "cinematic",
+      "slide_id": 159,
+      "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 3,
+      "duration": 14,
       "caption": "",
-      "quote": "",
+      "quote": "מספר הסיפורים",
       "primary_item": {
-        "index": 230,
-        "id": "AF1QipNBv-6uEsNIMndbe6UM6wQYcvdaAQmZCCEkiAr0",
-        "type": "Photo",
-        "is_video": false,
-        "filename": "230_IMG-20240525-WA0078.jpg",
-        "relative_path": "projects/dad-birthday-60/processed_photos/230_IMG-20240525-WA0078.jpg",
-        "width": 1200,
-        "height": 1600,
-        "timestamp": 1716643275000,
-        "date_formatted": "25/05/2024 16:21",
-        "year": 2024,
-        "act": "act_5",
-        "act_title": "פרק 5: חוגגים 60 לאבא",
-        "default_caption": "אבא - 2024",
-        "display_year": "2024",
-        "caption": "אבא - 2024",
-        "duration": 8,
+        "index": 118,
+        "id": "AF1QipNMfnwv59LBe1CMcFwYq1vAouzQ699lJ0zyzOlk",
+        "type": "Video",
+        "is_video": true,
+        "filename": "video_118_20210730_2036.mp4",
+        "relative_path": "projects/dad-birthday-60/videos/video_118_20210730_2036.mp4",
+        "width": 352,
+        "height": 640,
+        "timestamp": 1627666563000,
+        "date_formatted": "30/07/2021 20:36",
+        "year": 2021,
+        "act": "act_4",
+        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+        "default_caption": "אבא - 2021",
+        "display_year": "2021",
+        "caption": "סרטון משפחתי",
+        "duration": 14,
         "layout": "cinematic",
         "is_vintage": false,
-        "timeline_index": 291,
-        "cloud_path": "photos/230_IMG-20240525-WA0078.jpg"
+        "timeline_index": 179,
+        "cloud_path": "videos/video_118_20210730_2036.mp4"
       },
       "items": [
         {
-          "index": 230,
-          "id": "AF1QipNBv-6uEsNIMndbe6UM6wQYcvdaAQmZCCEkiAr0",
-          "type": "Photo",
-          "is_video": false,
-          "filename": "230_IMG-20240525-WA0078.jpg",
-          "relative_path": "projects/dad-birthday-60/processed_photos/230_IMG-20240525-WA0078.jpg",
-          "width": 1200,
-          "height": 1600,
-          "timestamp": 1716643275000,
-          "date_formatted": "25/05/2024 16:21",
-          "year": 2024,
-          "act": "act_5",
-          "act_title": "פרק 5: חוגגים 60 לאבא",
-          "default_caption": "אבא - 2024",
-          "display_year": "2024",
-          "caption": "אבא - 2024",
-          "duration": 8,
+          "index": 118,
+          "id": "AF1QipNMfnwv59LBe1CMcFwYq1vAouzQ699lJ0zyzOlk",
+          "type": "Video",
+          "is_video": true,
+          "filename": "video_118_20210730_2036.mp4",
+          "relative_path": "projects/dad-birthday-60/videos/video_118_20210730_2036.mp4",
+          "width": 352,
+          "height": 640,
+          "timestamp": 1627666563000,
+          "date_formatted": "30/07/2021 20:36",
+          "year": 2021,
+          "act": "act_4",
+          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+          "default_caption": "אבא - 2021",
+          "display_year": "2021",
+          "caption": "סרטון משפחתי",
+          "duration": 14,
           "layout": "cinematic",
           "is_vintage": false,
-          "timeline_index": 291,
-          "cloud_path": "photos/230_IMG-20240525-WA0078.jpg"
+          "timeline_index": 179,
+          "cloud_path": "videos/video_118_20210730_2036.mp4"
         }
       ],
       "rotation": 0,
-      "scale": 1.72,
-      "offsetX": 27,
-      "offsetY": -55,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
@@ -20687,7 +20584,94 @@
       "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "volume_boost": 1
+      "video_start": 0,
+      "video_end": 14,
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 14
+        }
+      ],
+      "video_source_duration": 16.896
+    },
+    {
+      "slide_id": 171,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 14,
+      "caption": "צחי מצחיקי",
+      "quote": "",
+      "primary_item": {
+        "index": 131,
+        "id": "AF1QipMaKAGmZSva5qR_VKsxssCZ8cNpuEaEoz2gcPFw",
+        "type": "Video",
+        "is_video": true,
+        "filename": "video_131_20211023_1722.mp4",
+        "relative_path": "projects/dad-birthday-60/videos/video_131_20211023_1722.mp4",
+        "width": 352,
+        "height": 640,
+        "timestamp": 1634998975000,
+        "date_formatted": "23/10/2021 17:22",
+        "year": 2021,
+        "act": "act_4",
+        "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+        "default_caption": "אבא - 2021",
+        "display_year": "2021",
+        "caption": "סרטון משפחתי",
+        "duration": 14,
+        "layout": "cinematic",
+        "is_vintage": false,
+        "timeline_index": 192,
+        "cloud_path": "videos/video_131_20211023_1722.mp4"
+      },
+      "items": [
+        {
+          "index": 131,
+          "id": "AF1QipMaKAGmZSva5qR_VKsxssCZ8cNpuEaEoz2gcPFw",
+          "type": "Video",
+          "is_video": true,
+          "filename": "video_131_20211023_1722.mp4",
+          "relative_path": "projects/dad-birthday-60/videos/video_131_20211023_1722.mp4",
+          "width": 352,
+          "height": 640,
+          "timestamp": 1634998975000,
+          "date_formatted": "23/10/2021 17:22",
+          "year": 2021,
+          "act": "act_4",
+          "act_title": "פרק 4: חוויות, טיולים ורגעים יפים",
+          "default_caption": "אבא - 2021",
+          "display_year": "2021",
+          "caption": "סרטון משפחתי",
+          "duration": 14,
+          "layout": "cinematic",
+          "is_vintage": false,
+          "timeline_index": 192,
+          "cloud_path": "videos/video_131_20211023_1722.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "filterMode": "original",
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_start": 0,
+      "video_end": 14,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 14
+        }
+      ],
+      "volume_boost": 1,
+      "video_source_duration": 21.525
     },
     {
       "slide_id": 271,
@@ -22068,5 +22052,5 @@
       "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3"
     }
   ],
-  "last_updated": "2026-10-01T17:24:06.395Z"
+  "last_updated": "2026-10-01T18:38:14.704Z"
 }
