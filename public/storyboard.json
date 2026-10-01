@@ -3688,7 +3688,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438958,
@@ -3782,7 +3782,7 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438967,
@@ -3876,7 +3876,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 72,
@@ -5352,14 +5352,14 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438961,
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 20,
+      "duration": 21,
       "caption": "רפי כהן",
       "quote": "",
       "primary_item": {
@@ -5367,8 +5367,8 @@
         "id": "blessing_8",
         "type": "Video",
         "is_video": true,
-        "filename": "blessing_08_moderate.mp4",
-        "relative_path": "videos/blessing_08_moderate.mp4",
+        "filename": "blessing_08_raw.mp4",
+        "relative_path": "videos/blessing_08_raw.mp4",
         "width": 576,
         "height": 1024,
         "timestamp": 1790579438854,
@@ -5383,8 +5383,8 @@
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 327,
-        "cloud_path": "videos/blessing_08_moderate.mp4",
-        "url": "videos/blessing_08_moderate.mp4"
+        "cloud_path": "videos/blessing_08_raw.mp4",
+        "url": "videos/blessing_08_raw.mp4"
       },
       "items": [
         {
@@ -5392,8 +5392,8 @@
           "id": "blessing_8",
           "type": "Video",
           "is_video": true,
-          "filename": "blessing_08_moderate.mp4",
-          "relative_path": "videos/blessing_08_moderate.mp4",
+          "filename": "blessing_08_raw.mp4",
+          "relative_path": "videos/blessing_08_raw.mp4",
           "width": 576,
           "height": 1024,
           "timestamp": 1790579438854,
@@ -5408,8 +5408,8 @@
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 327,
-          "cloud_path": "videos/blessing_08_moderate.mp4",
-          "url": "videos/blessing_08_moderate.mp4"
+          "cloud_path": "videos/blessing_08_raw.mp4",
+          "url": "videos/blessing_08_raw.mp4"
         }
       ],
       "rotation": 0,
@@ -5424,11 +5424,11 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 20,
+      "video_end": 21,
       "video_segments": [
         {
           "start": 0,
-          "end": 20
+          "end": 21
         }
       ],
       "cut_presets": {
@@ -5445,8 +5445,8 @@
           "duration": 20.05
         }
       },
-      "cut_mode": "moderate",
-      "volume_boost": 1
+      "cut_mode": "none",
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438954,
@@ -5540,7 +5540,7 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438972,
@@ -5634,7 +5634,7 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438969,
@@ -5728,7 +5728,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 55,
@@ -6193,7 +6193,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790504698878,
@@ -6551,7 +6551,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438977,
@@ -6645,7 +6645,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790504699217,
@@ -6949,22 +6949,24 @@
       "type": "video",
       "act": "act_5",
       "act_title": "מערכה 5: שנת ה-60 והלאה",
-      "duration": 42,
+      "duration": 41,
       "caption": "גיא",
       "quote": "",
       "primary_item": {
         "index": 315,
-        "filename": "VID_20260929_175639_moderate.mp4",
-        "cloud_path": "videos/VID_20260929_175639_moderate.mp4",
+        "filename": "VID_20260929_175639_aggressive.mp4",
+        "cloud_path": "videos/VID_20260929_175639_aggressive.mp4",
         "is_video": true,
-        "url": "videos/VID_20260929_175639_moderate.mp4"
+        "url": "videos/VID_20260929_175639_aggressive.mp4",
+        "relative_path": "videos/VID_20260929_175639_aggressive.mp4"
       },
       "items": [
         {
-          "filename": "VID_20260929_175639_moderate.mp4",
-          "cloud_path": "videos/VID_20260929_175639_moderate.mp4",
+          "filename": "VID_20260929_175639_aggressive.mp4",
+          "cloud_path": "videos/VID_20260929_175639_aggressive.mp4",
           "is_video": true,
-          "url": "videos/VID_20260929_175639_moderate.mp4"
+          "url": "videos/VID_20260929_175639_aggressive.mp4",
+          "relative_path": "videos/VID_20260929_175639_aggressive.mp4"
         }
       ],
       "rotation": 0,
@@ -6980,12 +6982,12 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 42.45
+          "end": 40.5
         }
       ],
       "video_start": 0,
-      "video_end": 42.45,
-      "cut_mode": "moderate",
+      "video_end": 40.5,
+      "cut_mode": "aggressive",
       "cut_presets": {
         "none": {
           "url": "videos/VID_20260929_175639.mp4",
@@ -7000,7 +7002,7 @@
           "duration": 40.52
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790757094409,
@@ -7038,11 +7040,11 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 8.53
+          "end": 8.5
         }
       ],
       "video_start": 0,
-      "video_end": 8.53,
+      "video_end": 8.5,
       "cut_mode": "moderate",
       "cut_presets": {
         "none": {
@@ -7058,7 +7060,7 @@
           "duration": 7.17
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790504700756,
@@ -7647,14 +7649,14 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438974,
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 6,
+      "duration": 12,
       "caption": "סרטון ברכה 21",
       "quote": "",
       "primary_item": {
@@ -7719,11 +7721,11 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0.6,
-      "video_end": 7,
+      "video_end": 12.1,
       "video_segments": [
         {
           "start": 0.6,
-          "end": 7
+          "end": 12.1
         }
       ],
       "cut_presets": {
@@ -8923,11 +8925,11 @@
       "video_segments": [
         {
           "start": 0,
-          "end": 26.32
+          "end": 26
         }
       ],
       "video_start": 0,
-      "video_end": 26.32,
+      "video_end": 26,
       "cut_mode": "moderate",
       "cut_presets": {
         "none": {
@@ -8943,7 +8945,7 @@
           "duration": 23.83
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438956,
@@ -9037,7 +9039,7 @@
         }
       },
       "cut_mode": "none",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438962,
@@ -9131,7 +9133,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438959,
@@ -9225,7 +9227,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438960,
@@ -9319,7 +9321,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438964,
@@ -9413,7 +9415,7 @@
         }
       },
       "cut_mode": "none",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 85,
@@ -11383,7 +11385,7 @@
       "type": "video",
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 12,
+      "duration": 11,
       "caption": "סרטון משפחתי",
       "quote": "",
       "primary_item": {
@@ -11442,15 +11444,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 9.5,
-      "video_end": 21.9,
+      "video_end": 20.8,
       "video_segments": [
         {
           "start": 9.5,
-          "end": 21.9
+          "end": 20.8
         }
       ],
       "volume_boost": 1
@@ -13269,7 +13271,7 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790748438215,
@@ -13387,14 +13389,14 @@
           "duration": 14.87
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790748428205,
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 66,
+      "duration": 29,
       "caption": "VID 20260929 WA0018",
       "quote": "",
       "primary_item": {
@@ -13424,12 +13426,12 @@
       "transition_effect": "crossfade",
       "video_segments": [
         {
-          "start": 0,
-          "end": 65.566667
+          "start": 18.2,
+          "end": 47
         }
       ],
-      "video_start": 0,
-      "video_end": 65.566667,
+      "video_start": 18.2,
+      "video_end": 47,
       "cut_mode": "moderate",
       "cut_presets": {
         "none": {
@@ -13445,7 +13447,7 @@
           "duration": 62.93
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 210,
@@ -15519,7 +15521,7 @@
       "type": "video",
       "act": "act_3",
       "act_title": "פרק 3: הקמת המשפחה, ילדים",
-      "duration": 14,
+      "duration": 12,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -15582,8 +15584,14 @@
       "soundtrack_action": "continue",
       "transition_effect": "zoom_fade",
       "video_start": 0,
-      "video_end": 14,
-      "volume_boost": 1
+      "video_end": 11.7,
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 11.7
+        }
+      ]
     },
     {
       "slide_id": 78,
@@ -16822,11 +16830,17 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "video_start": 29.5,
-      "video_end": 38,
+      "video_start": 0,
+      "video_end": 11,
       "soundtrack_action": "continue",
       "transition_effect": "zoom_fade",
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 11
+        }
+      ]
     },
     {
       "slide_id": 107,
@@ -17770,7 +17784,13 @@
       "transition_effect": "crossfade",
       "video_start": 0,
       "video_end": 5,
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 5
+        }
+      ]
     },
     {
       "slide_id": 195,
@@ -18002,7 +18022,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 158,
@@ -18500,7 +18520,7 @@
       "type": "video",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 54,
+      "duration": 46,
       "caption": "דורון",
       "quote": "",
       "primary_item": {
@@ -18508,8 +18528,8 @@
         "id": "blessing_2",
         "type": "Video",
         "is_video": true,
-        "filename": "blessing_02_moderate.mp4",
-        "relative_path": "videos/blessing_02_moderate.mp4",
+        "filename": "blessing_02_aggressive.mp4",
+        "relative_path": "videos/blessing_02_aggressive.mp4",
         "width": 576,
         "height": 1024,
         "timestamp": 1790579438854,
@@ -18524,8 +18544,8 @@
         "layout": "cinematic",
         "is_vintage": false,
         "timeline_index": 321,
-        "cloud_path": "videos/blessing_02_moderate.mp4",
-        "url": "videos/blessing_02_moderate.mp4"
+        "cloud_path": "videos/blessing_02_aggressive.mp4",
+        "url": "videos/blessing_02_aggressive.mp4"
       },
       "items": [
         {
@@ -18533,8 +18553,8 @@
           "id": "blessing_2",
           "type": "Video",
           "is_video": true,
-          "filename": "blessing_02_moderate.mp4",
-          "relative_path": "videos/blessing_02_moderate.mp4",
+          "filename": "blessing_02_aggressive.mp4",
+          "relative_path": "videos/blessing_02_aggressive.mp4",
           "width": 576,
           "height": 1024,
           "timestamp": 1790579438854,
@@ -18549,8 +18569,8 @@
           "layout": "cinematic",
           "is_vintage": false,
           "timeline_index": 321,
-          "cloud_path": "videos/blessing_02_moderate.mp4",
-          "url": "videos/blessing_02_moderate.mp4"
+          "cloud_path": "videos/blessing_02_aggressive.mp4",
+          "url": "videos/blessing_02_aggressive.mp4"
         }
       ],
       "rotation": 0,
@@ -18561,15 +18581,15 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false,
+      "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 54,
+      "video_end": 46,
       "video_segments": [
         {
           "start": 0,
-          "end": 54
+          "end": 46
         }
       ],
       "cut_presets": {
@@ -18586,8 +18606,8 @@
           "duration": 46.43
         }
       },
-      "cut_mode": "moderate",
-      "volume_boost": 1
+      "cut_mode": "aggressive",
+      "volume_boost": 3
     },
     {
       "slide_id": 1790748407390,
@@ -18645,7 +18665,7 @@
           "duration": 24.96
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438966,
@@ -18739,7 +18759,7 @@
         }
       },
       "cut_mode": "aggressive",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790579438968,
@@ -18833,7 +18853,7 @@
         }
       },
       "cut_mode": "moderate",
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 1790748432904,
@@ -18893,7 +18913,7 @@
           "duration": 30.37
         }
       },
-      "volume_boost": 1
+      "volume_boost": 3
     },
     {
       "slide_id": 153,
@@ -19327,12 +19347,18 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
       "video_end": 14,
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 14
+        }
+      ]
     },
     {
       "slide_id": 159,
@@ -19398,12 +19424,18 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
       "video_end": 14,
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 14
+        }
+      ]
     },
     {
       "slide_id": 171,
@@ -19822,7 +19854,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -20496,12 +20528,18 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
       "video_end": 7.5,
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 7.5
+        }
+      ]
     },
     {
       "slide_id": 242,
@@ -20572,7 +20610,13 @@
       "transition_effect": "crossfade",
       "video_start": 0,
       "video_end": 5.5,
-      "volume_boost": 1
+      "volume_boost": 1,
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 5.5
+        }
+      ]
     },
     {
       "slide_id": 260,
@@ -21833,7 +21877,7 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "continue",
+      "soundtrack_action": "mute",
       "transition_effect": "crossfade",
       "volume_boost": 1
     },
@@ -21902,7 +21946,7 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "continue",
+      "soundtrack_action": "mute",
       "transition_effect": "crossfade",
       "volume_boost": 1
     },
@@ -21911,8 +21955,8 @@
       "type": "split_2",
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 3,
-      "caption": "",
+      "duration": 14,
+      "caption": "אוהבים אותך מלא, מזל טוב עד 120 שתגשים את כל משאלותיך. אין עליך בעולם. ",
       "quote": "",
       "primary_item": {
         "index": 248,
@@ -22016,10 +22060,10 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "continue",
+      "soundtrack_action": "mute",
       "transition_effect": "crossfade",
       "volume_boost": 1
     }
   ],
-  "last_updated": "2026-10-01T04:41:57.981Z"
+  "last_updated": "2026-10-01T05:25:20.438Z"
 }
