@@ -13183,7 +13183,7 @@
       "act": "act_5",
       "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 83,
-      "caption": "סרטון ברכה 20",
+      "caption": "רוני ויצנר",
       "quote": "",
       "primary_item": {
         "index": 619,
@@ -13243,7 +13243,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false,
+      "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -13269,6 +13269,182 @@
         }
       },
       "cut_mode": "aggressive",
+      "volume_boost": 1
+    },
+    {
+      "slide_id": 1790748438215,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 25,
+      "caption": "משפחת שרעבי",
+      "quote": "",
+      "primary_item": {
+        "index": 314,
+        "filename": "VID-20260929-WA0032_aggressive.mp4",
+        "cloud_path": "videos/VID-20260929-WA0032_aggressive.mp4",
+        "is_video": true,
+        "url": "videos/VID-20260929-WA0032_aggressive.mp4",
+        "relative_path": "videos/VID-20260929-WA0032_aggressive.mp4"
+      },
+      "items": [
+        {
+          "filename": "VID-20260929-WA0032_aggressive.mp4",
+          "cloud_path": "videos/VID-20260929-WA0032_aggressive.mp4",
+          "is_video": true,
+          "url": "videos/VID-20260929-WA0032_aggressive.mp4",
+          "relative_path": "videos/VID-20260929-WA0032_aggressive.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 24.676009
+        }
+      ],
+      "video_start": 0,
+      "video_end": 24.676009,
+      "cut_mode": "aggressive",
+      "cut_presets": {
+        "none": {
+          "url": "videos/VID-20260929-WA0032.mp4",
+          "duration": 28.8
+        },
+        "moderate": {
+          "url": "videos/VID-20260929-WA0032_moderate.mp4",
+          "duration": 26.14
+        },
+        "aggressive": {
+          "url": "videos/VID-20260929-WA0032_aggressive.mp4",
+          "duration": 24.68
+        }
+      },
+      "volume_boost": 3
+    },
+    {
+      "slide_id": 1790748422597,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 16,
+      "caption": "",
+      "quote": "",
+      "primary_item": {
+        "index": 311,
+        "filename": "VID-20260927-WA0072_moderate.mp4",
+        "cloud_path": "videos/VID-20260927-WA0072_moderate.mp4",
+        "is_video": true,
+        "url": "videos/VID-20260927-WA0072_moderate.mp4"
+      },
+      "items": [
+        {
+          "filename": "VID-20260927-WA0072_moderate.mp4",
+          "cloud_path": "videos/VID-20260927-WA0072_moderate.mp4",
+          "is_video": true,
+          "url": "videos/VID-20260927-WA0072_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 16
+        }
+      ],
+      "video_start": 0,
+      "video_end": 16,
+      "cut_mode": "moderate",
+      "cut_presets": {
+        "none": {
+          "url": "videos/VID-20260927-WA0072.mp4",
+          "duration": 17.94
+        },
+        "moderate": {
+          "url": "videos/VID-20260927-WA0072_moderate.mp4",
+          "duration": 16.47
+        },
+        "aggressive": {
+          "url": "videos/VID-20260927-WA0072_aggressive.mp4",
+          "duration": 14.87
+        }
+      },
+      "volume_boost": 1
+    },
+    {
+      "slide_id": 1790748428205,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 66,
+      "caption": "VID 20260929 WA0018",
+      "quote": "",
+      "primary_item": {
+        "index": 312,
+        "filename": "VID-20260929-WA0018_moderate.mp4",
+        "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
+        "is_video": true,
+        "url": "videos/VID-20260929-WA0018_moderate.mp4"
+      },
+      "items": [
+        {
+          "filename": "VID-20260929-WA0018_moderate.mp4",
+          "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
+          "is_video": true,
+          "url": "videos/VID-20260929-WA0018_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 65.566667
+        }
+      ],
+      "video_start": 0,
+      "video_end": 65.566667,
+      "cut_mode": "moderate",
+      "cut_presets": {
+        "none": {
+          "url": "videos/VID-20260929-WA0018.mp4",
+          "duration": 65.56
+        },
+        "moderate": {
+          "url": "videos/VID-20260929-WA0018_moderate.mp4",
+          "duration": 65.57
+        },
+        "aggressive": {
+          "url": "videos/VID-20260929-WA0018_aggressive.mp4",
+          "duration": 62.93
+        }
+      },
       "volume_boost": 1
     },
     {
@@ -18389,11 +18565,11 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
-      "video_end": 54.39,
+      "video_end": 54,
       "video_segments": [
         {
           "start": 0,
-          "end": 54.39
+          "end": 54
         }
       ],
       "cut_presets": {
@@ -18411,6 +18587,64 @@
         }
       },
       "cut_mode": "moderate",
+      "volume_boost": 1
+    },
+    {
+      "slide_id": 1790748407390,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 28,
+      "caption": "נגה",
+      "quote": "",
+      "primary_item": {
+        "index": 310,
+        "filename": "VID-20260930-WA0002_moderate.mp4",
+        "cloud_path": "videos/VID-20260930-WA0002_moderate.mp4",
+        "is_video": true,
+        "url": "videos/VID-20260930-WA0002_moderate.mp4"
+      },
+      "items": [
+        {
+          "filename": "VID-20260930-WA0002_moderate.mp4",
+          "cloud_path": "videos/VID-20260930-WA0002_moderate.mp4",
+          "is_video": true,
+          "url": "videos/VID-20260930-WA0002_moderate.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 27.974
+        }
+      ],
+      "video_start": 0,
+      "video_end": 27.974,
+      "cut_mode": "moderate",
+      "cut_presets": {
+        "none": {
+          "url": "videos/VID-20260930-WA0002.mp4",
+          "duration": 32.47
+        },
+        "moderate": {
+          "url": "videos/VID-20260930-WA0002_moderate.mp4",
+          "duration": 27.97
+        },
+        "aggressive": {
+          "url": "videos/VID-20260930-WA0002_aggressive.mp4",
+          "duration": 24.96
+        }
+      },
       "volume_boost": 1
     },
     {
@@ -18599,6 +18833,66 @@
         }
       },
       "cut_mode": "moderate",
+      "volume_boost": 1
+    },
+    {
+      "slide_id": 1790748432904,
+      "type": "video",
+      "act": "act_5",
+      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "duration": 30,
+      "caption": "הראל סלע",
+      "quote": "",
+      "primary_item": {
+        "index": 313,
+        "filename": "VID-20260929-WA0034_aggressive.mp4",
+        "cloud_path": "videos/VID-20260929-WA0034_aggressive.mp4",
+        "is_video": true,
+        "url": "videos/VID-20260929-WA0034_aggressive.mp4",
+        "relative_path": "videos/VID-20260929-WA0034_aggressive.mp4"
+      },
+      "items": [
+        {
+          "filename": "VID-20260929-WA0034_aggressive.mp4",
+          "cloud_path": "videos/VID-20260929-WA0034_aggressive.mp4",
+          "is_video": true,
+          "url": "videos/VID-20260929-WA0034_aggressive.mp4",
+          "relative_path": "videos/VID-20260929-WA0034_aggressive.mp4"
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": true,
+      "soundtrack_action": "continue",
+      "transition_effect": "crossfade",
+      "video_segments": [
+        {
+          "start": 0,
+          "end": 30
+        }
+      ],
+      "video_start": 0,
+      "video_end": 30,
+      "cut_mode": "aggressive",
+      "cut_presets": {
+        "none": {
+          "url": "videos/VID-20260929-WA0034.mp4",
+          "duration": 36.63
+        },
+        "moderate": {
+          "url": "videos/VID-20260929-WA0034_moderate.mp4",
+          "duration": 32.85
+        },
+        "aggressive": {
+          "url": "videos/VID-20260929-WA0034_aggressive.mp4",
+          "duration": 30.37
+        }
+      },
       "volume_boost": 1
     },
     {
@@ -21725,297 +22019,7 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "volume_boost": 1
-    },
-    {
-      "slide_id": 1790748407390,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 28,
-      "caption": "VID 20260930 WA0002",
-      "quote": "",
-      "primary_item": {
-        "index": 310,
-        "filename": "VID-20260930-WA0002_moderate.mp4",
-        "cloud_path": "videos/VID-20260930-WA0002_moderate.mp4",
-        "is_video": true,
-        "url": "videos/VID-20260930-WA0002_moderate.mp4"
-      },
-      "items": [
-        {
-          "filename": "VID-20260930-WA0002_moderate.mp4",
-          "cloud_path": "videos/VID-20260930-WA0002_moderate.mp4",
-          "is_video": true,
-          "url": "videos/VID-20260930-WA0002_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 27.97
-        }
-      ],
-      "video_start": 0,
-      "video_end": 27.97,
-      "cut_mode": "moderate",
-      "cut_presets": {
-        "none": {
-          "url": "videos/VID-20260930-WA0002.mp4",
-          "duration": 32.47
-        },
-        "moderate": {
-          "url": "videos/VID-20260930-WA0002_moderate.mp4",
-          "duration": 27.97
-        },
-        "aggressive": {
-          "url": "videos/VID-20260930-WA0002_aggressive.mp4",
-          "duration": 24.96
-        }
-      },
-      "volume_boost": 1
-    },
-    {
-      "slide_id": 1790748422597,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 16,
-      "caption": "VID 20260927 WA0072",
-      "quote": "",
-      "primary_item": {
-        "index": 311,
-        "filename": "VID-20260927-WA0072_moderate.mp4",
-        "cloud_path": "videos/VID-20260927-WA0072_moderate.mp4",
-        "is_video": true,
-        "url": "videos/VID-20260927-WA0072_moderate.mp4"
-      },
-      "items": [
-        {
-          "filename": "VID-20260927-WA0072_moderate.mp4",
-          "cloud_path": "videos/VID-20260927-WA0072_moderate.mp4",
-          "is_video": true,
-          "url": "videos/VID-20260927-WA0072_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 16.47
-        }
-      ],
-      "video_start": 0,
-      "video_end": 16.47,
-      "cut_mode": "moderate",
-      "cut_presets": {
-        "none": {
-          "url": "videos/VID-20260927-WA0072.mp4",
-          "duration": 17.94
-        },
-        "moderate": {
-          "url": "videos/VID-20260927-WA0072_moderate.mp4",
-          "duration": 16.47
-        },
-        "aggressive": {
-          "url": "videos/VID-20260927-WA0072_aggressive.mp4",
-          "duration": 14.87
-        }
-      },
-      "volume_boost": 1
-    },
-    {
-      "slide_id": 1790748428205,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 66,
-      "caption": "VID 20260929 WA0018",
-      "quote": "",
-      "primary_item": {
-        "index": 312,
-        "filename": "VID-20260929-WA0018_moderate.mp4",
-        "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
-        "is_video": true,
-        "url": "videos/VID-20260929-WA0018_moderate.mp4"
-      },
-      "items": [
-        {
-          "filename": "VID-20260929-WA0018_moderate.mp4",
-          "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
-          "is_video": true,
-          "url": "videos/VID-20260929-WA0018_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 65.57
-        }
-      ],
-      "video_start": 0,
-      "video_end": 65.57,
-      "cut_mode": "moderate",
-      "cut_presets": {
-        "none": {
-          "url": "videos/VID-20260929-WA0018.mp4",
-          "duration": 65.56
-        },
-        "moderate": {
-          "url": "videos/VID-20260929-WA0018_moderate.mp4",
-          "duration": 65.57
-        },
-        "aggressive": {
-          "url": "videos/VID-20260929-WA0018_aggressive.mp4",
-          "duration": 62.93
-        }
-      },
-      "volume_boost": 1
-    },
-    {
-      "slide_id": 1790748432904,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 33,
-      "caption": "VID 20260929 WA0034",
-      "quote": "",
-      "primary_item": {
-        "index": 313,
-        "filename": "VID-20260929-WA0034_moderate.mp4",
-        "cloud_path": "videos/VID-20260929-WA0034_moderate.mp4",
-        "is_video": true,
-        "url": "videos/VID-20260929-WA0034_moderate.mp4"
-      },
-      "items": [
-        {
-          "filename": "VID-20260929-WA0034_moderate.mp4",
-          "cloud_path": "videos/VID-20260929-WA0034_moderate.mp4",
-          "is_video": true,
-          "url": "videos/VID-20260929-WA0034_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 32.85
-        }
-      ],
-      "video_start": 0,
-      "video_end": 32.85,
-      "cut_mode": "moderate",
-      "cut_presets": {
-        "none": {
-          "url": "videos/VID-20260929-WA0034.mp4",
-          "duration": 36.63
-        },
-        "moderate": {
-          "url": "videos/VID-20260929-WA0034_moderate.mp4",
-          "duration": 32.85
-        },
-        "aggressive": {
-          "url": "videos/VID-20260929-WA0034_aggressive.mp4",
-          "duration": 30.37
-        }
-      },
-      "volume_boost": 1
-    },
-    {
-      "slide_id": 1790748438215,
-      "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 26,
-      "caption": "VID 20260929 WA0032",
-      "quote": "",
-      "primary_item": {
-        "index": 314,
-        "filename": "VID-20260929-WA0032_moderate.mp4",
-        "cloud_path": "videos/VID-20260929-WA0032_moderate.mp4",
-        "is_video": true,
-        "url": "videos/VID-20260929-WA0032_moderate.mp4"
-      },
-      "items": [
-        {
-          "filename": "VID-20260929-WA0032_moderate.mp4",
-          "cloud_path": "videos/VID-20260929-WA0032_moderate.mp4",
-          "is_video": true,
-          "url": "videos/VID-20260929-WA0032_moderate.mp4"
-        }
-      ],
-      "rotation": 0,
-      "scale": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "trim": 0,
-      "cropBox": null,
-      "fitMode": "contain",
-      "showCaption": true,
-      "soundtrack_action": "continue",
-      "transition_effect": "crossfade",
-      "video_segments": [
-        {
-          "start": 0,
-          "end": 26.14
-        }
-      ],
-      "video_start": 0,
-      "video_end": 26.14,
-      "cut_mode": "moderate",
-      "cut_presets": {
-        "none": {
-          "url": "videos/VID-20260929-WA0032.mp4",
-          "duration": 28.8
-        },
-        "moderate": {
-          "url": "videos/VID-20260929-WA0032_moderate.mp4",
-          "duration": 26.14
-        },
-        "aggressive": {
-          "url": "videos/VID-20260929-WA0032_aggressive.mp4",
-          "duration": 24.68
-        }
-      },
-      "volume_boost": 1
     }
   ],
-  "last_updated": "2026-09-30T08:47:06.172Z"
+  "last_updated": "2026-10-01T04:41:57.981Z"
 }
