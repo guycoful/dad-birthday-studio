@@ -14593,9 +14593,11 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "continue",
+      "soundtrack_action": "new_track",
       "transition_effect": "crossfade",
-      "volume_boost": 1
+      "volume_boost": 1,
+      "soundtrack_track": "audio/אריק_לביא_-_אני_אשיר_לך_שיר_-_אני_אשיר_לך_שיר.mp3",
+      "soundtrack_name": "אריק לביא - אני אשיר לך שיר - אני אשיר לך שיר"
     },
     {
       "slide_id": 235,
@@ -22052,5 +22054,5 @@
       "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3"
     }
   ],
-  "last_updated": "2026-10-01T18:38:14.704Z"
+  "last_updated": "2026-10-01T18:44:18.344Z"
 }
