@@ -15,10 +15,10 @@
         "id": "AF1QipMU5kYF54tpCv1Rhivuf8trF9F1DV-IIDiH40Kr",
         "type": "Photo",
         "is_video": false,
-        "filename": "319_IMG-20260828-WA0005.jpg",
+        "filename": "tzachi_60_title.jpg",
         "relative_path": "projects/dad-birthday-60/processed_photos/319_IMG-20260828-WA0005.jpg",
-        "width": 1229,
-        "height": 1039,
+        "width": 1915,
+        "height": 1027,
         "timestamp": 1787902566000,
         "date_formatted": "28/08/2026 10:36",
         "year": 2026,
@@ -31,7 +31,7 @@
         "layout": "cinematic",
         "is_vintage": true,
         "timeline_index": 61,
-        "cloud_path": "photos/319_IMG-20260828-WA0005.jpg"
+        "cloud_path": "photos/tzachi_60_title.jpg"
       },
       "items": [
         {
@@ -39,10 +39,10 @@
           "id": "AF1QipMU5kYF54tpCv1Rhivuf8trF9F1DV-IIDiH40Kr",
           "type": "Photo",
           "is_video": false,
-          "filename": "319_IMG-20260828-WA0005.jpg",
+          "filename": "tzachi_60_title.jpg",
           "relative_path": "projects/dad-birthday-60/processed_photos/319_IMG-20260828-WA0005.jpg",
-          "width": 1229,
-          "height": 1039,
+          "width": 1915,
+          "height": 1027,
           "timestamp": 1787902566000,
           "date_formatted": "28/08/2026 10:36",
           "year": 2026,
@@ -55,19 +55,19 @@
           "layout": "cinematic",
           "is_vintage": true,
           "timeline_index": 61,
-          "cloud_path": "photos/319_IMG-20260828-WA0005.jpg"
+          "cloud_path": "photos/tzachi_60_title.jpg"
         }
       ],
       "rotation": 0,
-      "scale": 1.29,
+      "scale": 1,
       "offsetX": 0,
       "offsetY": 0,
       "trim": 0,
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
-      "colorized_path": "enhanced_photos/colorized_319_IMG-20260828-WA0005.png",
+      "showCaption": false,
+      "colorized_path": null,
       "transition_effect": "zoom_fade",
       "soundtrack_action": "new_track",
       "soundtrack_track": "audio/kaveret_song.mp3",
@@ -22054,5 +22054,5 @@
       "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3"
     }
   ],
-  "last_updated": "2026-10-01T18:44:18.344Z"
+  "last_updated": "2026-10-01T19:00:56.481Z"
 }
