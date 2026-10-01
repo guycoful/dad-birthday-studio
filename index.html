@@ -1153,30 +1153,83 @@
             margin-bottom: 12px;
         }
 
-        #mp4-export-overlay {
+        body.mp4-recording {
+            overflow: hidden;
+            background: #000;
+        }
+        body.mp4-recording header,
+        body.mp4-recording .sidebar,
+        body.mp4-recording .player-controls,
+        body.mp4-recording .progress-bar-container {
+            display: none !important;
+        }
+        body.mp4-recording .main-container {
+            display: block;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            max-width: none;
+        }
+        body.mp4-recording .player-card {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            border-radius: 0;
+            background: #000;
+            height: 100vh;
+            gap: 0;
+            box-shadow: none;
+        }
+        #player-screen.mp4-recording,
+        #player-screen:fullscreen {
             position: fixed;
             inset: 0;
+            width: 100vw !important;
+            height: 100vh !important;
+            max-width: none;
+            aspect-ratio: auto;
+            border-radius: 0;
             z-index: 100000;
-            background: rgba(2, 6, 16, 0.82);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
+            box-shadow: none;
         }
-        #mp4-export-card {
-            width: min(520px, 100%);
-            background: #0f172a;
+        #player-screen.mp4-recording .viewport-stage,
+        #player-screen:fullscreen .viewport-stage {
+            padding: 0;
+        }
+        #player-screen.mp4-recording #hud-indicator,
+        #player-screen:fullscreen #hud-indicator {
+            display: none !important;
+        }
+        #mp4-rec-hud {
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            z-index: 50;
+            display: none;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 14px;
+            background: rgba(2, 6, 16, 0.78);
             border: 1px solid rgba(251, 191, 36, 0.55);
-            border-radius: 14px;
-            padding: 22px 22px 18px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+        }
+        #mp4-rec-hud .mp4-rec-copy {
+            flex: 1;
+            min-width: 0;
+        }
+        #mp4-rec-hud .mp4-rec-actions {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
         }
         #mp4-export-bar {
-            height: 10px;
+            height: 8px;
             background: #1e293b;
             border-radius: 99px;
             overflow: hidden;
-            margin: 14px 0 8px;
+            margin-top: 8px;
         }
         #mp4-export-bar > div {
             height: 100%;
@@ -1265,6 +1318,18 @@
                     <div class="captions-block" id="captions-container">
                         <div class="caption-text" id="caption-display">איפה הכל התחיל... אבא תינוק</div>
                         <div class="quote-text" id="quote-display"></div>
+                    </div>
+                </div>
+
+                <div id="mp4-rec-hud">
+                    <div class="mp4-rec-copy">
+                        <div id="mp4-export-label" style="font-size:0.95rem; font-weight:700;">מקליט במסך מלא…</div>
+                        <div id="mp4-export-bar"><div id="mp4-export-bar-fill"></div></div>
+                        <div id="mp4-export-sub" style="font-size:0.78rem; color:#94a3b8; margin-top:6px;">ההקלטה ממלאת את המסך. «עצור ושמור» שומר את מה שצולם עד עכשיו. «בטל הקלטה» מוחק בלי קובץ.</div>
+                    </div>
+                    <div class="mp4-rec-actions">
+                        <button type="button" class="gold" onclick="stopMp4Export()">עצור ושמור</button>
+                        <button type="button" class="danger" onclick="cancelMp4Export()">בטל הקלטה</button>
                     </div>
                 </div>
             </div>
@@ -6135,25 +6200,26 @@
             const cap = document.getElementById('caption-display');
             const quote = document.getElementById('quote-display');
             const capsOn = captionsContainer && captionsContainer.style.display !== 'none' && !captionsContainer.classList.contains('cap-swap');
+            const typeScale = h / 720;
             ctx.save();
             ctx.direction = 'rtl';
             ctx.shadowColor = 'rgba(0,0,0,0.75)';
-            ctx.shadowBlur = 6;
+            ctx.shadowBlur = 8;
             if (badge && badge.textContent) {
                 ctx.textAlign = 'right';
-                ctx.font = '700 22px Arial, sans-serif';
+                ctx.font = `700 ${Math.round(22 * typeScale)}px Arial, sans-serif`;
                 ctx.fillStyle = '#7dd3fc';
-                ctx.fillText(badge.textContent, w - 28, 46);
+                ctx.fillText(badge.textContent, w - Math.round(28 * typeScale), Math.round(46 * typeScale));
             }
             if (capsOn && cap && cap.textContent) {
                 ctx.textAlign = 'center';
-                ctx.font = '700 36px Arial, sans-serif';
+                ctx.font = `700 ${Math.round(36 * typeScale)}px Arial, sans-serif`;
                 ctx.fillStyle = '#ffffff';
-                ctx.fillText(cap.textContent, w / 2, h - 72);
+                ctx.fillText(cap.textContent, w / 2, h - Math.round(72 * typeScale));
                 if (quote && quote.textContent) {
-                    ctx.font = 'italic 24px Arial, sans-serif';
+                    ctx.font = `italic ${Math.round(24 * typeScale)}px Arial, sans-serif`;
                     ctx.fillStyle = '#fbbf24';
-                    ctx.fillText(quote.textContent, w / 2, h - 36);
+                    ctx.fillText(quote.textContent, w / 2, h - Math.round(36 * typeScale));
                 }
             }
             ctx.restore();
@@ -6205,17 +6271,48 @@
             soundtrackResetPending = false;
         }
 
+        function setMp4RecordingChrome(on) {
+            document.body.classList.toggle('mp4-recording', !!on);
+            const screen = document.getElementById('player-screen');
+            if (screen) screen.classList.toggle('mp4-recording', !!on);
+            const hud = document.getElementById('mp4-rec-hud');
+            if (hud) hud.style.display = on ? 'flex' : 'none';
+            if (videoPlayer) {
+                if (on) {
+                    if (!videoPlayer.dataset.controlsBeforeExport) {
+                        videoPlayer.dataset.controlsBeforeExport = videoPlayer.controls ? '1' : '0';
+                    }
+                    videoPlayer.controls = false;
+                } else if (videoPlayer.dataset.controlsBeforeExport) {
+                    videoPlayer.controls = videoPlayer.dataset.controlsBeforeExport === '1';
+                    delete videoPlayer.dataset.controlsBeforeExport;
+                }
+            }
+        }
+
+        async function enterMp4Fullscreen() {
+            setMp4RecordingChrome(true);
+            const screen = document.getElementById('player-screen');
+            if (!screen || document.fullscreenElement === screen) return;
+            if (typeof screen.requestFullscreen !== 'function') return;
+            try { await screen.requestFullscreen(); } catch (e) {}
+        }
+
+        async function exitMp4Fullscreen() {
+            setMp4RecordingChrome(false);
+            if (document.fullscreenElement) {
+                try { await document.exitFullscreen(); } catch (e) {}
+            }
+        }
+
         function showMp4Overlay(text) {
-            const el = document.getElementById('mp4-export-overlay');
-            if (!el) return;
-            el.style.display = 'flex';
+            setMp4RecordingChrome(true);
             const label = document.getElementById('mp4-export-label');
             if (label && text) label.textContent = text;
         }
 
         function hideMp4Overlay() {
-            const el = document.getElementById('mp4-export-overlay');
-            if (el) el.style.display = 'none';
+            setMp4RecordingChrome(false);
         }
 
         function updateMp4Overlay() {
@@ -6231,12 +6328,12 @@
             if (sub) {
                 const elapsed = (performance.now() - mp4Export.started) / 1000;
                 const remain = Math.max(0, mp4Export.totalSec - elapsed);
-                sub.textContent = `נשארו בערך ${Math.ceil(remain / 60)} דק׳ · אל תסגרו את הלשונית`;
+                sub.textContent = `נשארו בערך ${Math.ceil(remain / 60)} דק׳ · עצור ושמור שומר את מה שצולם · בטל הקלטה בלי קובץ`;
             }
         }
 
         function exportDrawLoop() {
-            if (!mp4Export) return;
+            if (!mp4Export || mp4Export.finishing) return;
             if (videoGainNode && exportMixDest && !videoGainNode._exportConnected) {
                 try {
                     videoGainNode.connect(exportMixDest);
@@ -6259,6 +6356,7 @@
             await new Promise(resolve => {
                 if (!exp.rec || exp.rec.state === 'inactive') { resolve(); return; }
                 exp.rec.addEventListener('stop', () => resolve(), { once: true });
+                try { if (exp.rec.state === 'recording') exp.rec.requestData(); } catch (e) {}
                 try { exp.rec.stop(); } catch (e) { resolve(); }
             });
             try { await exp.writeChain; } catch (e) {}
@@ -6291,18 +6389,24 @@
                 el.style.animation = 'none';
                 el.removeAttribute('data-kb');
             });
-            hideMp4Overlay();
+            await exitMp4Fullscreen();
             if (!exp.discard) {
                 const note = document.getElementById('mp4-export-done-note');
                 if (note) note.style.display = 'block';
             }
         }
 
+        async function stopMp4Export() {
+            if (!mp4Export || mp4Export.finishing) return;
+            mp4Export.discard = false;
+            await finishMp4Export();
+        }
+
         async function cancelMp4Export() {
-            if (!mp4Export) return;
+            if (!mp4Export || mp4Export.finishing) return;
             mp4Export.discard = true;
             await finishMp4Export();
-            showCloudStatus('ייצוא ה-MP4 בוטל');
+            showCloudStatus('ההקלטה בוטלה בלי לשמור קובץ');
         }
 
         async function startFullShowMp4Export(opts = {}) {
@@ -6321,9 +6425,10 @@
             const totalSec = estimateShowSeconds(maxSlides || undefined);
             const minutes = Math.max(1, Math.round(totalSec / 60));
             if (!options.silentConfirm) {
-                const ok = confirm(`הייצוא מקליט את כל המצגת לקובץ אחד (${slides.length} שקפים, בערך ${minutes} דקות).\n\nנכללים מעברים, תנועת תמונות, מוזיקת רקע, וכשהשקף הוא סרטון — הסאונד של הסרטון.\nיש להשאיר את הלשונית פתוחה בחזית עד הסוף.\n\nלהתחיל?`);
+                const ok = confirm(`הייצוא מקליט את כל המצגת במסך מלא לקובץ אחד (${slides.length} שקפים, בערך ${minutes} דקות).\n\nנכללים מעברים, תנועת תמונות, מוזיקת רקע, וכשהשקף הוא סרטון — הסאונד של הסרטון.\nבזמן ההקלטה: «עצור ושמור» שומר את מה שצולם עד עכשיו. «בטל הקלטה» מוותר בלי קובץ.\nיש להשאיר את הלשונית פתוחה בחזית עד הסוף.\n\nלהתחיל?`);
                 if (!ok) return;
             }
+            await enterMp4Fullscreen();
 
             let writer = null;
             const chunks = [];
@@ -6335,13 +6440,16 @@
                     });
                     writer = await handle.createWritable();
                 } catch (e) {
-                    if (e && e.name === 'AbortError') return;
+                    if (e && e.name === 'AbortError') {
+                        await exitMp4Fullscreen();
+                        return;
+                    }
                 }
             }
 
             const canvas = document.createElement('canvas');
-            canvas.width = 1280;
-            canvas.height = 720;
+            canvas.width = 1920;
+            canvas.height = 1080;
             const ctx = canvas.getContext('2d', { alpha: false });
             const stream = canvas.captureStream(30);
             attachExportAudio(stream);
@@ -6349,7 +6457,7 @@
             let writeChain = Promise.resolve();
             const rec = new MediaRecorder(stream, {
                 mimeType: mime,
-                videoBitsPerSecond: 3500000,
+                videoBitsPerSecond: 6000000,
                 audioBitsPerSecond: 160000
             });
             rec.ondataavailable = (e) => {
@@ -6399,7 +6507,7 @@
             drawShowToCanvas(ctx, canvas.width, canvas.height);
             try { rec.start(500); } catch (err) {
                 mp4Export = null;
-                hideMp4Overlay();
+                await exitMp4Fullscreen();
                 alert('לא הצלחתי להתחיל הקלטה: ' + err.message);
                 return;
             }
@@ -6684,18 +6792,5 @@
         </div>
     </div>
 
-    <div id="mp4-export-overlay" style="display:none;">
-        <div id="mp4-export-card">
-            <h3 style="margin:0 0 8px; color:#fbbf24;">🎥 ייצוא המצגת ל-MP4</h3>
-            <div id="mp4-export-label" style="font-size:1rem;">מתחיל…</div>
-            <div id="mp4-export-bar"><div id="mp4-export-bar-fill"></div></div>
-            <div id="mp4-export-sub" style="font-size:0.82rem; color:#94a3b8; line-height:1.45;">
-                ההקלטה רצה בזמן אמת וכוללת מעברים, מוזיקת רקע וסאונד של סרטונים. השאירו את הלשונית פתוחה.
-            </div>
-            <div style="display:flex; justify-content:flex-end; margin-top:14px;">
-                <button type="button" class="danger" onclick="cancelMp4Export()">ביטול</button>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
