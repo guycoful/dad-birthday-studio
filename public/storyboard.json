@@ -3599,8 +3599,8 @@
     {
       "slide_id": 1790579438957,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_1",
+      "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
       "duration": 33,
       "caption": "רינת",
       "quote": "",
@@ -3693,8 +3693,8 @@
     {
       "slide_id": 1790579438958,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_1",
+      "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
       "duration": 21,
       "caption": "שחר אגם ויונתן",
       "quote": "",
@@ -3787,8 +3787,8 @@
     {
       "slide_id": 1790579438967,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_1",
+      "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
       "duration": 52,
       "caption": "מאיר",
       "quote": "",
@@ -3955,7 +3955,7 @@
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
-      "caption": "",
+      "caption": "אוהב ספורט",
       "quote": "",
       "primary_item": {
         "index": 66,
@@ -4024,7 +4024,7 @@
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
-      "caption": "",
+      "caption": "גם בטלויזיה יודעים",
       "quote": "",
       "primary_item": {
         "index": 45,
@@ -4093,7 +4093,7 @@
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
-      "caption": "",
+      "caption": "ואוהב את ריאל מדריד",
       "quote": "",
       "primary_item": {
         "index": 74,
@@ -4162,7 +4162,7 @@
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
-      "caption": "",
+      "caption": "עד ליציע מגיע",
       "quote": "",
       "primary_item": {
         "index": 75,
@@ -4231,7 +4231,7 @@
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
-      "caption": "ה-פולחן",
+      "caption": "אבל ה-פולחן",
       "quote": "",
       "primary_item": {
         "index": 156,
@@ -4300,7 +4300,7 @@
       "act": "act_2",
       "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
-      "caption": "",
+      "caption": "זה הפועל פתח תקווה",
       "quote": "",
       "primary_item": {
         "index": 157,
@@ -5032,8 +5032,8 @@
     {
       "slide_id": 269,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_2",
+      "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 3,
       "caption": "סרטון חגיגות 60",
       "quote": "",
@@ -5181,7 +5181,7 @@
           "end": 9.857533
         }
       ],
-      "volume_boost": 1
+      "volume_boost": 0.5
     },
     {
       "slide_id": 150,
@@ -5258,13 +5258,13 @@
           "end": 11
         }
       ],
-      "volume_boost": 1
+      "volume_boost": 0.5
     },
     {
       "slide_id": 1790579438970,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_2",
+      "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 25,
       "caption": "סרטון ברכה 17",
       "quote": "",
@@ -5357,8 +5357,8 @@
     {
       "slide_id": 1790579438961,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_2",
+      "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 21,
       "caption": "רפי כהן",
       "quote": "",
@@ -5451,8 +5451,8 @@
     {
       "slide_id": 1790579438954,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_2",
+      "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 16,
       "caption": "אופיר",
       "quote": "",
@@ -5545,8 +5545,8 @@
     {
       "slide_id": 1790579438972,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_2",
+      "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 23,
       "caption": "אורן",
       "quote": "",
@@ -5639,8 +5639,8 @@
     {
       "slide_id": 1790579438969,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_2",
+      "act_title": "פרק 2: האהדה לספורט והפועל פ\"ת",
       "duration": 21,
       "caption": "נוי",
       "quote": "",
@@ -5804,8 +5804,8 @@
     {
       "slide_id": 1790504698496,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -5939,8 +5939,8 @@
     {
       "slide_id": 1790504698627,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "169080",
       "quote": "",
@@ -5972,8 +5972,8 @@
     {
       "slide_id": 1790504698673,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "169082",
       "quote": "",
@@ -6005,8 +6005,8 @@
     {
       "slide_id": 1790504698753,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6038,8 +6038,8 @@
     {
       "slide_id": 1790504698795,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6071,8 +6071,8 @@
     {
       "slide_id": 1790504698837,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6104,11 +6104,11 @@
     {
       "slide_id": 1790579438971,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 36,
       "caption": "ניר ועדן",
-      "quote": "",
+      "quote": "ניריבוץ",
       "primary_item": {
         "index": 617,
         "id": "blessing_18",
@@ -6167,7 +6167,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false,
+      "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -6198,8 +6198,8 @@
     {
       "slide_id": 1790504698878,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6231,8 +6231,8 @@
     {
       "slide_id": 1790504698919,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6264,8 +6264,8 @@
     {
       "slide_id": 1790504698959,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6297,8 +6297,8 @@
     {
       "slide_id": 1790504698998,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6330,8 +6330,8 @@
     {
       "slide_id": 1790504699037,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6363,8 +6363,8 @@
     {
       "slide_id": 1790504699114,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6396,8 +6396,8 @@
     {
       "slide_id": 1790504699152,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6429,8 +6429,8 @@
     {
       "slide_id": 1790504699364,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6462,11 +6462,11 @@
     {
       "slide_id": 1790579438963,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 16,
       "caption": "מאיה",
-      "quote": "",
+      "quote": "מאיה פפאיה",
       "primary_item": {
         "index": 609,
         "id": "blessing_10",
@@ -6556,8 +6556,8 @@
     {
       "slide_id": 1790579438977,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 8,
       "caption": "אור",
       "quote": "",
@@ -6650,8 +6650,8 @@
     {
       "slide_id": 1790504699217,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6683,8 +6683,8 @@
     {
       "slide_id": 1790504699286,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6716,8 +6716,8 @@
     {
       "slide_id": 1790504699551,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6749,8 +6749,8 @@
     {
       "slide_id": 1790504699623,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6782,8 +6782,8 @@
     {
       "slide_id": 1790504699821,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6815,8 +6815,8 @@
     {
       "slide_id": 1790504699876,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6848,8 +6848,8 @@
     {
       "slide_id": 1790504699921,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6881,8 +6881,8 @@
     {
       "slide_id": 1790504699984,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6914,8 +6914,8 @@
     {
       "slide_id": 1790504700170,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -6947,11 +6947,11 @@
     {
       "slide_id": 1790757094408,
       "type": "video",
-      "act": "act_5",
-      "act_title": "מערכה 5: שנת ה-60 והלאה",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 41,
       "caption": "גיא",
-      "quote": "",
+      "quote": "גיגושונוש",
       "primary_item": {
         "index": 315,
         "filename": "VID_20260929_175639_aggressive.mp4",
@@ -7007,8 +7007,8 @@
     {
       "slide_id": 1790757094409,
       "type": "video",
-      "act": "act_5",
-      "act_title": "מערכה 5: שנת ה-60 והלאה",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 9,
       "caption": "טל",
       "quote": "",
@@ -7060,13 +7060,13 @@
           "duration": 7.17
         }
       },
-      "volume_boost": 3
+      "volume_boost": 1.5
     },
     {
       "slide_id": 1790504700756,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -7098,8 +7098,8 @@
     {
       "slide_id": 1790504700067,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -7131,8 +7131,8 @@
     {
       "slide_id": 1790504700340,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -7164,8 +7164,8 @@
     {
       "slide_id": 1790504700408,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -7197,8 +7197,8 @@
     {
       "slide_id": 1790504700464,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -7230,8 +7230,8 @@
     {
       "slide_id": 1790504700597,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168956",
       "quote": "",
@@ -7263,8 +7263,8 @@
     {
       "slide_id": 1790504700643,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168959",
       "quote": "",
@@ -7296,8 +7296,8 @@
     {
       "slide_id": 1790504700686,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168962",
       "quote": "",
@@ -7329,8 +7329,8 @@
     {
       "slide_id": 1790504700805,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168949",
       "quote": "",
@@ -7362,8 +7362,8 @@
     {
       "slide_id": 1790504700914,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168941",
       "quote": "",
@@ -7395,8 +7395,8 @@
     {
       "slide_id": 1790504700991,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168944",
       "quote": "",
@@ -7428,8 +7428,8 @@
     {
       "slide_id": 1790504701165,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168934",
       "quote": "",
@@ -7461,8 +7461,8 @@
     {
       "slide_id": 1790504701376,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168923",
       "quote": "",
@@ -7494,8 +7494,8 @@
     {
       "slide_id": 1790504702200,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168623",
       "quote": "",
@@ -7527,8 +7527,8 @@
     {
       "slide_id": 1790504702543,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168617",
       "quote": "",
@@ -7560,11 +7560,11 @@
     {
       "slide_id": 1790579438976,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 21,
       "caption": "סיון והשבט",
-      "quote": "",
+      "quote": "סיסובלה אין דומה לה",
       "primary_item": {
         "index": 622,
         "id": "blessing_23",
@@ -7654,9 +7654,9 @@
     {
       "slide_id": 1790579438974,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
-      "duration": 12,
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
+      "duration": 10,
       "caption": "סרטון ברכה 21",
       "quote": "",
       "primary_item": {
@@ -7721,11 +7721,11 @@
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0.6,
-      "video_end": 12.1,
+      "video_end": 11,
       "video_segments": [
         {
           "start": 0.6,
-          "end": 12.1
+          "end": 11
         }
       ],
       "cut_presets": {
@@ -7748,8 +7748,8 @@
     {
       "slide_id": 1790504701541,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168927",
       "quote": "",
@@ -7781,8 +7781,8 @@
     {
       "slide_id": 1790504701458,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168925",
       "quote": "",
@@ -7814,8 +7814,8 @@
     {
       "slide_id": 1790504701739,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168635",
       "quote": "",
@@ -7847,8 +7847,8 @@
     {
       "slide_id": 1790504700718,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "168965",
       "quote": "",
@@ -8892,8 +8892,8 @@
     {
       "slide_id": 1790748380037,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 26,
       "caption": "רז",
       "quote": "",
@@ -8950,8 +8950,8 @@
     {
       "slide_id": 1790579438956,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 8,
       "caption": "אורי",
       "quote": "",
@@ -9044,8 +9044,8 @@
     {
       "slide_id": 1790579438962,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 19,
       "caption": "רועי",
       "quote": "",
@@ -9138,8 +9138,8 @@
     {
       "slide_id": 1790579438959,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 27,
       "caption": "ריף",
       "quote": "",
@@ -9232,8 +9232,8 @@
     {
       "slide_id": 1790579438960,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 19,
       "caption": "עומר",
       "quote": "",
@@ -9326,8 +9326,8 @@
     {
       "slide_id": 1790579438964,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 50,
       "caption": "מיכל ואלון",
       "quote": "",
@@ -10269,8 +10269,8 @@
     {
       "slide_id": 1790504698454,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "בתואר של מאיה",
       "quote": "",
@@ -10923,8 +10923,8 @@
     {
       "slide_id": 108,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -10985,7 +10985,7 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "mute",
+      "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "soundtrack_track": "audio/משינה_-_מכונית_-_1990.mp3",
       "volume_boost": 1
@@ -10993,8 +10993,8 @@
     {
       "slide_id": 109,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11062,8 +11062,8 @@
     {
       "slide_id": 121,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11131,8 +11131,8 @@
     {
       "slide_id": 123,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11200,8 +11200,8 @@
     {
       "slide_id": 133,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11314,8 +11314,8 @@
     {
       "slide_id": 125,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11383,9 +11383,9 @@
     {
       "slide_id": 126,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 11,
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
+      "duration": 14,
       "caption": "סרטון משפחתי",
       "quote": "",
       "primary_item": {
@@ -11447,21 +11447,21 @@
       "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "video_start": 9.5,
-      "video_end": 20.8,
+      "video_start": 8.8,
+      "video_end": 22.6,
       "video_segments": [
         {
-          "start": 9.5,
-          "end": 20.8
+          "start": 8.8,
+          "end": 22.6
         }
       ],
-      "volume_boost": 1
+      "volume_boost": 0.5
     },
     {
       "slide_id": 134,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11529,8 +11529,8 @@
     {
       "slide_id": 137,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11598,8 +11598,8 @@
     {
       "slide_id": 138,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11667,8 +11667,8 @@
     {
       "slide_id": 139,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11736,8 +11736,8 @@
     {
       "slide_id": 140,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11850,8 +11850,8 @@
     {
       "slide_id": 141,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11919,8 +11919,8 @@
     {
       "slide_id": 157,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -11988,8 +11988,8 @@
     {
       "slide_id": 142,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12057,8 +12057,8 @@
     {
       "slide_id": 143,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12126,8 +12126,8 @@
     {
       "slide_id": 163,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12195,8 +12195,8 @@
     {
       "slide_id": 149,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12264,8 +12264,8 @@
     {
       "slide_id": 151,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12333,8 +12333,8 @@
     {
       "slide_id": 152,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12402,8 +12402,8 @@
     {
       "slide_id": 172,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12471,8 +12471,8 @@
     {
       "slide_id": 173,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12540,8 +12540,8 @@
     {
       "slide_id": 180,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12609,8 +12609,8 @@
     {
       "slide_id": 283,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12678,8 +12678,8 @@
     {
       "slide_id": 280,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12747,8 +12747,8 @@
     {
       "slide_id": 185,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12816,8 +12816,8 @@
     {
       "slide_id": 187,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12885,8 +12885,8 @@
     {
       "slide_id": 188,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -12954,8 +12954,8 @@
     {
       "slide_id": 284,
       "type": "split_2",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13068,8 +13068,8 @@
     {
       "slide_id": 213,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13182,8 +13182,8 @@
     {
       "slide_id": 1790579438973,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 83,
       "caption": "רוני ויצנר",
       "quote": "",
@@ -13276,8 +13276,8 @@
     {
       "slide_id": 1790748438215,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 25,
       "caption": "משפחת שרעבי",
       "quote": "",
@@ -13331,13 +13331,13 @@
           "duration": 24.68
         }
       },
-      "volume_boost": 3
+      "volume_boost": 3.5
     },
     {
       "slide_id": 1790748422597,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 16,
       "caption": "",
       "quote": "",
@@ -13389,29 +13389,31 @@
           "duration": 14.87
         }
       },
-      "volume_boost": 3
+      "volume_boost": 1.2
     },
     {
       "slide_id": 1790748428205,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
-      "duration": 29,
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
+      "duration": 30,
       "caption": "VID 20260929 WA0018",
       "quote": "",
       "primary_item": {
         "index": 312,
-        "filename": "VID-20260929-WA0018_moderate.mp4",
-        "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
+        "filename": "VID-20260929-WA0018.mp4",
+        "cloud_path": "videos/VID-20260929-WA0018.mp4",
         "is_video": true,
-        "url": "videos/VID-20260929-WA0018_moderate.mp4"
+        "url": "videos/VID-20260929-WA0018.mp4",
+        "relative_path": "videos/VID-20260929-WA0018.mp4"
       },
       "items": [
         {
-          "filename": "VID-20260929-WA0018_moderate.mp4",
-          "cloud_path": "videos/VID-20260929-WA0018_moderate.mp4",
+          "filename": "VID-20260929-WA0018.mp4",
+          "cloud_path": "videos/VID-20260929-WA0018.mp4",
           "is_video": true,
-          "url": "videos/VID-20260929-WA0018_moderate.mp4"
+          "url": "videos/VID-20260929-WA0018.mp4",
+          "relative_path": "videos/VID-20260929-WA0018.mp4"
         }
       ],
       "rotation": 0,
@@ -13426,13 +13428,13 @@
       "transition_effect": "crossfade",
       "video_segments": [
         {
-          "start": 18.2,
-          "end": 47
+          "start": 17.9,
+          "end": 48
         }
       ],
-      "video_start": 18.2,
-      "video_end": 47,
-      "cut_mode": "moderate",
+      "video_start": 17.9,
+      "video_end": 48,
+      "cut_mode": "none",
       "cut_presets": {
         "none": {
           "url": "videos/VID-20260929-WA0018.mp4",
@@ -13447,13 +13449,13 @@
           "duration": 62.93
         }
       },
-      "volume_boost": 3
+      "volume_boost": 2
     },
     {
       "slide_id": 210,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13521,8 +13523,8 @@
     {
       "slide_id": 212,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13590,8 +13592,8 @@
     {
       "slide_id": 220,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13704,8 +13706,8 @@
     {
       "slide_id": 247,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13773,8 +13775,8 @@
     {
       "slide_id": 222,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13842,8 +13844,8 @@
     {
       "slide_id": 223,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13911,8 +13913,8 @@
     {
       "slide_id": 224,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -13980,8 +13982,8 @@
     {
       "slide_id": 225,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14049,8 +14051,8 @@
     {
       "slide_id": 227,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14163,8 +14165,8 @@
     {
       "slide_id": 228,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14232,8 +14234,8 @@
     {
       "slide_id": 230,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14301,8 +14303,8 @@
     {
       "slide_id": 231,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14370,8 +14372,8 @@
     {
       "slide_id": 233,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14439,8 +14441,8 @@
     {
       "slide_id": 234,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14553,8 +14555,8 @@
     {
       "slide_id": 235,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14622,8 +14624,8 @@
     {
       "slide_id": 237,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14691,8 +14693,8 @@
     {
       "slide_id": 238,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14760,8 +14762,8 @@
     {
       "slide_id": 239,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14829,8 +14831,8 @@
     {
       "slide_id": 240,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14898,8 +14900,8 @@
     {
       "slide_id": 252,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -14967,8 +14969,8 @@
     {
       "slide_id": 258,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -15036,8 +15038,8 @@
     {
       "slide_id": 253,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -15105,8 +15107,8 @@
     {
       "slide_id": 254,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -15174,8 +15176,8 @@
     {
       "slide_id": 256,
       "type": "cinematic",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_3",
+      "act_title": "פרק 3: הקמת המשפחה, ילדים",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -15671,7 +15673,7 @@
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 5,
       "caption": "ולאכול",
-      "quote": "",
+      "quote": "מממ טעים !!",
       "primary_item": {
         "index": 58,
         "id": "AF1QipMY2bkaw-lO_XcQ_ToCEZXdPKpy0QVt0kFkzhua",
@@ -15740,7 +15742,7 @@
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 5,
       "caption": "אבל הסונטה ? תענוג",
-      "quote": "",
+      "quote": "לפנתיאוןןן",
       "primary_item": {
         "index": 38,
         "id": "AF1QipOAVQ7XYkcAJPIAMZKnerAzk8sgwJysTK3nkMbW",
@@ -15809,7 +15811,7 @@
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 5,
       "caption": "אוהב להצטלם בה",
-      "quote": "",
+      "quote": "איזה בידור !!",
       "primary_item": {
         "index": 32,
         "id": "AF1QipNblD3vVp96QjoRBhmFl-4RffhbmiyHySqRxJR1",
@@ -15923,7 +15925,7 @@
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 5,
       "caption": "ממש אוהב להצטלם בה",
-      "quote": "",
+      "quote": "אתה צוחק עליי .??",
       "primary_item": {
         "index": 34,
         "id": "AF1QipMMb-WKw1AbPVNt9nOOrrTWa1OxmnPEiRaHWcZU",
@@ -17239,7 +17241,7 @@
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 3,
       "caption": "מצחיק גם עם ילדים",
-      "quote": "",
+      "quote": "איזה גולם אני !",
       "primary_item": {
         "index": 84,
         "id": "AF1QipO87M5fOta1XjINKIIpdbeDGyFQ5vFsAz7XoAay",
@@ -18100,7 +18102,7 @@
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 3,
       "caption": "מהודר ומוכן",
-      "quote": "",
+      "quote": "איזה גזעי הא",
       "primary_item": {
         "index": 63,
         "id": "AF1QipNceXRirs_QlqKnklbwwtm2GuCoQxXCtXg9dWRn",
@@ -18444,7 +18446,7 @@
       "act": "act_4",
       "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 7,
-      "caption": "רקדן אוטומטי",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 124,
@@ -18518,8 +18520,8 @@
     {
       "slide_id": 1790579438955,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_4",
+      "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 46,
       "caption": "דורון",
       "quote": "",
@@ -18612,8 +18614,8 @@
     {
       "slide_id": 1790748407390,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_4",
+      "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 28,
       "caption": "נגה",
       "quote": "",
@@ -18670,8 +18672,8 @@
     {
       "slide_id": 1790579438966,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_4",
+      "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 52,
       "caption": "סרטון ברכה 13",
       "quote": "",
@@ -18764,8 +18766,8 @@
     {
       "slide_id": 1790579438968,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "act": "act_4",
+      "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 15,
       "caption": "סרטון ברכה 15",
       "quote": "",
@@ -18858,8 +18860,8 @@
     {
       "slide_id": 1790748432904,
       "type": "video",
-      "act": "act_5",
-      "act_title": "פרק 5: חוגגים 60 לאבא",
+      "act": "act_4",
+      "act_title": "פרק 4: אתה צוחק עליי ?!",
       "duration": 30,
       "caption": "הראל סלע",
       "quote": "",
@@ -18918,9 +18920,9 @@
     {
       "slide_id": 153,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -18989,9 +18991,9 @@
     {
       "slide_id": 154,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 5,
       "caption": "רני נולד",
       "quote": "",
       "primary_item": {
@@ -19103,9 +19105,9 @@
     {
       "slide_id": 156,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 5,
       "caption": "רני קטני",
       "quote": "",
       "primary_item": {
@@ -19172,9 +19174,9 @@
     {
       "slide_id": 161,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
-      "duration": 3,
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
+      "duration": 5,
       "caption": "",
       "quote": "",
       "primary_item": {
@@ -19286,10 +19288,10 @@
     {
       "slide_id": 160,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 14,
-      "caption": "סרטון משפחתי",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 119,
@@ -19363,11 +19365,11 @@
     {
       "slide_id": 159,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 14,
-      "caption": "סרטון משפחתי",
-      "quote": "",
+      "caption": "",
+      "quote": "מספר הסיפורים",
       "primary_item": {
         "index": 118,
         "id": "AF1QipNMfnwv59LBe1CMcFwYq1vAouzQ699lJ0zyzOlk",
@@ -19424,7 +19426,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": false,
+      "showCaption": true,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -19440,10 +19442,10 @@
     {
       "slide_id": 171,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 14,
-      "caption": "סרטון משפחתי",
+      "caption": "צחי מצחיקי",
       "quote": "",
       "primary_item": {
         "index": 131,
@@ -19517,8 +19519,8 @@
     {
       "slide_id": 165,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -19586,8 +19588,8 @@
     {
       "slide_id": 166,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -19655,8 +19657,8 @@
     {
       "slide_id": 167,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -19724,8 +19726,8 @@
     {
       "slide_id": 174,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -19870,8 +19872,8 @@
     {
       "slide_id": 178,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -19939,8 +19941,8 @@
     {
       "slide_id": 177,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20008,8 +20010,8 @@
     {
       "slide_id": 189,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20077,8 +20079,8 @@
     {
       "slide_id": 190,
       "type": "split_2",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20191,8 +20193,8 @@
     {
       "slide_id": 200,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20260,8 +20262,8 @@
     {
       "slide_id": 209,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20329,8 +20331,8 @@
     {
       "slide_id": 203,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20398,8 +20400,8 @@
     {
       "slide_id": 214,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20467,8 +20469,8 @@
     {
       "slide_id": 204,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 8,
       "caption": "סרטון משפחתי",
       "quote": "",
@@ -20544,10 +20546,10 @@
     {
       "slide_id": 242,
       "type": "video",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 6,
-      "caption": "סרטון משפחתי",
+      "caption": "",
       "quote": "",
       "primary_item": {
         "index": 210,
@@ -20828,8 +20830,8 @@
     {
       "slide_id": 244,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -20897,8 +20899,8 @@
     {
       "slide_id": 245,
       "type": "cinematic",
-      "act": "act_4",
-      "act_title": "פרק 4: אתה צוחק עליי ?!",
+      "act": "act_5",
+      "act_title": "פרק 5: סבא צחי מצחיקי",
       "duration": 3,
       "caption": "",
       "quote": "",
@@ -21877,7 +21879,7 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "mute",
+      "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "volume_boost": 1
     },
@@ -21946,7 +21948,7 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "mute",
+      "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "volume_boost": 1
     },
@@ -22060,10 +22062,11 @@
       "filterMode": "original",
       "fitMode": "contain",
       "showCaption": true,
-      "soundtrack_action": "mute",
+      "soundtrack_action": "continue",
       "transition_effect": "crossfade",
-      "volume_boost": 1
+      "volume_boost": 1,
+      "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3"
     }
   ],
-  "last_updated": "2026-10-01T05:25:20.438Z"
+  "last_updated": "2026-10-01T17:17:32.250Z"
 }
