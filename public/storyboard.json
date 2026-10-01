@@ -1,7 +1,39 @@
 {
   "title": "סטודיו סרטון יום הולדת 60 לאבא צחי",
-  "total_slides": 315,
+  "total_slides": 316,
   "slides": [
+    {
+      "slide_id": 1790880564378,
+      "type": "cinematic",
+      "act": "act_1",
+      "act_title": "פרק 1: נעורים, צבא ושנות ה-20",
+      "duration": 14,
+      "caption": "צילום מסך 2026 10 01 214905",
+      "quote": "",
+      "primary_item": {
+        "index": 316,
+        "filename": "צילום_מסך_2026-10-01_214905.png",
+        "cloud_path": "photos/צילום_מסך_2026-10-01_214905.png",
+        "is_video": false
+      },
+      "items": [
+        {
+          "filename": "צילום_מסך_2026-10-01_214905.png",
+          "cloud_path": "photos/צילום_מסך_2026-10-01_214905.png",
+          "is_video": false
+        }
+      ],
+      "rotation": 0,
+      "scale": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trim": 0,
+      "cropBox": null,
+      "fitMode": "contain",
+      "showCaption": false,
+      "soundtrack_action": "mute",
+      "transition_effect": "crossfade"
+    },
     {
       "slide_id": 54,
       "type": "cinematic",
@@ -9418,7 +9450,7 @@
       "cropBox": null,
       "filterMode": "original",
       "fitMode": "contain",
-      "showCaption": true,
+      "showCaption": false,
       "soundtrack_action": "continue",
       "transition_effect": "crossfade",
       "video_start": 0,
@@ -22054,5 +22086,5 @@
       "soundtrack_track": "audio/סימן_שאתה_צעיר.mp3"
     }
   ],
-  "last_updated": "2026-10-01T18:44:18.344Z"
+  "last_updated": "2026-10-01T18:50:35.139Z"
 }
