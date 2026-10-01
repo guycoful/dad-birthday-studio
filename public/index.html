@@ -298,12 +298,16 @@
         }
 
         #video-player {
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: contain;
             display: none;
+            opacity: 1;
             background: #000;
-            z-index: 10;
+            z-index: 8;
+            transition: opacity var(--slide-trans-duration, 1s) var(--slide-trans-curve, ease);
         }
 
         /* Clean, Non-Obtrusive Overlay Layer */
@@ -472,6 +476,10 @@
             max-width: 85%;
             backdrop-filter: blur(4px);
             border: 1px solid rgba(255,255,255,0.1);
+            transition: opacity 0.45s ease;
+        }
+        .captions-block.cap-swap {
+            opacity: 0;
         }
 
         .caption-text {
@@ -882,8 +890,42 @@
         
         /* === Dual Slide Deck & Presentation Transitions (60fps GPU Accelerated) === */
         :root {
-            --slide-trans-duration: 0.6s;
-            --slide-trans-curve: cubic-bezier(0.22, 1, 0.36, 1);
+            --slide-trans-duration: 1s;
+            --slide-trans-curve: cubic-bezier(0.45, 0.05, 0.2, 1);
+        }
+
+        .kb-motion {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-origin: center center;
+            will-change: transform;
+            pointer-events: none;
+        }
+        .kb-motion .cinematic-img {
+            pointer-events: auto;
+        }
+        @keyframes kbPanZoomA {
+            from { transform: scale(1) translate3d(0, 0, 0); }
+            to   { transform: scale(1.1) translate3d(-2.4%, -1.6%, 0); }
+        }
+        @keyframes kbPanZoomB {
+            from { transform: scale(1.08) translate3d(1.8%, 1.2%, 0); }
+            to   { transform: scale(1) translate3d(-1.6%, 0.4%, 0); }
+        }
+        @keyframes kbPanZoomC {
+            from { transform: scale(1.02) translate3d(-1.5%, 0.6%, 0); }
+            to   { transform: scale(1.1) translate3d(2.2%, -1.2%, 0); }
+        }
+        @keyframes kbPanZoomD {
+            from { transform: scale(1.06) translate3d(0, 1.8%, 0); }
+            to   { transform: scale(1.12) translate3d(0, -1.8%, 0); }
+        }
+        @keyframes kbPanZoomE {
+            from { transform: scale(1.1) translate3d(2%, -0.6%, 0); }
+            to   { transform: scale(1.02) translate3d(-1.8%, 1.4%, 0); }
         }
 
         .slide-deck-layer {
@@ -912,49 +954,49 @@
 
         /* 1. Slide Left / Push Left (מצגת - סלייד חלק שמאלה) */
         .anim-slide-left-out {
-            animation: animPushLeftOut var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animPushLeftOut var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 5 !important;
         }
         .anim-slide-left-in {
-            animation: animPushLeftIn var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animPushLeftIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 6 !important;
             display: block !important;
         }
         @keyframes animPushLeftOut {
-            0% { transform: translate3d(0, 0, 0); filter: brightness(1); }
-            100% { transform: translate3d(-100%, 0, 0); filter: brightness(0.65); }
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
         }
         @keyframes animPushLeftIn {
-            0% { transform: translate3d(100%, 0, 0); box-shadow: -25px 0 60px rgba(0,0,0,0.95); }
-            100% { transform: translate3d(0, 0, 0); box-shadow: none; }
+            0% { transform: translate3d(100%, 0, 0); }
+            100% { transform: translate3d(0, 0, 0); }
         }
 
         /* 2. Slide Right / Push Right (מצגת - סלייד חלק ימינה) */
         .anim-slide-right-out {
-            animation: animPushRightOut var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animPushRightOut var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 5 !important;
         }
         .anim-slide-right-in {
-            animation: animPushRightIn var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animPushRightIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 6 !important;
             display: block !important;
         }
         @keyframes animPushRightOut {
-            0% { transform: translate3d(0, 0, 0); filter: brightness(1); }
-            100% { transform: translate3d(100%, 0, 0); filter: brightness(0.65); }
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(100%, 0, 0); }
         }
         @keyframes animPushRightIn {
-            0% { transform: translate3d(-100%, 0, 0); box-shadow: 25px 0 60px rgba(0,0,0,0.95); }
-            100% { transform: translate3d(0, 0, 0); box-shadow: none; }
+            0% { transform: translate3d(-100%, 0, 0); }
+            100% { transform: translate3d(0, 0, 0); }
         }
 
         /* 3. Slide Up (סלייד אלגנטי מלמטה) */
         .anim-slide-up-out {
-            animation: animPushUpOut var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animPushUpOut var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 5 !important;
         }
         .anim-slide-up-in {
-            animation: animPushUpIn var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animPushUpIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 6 !important;
             display: block !important;
         }
@@ -969,52 +1011,115 @@
 
         /* 4. Crossfade Dissolve (דיסולב קולנועי רך) */
         .anim-fade-out {
-            animation: animCrossfadeOut var(--slide-trans-duration) ease-out forwards !important;
+            animation: animCrossfadeOut var(--slide-trans-duration) ease both !important;
             z-index: 5 !important;
         }
         .anim-fade-in {
-            animation: animCrossfadeIn var(--slide-trans-duration) ease-in forwards !important;
+            animation: animCrossfadeIn var(--slide-trans-duration) ease both !important;
             z-index: 6 !important;
             display: block !important;
         }
         @keyframes animCrossfadeOut {
-            0% { opacity: 1; }
-            100% { opacity: 0; }
+            0% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(1.06); }
         }
         @keyframes animCrossfadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            0% { opacity: 0; transform: scale(1.05); }
+            100% { opacity: 1; transform: scale(1); }
         }
 
         /* 5. Zoom & Fade (זום קולנועי והחלקה) */
         .anim-zoom-out {
-            animation: animZoomOut var(--slide-trans-duration) ease-out forwards !important;
+            animation: animZoomOut var(--slide-trans-duration) ease both !important;
             z-index: 5 !important;
         }
         .anim-zoom-in {
-            animation: animZoomIn var(--slide-trans-duration) var(--slide-trans-curve) forwards !important;
+            animation: animZoomIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
             z-index: 6 !important;
             display: block !important;
         }
         @keyframes animZoomOut {
             0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(1.1); opacity: 0; }
+            100% { transform: scale(1.14); opacity: 0; }
         }
         @keyframes animZoomIn {
             0% { transform: scale(0.9); opacity: 0; }
             100% { transform: scale(1); opacity: 1; }
         }
 
+        /* Soft pan / scroll (PowerPoint-style drift, not a hard cut) */
+        .anim-scroll-left-out, .anim-scroll-right-out, .anim-scroll-left-in, .anim-scroll-right-in,
+        .anim-cover-out, .anim-cover-in {
+            display: block !important;
+        }
+        .anim-scroll-left-out {
+            animation: animScrollLeftOut var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 5 !important;
+        }
+        .anim-scroll-left-in {
+            animation: animScrollLeftIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 6 !important;
+        }
+        .anim-scroll-right-out {
+            animation: animScrollRightOut var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 5 !important;
+        }
+        .anim-scroll-right-in {
+            animation: animScrollRightIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 6 !important;
+        }
+        @keyframes animScrollLeftOut {
+            0% { transform: translate3d(0, 0, 0); opacity: 1; }
+            100% { transform: translate3d(-32%, 0, 0); opacity: 0; }
+        }
+        @keyframes animScrollLeftIn {
+            0% { transform: translate3d(32%, 0, 0); opacity: 0; }
+            100% { transform: translate3d(0, 0, 0); opacity: 1; }
+        }
+        @keyframes animScrollRightOut {
+            0% { transform: translate3d(0, 0, 0); opacity: 1; }
+            100% { transform: translate3d(32%, 0, 0); opacity: 0; }
+        }
+        @keyframes animScrollRightIn {
+            0% { transform: translate3d(-32%, 0, 0); opacity: 0; }
+            100% { transform: translate3d(0, 0, 0); opacity: 1; }
+        }
+
+        .anim-cover-out {
+            animation: animCoverOut var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 5 !important;
+        }
+        .anim-cover-in {
+            animation: animCoverIn var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 7 !important;
+        }
+        @keyframes animCoverOut {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0.94); opacity: 0.55; }
+        }
+        @keyframes animCoverIn {
+            0% { transform: translate3d(100%, 0, 0); }
+            100% { transform: translate3d(0, 0, 0); }
+        }
+        .anim-cover-in-back {
+            animation: animCoverInBack var(--slide-trans-duration) var(--slide-trans-curve) both !important;
+            z-index: 7 !important;
+            display: block !important;
+        }
+        @keyframes animCoverInBack {
+            0% { transform: translate3d(-100%, 0, 0); }
+            100% { transform: translate3d(0, 0, 0); }
+        }
+
         /* 6. Fade through Black */
         .anim-fade-black-out {
-            animation: animFadeBlackOut calc(var(--slide-trans-duration) * 0.5) ease-out forwards !important;
+            animation: animFadeBlackOut calc(var(--slide-trans-duration) * 0.5) ease both !important;
             z-index: 5 !important;
         }
         .anim-fade-black-in {
-            animation: animFadeBlackIn calc(var(--slide-trans-duration) * 0.5) ease-in calc(var(--slide-trans-duration) * 0.5) forwards !important;
+            animation: animFadeBlackIn calc(var(--slide-trans-duration) * 0.5) ease calc(var(--slide-trans-duration) * 0.5) both !important;
             z-index: 6 !important;
             display: block !important;
-            opacity: 0;
         }
         @keyframes animFadeBlackOut { 0% { opacity: 1; } 100% { opacity: 0; } }
         @keyframes animFadeBlackIn  { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -1047,6 +1152,38 @@
             padding: 10px;
             margin-bottom: 12px;
         }
+
+        #mp4-export-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 100000;
+            background: rgba(2, 6, 16, 0.82);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        #mp4-export-card {
+            width: min(520px, 100%);
+            background: #0f172a;
+            border: 1px solid rgba(251, 191, 36, 0.55);
+            border-radius: 14px;
+            padding: 22px 22px 18px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.55);
+        }
+        #mp4-export-bar {
+            height: 10px;
+            background: #1e293b;
+            border-radius: 99px;
+            overflow: hidden;
+            margin: 14px 0 8px;
+        }
+        #mp4-export-bar > div {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #38bdf8, #fbbf24);
+            transition: width 0.25s linear;
+        }
         
     </style>
 </head>
@@ -1073,6 +1210,7 @@
             <button onclick="loadStoryboardFromCloud()">☁️ טען מהענן</button>
             <button onclick="openBackupsModal()">↺ שחזור גיבוי</button>
             <button onclick="exportStoryboardJson()">📥 ייצא JSON</button>
+            <button class="gold" onclick="startFullShowMp4Export()" title="הורדת כל המצגת כקובץ MP4 אחד לצפייה בלי אינטרנט">🎥 הורד MP4</button>
             <button onclick="document.getElementById('json-import-input').click()">📤 ייבא JSON</button>
         </div>
     </header>
@@ -1086,14 +1224,18 @@
                 <div class="slide-deck-layer layer-active" id="layer-1">
                     <img id="bg-blur-1" class="ambient-blur-bg" src="" alt="">
                     <div class="viewport-stage" id="stage-1">
-                        <img id="photo-1" class="cinematic-img" src="" alt="Slide Photo">
+                        <div class="kb-motion" id="kb-1">
+                            <img id="photo-1" class="cinematic-img" src="" alt="Slide Photo">
+                        </div>
                     </div>
                 </div>
 
                 <div class="slide-deck-layer layer-hidden" id="layer-2">
                     <img id="bg-blur-2" class="ambient-blur-bg" src="" alt="">
                     <div class="viewport-stage" id="stage-2">
-                        <img id="photo-2" class="cinematic-img" src="" alt="Slide Photo">
+                        <div class="kb-motion" id="kb-2">
+                            <img id="photo-2" class="cinematic-img" src="" alt="Slide Photo">
+                        </div>
                     </div>
                 </div>
 
@@ -1141,6 +1283,7 @@
                 <div style="display: flex; gap: 8px;">
                     <button type="button" class="tool-btn" onclick="clearCurrentCrop()" style="color: var(--gold); font-weight: bold;">🔄 בטל חיתוך (החזר פנים מלאות)</button>
                     <button type="button" class="tool-btn" onclick="toggleCaptionDisplay()" id="btn-toggle-caption">👁️ הסתר/הצג כיתוב</button>
+                    <button type="button" class="gold" onclick="startFullShowMp4Export()">🎥 הורד MP4</button>
                 </div>
             </div>
         </div>
@@ -1245,28 +1388,30 @@
             <!-- Transition Effect Panel -->
             <div class="panel transition-panel" id="transition-control-panel">
                 <h3 style="color: #c084fc;">✨ הנפשות מעבר מקצועיות (סליידים במצגת)</h3>
-                <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">
-                    הנפשות סלייד חלקות בין שקפים וסרטונים בסגנון מצגות Keynote ו-PowerPoint.
+                    <p style="font-size: 0.78rem; color: #94a3b8; margin: 4px 0 10px 0; line-height: 1.4;">
+                    מעבר חלק בין שקפים כמו ב-PowerPoint: דיסולב, זום, גלילה וכיסוי. בזמן ניגון כל תמונה גם זזה לאט (Ken Burns).
                 </p>
 
                 <div class="form-group" style="margin-bottom: 8px;">
                     <label style="font-size: 0.82rem;">סגנון מעבר לשקף זה:</label>
                     <select id="transition-effect-select" onchange="changeTransitionEffect(this.value)" style="width: 100%; padding: 6px; border-radius: 6px; background: var(--bg-main); color: #fff; border: 1px solid var(--border);">
-                        <option value="slide">↔️ סלייד חלק במצגת (Slide Push - מומלץ)</option>
-                        <option value="slide_up">⬆️ סלייד אלגנטי מלמטה (Slide Up)</option>
-                        <option value="crossfade">🎬 דיסולב קולנועי רך (Crossfade Dissolve)</option>
-                        <option value="zoom_fade">🔍 זום פנימה והחלקה (Zoom & Fade)</option>
-                        <option value="fade_black">⬛ פייד דרמטי לשחור (Fade to Black)</option>
-                        <option value="cut">⚡ חיתוך ישיר ללא הנפשה (Cut)</option>
+                        <option value="crossfade">🎬 דיסולב רך (Fade / Dissolve)</option>
+                        <option value="scroll">↔️ גלילה עדינה (Scroll / Pan)</option>
+                        <option value="slide">➡️ דחיפה מלאה (Push)</option>
+                        <option value="cover">📽️ כיסוי (Cover)</option>
+                        <option value="slide_up">⬆️ עלייה מלמטה (Slide Up)</option>
+                        <option value="zoom_fade">🔍 זום והחלקה (Zoom)</option>
+                        <option value="fade_black">⬛ פייד לשחור (Fade to Black)</option>
+                        <option value="cut">⚡ חיתוך יבש (Cut)</option>
                     </select>
                 </div>
 
                 <div class="form-group" style="margin-bottom: 10px;">
                     <label style="font-size: 0.82rem;">מהירות מעבר:</label>
                     <div style="display: flex; gap: 6px;">
-                        <button type="button" class="tool-btn trans-speed-btn" onclick="setTransitionSpeed(0.4)" id="speed-btn-04" style="flex: 1; font-size: 0.76rem; padding: 4px;">⚡ 0.4s (מהיר)</button>
-                        <button type="button" class="tool-btn trans-speed-btn active" onclick="setTransitionSpeed(0.6)" id="speed-btn-06" style="flex: 1; font-size: 0.76rem; padding: 4px; border-color: var(--accent);">🎬 0.6s (מומלץ)</button>
-                        <button type="button" class="tool-btn trans-speed-btn" onclick="setTransitionSpeed(0.9)" id="speed-btn-09" style="flex: 1; font-size: 0.76rem; padding: 4px;">🎞️ 0.9s (איטי)</button>
+                        <button type="button" class="tool-btn trans-speed-btn" onclick="setTransitionSpeed(0.6)" id="speed-btn-06" style="flex: 1; font-size: 0.76rem; padding: 4px;">⚡ 0.6s</button>
+                        <button type="button" class="tool-btn trans-speed-btn active" onclick="setTransitionSpeed(1.0)" id="speed-btn-10" style="flex: 1; font-size: 0.76rem; padding: 4px; border-color: var(--accent);">🎬 1.0s (מומלץ)</button>
+                        <button type="button" class="tool-btn trans-speed-btn" onclick="setTransitionSpeed(1.4)" id="speed-btn-14" style="flex: 1; font-size: 0.76rem; padding: 4px;">🎞️ 1.4s</button>
                     </div>
                 </div>
 
@@ -1915,6 +2060,7 @@
 
         let currentIndex = 0;
         let isPlaying = false;
+        let mp4Export = null;
         let animationFrame = null;
         let slideStartTime = 0;
         let draggedIndex = null;
@@ -2005,13 +2151,12 @@
                     }
                 }
             }
-            if (!bgAudio.paused) {
-                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
-                bgAudio._isFadingIn = false;
+            const curNow = slides[currentIndex];
+            const onVideo = curNow && (curNow.type === 'video' || (curNow.primary_item && curNow.primary_item.is_video));
+            if (onVideo && musicUserEnabled && !bgAudio.paused) {
                 bgAudio._wasPlayingBeforeVideo = true;
-                bgAudio.pause();
-                const audioIcon = document.getElementById('audio-btn-icon');
-                if (audioIcon) audioIcon.textContent = '🔈';
+                pauseSoundtrackKeepPosition();
+                setMusicIcon(false);
             }
         });
 
@@ -2027,24 +2172,20 @@
         });
 
         videoPlayer.addEventListener('pause', () => {
-            if (!isPlaying && bgAudio._wasPlayingBeforeVideo) {
-                fadeInBackgroundAudio();
-                bgAudio._wasPlayingBeforeVideo = false;
-                const audioIcon = document.getElementById('audio-btn-icon');
-                if (audioIcon) audioIcon.textContent = '🔊';
-            }
+            if (isPlaying || !bgAudio._wasPlayingBeforeVideo || !musicUserEnabled) return;
+            const curNow = slides[currentIndex];
+            const onVideo = curNow && (curNow.type === 'video' || (curNow.primary_item && curNow.primary_item.is_video));
+            if (onVideo && !videoPlayer.ended) return;
+            bgAudio._wasPlayingBeforeVideo = false;
+            ensureSoundtrack({ forcePlay: true });
         });
 
         videoPlayer.addEventListener('ended', () => {
-            if (bgAudio._wasPlayingBeforeVideo || isPlaying) {
-                fadeInBackgroundAudio();
-                bgAudio._wasPlayingBeforeVideo = false;
-                const audioIcon = document.getElementById('audio-btn-icon');
-                if (audioIcon) audioIcon.textContent = '🔊';
-            }
             if (isPlaying) {
                 nextSlide();
-                startPresentationLoop();
+            } else if (bgAudio._wasPlayingBeforeVideo && musicUserEnabled) {
+                bgAudio._wasPlayingBeforeVideo = false;
+                ensureSoundtrack({ forcePlay: true });
             }
         });
         const overlayLayer = document.getElementById('overlay');
@@ -2061,16 +2202,56 @@
             masterBgAudioVolume = 0.45;
         }
         bgAudio.volume = masterBgAudioVolume;
+        bgAudio.loop = true;
+
+        let musicUserEnabled = true;
+        let musicPausedForPresentation = false;
+        let musicHoldTime = 0;
+        let soundtrackResetPending = false;
+
+        bgAudio.addEventListener('timeupdate', () => {
+            if (!soundtrackResetPending && !bgAudio.paused && bgAudio.currentTime > 0.25) {
+                musicHoldTime = bgAudio.currentTime;
+            }
+        });
 
         let bgFadeInterval = null;
 
-        function fadeInBackgroundAudio(durationMs = 1200) {
+        function setMusicIcon(on) {
+            const icon = document.getElementById('audio-btn-icon');
+            if (icon) icon.textContent = on ? '🔊' : '🔈';
+        }
+
+        function soundtrackKey(url) {
+            if (!url) return '';
+            try {
+                const abs = new URL(url, window.location.href);
+                return decodeURIComponent(abs.pathname).split('/').pop().split('?')[0].toLowerCase();
+            } catch (e) {
+                return String(url).split('/').pop().split('?')[0].toLowerCase();
+            }
+        }
+
+        function pauseSoundtrackKeepPosition() {
             if (!bgAudio) return;
+            if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
+            bgAudio._isFadingIn = false;
+            if (!bgAudio.paused) {
+                if (bgAudio.currentTime > 0.2) musicHoldTime = bgAudio.currentTime;
+                bgAudio.pause();
+            }
+        }
+
+        function fadeInBackgroundAudio(durationMs = 700) {
+            if (!bgAudio || !musicUserEnabled) return;
             if (bgFadeInterval) {
                 clearInterval(bgFadeInterval);
                 bgFadeInterval = null;
             }
             const targetVol = (typeof masterBgAudioVolume === 'number' && !isNaN(masterBgAudioVolume)) ? masterBgAudioVolume : 0.45;
+            if (!soundtrackResetPending && musicHoldTime > 0.35 && bgAudio.currentTime < 0.08) {
+                try { bgAudio.currentTime = musicHoldTime; } catch (e) {}
+            }
             if (targetVol <= 0.01) {
                 bgAudio.volume = 0;
                 bgAudio._isFadingIn = false;
@@ -2078,8 +2259,14 @@
                 return;
             }
 
+            if (!bgAudio.paused && bgAudio.volume >= targetVol * 0.85) {
+                bgAudio.volume = targetVol;
+                bgAudio._isFadingIn = false;
+                return;
+            }
+
             bgAudio._isFadingIn = true;
-            const startVol = 0.04;
+            const startVol = bgAudio.paused ? 0 : bgAudio.volume;
             bgAudio.volume = startVol;
 
             const playPromise = bgAudio.play();
@@ -3442,13 +3629,13 @@
 
         function toggleAudio() {
             if (bgAudio.paused) {
-                fadeInBackgroundAudio();
-                document.getElementById('audio-btn-icon').textContent = '🔊';
+                musicUserEnabled = true;
+                musicPausedForPresentation = false;
+                ensureSoundtrack({ forcePlay: true });
             } else {
-                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
-                bgAudio._isFadingIn = false;
-                bgAudio.pause();
-                document.getElementById('audio-btn-icon').textContent = '🔈';
+                musicUserEnabled = false;
+                pauseSoundtrackKeepPosition();
+                setMusicIcon(false);
             }
         }
 
@@ -5018,55 +5205,74 @@
             reader.readAsDataURL(file);
         }
 
-        function syncSoundtrackPlayback() {
+        function ensureSoundtrack(opts = {}) {
+            const forcePlay = !!opts.forcePlay;
             const cur = slides[currentIndex];
             const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
+            if (!bgAudio) return;
+            bgAudio.loop = true;
+
+            if (!musicUserEnabled) {
+                pauseSoundtrackKeepPosition();
+                setMusicIcon(false);
+                return;
+            }
 
             if (isVid) {
-                if (!bgAudio.paused) {
-                    if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
-                    bgAudio._isFadingIn = false;
+                if (!bgAudio.paused || isPlaying || forcePlay || bgAudio._wasPlayingBeforeVideo) {
                     bgAudio._wasPlayingBeforeVideo = true;
-                    bgAudio.pause();
-                    const icon = document.getElementById('audio-btn-icon');
-                    if (icon) icon.textContent = '🔈';
                 }
+                if (!bgAudio.paused) pauseSoundtrackKeepPosition();
+                setMusicIcon(false);
                 return;
             }
 
             const targetTrack = resolveActiveTrackForSlide(currentIndex);
             if (!targetTrack) {
-                // Muted
-                if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
-                bgAudio._isFadingIn = false;
-                if (!bgAudio.paused) bgAudio.pause();
+                pauseSoundtrackKeepPosition();
+                setMusicIcon(false);
                 return;
             }
 
-            const currentSrc = bgAudio.getAttribute('data-active-track') || '';
-            if (currentSrc !== targetTrack) {
+            const activeAttr = bgAudio.getAttribute('data-active-track') || '';
+            const changed = soundtrackKey(activeAttr) !== soundtrackKey(targetTrack);
+            const wantPlay = forcePlay || bgAudio._wasPlayingBeforeVideo || (isPlaying && !musicPausedForPresentation) || (!bgAudio.paused && !musicPausedForPresentation);
+
+            if (changed) {
+                const resume = wantPlay;
+                soundtrackResetPending = true;
+                musicHoldTime = 0;
+                bgAudio._wasPlayingBeforeVideo = false;
                 bgAudio.setAttribute('data-active-track', targetTrack);
                 bgAudio.src = targetTrack;
-                if (isPlaying || bgAudio._wasPlayingBeforeVideo) {
-                    fadeInBackgroundAudio();
-                    const icon = document.getElementById('audio-btn-icon');
-                    if (icon) icon.textContent = '🔊';
+                bgAudio.loop = true;
+                try { bgAudio.currentTime = 0; } catch (e) {}
+                soundtrackResetPending = false;
+                if (resume) {
+                    musicPausedForPresentation = false;
+                    fadeInBackgroundAudio(800);
+                    setMusicIcon(true);
                 }
-            } else {
-                // Continuous playback: do not restart, just ensure running if it was playing
-                if ((isPlaying || bgAudio._wasPlayingBeforeVideo) && bgAudio.paused) {
-                    fadeInBackgroundAudio();
-                    const icon = document.getElementById('audio-btn-icon');
-                    if (icon) icon.textContent = '🔊';
-                }
+                return;
             }
+
+            if (wantPlay) {
+                bgAudio._wasPlayingBeforeVideo = false;
+                if (forcePlay) musicPausedForPresentation = false;
+                if (bgAudio.paused) fadeInBackgroundAudio(650);
+                setMusicIcon(true);
+            }
+        }
+
+        function syncSoundtrackPlayback() {
+            ensureSoundtrack();
         }
 
         // --- Transitions & Animations ---
         let currentActiveLayer = 1;
         let isSlideTransitioning = false;
-        let globalTransitionEffect = 'slide';
-        let globalTransitionDuration = 0.6;
+        let globalTransitionEffect = 'crossfade';
+        let globalTransitionDuration = 1.0;
 
         mainPhoto = document.getElementById('photo-1') || mainPhoto;
         bgBlurPhoto = document.getElementById('bg-blur-1') || bgBlurPhoto;
@@ -5266,9 +5472,8 @@
             }
             photo.style.clipPath = trimClip;
 
-            const panDrift = fitMode === 'cover' ? progress * -30 : 0;
-            const slowZoom = userScale * (1.0 + (progress * 0.02));
-            photo.style.transform = `translate3d(${userOffsetX}px, ${userOffsetY + panDrift}px, 0) scale(${slowZoom}) rotate(${rot}deg)`;
+            photo.style.transform = `translate3d(${userOffsetX}px, ${userOffsetY}px, 0) scale(${userScale}) rotate(${rot}deg)`;
+            applyKenBurns(layerNum, cur, currentIndex);
         }
 
         function executeSlideDeckTransition(fromIdx, toIdx, customDirection = null, onFinish = null, forcePreview = false) {
@@ -5319,16 +5524,56 @@
             } else if (effect === 'fade_black') {
                 outClass = 'anim-fade-black-out';
                 inClass = 'anim-fade-black-in';
+            } else if (effect === 'scroll' || effect === 'pan') {
+                if (dir === 'backward') {
+                    outClass = 'anim-scroll-right-out';
+                    inClass = 'anim-scroll-right-in';
+                } else {
+                    outClass = 'anim-scroll-left-out';
+                    inClass = 'anim-scroll-left-in';
+                }
+            } else if (effect === 'cover') {
+                if (dir === 'backward') {
+                    outClass = 'anim-cover-out';
+                    inClass = 'anim-cover-in-back';
+                } else {
+                    outClass = 'anim-cover-out';
+                    inClass = 'anim-cover-in';
+                }
             }
 
+            const hardCut = !outClass || effect === 'cut';
             if (!isTargetVid) {
                 populateSlideLayer(toLayerNum, targetSlide, 0);
-                videoPlayer.style.display = 'none';
-                if (!videoPlayer.paused) videoPlayer.pause();
+                if (isPrevVid && !hardCut) {
+                    videoPlayer.style.opacity = '0';
+                    const hideMs = Math.round(globalTransitionDuration * 1000);
+                    setTimeout(() => {
+                        if (parseFloat(videoPlayer.style.opacity || '1') < 0.05) {
+                            videoPlayer.style.display = 'none';
+                            videoPlayer.style.opacity = '1';
+                            if (!videoPlayer.paused) videoPlayer.pause();
+                        }
+                    }, hideMs);
+                } else {
+                    videoPlayer.style.display = 'none';
+                    videoPlayer.style.opacity = '1';
+                    if (!videoPlayer.paused) videoPlayer.pause();
+                }
                 overlayLayer.classList.remove('video-mode');
             } else {
                 incomingEl.style.display = 'none';
                 videoPlayer.style.display = 'block';
+                if (hardCut) {
+                    videoPlayer.style.opacity = '1';
+                } else {
+                    videoPlayer.style.transition = 'none';
+                    videoPlayer.style.opacity = '0';
+                    requestAnimationFrame(() => {
+                        videoPlayer.style.transition = '';
+                        videoPlayer.style.opacity = '1';
+                    });
+                }
                 applyCurrentVideoVolumeBoost();
                 overlayLayer.style.display = 'flex';
                 overlayLayer.classList.add('video-mode');
@@ -5374,12 +5619,14 @@
             const durationMs = Math.round(globalTransitionDuration * 1000);
             setTimeout(() => {
                 outgoingEl.className = 'slide-deck-layer layer-hidden';
+                outgoingEl.style.display = '';
                 outgoingEl.style.transform = '';
                 outgoingEl.style.opacity = '';
                 outgoingEl.style.filter = '';
 
                 if (!isTargetVid) {
                     incomingEl.className = 'slide-deck-layer layer-active';
+                    incomingEl.style.display = '';
                     incomingEl.style.transform = '';
                     incomingEl.style.opacity = '';
                     incomingEl.style.filter = '';
@@ -5450,6 +5697,11 @@
             captionDisplay.textContent = cur.caption || '';
             quoteDisplay.textContent = cur.quote ? `"${cur.quote}"` : '';
 
+            if (!skipTransition && prevIdx !== idx && captionsContainer) {
+                captionsContainer.classList.add('cap-swap');
+                setTimeout(() => captionsContainer.classList.remove('cap-swap'), 80);
+            }
+
             if (skipTransition || prevIdx === idx) {
                 renderCurrentFrame(0);
             } else {
@@ -5461,7 +5713,24 @@
             syncSoundtrackPlayback();
         }
 
+        function applyKenBurns(layerNum, slide, idx) {
+            const wrap = document.getElementById(`kb-${layerNum}`);
+            if (!wrap || !slide) return;
+            const isVid = slide.type === 'video' || (slide.primary_item && slide.primary_item.is_video);
+            const names = ['kbPanZoomA', 'kbPanZoomB', 'kbPanZoomC', 'kbPanZoomD', 'kbPanZoomE'];
+            const name = names[Math.abs(Number(slide.slide_id) || idx || 0) % names.length];
+            const dur = Math.max(4, Number(slide.duration) || 8);
+            const token = `${isPlaying && !isVid ? name : 'still'}:${idx}:${dur}`;
+            if (wrap.getAttribute('data-kb') === token) return;
+            wrap.setAttribute('data-kb', token);
+            wrap.style.animation = 'none';
+            if (!isPlaying || isVid) return;
+            void wrap.offsetWidth;
+            wrap.style.animation = `${name} ${dur}s linear forwards`;
+        }
+
         function renderCurrentFrame(progress = 0) {
+            if (isSlideTransitioning) return;
             const fallbackContainer = document.getElementById('missing-media-fallback');
             if (fallbackContainer) fallbackContainer.style.display = 'none';
             const cur = slides[currentIndex];
@@ -5482,16 +5751,6 @@
                 captionDisplay.textContent = cur.caption || '';
                 quoteDisplay.textContent = cur.quote ? `"${cur.quote}"` : '';
                 captionsContainer.style.display = (cur.showCaption !== false && (cur.caption || cur.quote)) ? 'block' : 'none';
-
-                // Interrupt & pause background music completely while video is active
-                if (!bgAudio.paused) {
-                    if (bgFadeInterval) { clearInterval(bgFadeInterval); bgFadeInterval = null; }
-                    bgAudio._isFadingIn = false;
-                    bgAudio._wasPlayingBeforeVideo = true;
-                    bgAudio.pause();
-                    const audioIcon = document.getElementById('audio-btn-icon');
-                    if (audioIcon) audioIcon.textContent = '🔈';
-                }
 
                 let videoUrl = (cur.primary_item && cur.primary_item.url) || (cur.primary_item && cur.primary_item.cloud_path) || ('videos/' + (cur.primary_item && cur.primary_item.filename ? cur.primary_item.filename : ''));
                 if (videoUrl.startsWith('https://lh3.googleusercontent.com') && !videoUrl.includes('=')) {
@@ -5551,15 +5810,6 @@
                 videoPlayer.pause();
             }
 
-            // Resume background music if presentation is playing or it was interrupted by video
-            if (isPlaying || bgAudio._wasPlayingBeforeVideo) {
-                if (bgAudio.paused) {
-                    fadeInBackgroundAudio();
-                }
-                bgAudio._wasPlayingBeforeVideo = false;
-                const audioIcon = document.getElementById('audio-btn-icon');
-                if (audioIcon) audioIcon.textContent = '🔊';
-            }
             mainPhoto.style.display = 'block';
             bgBlurPhoto.style.display = 'block';
             overlayLayer.style.display = 'flex';
@@ -5601,11 +5851,8 @@
             }
             mainPhoto.style.clipPath = trimClip;
 
-            // Subtle slow drift
-            const panDrift = fitMode === 'cover' ? progress * -30 : 0;
-            const slowZoom = userScale * (1.0 + (progress * 0.02));
-
-            mainPhoto.style.transform = `translate3d(${userOffsetX}px, ${userOffsetY + panDrift}px, 0) scale(${slowZoom}) rotate(${rot}deg)`;
+            mainPhoto.style.transform = `translate3d(${userOffsetX}px, ${userOffsetY}px, 0) scale(${userScale}) rotate(${rot}deg)`;
+            applyKenBurns(currentActiveLayer, cur, currentIndex);
         }
 
         function updateCurrentCaption(val) {
@@ -5642,8 +5889,11 @@
         }
 
         function nextSlide() {
-            if (currentIndex < slides.length - 1) {
+            const lastAllowed = (mp4Export && mp4Export.maxSlides) ? Math.min(slides.length, mp4Export.maxSlides) - 1 : slides.length - 1;
+            if (currentIndex < lastAllowed) {
                 selectSlide(currentIndex + 1, 'forward');
+            } else if (mp4Export) {
+                finishMp4Export();
             } else {
                 selectSlide(0, 'forward');
             }
@@ -5656,23 +5906,33 @@
         }
 
         function togglePlay() {
+            if (mp4Export && isPlaying) return;
             isPlaying = !isPlaying;
             const btn = document.getElementById('btn-play');
             if (isPlaying) {
                 btn.textContent = '⏸️ השהה מצגת';
                 btn.className = 'gold';
                 slideStartTime = performance.now();
+                musicPausedForPresentation = false;
                 const cur = slides[currentIndex];
-                const isVid = cur && (cur.type === 'video' || (cur.primary_item && cur.primary_item.is_video));
-                if (!isVid && bgAudio.paused) {
-                    fadeInBackgroundAudio();
-                }
+                document.querySelectorAll('.kb-motion').forEach(el => el.removeAttribute('data-kb'));
+                applyKenBurns(currentActiveLayer, cur, currentIndex);
+                ensureSoundtrack({ forcePlay: true });
                 startPresentationLoop();
             } else {
                 btn.textContent = "▶️ נגן מצגת (8 שנ' לשקף)";
                 btn.className = 'primary';
+                musicPausedForPresentation = true;
+                if (!mp4Export) {
+                    pauseSoundtrackKeepPosition();
+                    setMusicIcon(false);
+                }
                 stopPresentationLoop();
                 progressBar.style.width = '0%';
+                document.querySelectorAll('.kb-motion').forEach(el => {
+                    el.style.animation = 'none';
+                    el.removeAttribute('data-kb');
+                });
                 renderCurrentFrame(0);
             }
         }
@@ -5724,7 +5984,7 @@
                 progressBar.style.width = `${(progress * 100).toFixed(1)}%`;
                 renderCurrentFrame(progress);
 
-                if (elapsed >= durationMs) {
+                if (elapsed >= durationMs && !isSlideTransitioning) {
                     progressBar.style.width = '0%';
                     nextSlide();
                 }
@@ -5746,6 +6006,405 @@
             } else {
                 document.exitFullscreen();
             }
+        }
+
+        let bgAudioSourceNode = null;
+        let bgAudioGain = null;
+        let exportMixDest = null;
+
+        function pickMp4Mime() {
+            const types = [
+                'video/mp4;codecs=avc1.42E01E,opus',
+                'video/mp4;codecs=avc1,opus',
+                'video/mp4;codecs=avc1.42E01E',
+                'video/mp4;codecs=avc1',
+                'video/mp4',
+                'video/webm;codecs=vp9,opus',
+                'video/webm;codecs=vp8,opus',
+                'video/webm'
+            ];
+            return types.find(t => window.MediaRecorder && MediaRecorder.isTypeSupported(t)) || '';
+        }
+
+        function estimateShowSeconds(maxSlides) {
+            const list = maxSlides ? slides.slice(0, maxSlides) : slides;
+            let total = 0;
+            list.forEach(s => {
+                const isVid = s.type === 'video' || (s.primary_item && s.primary_item.is_video);
+                if (isVid) {
+                    const segs = getActiveVideoSegments(s);
+                    if (segs && segs.length) {
+                        total += segs.reduce((sum, seg) => sum + Math.max(0, Number(seg.end) - Number(seg.start)), 0);
+                    } else {
+                        total += Number(s.duration) || 10;
+                    }
+                } else {
+                    total += Number(s.duration) || 8;
+                }
+            });
+            return total;
+        }
+
+        function cssMatrix2d(transform) {
+            if (!transform || transform === 'none') return [1, 0, 0, 1, 0, 0];
+            const m3 = transform.match(/matrix3d\(([^)]+)\)/);
+            if (m3) {
+                const p = m3[1].split(',').map(Number);
+                return [p[0], p[1], p[4], p[5], p[12], p[13]];
+            }
+            const m = transform.match(/matrix\(([^)]+)\)/);
+            if (!m) return [1, 0, 0, 1, 0, 0];
+            return m[1].split(',').map(n => parseFloat(n));
+        }
+
+        function applyCssMatrix(ctx, matrix, w, h) {
+            ctx.translate(w / 2, h / 2);
+            ctx.transform(matrix[0], matrix[1], matrix[2], matrix[3], matrix[4], matrix[5]);
+            ctx.translate(-w / 2, -h / 2);
+        }
+
+        function drawFittedImage(ctx, img, w, h, fit, imgMatrix) {
+            const nw = img.naturalWidth || img.videoWidth;
+            const nh = img.naturalHeight || img.videoHeight;
+            if (!nw || !nh) return;
+            const scale = fit === 'cover' ? Math.max(w / nw, h / nh) : Math.min(w / nw, h / nh);
+            const dw = nw * scale;
+            const dh = nh * scale;
+            ctx.save();
+            ctx.translate((w - dw) / 2 + dw / 2, (h - dh) / 2 + dh / 2);
+            ctx.transform(imgMatrix[0], imgMatrix[1], imgMatrix[2], imgMatrix[3], imgMatrix[4], imgMatrix[5]);
+            ctx.translate(-dw / 2, -dh / 2);
+            ctx.drawImage(img, 0, 0, dw, dh);
+            ctx.restore();
+        }
+
+        function drawShowToCanvas(ctx, w, h) {
+            const layers = [document.getElementById('layer-1'), document.getElementById('layer-2')].filter(Boolean);
+            const videoReady = videoPlayer && getComputedStyle(videoPlayer).display !== 'none' && videoPlayer.readyState >= 2 && videoPlayer.videoWidth;
+            const photoReady = layers.some(layer => {
+                const lcs = getComputedStyle(layer);
+                if (lcs.display === 'none' || !(parseFloat(lcs.opacity) > 0.02)) return false;
+                const photo = layer.querySelector('.cinematic-img');
+                return photo && photo.naturalWidth;
+            });
+            if (!photoReady && !videoReady) return;
+            ctx.fillStyle = '#02040a';
+            ctx.fillRect(0, 0, w, h);
+            layers.sort((a, b) => (parseInt(getComputedStyle(a).zIndex, 10) || 0) - (parseInt(getComputedStyle(b).zIndex, 10) || 0));
+            layers.forEach(layer => {
+                const lcs = getComputedStyle(layer);
+                if (lcs.display === 'none') return;
+                const opacity = parseFloat(lcs.opacity);
+                if (!(opacity > 0.02)) return;
+                const photo = layer.querySelector('.cinematic-img');
+                const blur = layer.querySelector('.ambient-blur-bg');
+                const kb = layer.querySelector('.kb-motion');
+                const fit = photo && photo.classList.contains('mode-cover') ? 'cover' : 'contain';
+                ctx.save();
+                ctx.globalAlpha = opacity;
+                applyCssMatrix(ctx, cssMatrix2d(lcs.transform), w, h);
+                if (blur && blur.style.display !== 'none' && blur.naturalWidth) {
+                    ctx.save();
+                    ctx.filter = 'blur(14px) brightness(0.38)';
+                    drawFittedImage(ctx, blur, w, h, 'cover', [1, 0, 0, 1, 0, 0]);
+                    ctx.restore();
+                }
+                if (kb) applyCssMatrix(ctx, cssMatrix2d(getComputedStyle(kb).transform), w, h);
+                if (photo && photo.naturalWidth) {
+                    drawFittedImage(ctx, photo, w, h, fit, cssMatrix2d(getComputedStyle(photo).transform));
+                }
+                ctx.restore();
+            });
+
+            const v = videoPlayer;
+            if (v) {
+                const vcs = getComputedStyle(v);
+                const vOp = parseFloat(v.style.opacity || vcs.opacity || '1');
+                if (vcs.display !== 'none' && v.readyState >= 2 && vOp > 0.02 && v.videoWidth) {
+                    ctx.save();
+                    ctx.globalAlpha = vOp;
+                    const scale = Math.min(w / v.videoWidth, h / v.videoHeight);
+                    const dw = v.videoWidth * scale;
+                    const dh = v.videoHeight * scale;
+                    ctx.drawImage(v, (w - dw) / 2, (h - dh) / 2, dw, dh);
+                    ctx.restore();
+                }
+            }
+
+            const badge = document.getElementById('badge-chapter');
+            const cap = document.getElementById('caption-display');
+            const quote = document.getElementById('quote-display');
+            const capsOn = captionsContainer && captionsContainer.style.display !== 'none' && !captionsContainer.classList.contains('cap-swap');
+            ctx.save();
+            ctx.direction = 'rtl';
+            ctx.shadowColor = 'rgba(0,0,0,0.75)';
+            ctx.shadowBlur = 6;
+            if (badge && badge.textContent) {
+                ctx.textAlign = 'right';
+                ctx.font = '700 22px Arial, sans-serif';
+                ctx.fillStyle = '#7dd3fc';
+                ctx.fillText(badge.textContent, w - 28, 46);
+            }
+            if (capsOn && cap && cap.textContent) {
+                ctx.textAlign = 'center';
+                ctx.font = '700 36px Arial, sans-serif';
+                ctx.fillStyle = '#ffffff';
+                ctx.fillText(cap.textContent, w / 2, h - 72);
+                if (quote && quote.textContent) {
+                    ctx.font = 'italic 24px Arial, sans-serif';
+                    ctx.fillStyle = '#fbbf24';
+                    ctx.fillText(quote.textContent, w / 2, h - 36);
+                }
+            }
+            ctx.restore();
+        }
+
+        function attachExportAudio(stream) {
+            try { setupVideoAudioGain(); } catch (e) {}
+            if (videoAudioCtx && videoAudioCtx.state === 'suspended') {
+                videoAudioCtx.resume().catch(() => {});
+            }
+            if (!videoAudioCtx) {
+                if (typeof bgAudio.captureStream === 'function') {
+                    bgAudio.captureStream().getAudioTracks().forEach(t => stream.addTrack(t));
+                }
+                return;
+            }
+            if (!bgAudioSourceNode) {
+                bgAudioSourceNode = videoAudioCtx.createMediaElementSource(bgAudio);
+                bgAudioGain = videoAudioCtx.createGain();
+                bgAudioGain.gain.value = 1;
+                bgAudioSourceNode.connect(bgAudioGain);
+                bgAudioGain.connect(videoAudioCtx.destination);
+            }
+            if (!exportMixDest) {
+                exportMixDest = videoAudioCtx.createMediaStreamDestination();
+                bgAudioGain.connect(exportMixDest);
+            }
+            if (videoGainNode && !videoGainNode._exportConnected) {
+                try {
+                    videoGainNode.connect(exportMixDest);
+                    videoGainNode._exportConnected = true;
+                } catch (e) {}
+            }
+            exportMixDest.stream.getAudioTracks().forEach(t => stream.addTrack(t));
+        }
+
+        function restartSoundtrackForExport() {
+            const target = resolveActiveTrackForSlide(0);
+            if (!target || !bgAudio) return;
+            musicUserEnabled = true;
+            musicPausedForPresentation = false;
+            soundtrackResetPending = true;
+            musicHoldTime = 0;
+            bgAudio._wasPlayingBeforeVideo = false;
+            bgAudio.setAttribute('data-active-track', target);
+            bgAudio.src = target;
+            bgAudio.loop = true;
+            try { bgAudio.currentTime = 0; } catch (e) {}
+            soundtrackResetPending = false;
+        }
+
+        function showMp4Overlay(text) {
+            const el = document.getElementById('mp4-export-overlay');
+            if (!el) return;
+            el.style.display = 'flex';
+            const label = document.getElementById('mp4-export-label');
+            if (label && text) label.textContent = text;
+        }
+
+        function hideMp4Overlay() {
+            const el = document.getElementById('mp4-export-overlay');
+            if (el) el.style.display = 'none';
+        }
+
+        function updateMp4Overlay() {
+            if (!mp4Export) return;
+            const total = mp4Export.maxSlides ? Math.min(slides.length, mp4Export.maxSlides) : slides.length;
+            const idx = Math.min(currentIndex + 1, total);
+            const pct = Math.max(2, Math.min(100, (idx / total) * 100));
+            const bar = document.getElementById('mp4-export-bar-fill');
+            const label = document.getElementById('mp4-export-label');
+            const sub = document.getElementById('mp4-export-sub');
+            if (bar) bar.style.width = pct.toFixed(1) + '%';
+            if (label) label.textContent = `מקליט שקף ${idx} מתוך ${total}`;
+            if (sub) {
+                const elapsed = (performance.now() - mp4Export.started) / 1000;
+                const remain = Math.max(0, mp4Export.totalSec - elapsed);
+                sub.textContent = `נשארו בערך ${Math.ceil(remain / 60)} דק׳ · אל תסגרו את הלשונית`;
+            }
+        }
+
+        function exportDrawLoop() {
+            if (!mp4Export) return;
+            if (videoGainNode && exportMixDest && !videoGainNode._exportConnected) {
+                try {
+                    videoGainNode.connect(exportMixDest);
+                    videoGainNode._exportConnected = true;
+                } catch (e) {}
+            }
+            drawShowToCanvas(mp4Export.ctx, mp4Export.canvas.width, mp4Export.canvas.height);
+            updateMp4Overlay();
+            requestAnimationFrame(exportDrawLoop);
+        }
+
+        async function finishMp4Export() {
+            if (!mp4Export || mp4Export.finishing) return;
+            const exp = mp4Export;
+            exp.finishing = true;
+            isPlaying = false;
+            stopPresentationLoop();
+            musicPausedForPresentation = true;
+            pauseSoundtrackKeepPosition();
+            await new Promise(resolve => {
+                if (!exp.rec || exp.rec.state === 'inactive') { resolve(); return; }
+                exp.rec.addEventListener('stop', () => resolve(), { once: true });
+                try { exp.rec.stop(); } catch (e) { resolve(); }
+            });
+            try { await exp.writeChain; } catch (e) {}
+            if (exp.discard) {
+                if (exp.writer) { try { await exp.writer.abort(); } catch (e) {} }
+            } else if (exp.writer) {
+                await exp.writer.close();
+                showCloudStatus('הקובץ נשמר במחשב 🎥');
+            } else if (exp.chunks && exp.chunks.length) {
+                const blob = new Blob(exp.chunks, { type: exp.mime || 'video/mp4' });
+                const a = document.createElement('a');
+                const ext = (exp.mime || '').includes('webm') ? 'webm' : 'mp4';
+                a.href = URL.createObjectURL(blob);
+                a.download = `dad-60-birthday.${ext}`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                showCloudStatus(ext === 'mp4' ? 'הורדת MP4 התחילה 🎥' : 'הורדת הסרטון התחילה 🎥');
+            }
+            if (exp.stream) {
+                exp.stream.getVideoTracks().forEach(t => t.stop());
+            }
+            mp4Export = null;
+            const btn = document.getElementById('btn-play');
+            if (btn) {
+                btn.textContent = "▶️ נגן מצגת (8 שנ' לשקף)";
+                btn.className = 'primary';
+            }
+            document.querySelectorAll('.kb-motion').forEach(el => {
+                el.style.animation = 'none';
+                el.removeAttribute('data-kb');
+            });
+            hideMp4Overlay();
+            if (!exp.discard) {
+                const note = document.getElementById('mp4-export-done-note');
+                if (note) note.style.display = 'block';
+            }
+        }
+
+        async function cancelMp4Export() {
+            if (!mp4Export) return;
+            mp4Export.discard = true;
+            await finishMp4Export();
+            showCloudStatus('ייצוא ה-MP4 בוטל');
+        }
+
+        async function startFullShowMp4Export(opts = {}) {
+            if (mp4Export) return;
+            const options = opts || {};
+            if (typeof MediaRecorder === 'undefined') {
+                alert('הדפדפן הזה לא תומך בייצוא וידאו. פתחו את האתר ב-Chrome או Edge.');
+                return;
+            }
+            const mime = pickMp4Mime();
+            if (!mime) {
+                alert('הדפדפן לא תומך בהקלטת MP4. נסו Chrome או Edge מעודכנים.');
+                return;
+            }
+            const maxSlides = options.maxSlides || 0;
+            const totalSec = estimateShowSeconds(maxSlides || undefined);
+            const minutes = Math.max(1, Math.round(totalSec / 60));
+            if (!options.silentConfirm) {
+                const ok = confirm(`הייצוא מקליט את כל המצגת לקובץ אחד (${slides.length} שקפים, בערך ${minutes} דקות).\n\nנכללים מעברים, תנועת תמונות, מוזיקת רקע, וכשהשקף הוא סרטון — הסאונד של הסרטון.\nיש להשאיר את הלשונית פתוחה בחזית עד הסוף.\n\nלהתחיל?`);
+                if (!ok) return;
+            }
+
+            let writer = null;
+            const chunks = [];
+            if (!options.skipPicker && window.showSaveFilePicker) {
+                try {
+                    const handle = await showSaveFilePicker({
+                        suggestedName: 'dad-60-birthday.mp4',
+                        types: [{ description: 'MP4', accept: { 'video/mp4': ['.mp4'] } }]
+                    });
+                    writer = await handle.createWritable();
+                } catch (e) {
+                    if (e && e.name === 'AbortError') return;
+                }
+            }
+
+            const canvas = document.createElement('canvas');
+            canvas.width = 1280;
+            canvas.height = 720;
+            const ctx = canvas.getContext('2d', { alpha: false });
+            const stream = canvas.captureStream(30);
+            attachExportAudio(stream);
+
+            let writeChain = Promise.resolve();
+            const rec = new MediaRecorder(stream, {
+                mimeType: mime,
+                videoBitsPerSecond: 3500000,
+                audioBitsPerSecond: 160000
+            });
+            rec.ondataavailable = (e) => {
+                if (!e.data || !e.data.size) return;
+                writeChain = writeChain.then(async () => {
+                    if (writer) await writer.write(e.data);
+                    else chunks.push(e.data);
+                }).catch(err => console.warn('mp4 write', err));
+            };
+
+            if (isPlaying) {
+                isPlaying = false;
+                stopPresentationLoop();
+            }
+            selectSlide(0, null, true);
+            restartSoundtrackForExport();
+
+            mp4Export = {
+                rec,
+                writer,
+                chunks,
+                writeChain,
+                stream,
+                canvas,
+                ctx,
+                mime,
+                started: performance.now(),
+                totalSec,
+                maxSlides: maxSlides || 0,
+                finishing: false,
+                discard: false
+            };
+            Object.defineProperty(mp4Export, 'writeChain', { get() { return writeChain; } });
+
+            showMp4Overlay('מתחיל הקלטה…');
+            const btn = document.getElementById('btn-play');
+            isPlaying = true;
+            musicPausedForPresentation = false;
+            if (btn) {
+                btn.textContent = '⏸️ השהה מצגת';
+                btn.className = 'gold';
+            }
+            slideStartTime = performance.now();
+            document.querySelectorAll('.kb-motion').forEach(el => el.removeAttribute('data-kb'));
+            applyKenBurns(currentActiveLayer, slides[0], 0);
+            ensureSoundtrack({ forcePlay: true });
+            drawShowToCanvas(ctx, canvas.width, canvas.height);
+            try { rec.start(500); } catch (err) {
+                mp4Export = null;
+                hideMp4Overlay();
+                alert('לא הצלחתי להתחיל הקלטה: ' + err.message);
+                return;
+            }
+            startPresentationLoop();
+            exportDrawLoop();
         }
 
         renderScenesList('all');
@@ -6025,5 +6684,18 @@
         </div>
     </div>
 
+    <div id="mp4-export-overlay" style="display:none;">
+        <div id="mp4-export-card">
+            <h3 style="margin:0 0 8px; color:#fbbf24;">🎥 ייצוא המצגת ל-MP4</h3>
+            <div id="mp4-export-label" style="font-size:1rem;">מתחיל…</div>
+            <div id="mp4-export-bar"><div id="mp4-export-bar-fill"></div></div>
+            <div id="mp4-export-sub" style="font-size:0.82rem; color:#94a3b8; line-height:1.45;">
+                ההקלטה רצה בזמן אמת וכוללת מעברים, מוזיקת רקע וסאונד של סרטונים. השאירו את הלשונית פתוחה.
+            </div>
+            <div style="display:flex; justify-content:flex-end; margin-top:14px;">
+                <button type="button" class="danger" onclick="cancelMp4Export()">ביטול</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
